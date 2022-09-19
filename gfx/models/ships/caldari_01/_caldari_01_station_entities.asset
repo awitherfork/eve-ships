@@ -1,0 +1,764 @@
+# reload assets gfx/models/ships/caldari_01/_caldari_01_station_entities.asset 
+
+# ship designer scale #
+@constructor_scale = 1.0
+@science_scale = 3.0
+@orbital_station_scale = 1
+@refinary_station = 1
+@research_station_scale = 1
+@mining_station_scale = 1
+@terraforming_station_scale = 1
+@wormhole_station_scale = 1
+@observatory_station_scale = 1
+@plataform_scale = 5.0
+
+
+# ingame ship scale #
+@science_physical_scale = 0.5
+@constructor_physical_scale = 0.25
+@orbital_station_physical_scale = 0.1
+@refinary_physical_scale = 0.1
+@research_station_physical_scale = 0.1
+@mining_station_physical_scale = 1.0
+@terraforming_station_physical_scale = 0.1
+@wormhole_station_physical_scale = 0.1
+@observatory_station_physical_scale = 0.1
+@plataform_physical_scale = 0.5
+
+
+@small_trail_W = 10
+@small_trail_L = 60
+@medium_trail_W = 50
+@medium_trail_L = 300
+@large_trail_W = 50
+@large_trail_L =  300
+
+###################################################################################
+###																				###
+###									STATIONS									###
+###																				###
+###################################################################################
+
+################
+##	plataform ##
+################
+
+entity = {
+	name = "caldari_01_military_station_large_entity"
+	pdxmesh = "caldari_01_platform_mesh"
+
+	locator = { name = "part1"	position = { 0 0 0 } rotation = { 0 0 0 } }
+	locator = { name = "part2"	position = { 0 0 0 } rotation = { 0 0 180 } }
+
+	default_state = "idle"
+	state = { name = "idle" state_time = 5
+		start_event = { trigger_once = yes sound = { soundeffect = "defense_station_idle_hum" } }
+
+		event = { time = 0.0 node = "light_locator_01" particle = "ship_light_blue_effect" keep_particle = yes trigger_once = yes }
+		event = { time = 2.0 node = "light_locator_02" particle = "ship_light_blue_effect" keep_particle = yes trigger_once = yes }
+	}
+	state = { name = "death" state_time = 2 looping = no
+		event = { time = 0.0 node = "light_locator_01" particle = "ship_explosion_particle" keep_particle = yes trigger_once = yes sound = { soundeffect = "station_explosion_small" } }
+		event = { time = 0.5 node = "light_locator_02" particle = "ship_explosion_particle" keep_particle = yes trigger_once = yes sound = { soundeffect = "station_explosion_small" } }
+
+		event = { time = 1.9 particle = "medium_station_explosion_particle" keep_particle = yes trigger_once = yes sound = { soundeffect = "station_explosion_large" } }
+	}
+
+	scale = @plataform_physical_scale
+
+	game_data = {
+		size = @plataform_scale
+	}
+}
+
+entity = {
+	name = "caldari_01_military_station_medium_entity"
+	pdxmesh = "caldari_01_platform_mesh"
+
+	locator = { name = "part1"	position = { 0 0 0 } rotation = { 0 0 0 } }
+	locator = { name = "part2"	position = { 0 0 0 } rotation = { 0 0 180 } }
+
+	default_state = "idle"
+	state = { name = "idle" state_time = 5
+		start_event = { trigger_once = yes sound = { soundeffect = "defense_station_idle_hum" } }
+
+		event = { time = 0.0 node = "light_locator_01" particle = "ship_light_blue_effect" keep_particle = yes trigger_once = yes }
+		event = { time = 2.0 node = "light_locator_02" particle = "ship_light_blue_effect" keep_particle = yes trigger_once = yes }
+	}
+	state = { name = "death" state_time = 2 looping = no
+		event = { time = 0.0 node = "light_locator_01" particle = "ship_explosion_particle" keep_particle = yes trigger_once = yes sound = { soundeffect = "station_explosion_small" } }
+		event = { time = 0.5 node = "light_locator_02" particle = "ship_explosion_particle" keep_particle = yes trigger_once = yes sound = { soundeffect = "station_explosion_small" } }
+
+		event = { time = 1.9 particle = "medium_station_explosion_particle" keep_particle = yes trigger_once = yes sound = { soundeffect = "station_explosion_large" } }
+	}
+
+	scale = @plataform_physical_scale
+
+	game_data = {
+		size = @plataform_scale
+	}
+}
+
+entity = {
+	name = "caldari_01_military_station_small_entity"
+	pdxmesh = "caldari_01_platform_mesh"
+
+	locator = { name = "part1"	position = { 0 0 0 } rotation = { 0 0 0 } }
+	locator = { name = "part2"	position = { 0 0 0 } rotation = { 0 0 180 } }
+
+	default_state = "idle"
+	state = { name = "idle" state_time = 5
+		start_event = { trigger_once = yes sound = { soundeffect = "defense_station_idle_hum" } }
+
+		event = { time = 0.0 node = "light_locator_01" particle = "ship_light_blue_effect" keep_particle = yes trigger_once = yes }
+		event = { time = 2.0 node = "light_locator_02" particle = "ship_light_blue_effect" keep_particle = yes trigger_once = yes }
+	}
+	state = { name = "death" state_time = 2 looping = no
+		event = { time = 0.0 node = "light_locator_01" particle = "ship_explosion_particle" keep_particle = yes trigger_once = yes sound = { soundeffect = "station_explosion_small" } }
+		event = { time = 0.5 node = "light_locator_02" particle = "ship_explosion_particle" keep_particle = yes trigger_once = yes sound = { soundeffect = "station_explosion_small" } }
+
+		event = { time = 1.9 particle = "medium_station_explosion_particle" keep_particle = yes trigger_once = yes sound = { soundeffect = "station_explosion_large" } }
+	}
+
+	scale = @plataform_physical_scale
+
+	game_data = {
+		size = @plataform_scale
+	}
+}
+
+# unused
+
+entity = {
+	name = "caldari_01_military_station_section_heavy_entity"
+	pdxmesh = "caldari_01_platform_mesh"
+
+	locator = { name = "part1"	position = { 0 0 0 } rotation = { 0 0 0 } }
+	locator = { name = "part2"	position = { 0 0 0 } rotation = { 0 0 180 } }
+
+	default_state = "idle"
+	state = { name = "idle" state_time = 5
+		start_event = { trigger_once = yes sound = { soundeffect = "defense_station_idle_hum" } }
+
+		event = { time = 0.0 node = "light_locator_01" particle = "ship_light_blue_effect" keep_particle = yes trigger_once = yes }
+		event = { time = 2.0 node = "light_locator_02" particle = "ship_light_blue_effect" keep_particle = yes trigger_once = yes }
+	}
+	state = { name = "death" state_time = 2 looping = no
+		event = { time = 0.0 node = "light_locator_01" particle = "ship_explosion_particle" keep_particle = yes trigger_once = yes sound = { soundeffect = "station_explosion_small" } }
+		event = { time = 0.5 node = "light_locator_02" particle = "ship_explosion_particle" keep_particle = yes trigger_once = yes sound = { soundeffect = "station_explosion_small" } }
+
+		event = { time = 1.9 particle = "medium_station_explosion_particle" keep_particle = yes trigger_once = yes sound = { soundeffect = "station_explosion_large" } }
+	}
+
+	scale = @plataform_physical_scale
+
+	game_data = {
+		size = @plataform_scale
+	}
+}
+
+entity = {
+	name = "caldari_01_military_station_section_medium_entity"
+	pdxmesh = "caldari_01_platform_mesh"
+
+	locator = { name = "part1"	position = { 0 0 0 } rotation = { 0 0 0 } }
+	locator = { name = "part2"	position = { 0 0 0 } rotation = { 0 0 180 } }
+
+	default_state = "idle"
+	state = { name = "idle" state_time = 5
+		start_event = { trigger_once = yes sound = { soundeffect = "defense_station_idle_hum" } }
+
+		event = { time = 0.0 node = "light_locator_01" particle = "ship_light_blue_effect" keep_particle = yes trigger_once = yes }
+		event = { time = 2.0 node = "light_locator_02" particle = "ship_light_blue_effect" keep_particle = yes trigger_once = yes }
+	}
+	state = { name = "death" state_time = 2 looping = no
+		event = { time = 0.0 node = "light_locator_01" particle = "ship_explosion_particle" keep_particle = yes trigger_once = yes sound = { soundeffect = "station_explosion_small" } }
+		event = { time = 0.5 node = "light_locator_02" particle = "ship_explosion_particle" keep_particle = yes trigger_once = yes sound = { soundeffect = "station_explosion_small" } }
+
+		event = { time = 1.9 particle = "medium_station_explosion_particle" keep_particle = yes trigger_once = yes sound = { soundeffect = "station_explosion_large" } }
+	}
+
+	scale = @plataform_physical_scale
+
+	game_data = {
+		size = @plataform_scale
+	}
+}
+
+
+entity = {
+	name = "caldari_01_military_station_section_light_entity"
+	pdxmesh = "caldari_01_platform_mesh"
+
+	locator = { name = "part1"	position = { 0 0 0 } rotation = { 0 0 0 } }
+	locator = { name = "part2"	position = { 0 0 0 } rotation = { 0 0 180 } }
+
+	default_state = "idle"
+	state = { name = "idle" state_time = 5
+		start_event = { trigger_once = yes sound = { soundeffect = "defense_station_idle_hum" } }
+
+		event = { time = 0.0 node = "light_locator_01" particle = "ship_light_blue_effect" keep_particle = yes trigger_once = yes }
+		event = { time = 2.0 node = "light_locator_02" particle = "ship_light_blue_effect" keep_particle = yes trigger_once = yes }
+	}
+	state = { name = "death" state_time = 2 looping = no
+		event = { time = 0.0 node = "light_locator_01" particle = "ship_explosion_particle" keep_particle = yes trigger_once = yes sound = { soundeffect = "station_explosion_small" } }
+		event = { time = 0.5 node = "light_locator_02" particle = "ship_explosion_particle" keep_particle = yes trigger_once = yes sound = { soundeffect = "station_explosion_small" } }
+
+		event = { time = 1.9 particle = "medium_station_explosion_particle" keep_particle = yes trigger_once = yes sound = { soundeffect = "station_explosion_large" } }
+	}
+
+	scale = @plataform_physical_scale
+
+	game_data = {
+		size = @plataform_scale
+	}
+}
+
+#################
+
+## orbital_station ##
+entity = {
+	name = "caldari_01_orbital_station_entity"
+	pdxmesh = "empty_mesh"
+
+	locator = { name = "part1"  rotation ={ 0 0 0} }		
+
+	attach = { part1   = "caldari_01_station3_entity"	}
+
+	game_data = {
+		size = @orbital_station_scale
+		emissive_recolor_crunch = 5.0
+	}
+}
+
+entity = {
+	name = "caldari_01_orbital_station_section_entity"
+	pdxmesh = "empty_mesh"
+}
+
+## mining_station ##
+entity = {
+	name = "caldari_01_mining_station_entity"
+	pdxmesh = "empty_mesh"
+
+	locator = { name = "part1"  rotation ={ 0 0 0} }		
+
+	attach = { part1   = "caldari_01_station7_entity"	}
+
+	scale = @mining_station_physical_scale
+	game_data = {
+		size = @mining_station_scale
+	}
+}
+
+entity = {
+	name = "caldari_01_mining_station_section_entity"
+	pdxmesh = "empty_mesh"
+}
+
+## terraforming_station ##
+entity = {
+	name = "caldari_01_terraform_station_entity"
+	pdxmesh = "empty_mesh"
+
+	locator = { name = "part1"  rotation ={ 0 0 0} }		
+
+	attach = { part1   = "caldari_01_station5_entity"	}
+
+	scale = @terraforming_station_physical_scale
+	game_data = {
+		size = @terraforming_station_scale
+	}
+}
+
+entity = {
+	name = "caldari_01_terraform_station_section_entity"
+	pdxmesh = "empty_mesh"
+}
+
+## research_station ##
+entity = {
+	name = "caldari_01_research_station_entity"
+	pdxmesh = "empty_mesh"
+
+	locator = { name = "part1"  rotation ={ 0 0 0} }		
+
+	attach = { part1   = "caldari_01_station4_entity"	}
+
+	scale = @research_station_physical_scale
+	game_data = {
+		size = @research_station_scale
+	}
+}
+
+entity = {
+	name = "caldari_01_research_station_section_entity"
+	pdxmesh = "empty_mesh"
+}
+
+## wormhole_station ##
+entity = {
+	name = "caldari_01_wormhole_station_entity"
+	pdxmesh = "caldari_01_station5_mesh"
+
+	locator = { name = "part1" 			position = { 0 	0 	0 } }
+
+	default_state = "idle"
+	state = { name = "idle" state_time = 5
+		start_event = { trigger_once = yes sound = { soundeffect = "amb_research_station_signals" } }
+		
+		event = { time = 0.0 node = "light_locator_01" particle = "ship_light_blue_effect" keep_particle = yes trigger_once = yes }
+		event = { time = 0.0 node = "light_locator_02" particle = "ship_light_blue_effect" keep_particle = yes trigger_once = yes }
+		event = { time = 0.0 node = "light_locator_03" particle = "ship_light_blue_effect" keep_particle = yes trigger_once = yes }
+		event = { time = 0.0 node = "light_locator_04" particle = "ship_light_blue_effect" keep_particle = yes trigger_once = yes }
+		event = { time = 0.0 node = "light_locator_05" particle = "ship_light_blue_effect" keep_particle = yes trigger_once = yes }
+	}
+	
+	state = { name = "death" state_time = 4 looping = no
+		event = { time = 0.0 node = "light_locator_01" particle = "ship_explosion_particle" keep_particle = yes trigger_once = yes sound = { soundeffect = "station_explosion_small" } }
+		event = { time = 0.5 node = "light_locator_02" particle = "ship_explosion_particle" keep_particle = yes trigger_once = yes sound = { soundeffect = "station_explosion_small" } }
+		event = { time = 1.5 node = "light_locator_03" particle = "ship_explosion_particle" keep_particle = yes trigger_once = yes sound = { soundeffect = "station_explosion_small" } }
+		event = { time = 2.5 node = "light_locator_04" particle = "ship_explosion_particle" keep_particle = yes trigger_once = yes sound = { soundeffect = "station_explosion_small" } }
+		event = { time = 3.5 node = "light_locator_05" particle = "ship_explosion_particle" keep_particle = yes trigger_once = yes sound = { soundeffect = "station_explosion_small" } }
+		
+		event = { time = 3.9 particle = "medium_station_explosion_particle" keep_particle = yes trigger_once = yes sound = { soundeffect = "station_explosion_large" } }
+	}
+	scale = @wormhole_station_physical_scale
+	
+	game_data = {
+		size = @wormhole_station_scale
+		emissive_recolor_crunch = 5.0
+	}
+}
+
+entity = {
+	name = "caldari_01_wormhole_station_section_entity"
+	pdxmesh = "empty_mesh"
+}
+
+## observatory_station ##
+entity = {
+	name = "caldari_01_observation_station_entity"
+	pdxmesh = "empty_mesh"
+
+	locator = { name = "part1"  rotation ={ 0 0 0} }		
+
+	attach = { part1   = "caldari_01_station2_entity"	}
+
+	scale = @observatory_station_physical_scale
+	game_data = {
+		size = @observatory_station_scale
+	}
+}
+
+##################         	 CONSTRUCTION ENTITIES           ########################
+
+entity = {
+	name = "caldari_01_observation_station_section_entity"
+	pdxmesh = "empty_mesh"
+}
+
+entity = {
+	name = "caldari_01_orbital_station_construction_entity"
+	pdxmesh = "caldari_01_station3_entity"
+		default_state = "idle"
+		state = { name = "idle" animation = "idle" animation_speed = 0
+			event = { trigger_once = yes sound = { soundeffect = "place_construction" } }
+		}
+}
+
+entity = {
+	name = "caldari_01_mining_station_construction_entity"
+	pdxmesh = "caldari_01_station7_entity"
+		default_state = "idle"
+		state = { name = "idle" state_time = 5
+			event = { trigger_once = yes sound = { soundeffect = "place_construction" } }
+		}
+	scale = @mining_station_scale
+}
+
+entity = {
+	name = "caldari_01_research_station_construction_entity"
+	pdxmesh = "caldari_01_station4_entity"
+		default_state = "idle"
+		state = { name = "idle" animation = idle animation_speed = 0
+			event = { trigger_once = yes sound = { soundeffect = "place_construction" } }
+		}
+	scale = @research_station_scale
+}
+
+entity = {
+	name = "caldari_01_wormhole_station_construction_entity"
+	pdxmesh = "caldari_01_station5_mesh"
+		default_state = "idle"
+		#event = { trigger_once = yes sound = { soundeffect = "place_construction" } }
+			
+	scale = @wormhole_station_scale
+}	
+
+entity = {
+	name = "caldari_01_terraform_station_construction_entity"
+	pdxmesh = "caldari_01_station5_entity"
+		default_state = "idle"
+		state = { name = "idle" state_time = 5
+			event = { trigger_once = yes sound = { soundeffect = "place_construction" } }
+		}
+	scale = @terraforming_station_scale
+}
+
+entity = {
+	name = "caldari_01_observation_station_construction_entity"
+	pdxmesh = "caldari_01_station2_entity"
+		default_state = "idle"
+		state = { name = "idle" animation = idle animation_speed = 0
+		event = { trigger_once = yes sound = { soundeffect = "place_construction" } }
+		}
+	scale = @observatory_station_scale
+}
+
+
+############
+# entities #
+############
+
+# station 1
+entity = {
+	name = "caldari_01_station1_entity"
+	pdxmesh = "caldari_01_station1_mesh"
+	#pdxmesh = "empty_mesh_ship"
+	
+	locator = { name = "beam_mesh"  rotation ={ 0 0 0} }		
+
+	attach = { logo   = "effect_athanor_logo_entity"	}
+	#attach = { beam_mesh   = "athanor_beam_entity"	}
+	attach = { light_locator_01   = "station_effect_entity"	}	
+	attach = { light_locator_02   = "station_effect_entity"	}	
+	attach = { light_locator_03   = "station_effect_entity"	}	
+	attach = { light_locator_04   = "station_effect_entity"	}	
+	attach = { light_locator_05   = "station_effect_entity"	}	
+	attach = { light_locator_06   = "station_effect_entity"	}	
+	attach = { light_locator_07   = "station_effect_entity"	}	
+	attach = { light_locator_08   = "station_effect_entity"	}	
+	attach = { light_locator_09   = "station_effect_entity"	}	
+	attach = { light_locator_10   = "station_effect_entity"	}	
+	attach = { light_locator_11   = "station_effect_entity"	}	
+	attach = { light_locator_12   = "station_effect_entity"	}	
+	attach = { light_locator_13   = "station_effect_entity"	}	
+	attach = { light_locator_14   = "station_effect_entity"	}	
+	attach = { light_locator_15   = "station_effect_entity"	}	
+	attach = { light_locator_16   = "station_effect_entity"	}	
+	attach = { light_locator_17   = "station_effect_entity"	}	
+	attach = { light_locator_18   = "station_effect_entity"	}	
+	attach = { light_locator_19   = "station_effect_entity"	}	
+	attach = { light_locator_20   = "station_effect_entity"	}	
+	attach = { light_locator_21   = "station_effect_entity"	}	
+	attach = { light_locator_22   = "station_effect_entity"	}	
+	attach = { light_locator_23   = "station_effect_entity"	}	
+	attach = { light_locator_24   = "station_effect_entity"	}	
+	attach = { light_locator_25   = "station_effect_entity"	}	
+	attach = { light_locator_26   = "station_effect_entity"	}	
+	attach = { light_locator_27   = "station_effect_entity"	}	
+	attach = { light_locator_28   = "station_effect_entity"	}	
+	attach = { light_locator_29   = "station_effect_entity"	}	
+	attach = { light_locator_30   = "station_effect_entity"	}	
+	attach = { light_locator_31   = "station_effect_entity"	}	
+	attach = { light_locator_32   = "station_effect_entity"	}	
+	attach = { light_locator_33   = "station_effect_entity"	}	
+	attach = { light_locator_34   = "station_effect_entity"	}	
+	attach = { light_locator_35   = "station_effect_entity"	}	
+	attach = { light_locator_36   = "station_effect_entity"	}	
+	attach = { light_locator_37   = "station_effect_entity"	}	
+	attach = { light_locator_38   = "station_effect_entity"	}	
+	attach = { light_locator_39   = "station_effect_entity"	}	
+	attach = { light_locator_40   = "station_effect_entity"	}	
+	attach = { light_locator_41   = "station_effect_entity"	}	
+	attach = { light_locator_42   = "station_effect_entity"	}	
+	attach = { light_locator_43   = "station_effect_entity"	}	
+	attach = { light_locator_44   = "station_effect_entity"	}	
+	attach = { light_locator_45   = "station_effect_entity"	}	
+	attach = { light_locator_46   = "station_effect_entity"	}	
+	attach = { light_locator_47   = "station_effect_entity"	}	
+	attach = { light_locator_48   = "station_effect_entity"	}	
+	attach = { light_locator_49   = "station_effect_entity"	}	
+	attach = { light_locator_50   = "station_effect_entity"	}	
+	attach = { light_locator_51   = "station_effect_entity"	}	
+	attach = { light_locator_52   = "station_effect_entity"	}	
+	attach = { light_locator_53   = "station_effect_entity"	}	
+	attach = { light_locator_54   = "station_effect_entity"	}	
+	attach = { light_locator_55   = "station_effect_entity"	}	
+	attach = { light_locator_56   = "station_effect_entity"	}	
+	attach = { light_locator_57   = "station_effect_entity"	}	
+	attach = { light_locator_58   = "station_effect_entity"	}	
+	attach = { light_locator_59   = "station_effect_entity"	}	
+	attach = { light_locator_60   = "station_effect_entity"	}	
+	
+	default_state = "idle"
+	state = { name = "idle" animation = "idle"
+		start_event = { trigger_once = yes sound = { soundeffect = "amb_mining_station_signals" } }
+		event = { time = 0.0 node = "light_locator_01" particle = "ship_light_blue_effect" keep_particle = yes trigger_once = yes }
+		event = { time = 2.0 node = "light_locator_02" particle = "ship_light_blue_effect" keep_particle = yes trigger_once = yes }
+
+		#start_event = { node = "effect_1" particle = "athanor_beam_effect" keep_particle = yes trigger_once = yes }
+		#start_event = { node = "effect_1" particle = "athanor_beam_effect" keep_particle = yes trigger_once = yes }
+	}
+
+	state = { name = "death" animation = "death" looping = no
+		event = { time = 0.0 node = "light_locator_01" particle = "ship_explosion_particle" keep_particle = yes trigger_once = yes sound = { soundeffect = "station_explosion_small" } }
+		event = { time = 0.5 node = "light_locator_02" particle = "ship_explosion_particle" keep_particle = yes trigger_once = yes sound = { soundeffect = "station_explosion_small" } }
+
+		event = { time = 1.9 particle = "medium_station_explosion_particle" keep_particle = yes trigger_once = yes  sound = { soundeffect = "station_explosion_large" } }
+	}
+
+	scale = @mining_station_physical_scale
+	game_data = {
+		size = @mining_station_scale
+	}
+}
+
+# station 2 # observatory
+entity = {
+	name = "caldari_01_station2_entity"
+	pdxmesh = "caldari_01_station2_mesh"
+	#pdxmesh = "empty_mesh_ship"
+	
+	locator = { name = "beam_mesh"  rotation ={ 0 0 0} }		
+
+	default_state = "idle"
+	state = { name = "idle" animation = "idle"
+		start_event = { trigger_once = yes sound = { soundeffect = "amb_mining_station_signals" } }
+		event = { time = 0.0 node = "light_locator_01" particle = "ship_light_blue_effect" keep_particle = yes trigger_once = yes }
+		event = { time = 2.0 node = "light_locator_02" particle = "ship_light_blue_effect" keep_particle = yes trigger_once = yes }
+
+		#start_event = { node = "effect_1" particle = "athanor_beam_effect" keep_particle = yes trigger_once = yes }
+		#start_event = { node = "effect_1" particle = "athanor_beam_effect" keep_particle = yes trigger_once = yes }
+	}
+
+	state = { name = "death" animation = "death" looping = no
+		event = { time = 0.0 node = "light_locator_01" particle = "ship_explosion_particle" keep_particle = yes trigger_once = yes sound = { soundeffect = "station_explosion_small" } }
+		event = { time = 0.5 node = "light_locator_02" particle = "ship_explosion_particle" keep_particle = yes trigger_once = yes sound = { soundeffect = "station_explosion_small" } }
+
+		event = { time = 1.9 particle = "medium_station_explosion_particle" keep_particle = yes trigger_once = yes  sound = { soundeffect = "station_explosion_large" } }
+	}
+
+	scale = @mining_station_physical_scale
+	game_data = {
+		size = @mining_station_scale
+	}
+}
+
+# station 3
+entity = {
+	name = "caldari_01_station3_entity"
+	pdxmesh = "caldari_01_station3_mesh"
+	#pdxmesh = "empty_mesh_ship"
+	
+	locator = { name = "beam_mesh"  rotation ={ 0 0 0} }		
+
+	default_state = "idle"
+	state = { name = "idle" animation = "idle"
+		start_event = { trigger_once = yes sound = { soundeffect = "amb_mining_station_signals" } }
+		event = { time = 0.0 node = "light_locator_01" particle = "ship_light_blue_effect" keep_particle = yes trigger_once = yes }
+		event = { time = 2.0 node = "light_locator_02" particle = "ship_light_blue_effect" keep_particle = yes trigger_once = yes }
+
+		#start_event = { node = "effect_1" particle = "athanor_beam_effect" keep_particle = yes trigger_once = yes }
+		#start_event = { node = "effect_1" particle = "athanor_beam_effect" keep_particle = yes trigger_once = yes }
+	}
+
+	state = { name = "death" animation = "death" looping = no
+		event = { time = 0.0 node = "light_locator_01" particle = "ship_explosion_particle" keep_particle = yes trigger_once = yes sound = { soundeffect = "station_explosion_small" } }
+		event = { time = 0.5 node = "light_locator_02" particle = "ship_explosion_particle" keep_particle = yes trigger_once = yes sound = { soundeffect = "station_explosion_small" } }
+
+		event = { time = 1.9 particle = "medium_station_explosion_particle" keep_particle = yes trigger_once = yes  sound = { soundeffect = "station_explosion_large" } }
+	}
+
+	scale = @mining_station_physical_scale
+	game_data = {
+		size = @mining_station_scale
+	}
+}
+
+# station 4 # research
+entity = {
+	name = "caldari_01_station4_entity"
+	pdxmesh = "caldari_01_station4_mesh"
+	#pdxmesh = "empty_mesh_ship"
+	
+	locator = { name = "beam_mesh"  rotation ={ 0 0 0} }		
+
+	default_state = "idle"
+	state = { name = "idle" animation = "idle"
+		start_event = { trigger_once = yes sound = { soundeffect = "amb_mining_station_signals" } }
+		event = { time = 0.0 node = "light_locator_01" particle = "ship_light_blue_effect" keep_particle = yes trigger_once = yes }
+		event = { time = 2.0 node = "light_locator_02" particle = "ship_light_blue_effect" keep_particle = yes trigger_once = yes }
+
+		#start_event = { node = "effect_1" particle = "athanor_beam_effect" keep_particle = yes trigger_once = yes }
+		#start_event = { node = "effect_1" particle = "athanor_beam_effect" keep_particle = yes trigger_once = yes }
+	}
+
+	state = { name = "death" animation = "death" looping = no
+		event = { time = 0.0 node = "light_locator_01" particle = "ship_explosion_particle" keep_particle = yes trigger_once = yes sound = { soundeffect = "station_explosion_small" } }
+		event = { time = 0.5 node = "light_locator_02" particle = "ship_explosion_particle" keep_particle = yes trigger_once = yes sound = { soundeffect = "station_explosion_small" } }
+
+		event = { time = 1.9 particle = "medium_station_explosion_particle" keep_particle = yes trigger_once = yes  sound = { soundeffect = "station_explosion_large" } }
+	}
+
+	scale = @mining_station_physical_scale
+	game_data = {
+		size = @mining_station_scale
+	}
+}
+
+# station 5
+entity = {
+	name = "caldari_01_station5_entity"
+	pdxmesh = "caldari_01_station5_mesh"
+	#pdxmesh = "empty_mesh_ship"
+	
+	locator = { name = "beam_mesh"  rotation ={ 0 0 0} }		
+
+	default_state = "idle"
+	state = { name = "idle" animation = "idle"
+		start_event = { trigger_once = yes sound = { soundeffect = "amb_mining_station_signals" } }
+		event = { time = 0.0 node = "light_locator_01" particle = "ship_light_blue_effect" keep_particle = yes trigger_once = yes }
+		event = { time = 2.0 node = "light_locator_02" particle = "ship_light_blue_effect" keep_particle = yes trigger_once = yes }
+
+		#start_event = { node = "effect_1" particle = "athanor_beam_effect" keep_particle = yes trigger_once = yes }
+		#start_event = { node = "effect_1" particle = "athanor_beam_effect" keep_particle = yes trigger_once = yes }
+	}
+
+	state = { name = "death" animation = "death" looping = no
+		event = { time = 0.0 node = "light_locator_01" particle = "ship_explosion_particle" keep_particle = yes trigger_once = yes sound = { soundeffect = "station_explosion_small" } }
+		event = { time = 0.5 node = "light_locator_02" particle = "ship_explosion_particle" keep_particle = yes trigger_once = yes sound = { soundeffect = "station_explosion_small" } }
+
+		event = { time = 1.9 particle = "medium_station_explosion_particle" keep_particle = yes trigger_once = yes  sound = { soundeffect = "station_explosion_large" } }
+	}
+
+	scale = @mining_station_physical_scale
+	game_data = {
+		size = @mining_station_scale
+	}
+}
+
+# station 7 mining
+entity = {
+	name = "caldari_01_station7_entity"
+	pdxmesh = "caldari_01_station7_mesh"
+	#pdxmesh = "empty_mesh_ship"
+	
+	locator = { name = "beam_mesh"  rotation ={ 0 0 0} }		
+
+	default_state = "idle"
+	state = { name = "idle" animation = "idle"
+		start_event = { trigger_once = yes sound = { soundeffect = "amb_mining_station_signals" } }
+		event = { time = 0.0 node = "light_locator_01" particle = "ship_light_blue_effect" keep_particle = yes trigger_once = yes }
+		event = { time = 2.0 node = "light_locator_02" particle = "ship_light_blue_effect" keep_particle = yes trigger_once = yes }
+
+		#start_event = { node = "effect_1" particle = "athanor_beam_effect" keep_particle = yes trigger_once = yes }
+		#start_event = { node = "effect_1" particle = "athanor_beam_effect" keep_particle = yes trigger_once = yes }
+	}
+
+	state = { name = "death" animation = "death" looping = no
+		event = { time = 0.0 node = "light_locator_01" particle = "ship_explosion_particle" keep_particle = yes trigger_once = yes sound = { soundeffect = "station_explosion_small" } }
+		event = { time = 0.5 node = "light_locator_02" particle = "ship_explosion_particle" keep_particle = yes trigger_once = yes sound = { soundeffect = "station_explosion_small" } }
+
+		event = { time = 1.9 particle = "medium_station_explosion_particle" keep_particle = yes trigger_once = yes  sound = { soundeffect = "station_explosion_large" } }
+	}
+
+	scale = @mining_station_physical_scale
+	game_data = {
+		size = @mining_station_scale
+	}
+}
+
+# station 8 habitat
+entity = {
+	name = "caldari_01_station8_entity"
+	pdxmesh = "caldari_01_station8_mesh"
+	#pdxmesh = "empty_mesh_ship"
+	
+	locator = { name = "beam_mesh"  rotation ={ 0 0 0} }		
+
+	default_state = "idle"
+	state = { name = "idle" animation = "idle"
+		start_event = { trigger_once = yes sound = { soundeffect = "amb_mining_station_signals" } }
+		event = { time = 0.0 node = "light_locator_01" particle = "ship_light_blue_effect" keep_particle = yes trigger_once = yes }
+		event = { time = 2.0 node = "light_locator_02" particle = "ship_light_blue_effect" keep_particle = yes trigger_once = yes }
+
+		#start_event = { node = "effect_1" particle = "athanor_beam_effect" keep_particle = yes trigger_once = yes }
+		#start_event = { node = "effect_1" particle = "athanor_beam_effect" keep_particle = yes trigger_once = yes }
+	}
+
+	state = { name = "death" animation = "death" looping = no
+		event = { time = 0.0 node = "light_locator_01" particle = "ship_explosion_particle" keep_particle = yes trigger_once = yes sound = { soundeffect = "station_explosion_small" } }
+		event = { time = 0.5 node = "light_locator_02" particle = "ship_explosion_particle" keep_particle = yes trigger_once = yes sound = { soundeffect = "station_explosion_small" } }
+
+		event = { time = 1.9 particle = "medium_station_explosion_particle" keep_particle = yes trigger_once = yes  sound = { soundeffect = "station_explosion_large" } }
+	}
+
+	scale = @mining_station_physical_scale
+	game_data = {
+		size = @mining_station_scale
+	}
+}
+
+# station 9
+entity = {
+	name = "caldari_01_station9_entity"
+	pdxmesh = "caldari_01_station9_mesh"
+	#pdxmesh = "empty_mesh_ship"
+	
+	locator = { name = "beam_mesh"  rotation ={ 0 0 0} }		
+
+	default_state = "idle"
+	state = { name = "idle" animation = "idle"
+		start_event = { trigger_once = yes sound = { soundeffect = "amb_mining_station_signals" } }
+		event = { time = 0.0 node = "light_locator_01" particle = "ship_light_blue_effect" keep_particle = yes trigger_once = yes }
+		event = { time = 2.0 node = "light_locator_02" particle = "ship_light_blue_effect" keep_particle = yes trigger_once = yes }
+
+		#start_event = { node = "effect_1" particle = "athanor_beam_effect" keep_particle = yes trigger_once = yes }
+		#start_event = { node = "effect_1" particle = "athanor_beam_effect" keep_particle = yes trigger_once = yes }
+	}
+
+	state = { name = "death" animation = "death" looping = no
+		event = { time = 0.0 node = "light_locator_01" particle = "ship_explosion_particle" keep_particle = yes trigger_once = yes sound = { soundeffect = "station_explosion_small" } }
+		event = { time = 0.5 node = "light_locator_02" particle = "ship_explosion_particle" keep_particle = yes trigger_once = yes sound = { soundeffect = "station_explosion_small" } }
+
+		event = { time = 1.9 particle = "medium_station_explosion_particle" keep_particle = yes trigger_once = yes  sound = { soundeffect = "station_explosion_large" } }
+	}
+
+	scale = @mining_station_physical_scale
+	game_data = {
+		size = @mining_station_scale
+	}
+}
+
+##################
+# Module overrides
+##################
+
+entity = {
+	name = "caldari_01_orbital_station_assemblyyard_section_entity"
+	pdxmesh = "empty_mesh"
+}
+
+entity = {
+	name = "caldari_01_orbital_station_refinery_section_entity"
+	pdxmesh = "empty_mesh"
+}
+
+entity = {
+	name = "caldari_01_orbital_station_science_section_entity"
+	pdxmesh = "empty_mesh"
+}
+
+entity = {
+	name = "caldari_01_orbital_station_hangarbay_section_entity"
+	pdxmesh = "empty_mesh"
+	scale = 0.9
+}
+
+entity = {
+	name = "caldari_01_starbase_turret_section_entity"
+	pdxmesh = "empty_mesh"
+	scale = 0.9
+}

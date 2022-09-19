@@ -1,0 +1,7 @@
+objectTypes = {
+	pdxmesh = {
+		name = "triglavian_zirnitra_mesh"
+		file = "gfx/models/ships/colossus/zirnitra.mesh"
+		scale = 0.1
+	}
+}

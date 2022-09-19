@@ -1,0 +1,7 @@
+objectTypes = {
+	pdxmesh = {
+		name = "caldari_01_headquarters_mesh"
+		file = "gfx/models/ships/juggernauts/caldari_01/caldari_01_headquarters.mesh"
+		scale = 1.0
+	}
+}

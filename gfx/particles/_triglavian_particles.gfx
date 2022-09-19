@@ -1,0 +1,29 @@
+objectTypes = {
+
+	pdxparticle = {
+		name = "triglavian_core" 
+		type = "triglavian_core_file"
+		
+		scale = 10.0
+	}
+
+	pdxparticle = {
+		name = "triglavian_core2"
+		type = "triglavian_core_file2"
+	
+		scale = 6
+	}
+	# Triglavian Cloud
+
+	pdxparticle = {               
+		name = "triglavian_storm_1_effect"
+		type = "triglavian_storm_1_file"
+		scale = 1
+	}
+
+	pdxparticle = {               
+		name = "triglavian_storm_2_effect"
+		type = "triglavian_storm_1_file"
+		scale = 2
+	}
+}

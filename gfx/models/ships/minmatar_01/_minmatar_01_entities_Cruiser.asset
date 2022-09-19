@@ -1,0 +1,596 @@
+# reload assets gfx/models/ships/minmatar_01/_minmatar_01_cruiser_ships_entities.asset 
+
+# ship designer scale #
+@cruiser_scale = 5
+@belicose_scale = 5
+@scythe_scale = 5
+@stabber_scale = 5
+@rupture_scale = 5
+
+# in game size scale #
+@cruiser_physical_scale = 1.0
+@belicose_physical_scale = 1.0
+@scythe_physical_scale = 1.0
+@stabber_physical_scale = 1.0
+@rupture_physical_scale = 1.0
+
+@small_trail_W = 10
+@small_trail_L = 60
+@medium_trail_W = 50
+@medium_trail_L = 300
+@large_trail_W = 50
+@large_trail_L =  300
+
+#############################################################################
+##################         	 CRUISER                 ########################
+#############################################################################
+
+
+#############################################################################
+##################         	 FRAME                   ########################
+#############################################################################
+	entity = {
+		name = "minmatar_01_cruiser_entity"
+		pdxmesh = "arthropoid_01_cruiser_frame_mesh"
+
+		default_state = idle
+		state = { name = "idle" animation = "idle" animation_blend_time = 4
+			start_event = { trigger_once = yes sound = { soundeffect = "amb_battleship_hum" } }
+		}
+		state = { name = "moving" animation = "idle" animation_blend_time = 2
+			event = { trigger_once = yes sound = { soundeffect = "moving_out_battleship" } }
+		}
+		state = { name = "death" animation = "death" animation_blend_time = 0.0 chance = 1 looping = no
+			event = { time = 3.4 node = "part1_locator" particle = "ship_explosion_particle" }
+			event = { time = 3.4 node = "part1_locator" particle = "ship_explosion_air_vent_particle" }
+			event = { time = 3.4 node = "part1_locator" particle = "ship_burn_particle" }
+
+			event = { time = 8.0 node = "part2_back_locator" particle = "ship_explosion_air_vent_particle" }
+			event = { time = 3.4 node = "part2_front_locator" particle = "ship_explosion_air_vent_particle" }
+			event = { time = 8.0 node = "part2_back_locator" particle = "ship_burn_particle" }
+			event = { time = 3.4 node = "part2_front_locator" particle = "ship_burn_particle" }
+
+			event = { time = 8.0 node = "part3_locator" particle = "ship_burn_particle" }
+			event = { time = 8.0 node = "part3_locator" particle = "ship_explosion_particle" }
+			event = { time = 8.0 node = "part3_locator" particle = "ship_explosion_air_vent_particle" }
+
+			event = { time = 0.0 node = "root" particle = "large_ship_explosion_particle" sound = { soundeffect = ship_destroyed } }
+		}
+		state = { name = "death" animation = "death2" animation_blend_time = 0.0 chance = 1 looping = no
+			event = { time = 5.16 node = "part1_locator" particle = "ship_explosion_particle" }
+			event = { time = 5.16 node = "part1_locator" particle = "ship_explosion_air_vent_particle" }
+			event = { time = 5.16 node = "part1_locator" particle = "ship_burn_particle" }
+
+			event = { time = 5.16 node = "part2_front_locator" particle = "ship_explosion_air_vent_particle" }
+			event = { time = 5.16 node = "part2_front_locator" particle = "ship_burn_particle" }
+
+			event = { time = 11.9 node = "part2_back_locator" particle = "ship_explosion_air_vent_particle" }
+			event = { time = 11.9 node = "part2_back_locator" particle = "ship_burn_particle" }
+			event = { time = 11.9 node = "part2_back_locator" particle = "ship_explosion_particle" }
+
+			event = { time = 11.9 node = "part3_explosion_locator" particle = "large_ship_explosion_particle" sound = { soundeffect = ship_destroyed } }
+
+			event = { time = 0.0 node = "root" particle = "large_ship_explosion_particle" sound = { soundeffect = ship_destroyed } }
+		}
+
+		state = { name = "death" animation = "death3" animation_blend_time = 0.0 chance = 1 looping = no
+			event = { time = 1.7 node = "explosion_locator1" particle = "ship_burn_particle" }
+			event = { time = 1.7 node = "explosion_locator1" particle = "ship_explosion_particle" }
+
+			event = { time = 2.16 node = "explosion_locator2" particle = "ship_burn_particle" }
+			event = { time = 2.16 node = "explosion_locator2" particle = "ship_explosion_particle" }
+
+			event = { time = 3.9 node = "explosion_locator3" particle = "ship_burn_particle" }
+			event = { time = 3.9 node = "explosion_locator3" particle = "ship_explosion_particle" }
+
+			event = { time = 7.5 node = "explosion_locator4" particle = "ship_burn_particle" }
+			event = { time = 7.5 node = "explosion_locator4" particle = "ship_explosion_particle" }
+
+			event = { time = 4.9 node = "explosion_locator5" particle = "ship_burn_particle" }
+			event = { time = 4.9 node = "explosion_locator5" particle = "ship_explosion_particle" }
+
+			event = { time = 0.0 node = "root" particle = "large_ship_explosion_particle" sound = { soundeffect = ship_destroyed } }
+		}
+
+		scale = @cruiser_physical_scale
+
+		game_data = {
+			size = @cruiser_scale
+		}
+}
+
+#############################################################################
+##################         	 BOW SECTIONS            ########################
+#############################################################################
+entity = {
+	name = "minmatar_01_cruiser_bow_L1_entity"
+	pdxmesh = "empty_mesh_ship"
+
+	locator = { name = "large_gun_01" rotation = { 0 0 0 } position = { 0 0 0 } }
+}
+
+entity = {
+	name = "minmatar_01_cruiser_bow_M1S2_entity"
+	pdxmesh = "empty_mesh_ship"
+
+	locator = { name = "medium_gun_01" rotation = { 0 0 0 } position = { 0 0 0 } }
+	locator = { name = "small_gun_01" rotation = { 0 0 0 } position = { 0 0 0 } }
+	locator = { name = "small_gun_02" rotation = { 0 0 0 } position = { 0 0 0 } }
+}
+
+entity = {
+	name = "minmatar_01_cruiser_bow_M2_entity"
+	pdxmesh = "empty_mesh_ship"
+
+	locator = { name = "medium_gun_01" rotation = { 0 0 0 } position = { 0 0 0 } }
+	locator = { name = "medium_gun_02" rotation = { 0 0 0 } position = { 0 0 0 } }
+}
+
+#############################################################################
+##################         	 MID   SECTIONS          ########################
+#############################################################################
+entity = {
+	name = "minmatar_01_cruiser_mid_S2HB_entity"
+	pdxmesh = "minmatar_01_scythe_mesh"
+
+	locator = { name = "small_gun_01" rotation = { 0 0 0 } position = { 0 0 0 } }
+	locator = { name = "small_gun_02" rotation = { 0 0 0 } position = { 0 0 0 } }
+	locator = { name = "strike_craft_locator_01" rotation = { 0 0 0 } position = { 0 0 0 } }
+
+	default_state = "idle"
+	state = { name = "idle" state_time = 5
+		event = { time = 0 node = "light_locator_01" particle = "ship_light_blue_effect" trigger_once = yes keep_particle = yes }
+		event = { time = 0 node = "light_locator_02" particle = "ship_light_blue_effect" trigger_once = yes keep_particle = yes }
+		event = { time = 0 node = "light_locator_03" particle = "ship_light_blue_effect" trigger_once = yes keep_particle = yes }		
+		event = { time = 0 node = "light_locator_04" particle = "ship_light_blue_effect" trigger_once = yes keep_particle = yes }		
+		event = { time = 0 node = "light_locator_05" particle = "ship_light_blue_effect" trigger_once = yes keep_particle = yes }		
+
+		event = { time = 0 node = "engine_small_01" particle = "minmatar_1_1_00_exhaust_idle_particle" trigger_once = yes keep_particle = yes }
+		event = { time = 0 node = "engine_small_02" particle = "minmatar_1_1_00_exhaust_idle_particle" trigger_once = yes keep_particle = yes }
+		event = { time = 0 node = "engine_small_03" particle = "minmatar_1_1_00_exhaust_idle_particle" trigger_once = yes keep_particle = yes }
+		event = { time = 0 node = "engine_small_04" particle = "minmatar_1_1_00_exhaust_idle_particle" trigger_once = yes keep_particle = yes }		
+		event = { time = 0 node = "engine_small_05" particle = "minmatar_1_1_00_exhaust_idle_particle" trigger_once = yes keep_particle = yes }
+	}
+	state = { name = "moving" state_time = 5
+		event = { time = 0 node = "light_locator_01" particle = "ship_light_blue_effect" trigger_once = yes keep_particle = yes }
+		event = { time = 0 node = "light_locator_02" particle = "ship_light_blue_effect" trigger_once = yes keep_particle = yes }
+		event = { time = 0 node = "light_locator_03" particle = "ship_light_blue_effect" trigger_once = yes keep_particle = yes }		
+		event = { time = 0 node = "light_locator_04" particle = "ship_light_blue_effect" trigger_once = yes keep_particle = yes }		
+		event = { time = 0 node = "light_locator_05" particle = "ship_light_blue_effect" trigger_once = yes keep_particle = yes }		
+
+		event = { time = 0 node = "engine_small_01" particle = "minmatar_1_2_00_ship_exhaust_moving_particle" trigger_once = yes keep_particle = yes }
+		event = { time = 0 node = "engine_small_02" particle = "minmatar_1_2_00_ship_exhaust_moving_particle" trigger_once = yes keep_particle = yes }
+		event = { time = 0 node = "engine_small_03" particle = "minmatar_1_2_00_ship_exhaust_moving_particle" trigger_once = yes keep_particle = yes }
+		event = { time = 0 node = "engine_small_04" particle = "minmatar_1_2_00_ship_exhaust_moving_particle" trigger_once = yes keep_particle = yes }
+		event = { time = 0 node = "engine_small_05" particle = "minmatar_1_2_00_ship_exhaust_moving_particle" trigger_once = yes keep_particle = yes }
+	}
+	state = { name = "death" state_time = 5 }
+
+	scale = @scythe_physical_scale
+
+	game_data = {
+		size =  @scythe_scale
+	}
+}
+
+entity = {
+	name = "minmatar_01_cruiser_mid_L1M1_entity"
+	pdxmesh = "minmatar_01_stabber_mesh"
+
+	locator = { name = "large_gun_01" rotation = { 0 0 0 } position = { 0 0 0 } }
+	locator = { name = "medium_gun_01" rotation = { 0 0 0 } position = { 0 0 0 } }
+
+	default_state = "idle"
+	state = { name = "idle" state_time = 5
+		event = { time = 0 node = "light_locator_01" particle = "ship_light_blue_effect" trigger_once = yes keep_particle = yes }
+		event = { time = 0 node = "light_locator_02" particle = "ship_light_blue_effect" trigger_once = yes keep_particle = yes }
+		event = { time = 0 node = "light_locator_03" particle = "ship_light_blue_effect" trigger_once = yes keep_particle = yes }		
+		event = { time = 0 node = "light_locator_04" particle = "ship_light_blue_effect" trigger_once = yes keep_particle = yes }		
+		event = { time = 0 node = "light_locator_05" particle = "ship_light_blue_effect" trigger_once = yes keep_particle = yes }		
+
+		event = { time = 0 node = "engine_small_01" particle = "minmatar_1_1_00_exhaust_idle_particle" trigger_once = yes keep_particle = yes }
+		event = { time = 0 node = "engine_small_02" particle = "minmatar_1_1_00_exhaust_idle_particle" trigger_once = yes keep_particle = yes }
+		event = { time = 0 node = "engine_small_03" particle = "minmatar_1_1_00_exhaust_idle_particle" trigger_once = yes keep_particle = yes }
+		event = { time = 0 node = "engine_small_04" particle = "minmatar_1_1_00_exhaust_idle_particle" trigger_once = yes keep_particle = yes }		
+		event = { time = 0 node = "engine_small_05" particle = "minmatar_1_1_00_exhaust_idle_particle" trigger_once = yes keep_particle = yes }
+		event = { time = 0 node = "engine_small_06" particle = "minmatar_1_1_00_exhaust_idle_particle" trigger_once = yes keep_particle = yes }		
+		event = { time = 0 node = "engine_small_07" particle = "minmatar_1_1_00_exhaust_idle_particle" trigger_once = yes keep_particle = yes }		
+	}
+	state = { name = "moving" state_time = 5
+		event = { time = 0 node = "light_locator_01" particle = "ship_light_blue_effect" trigger_once = yes keep_particle = yes }
+		event = { time = 0 node = "light_locator_02" particle = "ship_light_blue_effect" trigger_once = yes keep_particle = yes }
+		event = { time = 0 node = "light_locator_03" particle = "ship_light_blue_effect" trigger_once = yes keep_particle = yes }		
+		event = { time = 0 node = "light_locator_04" particle = "ship_light_blue_effect" trigger_once = yes keep_particle = yes }		
+		event = { time = 0 node = "light_locator_05" particle = "ship_light_blue_effect" trigger_once = yes keep_particle = yes }		
+
+		event = { time = 0 node = "engine_small_01" particle = "minmatar_1_2_00_ship_exhaust_moving_particle" trigger_once = yes keep_particle = yes }
+		event = { time = 0 node = "engine_small_02" particle = "minmatar_1_2_00_ship_exhaust_moving_particle" trigger_once = yes keep_particle = yes }
+		event = { time = 0 node = "engine_small_03" particle = "minmatar_1_2_00_ship_exhaust_moving_particle" trigger_once = yes keep_particle = yes }
+		event = { time = 0 node = "engine_small_04" particle = "minmatar_1_2_00_ship_exhaust_moving_particle" trigger_once = yes keep_particle = yes }
+		event = { time = 0 node = "engine_small_05" particle = "minmatar_1_2_00_ship_exhaust_moving_particle" trigger_once = yes keep_particle = yes }
+		event = { time = 0 node = "engine_small_06" particle = "minmatar_1_2_00_ship_exhaust_moving_particle" trigger_once = yes keep_particle = yes }
+		event = { time = 0 node = "engine_small_07" particle = "minmatar_1_2_00_ship_exhaust_moving_particle" trigger_once = yes keep_particle = yes }
+	}
+	state = { name = "death" state_time = 5 }
+
+	scale = @stabber_physical_scale
+	game_data = {
+		trail_locators = {
+			"engine_small_01" = 		{ width = @medium_trail_W 	length = @medium_trail_L   	}
+			"engine_small_02" = 		{ width = @medium_trail_W 	length = @medium_trail_L   	}
+			"engine_small_03" = 		{ width = @medium_trail_W 	length = @medium_trail_L   	}
+			"engine_small_04" = 		{ width = @medium_trail_W 	length = @medium_trail_L   	}
+			"engine_small_05" = 		{ width = @medium_trail_W 	length = @medium_trail_L   	}
+			"engine_small_06" = 		{ width = @medium_trail_W 	length = @medium_trail_L   	}
+		}	
+		size = @stabber_scale
+	}
+}
+
+entity = {
+	name = "minmatar_01_cruiser_mid_M3_entity"
+	pdxmesh = "minmatar_01_rupture_mesh"
+
+	locator = { name = "medium_gun_01" rotation = { 0 0 0 } position = { 0 0 0 } }
+	locator = { name = "medium_gun_02" rotation = { 0 0 0 } position = { 0 0 0 } }
+	locator = { name = "medium_gun_03" rotation = { 0 0 0 } position = { 0 0 0 } }
+
+	default_state = "idle"
+	state = { name = "idle" state_time = 5
+		event = { time = 0 node = "light_locator_01" particle = "ship_light_blue_effect" trigger_once = yes keep_particle = yes }
+		event = { time = 0 node = "light_locator_02" particle = "ship_light_blue_effect" trigger_once = yes keep_particle = yes }
+		event = { time = 0 node = "light_locator_03" particle = "ship_light_blue_effect" trigger_once = yes keep_particle = yes }		
+		event = { time = 0 node = "light_locator_04" particle = "ship_light_blue_effect" trigger_once = yes keep_particle = yes }		
+		event = { time = 0 node = "light_locator_05" particle = "ship_light_blue_effect" trigger_once = yes keep_particle = yes }		
+
+		event = { time = 0 node = "engine_small_01" particle = "minmatar_1_1_00_exhaust_idle_particle" trigger_once = yes keep_particle = yes }
+		event = { time = 0 node = "engine_small_02" particle = "minmatar_1_1_00_exhaust_idle_particle" trigger_once = yes keep_particle = yes }
+		event = { time = 0 node = "engine_small_03" particle = "minmatar_1_1_00_exhaust_idle_particle" trigger_once = yes keep_particle = yes }
+		event = { time = 0 node = "engine_small_04" particle = "minmatar_1_1_00_exhaust_idle_particle" trigger_once = yes keep_particle = yes }		
+		event = { time = 0 node = "engine_small_05" particle = "minmatar_1_1_00_exhaust_idle_particle" trigger_once = yes keep_particle = yes }
+		event = { time = 0 node = "engine_small_06" particle = "minmatar_1_1_00_exhaust_idle_particle" trigger_once = yes keep_particle = yes }		
+		event = { time = 0 node = "engine_small_07" particle = "minmatar_1_1_00_exhaust_idle_particle" trigger_once = yes keep_particle = yes }		
+		event = { time = 0 node = "engine_small_08" particle = "minmatar_1_1_00_exhaust_idle_particle" trigger_once = yes keep_particle = yes }		
+		event = { time = 0 node = "engine_small_09" particle = "minmatar_1_1_00_exhaust_idle_particle" trigger_once = yes keep_particle = yes }
+		event = { time = 0 node = "engine_small_10" particle = "minmatar_1_1_00_exhaust_idle_particle" trigger_once = yes keep_particle = yes }		
+		event = { time = 0 node = "engine_small_11" particle = "minmatar_1_1_00_exhaust_idle_particle" trigger_once = yes keep_particle = yes }	
+	}
+	state = { name = "moving" state_time = 5
+		event = { time = 0 node = "light_locator_01" particle = "ship_light_blue_effect" trigger_once = yes keep_particle = yes }
+		event = { time = 0 node = "light_locator_02" particle = "ship_light_blue_effect" trigger_once = yes keep_particle = yes }
+		event = { time = 0 node = "light_locator_03" particle = "ship_light_blue_effect" trigger_once = yes keep_particle = yes }		
+		event = { time = 0 node = "light_locator_04" particle = "ship_light_blue_effect" trigger_once = yes keep_particle = yes }		
+		event = { time = 0 node = "light_locator_05" particle = "ship_light_blue_effect" trigger_once = yes keep_particle = yes }		
+
+		event = { time = 0 node = "engine_small_01" particle = "minmatar_1_2_00_ship_exhaust_moving_particle" trigger_once = yes keep_particle = yes }
+		event = { time = 0 node = "engine_small_02" particle = "minmatar_1_2_00_ship_exhaust_moving_particle" trigger_once = yes keep_particle = yes }
+		event = { time = 0 node = "engine_small_03" particle = "minmatar_1_2_00_ship_exhaust_moving_particle" trigger_once = yes keep_particle = yes }
+		event = { time = 0 node = "engine_small_04" particle = "minmatar_1_2_00_ship_exhaust_moving_particle" trigger_once = yes keep_particle = yes }
+		event = { time = 0 node = "engine_small_05" particle = "minmatar_1_2_00_ship_exhaust_moving_particle" trigger_once = yes keep_particle = yes }
+		event = { time = 0 node = "engine_small_06" particle = "minmatar_1_2_00_ship_exhaust_moving_particle" trigger_once = yes keep_particle = yes }
+		event = { time = 0 node = "engine_small_07" particle = "minmatar_1_2_00_ship_exhaust_moving_particle" trigger_once = yes keep_particle = yes }
+		event = { time = 0 node = "engine_small_08" particle = "minmatar_1_2_00_ship_exhaust_moving_particle" trigger_once = yes keep_particle = yes }
+		event = { time = 0 node = "engine_small_09" particle = "minmatar_1_2_00_ship_exhaust_moving_particle" trigger_once = yes keep_particle = yes }
+		event = { time = 0 node = "engine_small_10" particle = "minmatar_1_2_00_ship_exhaust_moving_particle" trigger_once = yes keep_particle = yes }
+		event = { time = 0 node = "engine_small_11" particle = "minmatar_1_2_00_ship_exhaust_moving_particle" trigger_once = yes keep_particle = yes }
+	}
+	state = { name = "death" state_time = 5 }
+
+	scale = @rupture_physical_scale
+	game_data = {
+		trail_locators = {
+			"engine_small_01" = 		{ width = @medium_trail_W 	length = @medium_trail_L   	}
+			"engine_small_02" = 		{ width = @medium_trail_W 	length = @medium_trail_L   	}
+			"engine_small_03" = 		{ width = @medium_trail_W 	length = @medium_trail_L   	}
+			"engine_small_04" = 		{ width = @medium_trail_W 	length = @medium_trail_L   	}
+			"engine_small_05" = 		{ width = @medium_trail_W 	length = @medium_trail_L   	}
+			"engine_small_06" = 		{ width = @medium_trail_W 	length = @medium_trail_L   	}
+			"engine_small_07" = 		{ width = @medium_trail_W 	length = @medium_trail_L   	}
+		}	
+		size = @rupture_scale
+	}
+}
+
+entity = {
+	name = "minmatar_01_cruiser_mid_M2S2_entity"
+	pdxmesh = "minmatar_01_belicose_mesh"
+
+	locator = { name = "medium_gun_01" rotation = { 0 0 0 } position = { 0 0 0 } }
+	locator = { name = "medium_gun_02" rotation = { 0 0 0 } position = { 0 0 0 } }
+	locator = { name = "small_gun_01" rotation = { 0 0 0 } position = { 0 0 0 } }
+	locator = { name = "small_gun_02" rotation = { 0 0 0 } position = { 0 0 0 } }
+
+	default_state = "idle"
+	state = { name = "idle" state_time = 5
+		event = { time = 0 node = "light_locator_01" particle = "ship_light_blue_effect" trigger_once = yes keep_particle = yes }
+		event = { time = 0 node = "light_locator_02" particle = "ship_light_blue_effect" trigger_once = yes keep_particle = yes }
+		event = { time = 0 node = "light_locator_03" particle = "ship_light_blue_effect" trigger_once = yes keep_particle = yes }		
+
+		event = { time = 0 node = "engine_small_01" particle = "minmatar_1_1_00_exhaust_idle_particle" trigger_once = yes keep_particle = yes }
+		event = { time = 0 node = "engine_small_02" particle = "minmatar_1_1_00_exhaust_idle_particle" trigger_once = yes keep_particle = yes }
+		event = { time = 0 node = "engine_small_03" particle = "minmatar_1_1_00_exhaust_idle_particle" trigger_once = yes keep_particle = yes }
+		event = { time = 0 node = "engine_small_04" particle = "minmatar_1_1_00_exhaust_idle_particle" trigger_once = yes keep_particle = yes }		
+		event = { time = 0 node = "engine_small_05" particle = "minmatar_1_1_00_exhaust_idle_particle" trigger_once = yes keep_particle = yes }
+		event = { time = 0 node = "engine_small_06" particle = "minmatar_1_1_00_exhaust_idle_particle" trigger_once = yes keep_particle = yes }		
+		event = { time = 0 node = "engine_small_07" particle = "minmatar_1_1_00_exhaust_idle_particle" trigger_once = yes keep_particle = yes }	
+		event = { time = 0 node = "engine_small_08" particle = "minmatar_1_1_00_exhaust_idle_particle" trigger_once = yes keep_particle = yes }		
+		event = { time = 0 node = "engine_small_09" particle = "minmatar_1_1_00_exhaust_idle_particle" trigger_once = yes keep_particle = yes }
+		event = { time = 0 node = "engine_small_10" particle = "minmatar_1_1_00_exhaust_idle_particle" trigger_once = yes keep_particle = yes }		
+		event = { time = 0 node = "engine_small_11" particle = "minmatar_1_1_00_exhaust_idle_particle" trigger_once = yes keep_particle = yes }			
+	}
+	state = { name = "moving" state_time = 5
+		event = { time = 0 node = "light_locator_01" particle = "ship_light_blue_effect" trigger_once = yes keep_particle = yes }
+		event = { time = 0 node = "light_locator_02" particle = "ship_light_blue_effect" trigger_once = yes keep_particle = yes }
+		event = { time = 0 node = "light_locator_03" particle = "ship_light_blue_effect" trigger_once = yes keep_particle = yes }		
+
+		event = { time = 0 node = "engine_small_01" particle = "minmatar_1_2_00_ship_exhaust_moving_particle" trigger_once = yes keep_particle = yes }
+		event = { time = 0 node = "engine_small_02" particle = "minmatar_1_2_00_ship_exhaust_moving_particle" trigger_once = yes keep_particle = yes }
+		event = { time = 0 node = "engine_small_03" particle = "minmatar_1_2_00_ship_exhaust_moving_particle" trigger_once = yes keep_particle = yes }
+		event = { time = 0 node = "engine_small_04" particle = "minmatar_1_2_00_ship_exhaust_moving_particle" trigger_once = yes keep_particle = yes }
+		event = { time = 0 node = "engine_small_05" particle = "minmatar_1_2_00_ship_exhaust_moving_particle" trigger_once = yes keep_particle = yes }
+		event = { time = 0 node = "engine_small_06" particle = "minmatar_1_2_00_ship_exhaust_moving_particle" trigger_once = yes keep_particle = yes }
+		event = { time = 0 node = "engine_small_07" particle = "minmatar_1_2_00_ship_exhaust_moving_particle" trigger_once = yes keep_particle = yes }
+		event = { time = 0 node = "engine_small_08" particle = "minmatar_1_1_00_exhaust_idle_particle" trigger_once = yes keep_particle = yes }		
+		event = { time = 0 node = "engine_small_09" particle = "minmatar_1_1_00_exhaust_idle_particle" trigger_once = yes keep_particle = yes }
+		event = { time = 0 node = "engine_small_10" particle = "minmatar_1_1_00_exhaust_idle_particle" trigger_once = yes keep_particle = yes }		
+		event = { time = 0 node = "engine_small_11" particle = "minmatar_1_1_00_exhaust_idle_particle" trigger_once = yes keep_particle = yes }		
+	}
+	state = { name = "death" state_time = 5 }
+
+	scale = @belicose_physical_scale
+	game_data = {
+		trail_locators = {
+			"engine_small_01" = 		{ width = @medium_trail_W 	length = @medium_trail_L   	}
+			"engine_small_02" = 		{ width = @medium_trail_W 	length = @medium_trail_L   	}
+			"engine_small_03" = 		{ width = @medium_trail_W 	length = @medium_trail_L   	}
+			"engine_small_04" = 		{ width = @medium_trail_W 	length = @medium_trail_L   	}
+			"engine_small_05" = 		{ width = @medium_trail_W 	length = @medium_trail_L   	}
+			"engine_small_06" = 		{ width = @medium_trail_W 	length = @medium_trail_L   	}
+			"engine_small_07" = 		{ width = @medium_trail_W 	length = @medium_trail_L   	}
+		}	
+		size = @belicose_scale
+	}
+}
+
+#############################################################################
+##################         	 STERN SECTIONS          ########################
+#############################################################################
+entity = {
+	name = "minmatar_01_cruiser_stern_M1_entity"
+	pdxmesh = "empty_mesh_ship"
+
+	locator = { name = "medium_gun_01" rotation = { 0 0 0 } position = { 0 0 0 } }
+}
+
+entity = {
+	name = "minmatar_01_cruiser_stern_S2_entity"
+	pdxmesh = "empty_mesh_ship"
+
+	locator = { name = "small_gun_01" rotation = { 0 0 0 } position = { 0 0 0 } }
+	locator = { name = "small_gun_02" rotation = { 0 0 0 } position = { 0 0 0 } }
+}
+##
+#
+##
+# entity = {
+# 	name = "minmatar_01_stabber_entity"
+# 	pdxmesh = "minmatar_01_stabber_mesh"
+
+# 	scale = @stabber_physical_scale
+
+# 	default_state = "idle"
+# 	state = { name = "idle" state_time = 5
+# 		event = { time = 0 node = "light_locator_01" particle = "ship_light_blue_effect" trigger_once = yes keep_particle = yes }
+# 		event = { time = 0 node = "light_locator_02" particle = "ship_light_blue_effect" trigger_once = yes keep_particle = yes }
+# 		event = { time = 0 node = "light_locator_03" particle = "ship_light_blue_effect" trigger_once = yes keep_particle = yes }		
+# 		event = { time = 0 node = "light_locator_04" particle = "ship_light_blue_effect" trigger_once = yes keep_particle = yes }		
+# 		event = { time = 0 node = "light_locator_05" particle = "ship_light_blue_effect" trigger_once = yes keep_particle = yes }		
+
+# 		event = { time = 0 node = "engine_small_01" particle = "minmatar_1_1_00_exhaust_idle_particle" trigger_once = yes keep_particle = yes }
+# 		event = { time = 0 node = "engine_small_02" particle = "minmatar_1_1_00_exhaust_idle_particle" trigger_once = yes keep_particle = yes }
+# 		event = { time = 0 node = "engine_small_03" particle = "minmatar_1_1_00_exhaust_idle_particle" trigger_once = yes keep_particle = yes }
+# 		event = { time = 0 node = "engine_small_04" particle = "minmatar_1_1_00_exhaust_idle_particle" trigger_once = yes keep_particle = yes }		
+# 		event = { time = 0 node = "engine_small_05" particle = "minmatar_1_1_00_exhaust_idle_particle" trigger_once = yes keep_particle = yes }
+# 		event = { time = 0 node = "engine_small_06" particle = "minmatar_1_1_00_exhaust_idle_particle" trigger_once = yes keep_particle = yes }		
+# 		event = { time = 0 node = "engine_small_07" particle = "minmatar_1_1_00_exhaust_idle_particle" trigger_once = yes keep_particle = yes }		
+# 	}
+# 	state = { name = "moving" state_time = 5
+# 		event = { time = 0 node = "light_locator_01" particle = "ship_light_blue_effect" trigger_once = yes keep_particle = yes }
+# 		event = { time = 0 node = "light_locator_02" particle = "ship_light_blue_effect" trigger_once = yes keep_particle = yes }
+# 		event = { time = 0 node = "light_locator_03" particle = "ship_light_blue_effect" trigger_once = yes keep_particle = yes }		
+# 		event = { time = 0 node = "light_locator_04" particle = "ship_light_blue_effect" trigger_once = yes keep_particle = yes }		
+# 		event = { time = 0 node = "light_locator_05" particle = "ship_light_blue_effect" trigger_once = yes keep_particle = yes }		
+
+# 		event = { time = 0 node = "engine_small_01" particle = "minmatar_1_2_00_ship_exhaust_moving_particle" trigger_once = yes keep_particle = yes }
+# 		event = { time = 0 node = "engine_small_02" particle = "minmatar_1_2_00_ship_exhaust_moving_particle" trigger_once = yes keep_particle = yes }
+# 		event = { time = 0 node = "engine_small_03" particle = "minmatar_1_2_00_ship_exhaust_moving_particle" trigger_once = yes keep_particle = yes }
+# 		event = { time = 0 node = "engine_small_04" particle = "minmatar_1_2_00_ship_exhaust_moving_particle" trigger_once = yes keep_particle = yes }
+# 		event = { time = 0 node = "engine_small_05" particle = "minmatar_1_2_00_ship_exhaust_moving_particle" trigger_once = yes keep_particle = yes }
+# 		event = { time = 0 node = "engine_small_06" particle = "minmatar_1_2_00_ship_exhaust_moving_particle" trigger_once = yes keep_particle = yes }
+# 		event = { time = 0 node = "engine_small_07" particle = "minmatar_1_2_00_ship_exhaust_moving_particle" trigger_once = yes keep_particle = yes }
+# 	}
+# 	state = { name = "death" state_time = 5 }
+
+# 	game_data = {
+# 		trail_locators = {
+# 			"engine_small_01" = 		{ width = @medium_trail_W 	length = @medium_trail_L   	}
+# 			"engine_small_02" = 		{ width = @medium_trail_W 	length = @medium_trail_L   	}
+# 			"engine_small_03" = 		{ width = @medium_trail_W 	length = @medium_trail_L   	}
+# 			"engine_small_04" = 		{ width = @medium_trail_W 	length = @medium_trail_L   	}
+# 			"engine_small_05" = 		{ width = @medium_trail_W 	length = @medium_trail_L   	}
+# 			"engine_small_06" = 		{ width = @medium_trail_W 	length = @medium_trail_L   	}
+# 		}	
+# 		size = @stabber_scale
+# 	}
+# }
+
+# entity = {
+# 	name = "minmatar_01_rupture_entity"
+# 	pdxmesh = "minmatar_01_rupture_mesh"
+
+# 	scale = @rupture_physical_scale
+
+# 	default_state = "idle"
+# 	state = { name = "idle" state_time = 5
+# 		event = { time = 0 node = "light_locator_01" particle = "ship_light_blue_effect" trigger_once = yes keep_particle = yes }
+# 		event = { time = 0 node = "light_locator_02" particle = "ship_light_blue_effect" trigger_once = yes keep_particle = yes }
+# 		event = { time = 0 node = "light_locator_03" particle = "ship_light_blue_effect" trigger_once = yes keep_particle = yes }		
+# 		event = { time = 0 node = "light_locator_04" particle = "ship_light_blue_effect" trigger_once = yes keep_particle = yes }		
+# 		event = { time = 0 node = "light_locator_05" particle = "ship_light_blue_effect" trigger_once = yes keep_particle = yes }		
+
+# 		event = { time = 0 node = "engine_small_01" particle = "minmatar_1_1_00_exhaust_idle_particle" trigger_once = yes keep_particle = yes }
+# 		event = { time = 0 node = "engine_small_02" particle = "minmatar_1_1_00_exhaust_idle_particle" trigger_once = yes keep_particle = yes }
+# 		event = { time = 0 node = "engine_small_03" particle = "minmatar_1_1_00_exhaust_idle_particle" trigger_once = yes keep_particle = yes }
+# 		event = { time = 0 node = "engine_small_04" particle = "minmatar_1_1_00_exhaust_idle_particle" trigger_once = yes keep_particle = yes }		
+# 		event = { time = 0 node = "engine_small_05" particle = "minmatar_1_1_00_exhaust_idle_particle" trigger_once = yes keep_particle = yes }
+# 		event = { time = 0 node = "engine_small_06" particle = "minmatar_1_1_00_exhaust_idle_particle" trigger_once = yes keep_particle = yes }		
+# 		event = { time = 0 node = "engine_small_07" particle = "minmatar_1_1_00_exhaust_idle_particle" trigger_once = yes keep_particle = yes }		
+# 		event = { time = 0 node = "engine_small_08" particle = "minmatar_1_1_00_exhaust_idle_particle" trigger_once = yes keep_particle = yes }		
+# 		event = { time = 0 node = "engine_small_09" particle = "minmatar_1_1_00_exhaust_idle_particle" trigger_once = yes keep_particle = yes }
+# 		event = { time = 0 node = "engine_small_10" particle = "minmatar_1_1_00_exhaust_idle_particle" trigger_once = yes keep_particle = yes }		
+# 		event = { time = 0 node = "engine_small_11" particle = "minmatar_1_1_00_exhaust_idle_particle" trigger_once = yes keep_particle = yes }	
+# 	}
+# 	state = { name = "moving" state_time = 5
+# 		event = { time = 0 node = "light_locator_01" particle = "ship_light_blue_effect" trigger_once = yes keep_particle = yes }
+# 		event = { time = 0 node = "light_locator_02" particle = "ship_light_blue_effect" trigger_once = yes keep_particle = yes }
+# 		event = { time = 0 node = "light_locator_03" particle = "ship_light_blue_effect" trigger_once = yes keep_particle = yes }		
+# 		event = { time = 0 node = "light_locator_04" particle = "ship_light_blue_effect" trigger_once = yes keep_particle = yes }		
+# 		event = { time = 0 node = "light_locator_05" particle = "ship_light_blue_effect" trigger_once = yes keep_particle = yes }		
+
+# 		event = { time = 0 node = "engine_small_01" particle = "minmatar_1_2_00_ship_exhaust_moving_particle" trigger_once = yes keep_particle = yes }
+# 		event = { time = 0 node = "engine_small_02" particle = "minmatar_1_2_00_ship_exhaust_moving_particle" trigger_once = yes keep_particle = yes }
+# 		event = { time = 0 node = "engine_small_03" particle = "minmatar_1_2_00_ship_exhaust_moving_particle" trigger_once = yes keep_particle = yes }
+# 		event = { time = 0 node = "engine_small_04" particle = "minmatar_1_2_00_ship_exhaust_moving_particle" trigger_once = yes keep_particle = yes }
+# 		event = { time = 0 node = "engine_small_05" particle = "minmatar_1_2_00_ship_exhaust_moving_particle" trigger_once = yes keep_particle = yes }
+# 		event = { time = 0 node = "engine_small_06" particle = "minmatar_1_2_00_ship_exhaust_moving_particle" trigger_once = yes keep_particle = yes }
+# 		event = { time = 0 node = "engine_small_07" particle = "minmatar_1_2_00_ship_exhaust_moving_particle" trigger_once = yes keep_particle = yes }
+# 		event = { time = 0 node = "engine_small_08" particle = "minmatar_1_2_00_ship_exhaust_moving_particle" trigger_once = yes keep_particle = yes }
+# 		event = { time = 0 node = "engine_small_09" particle = "minmatar_1_2_00_ship_exhaust_moving_particle" trigger_once = yes keep_particle = yes }
+# 		event = { time = 0 node = "engine_small_10" particle = "minmatar_1_2_00_ship_exhaust_moving_particle" trigger_once = yes keep_particle = yes }
+# 		event = { time = 0 node = "engine_small_11" particle = "minmatar_1_2_00_ship_exhaust_moving_particle" trigger_once = yes keep_particle = yes }
+# 	}
+# 	state = { name = "death" state_time = 5 }
+
+# 	game_data = {
+# 		trail_locators = {
+# 			"engine_small_01" = 		{ width = @medium_trail_W 	length = @medium_trail_L   	}
+# 			"engine_small_02" = 		{ width = @medium_trail_W 	length = @medium_trail_L   	}
+# 			"engine_small_03" = 		{ width = @medium_trail_W 	length = @medium_trail_L   	}
+# 			"engine_small_04" = 		{ width = @medium_trail_W 	length = @medium_trail_L   	}
+# 			"engine_small_05" = 		{ width = @medium_trail_W 	length = @medium_trail_L   	}
+# 			"engine_small_06" = 		{ width = @medium_trail_W 	length = @medium_trail_L   	}
+# 			"engine_small_07" = 		{ width = @medium_trail_W 	length = @medium_trail_L   	}
+# 		}	
+# 		size = @rupture_scale
+# 	}
+# }
+
+# entity = {
+# 	name = "minmatar_01_belicose_entity"
+# 	pdxmesh = "minmatar_01_belicose_mesh"
+
+# 	scale = @belicose_physical_scale
+
+# 	default_state = "idle"
+# 	state = { name = "idle" state_time = 5
+# 		event = { time = 0 node = "light_locator_01" particle = "ship_light_blue_effect" trigger_once = yes keep_particle = yes }
+# 		event = { time = 0 node = "light_locator_02" particle = "ship_light_blue_effect" trigger_once = yes keep_particle = yes }
+# 		event = { time = 0 node = "light_locator_03" particle = "ship_light_blue_effect" trigger_once = yes keep_particle = yes }		
+
+# 		event = { time = 0 node = "engine_small_01" particle = "minmatar_1_1_00_exhaust_idle_particle" trigger_once = yes keep_particle = yes }
+# 		event = { time = 0 node = "engine_small_02" particle = "minmatar_1_1_00_exhaust_idle_particle" trigger_once = yes keep_particle = yes }
+# 		event = { time = 0 node = "engine_small_03" particle = "minmatar_1_1_00_exhaust_idle_particle" trigger_once = yes keep_particle = yes }
+# 		event = { time = 0 node = "engine_small_04" particle = "minmatar_1_1_00_exhaust_idle_particle" trigger_once = yes keep_particle = yes }		
+# 		event = { time = 0 node = "engine_small_05" particle = "minmatar_1_1_00_exhaust_idle_particle" trigger_once = yes keep_particle = yes }
+# 		event = { time = 0 node = "engine_small_06" particle = "minmatar_1_1_00_exhaust_idle_particle" trigger_once = yes keep_particle = yes }		
+# 		event = { time = 0 node = "engine_small_07" particle = "minmatar_1_1_00_exhaust_idle_particle" trigger_once = yes keep_particle = yes }	
+# 		event = { time = 0 node = "engine_small_08" particle = "minmatar_1_1_00_exhaust_idle_particle" trigger_once = yes keep_particle = yes }		
+# 		event = { time = 0 node = "engine_small_09" particle = "minmatar_1_1_00_exhaust_idle_particle" trigger_once = yes keep_particle = yes }
+# 		event = { time = 0 node = "engine_small_10" particle = "minmatar_1_1_00_exhaust_idle_particle" trigger_once = yes keep_particle = yes }		
+# 		event = { time = 0 node = "engine_small_11" particle = "minmatar_1_1_00_exhaust_idle_particle" trigger_once = yes keep_particle = yes }			
+# 	}
+# 	state = { name = "moving" state_time = 5
+# 		event = { time = 0 node = "light_locator_01" particle = "ship_light_blue_effect" trigger_once = yes keep_particle = yes }
+# 		event = { time = 0 node = "light_locator_02" particle = "ship_light_blue_effect" trigger_once = yes keep_particle = yes }
+# 		event = { time = 0 node = "light_locator_03" particle = "ship_light_blue_effect" trigger_once = yes keep_particle = yes }		
+
+# 		event = { time = 0 node = "engine_small_01" particle = "minmatar_1_2_00_ship_exhaust_moving_particle" trigger_once = yes keep_particle = yes }
+# 		event = { time = 0 node = "engine_small_02" particle = "minmatar_1_2_00_ship_exhaust_moving_particle" trigger_once = yes keep_particle = yes }
+# 		event = { time = 0 node = "engine_small_03" particle = "minmatar_1_2_00_ship_exhaust_moving_particle" trigger_once = yes keep_particle = yes }
+# 		event = { time = 0 node = "engine_small_04" particle = "minmatar_1_2_00_ship_exhaust_moving_particle" trigger_once = yes keep_particle = yes }
+# 		event = { time = 0 node = "engine_small_05" particle = "minmatar_1_2_00_ship_exhaust_moving_particle" trigger_once = yes keep_particle = yes }
+# 		event = { time = 0 node = "engine_small_06" particle = "minmatar_1_2_00_ship_exhaust_moving_particle" trigger_once = yes keep_particle = yes }
+# 		event = { time = 0 node = "engine_small_07" particle = "minmatar_1_2_00_ship_exhaust_moving_particle" trigger_once = yes keep_particle = yes }
+# 		event = { time = 0 node = "engine_small_08" particle = "minmatar_1_1_00_exhaust_idle_particle" trigger_once = yes keep_particle = yes }		
+# 		event = { time = 0 node = "engine_small_09" particle = "minmatar_1_1_00_exhaust_idle_particle" trigger_once = yes keep_particle = yes }
+# 		event = { time = 0 node = "engine_small_10" particle = "minmatar_1_1_00_exhaust_idle_particle" trigger_once = yes keep_particle = yes }		
+# 		event = { time = 0 node = "engine_small_11" particle = "minmatar_1_1_00_exhaust_idle_particle" trigger_once = yes keep_particle = yes }		
+# 	}
+# 	state = { name = "death" state_time = 5 }
+
+# 	game_data = {
+# 		trail_locators = {
+# 			"engine_small_01" = 		{ width = @medium_trail_W 	length = @medium_trail_L   	}
+# 			"engine_small_02" = 		{ width = @medium_trail_W 	length = @medium_trail_L   	}
+# 			"engine_small_03" = 		{ width = @medium_trail_W 	length = @medium_trail_L   	}
+# 			"engine_small_04" = 		{ width = @medium_trail_W 	length = @medium_trail_L   	}
+# 			"engine_small_05" = 		{ width = @medium_trail_W 	length = @medium_trail_L   	}
+# 			"engine_small_06" = 		{ width = @medium_trail_W 	length = @medium_trail_L   	}
+# 			"engine_small_07" = 		{ width = @medium_trail_W 	length = @medium_trail_L   	}
+# 		}	
+# 		size = @belicose_scale
+# 	}
+# }
+
+# entity = {
+# 	name = "minmatar_01_scythe_entity"
+# 	pdxmesh = "minmatar_01_scythe_mesh"
+
+# 	scale = @scythe_physical_scale
+
+# 	default_state = "idle"
+# 	state = { name = "idle" state_time = 5
+# 		event = { time = 0 node = "light_locator_01" particle = "ship_light_blue_effect" trigger_once = yes keep_particle = yes }
+# 		event = { time = 0 node = "light_locator_02" particle = "ship_light_blue_effect" trigger_once = yes keep_particle = yes }
+# 		event = { time = 0 node = "light_locator_03" particle = "ship_light_blue_effect" trigger_once = yes keep_particle = yes }		
+# 		event = { time = 0 node = "light_locator_04" particle = "ship_light_blue_effect" trigger_once = yes keep_particle = yes }		
+# 		event = { time = 0 node = "light_locator_05" particle = "ship_light_blue_effect" trigger_once = yes keep_particle = yes }		
+
+# 		event = { time = 0 node = "engine_small_01" particle = "minmatar_1_1_00_exhaust_idle_particle" trigger_once = yes keep_particle = yes }
+# 		event = { time = 0 node = "engine_small_02" particle = "minmatar_1_1_00_exhaust_idle_particle" trigger_once = yes keep_particle = yes }
+# 		event = { time = 0 node = "engine_small_03" particle = "minmatar_1_1_00_exhaust_idle_particle" trigger_once = yes keep_particle = yes }
+# 		event = { time = 0 node = "engine_small_04" particle = "minmatar_1_1_00_exhaust_idle_particle" trigger_once = yes keep_particle = yes }		
+# 		event = { time = 0 node = "engine_small_05" particle = "minmatar_1_1_00_exhaust_idle_particle" trigger_once = yes keep_particle = yes }
+# 	}
+# 	state = { name = "moving" state_time = 5
+# 		event = { time = 0 node = "light_locator_01" particle = "ship_light_blue_effect" trigger_once = yes keep_particle = yes }
+# 		event = { time = 0 node = "light_locator_02" particle = "ship_light_blue_effect" trigger_once = yes keep_particle = yes }
+# 		event = { time = 0 node = "light_locator_03" particle = "ship_light_blue_effect" trigger_once = yes keep_particle = yes }		
+# 		event = { time = 0 node = "light_locator_04" particle = "ship_light_blue_effect" trigger_once = yes keep_particle = yes }		
+# 		event = { time = 0 node = "light_locator_05" particle = "ship_light_blue_effect" trigger_once = yes keep_particle = yes }		
+
+# 		event = { time = 0 node = "engine_small_01" particle = "minmatar_1_2_00_ship_exhaust_moving_particle" trigger_once = yes keep_particle = yes }
+# 		event = { time = 0 node = "engine_small_02" particle = "minmatar_1_2_00_ship_exhaust_moving_particle" trigger_once = yes keep_particle = yes }
+# 		event = { time = 0 node = "engine_small_03" particle = "minmatar_1_2_00_ship_exhaust_moving_particle" trigger_once = yes keep_particle = yes }
+# 		event = { time = 0 node = "engine_small_04" particle = "minmatar_1_2_00_ship_exhaust_moving_particle" trigger_once = yes keep_particle = yes }
+# 		event = { time = 0 node = "engine_small_05" particle = "minmatar_1_2_00_ship_exhaust_moving_particle" trigger_once = yes keep_particle = yes }
+# 	}
+# 	state = { name = "death" state_time = 5 }
+
+# 	game_data = {
+# 		trail_locators = {
+# 			"engine_small_01" = 		{ width = @medium_trail_W 	length = @medium_trail_L   	}
+# 			"engine_small_02" = 		{ width = @medium_trail_W 	length = @medium_trail_L   	}
+# 			"engine_small_03" = 		{ width = @medium_trail_W 	length = @medium_trail_L   	}
+# 			"engine_small_04" = 		{ width = @medium_trail_W 	length = @medium_trail_L   	}
+# 			"engine_small_05" = 		{ width = @medium_trail_W 	length = @medium_trail_L   	}
+# 			}	
+# 		size = @scythe_scale
+# 	}
+
+# 	#TEMP LOCATOR REPLACE IN SCENE
+# 	locator = {
+# 		name = "strike_craft_locator_01"
+# 		rotation = { -90 0 0 }
+# 	}
+# }

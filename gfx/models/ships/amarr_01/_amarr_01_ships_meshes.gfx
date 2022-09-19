@@ -1,0 +1,544 @@
+## reload assets gfx/models/ships/amarr_01/_amarr_01_ships_meshes.gfx ##
+
+@invis_scale = 0.1
+@invisx2_scale = 0.2
+@half_scale = 0.5
+@main_scale = 1
+
+
+
+### Turrets ###
+
+objectTypes = {
+
+	pdxmesh = {
+		name = "amarr_01_turret_projectile_large_mesh"
+		file = "gfx/models/ships/amarr_01/empty_turret.mesh"
+
+		scale = @invis_scale
+	}
+
+	pdxmesh = {
+		name = "amarr_01_turret_xl_mesh"
+		file = "gfx/models/ships/caldari_01/empty_turret.mesh"
+
+		scale = @invis_scale
+	}
+}
+objectTypes = {
+	pdxmesh = {
+		name = "amarr_01_turret_projectile_medium_mesh"
+		file = "gfx/models/ships/amarr_01/empty_turret.mesh"
+
+		scale = @invis_scale
+	}
+}
+objectTypes = {
+	pdxmesh = {
+		name = "amarr_01_turret_projectile_small_mesh"
+		file = "gfx/models/ships/amarr_01/empty_turret.mesh"
+
+		scale = @invis_scale
+	}
+}
+objectTypes = {
+	pdxmesh = {
+		name = "amarr_01_turret_missile_medium_mesh"
+		file = "gfx/models/ships/amarr_01/empty_turret.mesh"
+
+		scale = @invis_scale
+	}
+}
+
+### Corvette ###
+
+objectTypes = {
+
+	pdxmesh = {
+        name = "amarr_01_punisher_mesh"
+        file = "gfx/models/ships/amarr_01/punisher.mesh"
+        scale = @invis_scale
+    }
+
+	pdxmesh = {
+        name = "amarr_01_punisher_frame_mesh"
+        file = "gfx/models/ships/amarr_01/punisher_frame.mesh"
+        scale = @invisx2_scale
+    }
+
+	# crucifier
+	pdxmesh = {
+		name = "amarr_01_crucifier_mesh"
+	    file = "gfx/models/ships/amarr_01/crucifier.mesh"
+	    scale = @invis_scale
+	}
+
+	pdxmesh = {
+		name = "amarr_01_crucifier_frame_mesh"
+	    file = "gfx/models/ships/amarr_01/crucifier_frame.mesh"
+	    scale = @invis_scale
+	}
+
+	# purifier
+	pdxmesh = {
+		name = "amarr_01_purifier_mesh"
+	    file = "gfx/models/ships/amarr_01/purifier.mesh"
+	    scale = @invis_scale
+	}
+
+	# executioner	
+	pdxmesh = {
+		name = "amarr_01_executioner_mesh"
+	    file = "gfx/models/ships/amarr_01/executioner.mesh"
+	    scale = @invis_scale
+	}
+
+	pdxmesh = {
+		name = "amarr_01_executioner_frame_mesh"
+	    file = "gfx/models/ships/amarr_01/executioner_frame.mesh"
+	    scale = @invisx2_scale
+	}
+
+	pdxmesh = {
+		name = "amarr_01_inquisitor_mesh"
+	    file = "gfx/models/ships/amarr_01/inquisitor.mesh"
+	    scale = @invis_scale
+	}
+
+	pdxmesh = {
+		name = "amarr_01_inquisitor_frame_mesh"
+	    file = "gfx/models/ships/amarr_01/inquisitor_frame.mesh"
+	    scale = @invisx2_scale
+	}
+}
+	
+### T2 Corvertte ###
+
+objectTypes = {
+	
+	pdxmesh = {
+		name = "amarr_01_Malediction_mesh"
+	    file = "gfx/models/ships/amarr_01/malediction.mesh"
+	    scale = @invis_scale
+  
+	}
+	
+	pdxmesh = {
+		name = "amarr_01_Crusader_mesh"
+	    file = "gfx/models/ships/amarr_01/crusader.mesh"
+	    scale = @invis_scale
+	    
+	}
+	
+	pdxmesh = {
+		name = "amarr_01_Deacon_mesh"
+	    file = "gfx/models/ships/amarr_01/deacon.mesh"
+	    scale = @invis_scale
+    
+	}
+}
+
+### Destroyer ###
+
+objectTypes = {
+	pdxmesh = {
+        name = "amarr_01_coercer_mesh"
+        file = "gfx/models/ships/amarr_01/coecer.mesh"
+        scale = @invis_scale
+	}
+
+	pdxmesh = {
+        name = "amarr_01_coercer_frame_mesh"
+        file = "gfx/models/ships/amarr_01/coecer_frame.mesh"
+        scale = @invis_scale
+	}
+
+	pdxmesh = {
+	    name = "amarr_01_dragoon_mesh"
+	    file = "gfx/models/ships/amarr_01/dragoon.mesh"
+	    scale = @invis_scale
+	}
+
+	pdxmesh = {
+	    name = "amarr_01_dragoon_frame_mesh"
+	    file = "gfx/models/ships/amarr_01/dragoon_frame.mesh"
+	    scale = @invis_scale
+	}
+
+### T2 ### 	
+	#pdxmesh = {
+    #    name = "amarr_01_heretic_mesh"
+    #    file = "gfx/models/ships/amarr_01/heretic.mesh"
+    #    scale = @invis_scale
+	#}
+	
+	pdxmesh = {
+	    name = "amarr_01_heretic_mesh"
+	    file = "gfx/models/ships/amarr_01/coecer.mesh"
+	    scale = @invis_scale
+
+		meshsettings = {
+			name = "HullShape"
+			index = 0
+			texture_diffuse = "heretic_difuse.dds"
+			texture_normal = "coercer_normal.dds"
+			texture_specular = "coercer_specular.dds"
+			shader = "PdxMeshShip"
+		}
+
+		meshsettings = {
+			name = "exhaustShape"
+			index = 0
+			texture_diffuse = "heretic_difuse.dds"
+			texture_normal = "coercer_normal.dds"
+			texture_specular = "coercer_specular.dds"
+			shader = "PdxMeshShip"
+		}
+	}
+
+	#pdxmesh = {
+	#    name = "amarr_01_pontifex_mesh"
+	#    file = "gfx/models/ships/amarr_01/pontifex.mesh"
+	#    scale = @invis_scale
+	#}
+	# scale = @invis_scale
+	
+	pdxmesh = {
+	    name = "amarr_01_pontifex_mesh"
+	    file = "gfx/models/ships/amarr_01/dragoon.mesh"
+	    scale = @invis_scale
+		
+		meshsettings = {
+			name = "HullShape"
+			index = 0
+			texture_diffuse = "pontifex_difuse.dds"
+			texture_normal = "dragoon_normal.dds"
+			texture_specular = "dragoon_specular.dds"
+			shader = "PdxMeshShip"
+		}
+
+		meshsettings = {
+			name = "ExhaustShape"
+			index = 0
+			texture_diffuse = "pontifex_difuse.dds"
+			texture_normal = "dragoon_normal.dds"
+			texture_specular = "dragoon_specular.dds"
+			shader = "PdxMeshShip"
+		}
+	}
+}
+
+objectTypes = {
+
+	pdxmesh = {
+	    name = "amarr_01_confessor_mesh"
+	    file = "gfx/models/ships/amarr_01/confessor.mesh"
+	    scale = @invis_scale
+	}
+}
+
+### Cruiser ###
+
+objectTypes = {
+	pdxmesh = {
+	       name = "amarr_01_arbitrator_mesh"
+	       file = "gfx/models/ships/amarr_01/arbitrator.mesh"
+	       scale = @invis_scale
+		}
+	pdxmesh = {
+	        name = "amarr_01_augoror_mesh"
+	        file = "gfx/models/ships/amarr_01/augoror.mesh"
+	        scale = @invis_scale
+		}
+
+	pdxmesh = {
+	        name = "amarr_01_maller_mesh"
+	        file = "gfx/models/ships/amarr_01/maller.mesh"
+	        scale = @invis_scale
+		}
+
+	pdxmesh = {
+        name = "amarr_01_omen_mesh"
+        file = "gfx/models/ships/amarr_01/omen.mesh"
+        scale = @invis_scale
+    }
+}
+### T2 ###
+objectTypes = {
+		pdxmesh = {
+	        name = "amarr_01_curse_mesh"
+	        file = "gfx/models/ships/amarr_01/curse.mesh"
+	        scale = @invis_scale
+		}	
+		
+		pdxmesh = {
+	        name = "amarr_01_guardian_mesh"
+	        file = "gfx/models/ships/amarr_01/guardian.mesh"
+	        scale = @invis_scale
+		}	
+
+		pdxmesh = {
+	        name = "amarr_01_devoter_mesh"
+	        file = "gfx/models/ships/amarr_01/devoter.mesh"
+	        scale = @invis_scale
+		}			
+
+		pdxmesh = {
+	        name = "amarr_01_zealot_mesh"
+	        file = "gfx/models/ships/amarr_01/zealot.mesh"
+	        scale = @invis_scale
+		}		
+		
+}
+## note in use ##
+objectTypes = {
+		pdxmesh = {
+	        name = "amarr_01_pilgrim_mesh"
+	        file = "gfx/models/ships/amarr_01/pilgrim.mesh"
+	        scale = @invis_scale
+		}
+
+		pdxmesh = {
+	        name = "amarr_01_sacrilege_mesh"
+	        file = "gfx/models/ships/amarr_01/sacrilege.mesh"
+	        scale = @invis_scale
+		}	
+	}
+
+# strategic cruiser #
+objectTypes = {
+	pdxmesh = {
+		name = "amarr_01_legion_1_mesh"
+		file = "gfx/models/ships/amarr_01/legion_1.mesh"
+		scale = @invis_scale
+		}
+	}
+
+### Battlecruiser ###
+objectTypes = {
+	pdxmesh = {
+        name = "amarr_01_harbinger_mesh"
+        file = "gfx/models/ships/amarr_01/harbringer.mesh"
+        scale = @invis_scale
+	}
+
+	pdxmesh = {
+        name = "amarr_01_prophecy_mesh"
+        file = "gfx/models/ships/amarr_01/prophecy.mesh"
+        scale = @invis_scale
+	}
+
+	pdxmesh = {
+        name = "amarr_01_oracle_mesh"
+        file = "gfx/models/ships/amarr_01/oracle.mesh"
+        scale = @invis_scale
+    }
+}
+
+### Battleship ###
+objectTypes = {
+	pdxmesh = {
+        name = "amarr_01_apocalypse_mesh"
+        file = "gfx/models/ships/amarr_01/apocalypse.mesh"
+        scale = @invis_scale
+	}
+
+	pdxmesh = {
+        name = "amarr_01_abaddon_mesh"
+        file = "gfx/models/ships/amarr_01/abaddon.mesh"
+        scale = @invis_scale
+    }
+
+	pdxmesh = {
+       name = "amarr_01_armageddon_mesh"
+       file = "gfx/models/ships/amarr_01/armaggedon.mesh"
+       scale = @invis_scale
+    }
+}
+
+
+### Carrier ###
+objectTypes = {
+	pdxmesh = {
+        name = "amarr_01_archon_mesh"
+        file = "gfx/models/ships/amarr_01/archon.mesh"
+        scale = @invis_scale
+	}
+
+	pdxmesh = {
+        name = "amarr_01_apostle_mesh"
+        file = "gfx/models/ships/amarr_01/apostle.mesh"
+        scale = @invis_scale
+	}
+
+	pdxmesh = {
+        name = "amarr_01_aeon_mesh"
+        file = "gfx/models/ships/amarr_01/aeon.mesh"
+        scale = @invis_scale
+
+	}
+}
+
+### Dreadnought ###
+objectTypes = {
+	pdxmesh = {
+		name = "amarr_01_revelation_mesh"
+		file = "gfx/models/ships/amarr_01/revelation.mesh"
+		scale = @invis_scale
+
+	}
+
+	pdxmesh = {
+		name = "amarr_01_revelation_bow_mesh"
+		file = "gfx/models/ships/amarr_01/revelation_bow.mesh"
+		scale = @invis_scale
+
+	}
+
+	pdxmesh = {
+		name = "amarr_01_revelation_stern_mesh"
+		file = "gfx/models/ships/amarr_01/revelation_stern.mesh"
+		scale = @invis_scale
+
+	}
+}
+
+### Titan ###
+objectTypes = {
+	pdxmesh = {
+		name = "amarr_01_avatar_mesh"
+		file = "gfx/models/ships/amarr_01/avatar.mesh"
+		scale = @invis_scale
+	}
+
+	pdxmesh = {
+		name = "amarr_01_avatar_bow_mesh"
+		file = "gfx/models/ships/amarr_01/avatar_bow.mesh"
+		scale = @invis_scale
+	}
+
+	pdxmesh = {
+		name = "amarr_01_avatar_stern_mesh"
+		file = "gfx/models/ships/amarr_01/avatar_stern.mesh"
+		scale = @invis_scale
+	}
+
+	pdxmesh = {
+		name = "amarr_01_new_avatar_mesh"
+		file = "gfx/models/ships/amarr_01/new_avatar.mesh"
+		scale = @invis_scale
+	}
+
+	pdxmesh = {
+		name = "amarr_01_new_avatar_effect_mesh"
+		file = "gfx/models/ships/amarr_01/new_avatar_effect.mesh"
+		scale = @invis_scale
+	}
+
+	pdxmesh = {
+		name = "amarr_avatar_wreck_mesh"
+		file = "gfx/models/ships/amarr_01/avatar_wreck.mesh"
+		scale = @invis_scale
+	}
+	
+}
+
+
+### Small ships ###
+objectTypes = {
+	pdxmesh = {
+        name = "amarr_01_fighter_mesh"
+        file = "gfx/models/ships/amarr_01/amarr_01_fighter.mesh"
+        scale = @main_scale
+
+        meshsettings = {
+			name = "fighter_hull"
+			index = 0
+			texture_diffuse = "amarr_01_fighter_diffuse.dds"
+			texture_normal = "amarr_01_fighter_normal.dds"
+			texture_specular = "amarr_01_fighter_specular.dds"
+			shader = "PdxMeshShip"
+        }
+	}
+}
+
+	
+
+### Science ship ###
+objectTypes = {
+	pdxmesh = {
+        name = "amarr_01_magnate_mesh"
+        file = "gfx/models/ships/amarr_01/magnate.mesh"
+        scale = @half_scale
+
+        meshsettings = {
+			name = "magnate_hull"
+			index = 0
+			texture_diffuse = "amarr_01_magnate_diffuse.dds"
+			texture_normal = "amarr_01_magnate_normal.dds"
+			texture_specular = "amarr_01_magnate_specular.dds"
+			shader = "PdxMeshShip"
+        }
+    }
+}
+
+	### Colony ship ###
+objectTypes = {
+	pdxmesh = {
+		name = "amarr_01_providence_mesh"
+		file = "gfx/models/ships/amarr_01/amarr_01_providence.mesh"
+		scale = @invis_scale
+		meshsettings = { shader = "PdxMeshAsteroid" }
+		}
+
+	### Transport ship ###
+
+	pdxmesh = {
+		name = "amarr_01_sigil_mesh"
+		file = "gfx/models/ships/amarr_01/sigil.mesh"
+		scale = @invis_scale
+	}
+
+	# Construction ship #
+	pdxmesh = {
+		name = "amarr_01_bestower_mesh"
+		file = "gfx/models/ships/amarr_01/bestower.mesh"
+		scale = @invis_scale
+	}
+
+	pdxmesh = {
+		name = "amarr_01_Providance_mesh"
+		file = "gfx/models/ships/amarr_01/providance.mesh"
+		scale = @invis_scale
+	}
+}
+
+
+### Stations ###
+objectTypes = {
+	pdxmesh = {
+		name = "amarr_01_platform_mesh"
+		file = "gfx/models/ships/amarr_01/amarr_01_platform.mesh"
+		scale = @invis_scale
+		meshsettings = { shader = "PdxMeshAsteroid" }
+	}
+}
+objectTypes = {
+	pdxmesh = {
+		name = "amarr_01_research_mesh"
+		file = "gfx/models/ships/amarr_01/amarr_01_research.mesh"
+	}
+}
+objectTypes = {
+	pdxmesh = {
+		name = "amarr_01_mining_mesh"
+		file = "gfx/models/ships/amarr_01/amarr_01_mining.mesh"
+	}
+}
+objectTypes = {
+	pdxmesh = {
+		name = "amarr_01_habitat_mesh"
+		file = "gfx/models/ships/amarr_01/amarr_01_habitat.mesh"
+		scale = @invis_scale
+	}
+}

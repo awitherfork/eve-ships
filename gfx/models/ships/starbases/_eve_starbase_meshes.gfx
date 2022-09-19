@@ -1,0 +1,618 @@
+objectTypes = {
+
+	#################
+	# Light Trail	#
+	#################
+
+	pdxmesh = {
+		name = "light_trail_mesh"
+		file = "gfx/models/ships/starbases/light_trail.mesh"
+		#file = "gfx/models/ships/starbases/light trail2.mesh"
+
+		meshsettings = {
+			index = 0
+			#texture_diffuse = "mammalian_01_titan_effect.dds"
+			texture_diffuse = "glow_orange.dds"
+			texture_normal = "nonormal.dds"
+			texture_specular = "nospec.dds"
+			shader = "PdxMeshAlphaAdditiveAnimateUV"
+		}
+	}
+	
+
+	######################## 
+	# Glowing orbs Effects #
+	########################
+		pdxmesh = {
+			name = "jita_station_effect_mesh"
+			file = "gfx/models/ships/starbases/jita_station_effect.mesh"
+			scale = 0.1
+		}
+	
+		pdxmesh = {
+			name = "station_effect_mesh"
+			file = "gfx/models/ships/starbases/effect.mesh"
+			scale = 0.2
+		}
+
+		pdxmesh = {
+			name = "effect_citadel_mesh"
+			file = "gfx/models/ships/starbases/effect.mesh"
+			scale = 4.0
+		}
+
+		#  not used
+		pdxmesh = {
+			name = "effect_citadel_fortizar_mesh"
+			file = "gfx/models/ships/starbases/fortizar_effect.mesh"
+			scale = 0.1
+		}
+
+		pdxmesh = {
+			name = "effect_citadel_fortizar2_mesh"
+			file = "gfx/models/ships/starbases/citadel_fortizar_effect.mesh"
+			scale = 0.1
+		}
+
+		pdxmesh = {
+			name = "effect_citadel_keepstar_mesh"
+			file = "gfx/models/ships/starbases/citadel_keepstar_effect.mesh"
+			scale = 0.05
+		}
+		
+
+	##### POS Shield ####
+		pdxmesh = {
+			name = "shield_sphere_mesh"
+			file = "gfx/models/ships/starbases/shield_effect.mesh"
+			scale = 6.0
+		}
+	
+		pdxmesh = {
+			name = "shield_sphere_gallente_mesh"
+			file = "gfx/models/ships/starbases/shield_effect.mesh"
+			scale = 6.0
+
+			meshsettings = {
+				texture_diffuse = "sphere_core_diffuse_gallente.dds"
+			}
+		}
+
+	##### Logo #####
+		pdxmesh = {
+			name = "effect_athanor_logo_mesh"
+			file = "gfx/models/ships/starbases/athanor_logo.mesh"
+			scale = 0.1
+		}
+
+		pdxmesh = {
+			name = "effect_tatara_logo_mesh"
+			file = "gfx/models/ships/starbases/athanor_logo.mesh"
+			scale = 0.1
+
+			meshsettings = { 
+				texture_diffuse = "logo_tatara.dds"
+			 }
+		}
+
+		pdxmesh = {
+			name = "effect_astrhaus_logo_mesh"
+			file = "gfx/models/ships/starbases/citadel_astrahus_logo.mesh"
+			scale = 1.0
+		}
+
+		pdxmesh = {
+			name = "effect_fortizar_logo_mesh"
+			file = "gfx/models/ships/starbases/citadel_fortizar_logo.mesh"
+			scale = 0.1
+		}
+
+		pdxmesh = {
+			name = "effect_keepstar_logo_mesh"
+			file = "gfx/models/ships/starbases/citadel_keepstar_logo.mesh"
+			scale = 1.0
+		}
+
+		pdxmesh = {
+			name = "effect_raitaru_logo_mesh"
+			file = "gfx/models/ships/starbases/ia_raitaru_logo.mesh"
+			scale = 0.1
+		}
+
+		### races logo ###
+		pdxmesh = {
+			name = "logo_amarr_mesh"
+			file = "gfx/models/ships/starbases/logo_amarr.mesh"
+			scale = 1.0
+		}
+
+		pdxmesh = {
+			name = "logo_caldari_mesh"
+			file = "gfx/models/ships/starbases/logo_amarr.mesh"
+			scale = 1.0
+
+			meshsettings = {
+				texture_diffuse = "logo_caldari.dds"
+			}
+		}
+
+		pdxmesh = {
+			name = "logo_gallente_mesh"
+			file = "gfx/models/ships/starbases/logo_amarr.mesh"
+			scale = 1.0
+
+			meshsettings = {
+				texture_diffuse = "logo_gallente.dds"
+			}
+		}
+
+		pdxmesh = {
+			name = "logo_minmatar_mesh"
+			file = "gfx/models/ships/starbases/logo_amarr.mesh"
+			scale = 1.0
+
+			meshsettings = {
+				texture_diffuse = "logo_minmatar.dds"
+			}
+		}
+
+		pdxmesh = {
+			name = "logo_angel_mesh"
+			file = "gfx/models/ships/starbases/logo_amarr.mesh"
+			scale = 1.0
+
+			meshsettings = {
+				texture_diffuse = "logo_angel.dds"
+			}
+		}
+
+		pdxmesh = {
+			name = "logo_bloodraiders_mesh"
+			file = "gfx/models/ships/starbases/logo_amarr.mesh"
+			scale = 1.0
+		}
+
+		pdxmesh = {
+			name = "logo_guristas_mesh"
+			file = "gfx/models/ships/starbases/logo_amarr.mesh"
+			scale = 1.0
+
+			meshsettings = {
+				texture_diffuse = "logo_guristas.dds"
+			}
+		}
+
+		pdxmesh = {
+			name = "logo_serpentis_mesh"
+			file = "gfx/models/ships/starbases/logo_amarr.mesh"
+			scale = 1.0
+
+			meshsettings = {
+				texture_diffuse = "logo_serpentis.dds"
+			}
+		}
+
+		pdxmesh = {
+			name = "logo_sansha_mesh"
+			file = "gfx/models/ships/starbases/logo_sansha.mesh"
+			scale = 2.0
+		}
+
+		pdxmesh = {
+			name = "logo_jita_mesh"
+			file = "gfx/models/ships/starbases/jita_logo.mesh"
+			scale = 2.0
+	}
+	
+	###########
+	# Station #
+	###########
+		pdxmesh = {
+			name = "amarr_station_mesh"
+			file = "gfx/models/ships/starbases/jita_station.mesh"
+			scale = 0.1
+		}
+
+		pdxmesh = {
+			name = "jita_station_mesh"
+			file = "gfx/models/ships/starbases/jita_station.mesh"
+			scale = 0.1
+		}
+
+		pdxmesh = {
+			name = "soe_01_station_mesh"
+			file = "gfx/models/ships/starbases/soe_station.mesh"
+			scale = 0.1
+		}
+
+	### Star Bases ##
+		pdxmesh = {
+			name = "triglavian_ark_mesh"
+			file = "gfx/models/ships/starbases/triglavian_ark.mesh"
+			scale = 0.1
+		}
+
+		pdxmesh = {
+			name = "citadel_astrahus_mesh"
+			file = "gfx/models/ships/starbases/citadel_astrahus.mesh"
+			scale = 0.1
+
+		}
+
+		pdxmesh = {
+			name = "citadel_astrahus_ruined_mesh"
+			file = "gfx/models/ships/starbases/citadel_astrahus_wreck.mesh"
+			scale = 0.05
+		}	
+		
+		pdxmesh = {
+			name = "citadel_fortizar_mesh"
+			file = "gfx/models/ships/starbases/citadel_fortizar.mesh"
+			scale = 0.1
+		}
+
+		pdxmesh = {
+			name = "citadel_fortizar_ruined_mesh"
+			file = "gfx/models/ships/starbases/citadel_fortizar_wreck.mesh"
+			scale = 0.05
+		}		
+		
+		pdxmesh = {
+			name = "citadel_keepstar_mesh"
+			file = "gfx/models/ships/starbases/citadel_keepstar_medium.mesh"
+			scale = 0.05
+		}		
+
+		pdxmesh = {
+			name = "citadel_keepstar_ruined_mesh"
+			file = "gfx/models/ships/starbases/citadel_keepstar_medium_wreck.mesh"
+			scale = 0.05
+	}		
+
+	
+
+	## Refinery ##
+		pdxmesh = {
+			name = "athanor_refinary_mesh"
+			file = "gfx/models/ships/starbases/athanor.mesh"
+			scale = 0.1
+		}
+
+		pdxmesh = {
+			name = "athanor_beam_mesh"
+			file = "gfx/models/ships/starbases/athanor_beam.mesh"
+			scale = 0.1
+		}
+
+		pdxmesh = {
+			name = "tatara_refinary_mesh"
+			file = "gfx/models/ships/starbases/tatara.mesh"
+			scale = 0.1
+		}
+
+		pdxmesh = {
+			name = "tatara_beam_mesh"
+			file = "gfx/models/ships/starbases/tatara_beam.mesh"
+			scale = 0.1
+		}
+
+	## Racial Stations ##
+		pdxmesh = {
+			name = "amarr_01_station1_mesh"
+			file = "gfx/models/ships/starbases/as1.mesh"
+			scale = 0.1
+
+		}
+
+		pdxmesh = {
+			name = "bloodraiders_station1_mesh"
+			file = "gfx/models/ships/starbases/as1.mesh"
+			scale = 0.1
+			meshsettings = { 
+				texture_diffuse = "as1_bloodraider_difuse.dds"
+			 }
+		}
+
+		pdxmesh = {
+			name = "amarr_station1_effect_mesh"
+			file = "gfx/models/ships/starbases/as1_effect.mesh"
+			scale = 0.1
+
+		}
+	
+		pdxmesh = {
+			name = "amarr_01_station2_mesh"
+			file = "gfx/models/ships/starbases/as2.mesh"
+			scale = 1.0
+		}
+			
+		pdxmesh = {
+			name = "amarr_01_station3_mesh"
+			file = "gfx/models/ships/starbases/as3.mesh"
+			scale = 1.0
+		}
+			
+			
+		pdxmesh = {
+			name = "amarr_01_station4_mesh"
+			file = "gfx/models/ships/starbases/as4.mesh"
+			scale = 1.0
+		}
+			
+		pdxmesh = {
+			name = "amarr_01_station5_mesh"
+			file = "gfx/models/ships/starbases/as5.mesh"
+			scale = 1.0
+		}
+			
+		pdxmesh = {
+			name = "amarr_01_station6_mesh"
+			file = "gfx/models/ships/starbases/as6.mesh"
+			scale = 1.0
+		}
+			
+		pdxmesh = {
+			name = "amarr_01_station7_mesh"
+			file = "gfx/models/ships/starbases/as7.mesh"
+			scale = 1.0
+		}
+			
+		pdxmesh = {
+			name = "amarr_01_station8_mesh"
+			file = "gfx/models/ships/starbases/as8.mesh"
+			scale = 1.0
+		}
+		
+		pdxmesh = {
+			name = "amarr_01_station9_mesh"
+			file = "gfx/models/ships/starbases/as9.mesh"
+			scale = 1.0
+		}
+
+		pdxmesh = {
+			name = "amarr_01_station10_mesh"
+			file = "gfx/models/ships/starbases/as10.mesh"
+			scale = 1.0
+	}
+
+	#### POS ###
+		pdxmesh = {
+			name = "amarr_01_pos_mesh"
+			file = "gfx/models/ships/starbases/amarr_pos.mesh"
+			scale = 0.1
+		}
+
+		pdxmesh = {
+			name = "amarr_01_pos2_mesh"
+			file = "gfx/models/ships/starbases/amarr_pos2.mesh"
+			scale = 0.1
+		}
+
+		pdxmesh = {
+			name = "caldari_01_pos_mesh"
+			file = "gfx/models/ships/starbases/caldari_pos.mesh"
+			scale = 0.1
+		}
+
+		pdxmesh = {
+			name = "caldari_01_pos2_mesh"
+			file = "gfx/models/ships/starbases/caldari_pos2.mesh"
+			scale = 0.1
+		}
+
+		pdxmesh = {
+			name = "gallente_01_pos_mesh"
+			file = "gfx/models/ships/starbases/gallente_pos.mesh"
+			scale = 0.1
+		}
+
+		pdxmesh = {
+			name = "gallente_01_pos2_mesh"
+			file = "gfx/models/ships/starbases/gallente_pos2.mesh"
+			scale = 0.1
+		}
+
+		pdxmesh = {
+			name = "minmatar_01_pos_mesh"
+			file = "gfx/models/ships/starbases/minmatar_pos.mesh"
+			scale = 0.1
+		}
+
+		pdxmesh = {
+			name = "minmatar_01_pos2_mesh"
+			file = "gfx/models/ships/starbases/minmatar_pos2.mesh"
+			scale = 0.1
+		}
+
+	#### POS Modules ###
+		pdxmesh = {
+			name = "eve_shipyeard_section_mesh"
+			file = "gfx/models/ships/starbases/shipyard.mesh"
+			scale = 0.1
+		}
+
+		pdxmesh = {
+			name = "caldari_01_orbital_station_refinery_section_entity"
+			file = "gfx/models/ships/starbases/caldari_refinery.mesh"
+			scale = 0.1
+		}
+
+		pdxmesh = {
+			name = "caldari_01_orbital_station_hangarbay_section_entity"
+			file = "gfx/models/ships/starbases/caldari_refinery.mesh"
+			scale = 0.1
+		}
+
+
+	#### Frames ####	
+		
+		pdxmesh = {
+			name = "eve_starport_mesh"
+			file = "gfx/models/ships/starbases/caldari_01_commandbase.mesh"
+			scale = 1.0
+
+		}
+		
+	### star bases ###
+		pdxmesh = {
+			name = "eve_outpost_mesh"
+			file = "gfx/models/ships/starbases/outpost.mesh"
+			scale = 0.25
+		}
+		
+	
+		pdxmesh = {
+			name = "eve_starport_mesh"
+			file = "gfx/models/ships/starbases/caldari_01_commandbase.mesh"
+			scale = 1.0
+		}
+
+	
+	## stations ##
+		pdxmesh = {
+			name = "caldari_01_battlestation_mesh"
+			file = "gfx/models/ships/starbases/caldari_battlestation.mesh"
+			scale = 1.0
+		}
+		
+			pdxmesh = {
+			name = "caldari_01_refinary_mesh"
+			file = "gfx/models/ships/starbases/caldari_refinary.mesh"
+			scale = 1.0
+
+		}
+		
+			pdxmesh = {
+			name = "caldari_01_station1_mesh"
+			file = "gfx/models/ships/starbases/caldari_station1.mesh"
+			scale = 0.1
+
+		}
+			
+			pdxmesh = {
+			name = "caldari_01_station2_mesh"
+			file = "gfx/models/ships/starbases/caldari_station2.mesh"
+			scale = 0.1
+
+		}
+			
+			
+			pdxmesh = {
+			name = "caldari_01_station3_mesh"
+			file = "gfx/models/ships/starbases/caldari_station3.mesh"
+			scale = 0.1
+
+		}
+			
+			pdxmesh = {
+			name = "caldari_01_station4_mesh"
+			file = "gfx/models/ships/starbases/caldari_station4.mesh"
+			scale = 0.1
+
+		}
+			
+			pdxmesh = {
+			name = "caldari_01_station5_mesh"
+			file = "gfx/models/ships/starbases/caldari_station5.mesh"
+			scale = 0.1
+
+		}
+			
+			pdxmesh = {
+			name = "caldari_01_station7_mesh"
+			file = "gfx/models/ships/starbases/caldari_station7.mesh"
+			scale = 0.1
+
+		}
+			
+			pdxmesh = {
+			name = "caldari_01_station8_mesh"
+			file = "gfx/models/ships/starbases/caldari_station8.mesh"
+			scale = 0.1
+
+		}
+		
+		
+			pdxmesh = {
+			name = "caldari_01_station9_mesh"
+			file = "gfx/models/ships/starbases/caldari_station9.mesh"
+			scale = 0.1
+
+		}
+	
+
+	#############################
+	#			gallente		#
+	#############################
+
+	#### Frames ####	
+	pdxmesh = {
+		name = "gallente_01_starport_frame_mesh"
+		file = "gfx/models/ships/starbases/caldari_01_commandbase.mesh"
+		scale = 1.0
+	}
+	
+	
+	## stations ##
+		
+	pdxmesh = {
+		name = "gallente_01_station1_mesh"
+		file = "gfx/models/ships/starbases/gs1.mesh"
+		scale = 0.1
+	}
+	
+		pdxmesh = {
+		name = "gallente_01_station2_mesh"
+		file = "gfx/models/ships/starbases/gs2.mesh"
+		scale = 0.1
+	}
+		
+		pdxmesh = {
+		name = "gallente_01_station3_mesh"
+		file = "gfx/models/ships/starbases/gs3_medium.mesh"
+		scale = 0.1
+	}
+		
+		
+		pdxmesh = {
+		name = "gallente_01_station4_mesh"
+		file = "gfx/models/ships/starbases/gs4.mesh"
+		scale = 0.1
+	}
+		
+		pdxmesh = {
+		name = "gallente_01_station5_mesh"
+		file = "gfx/models/ships/starbases/gs5.mesh"
+		scale = 0.1
+	}
+		
+		pdxmesh = {
+		name = "gallente_01_station6_mesh"
+		file = "gfx/models/ships/starbases/gs6.mesh"
+		scale = 0.1
+	}
+		
+		pdxmesh = {
+		name = "gallente_01_station7_mesh"
+		file = "gfx/models/ships/starbases/gs7.mesh"
+		scale = 0.1
+	}
+		
+		pdxmesh = {
+		name = "gallente_01_station8_mesh"
+		file = "gfx/models/ships/starbases/gs8.mesh"
+		scale = 0.1
+	}
+
+#####################
+#	Triglavian		#
+#####################
+
+	pdxmesh = {
+		name = "triglavian_gate1_mesh"
+		file = "gfx/models/ships/starbases/triglavian_gate.mesh"
+		scale = 0.1
+	}
+
+}
+

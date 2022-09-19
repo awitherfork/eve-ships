@@ -1,0 +1,91 @@
+# # BOW
+# entity = {
+# 	name = "amarr_01_supportship_bow_L1_entity"
+# 	pdxmesh = "empty_mesh_ship"
+
+# }
+
+# entity = {
+# 	name = "amarr_01_supportship_bow_M1S2_entity"
+# 	pdxmesh = "empty_mesh_ship"
+
+
+# }
+
+# entity = {
+# 	name = "amarr_01_supportship_bow_M2_entity"
+# 	pdxmesh = "empty_mesh_ship"
+
+
+# }
+
+# # MID1
+
+# entity = {
+# 	name = "amarr_01_supportship_mid1_S2HB_entity"
+# 	pdxmesh = "empty_mesh_ship"
+
+
+# }
+
+# entity = {
+# 	name = "amarr_01_supportship_mid1_L1M1_entity"
+# 	pdxmesh = "empty_mesh_ship"
+
+# }
+
+# entity = {
+# 	name = "amarr_01_supportship_mid1_M3_entity"
+# 	pdxmesh = "empty_mesh_ship"
+
+# }
+
+# entity = {
+# 	name = "amarr_01_supportship_mid1_M2S2_entity"
+# 	pdxmesh = "empty_mesh_ship"
+
+
+# }
+
+# # MID2
+
+# entity = {
+# 	name = "amarr_01_supportship_mid2_S2HB_entity"
+# 	pdxmesh = "empty_mesh_ship"
+
+
+# }
+
+# entity = {
+# 	name = "amarr_01_supportship_mid2_L1M1_entity"
+# 	pdxmesh = "empty_mesh_ship"
+
+# }
+
+# entity = {
+# 	name = "amarr_01_supportship_mid2_M3_entity"
+# 	pdxmesh = "empty_mesh_ship"
+
+# }
+
+# entity = {
+# 	name = "amarr_01_supportship_mid2_M2S2_entity"
+# 	pdxmesh = "empty_mesh_ship"
+
+
+# }
+
+# # STERN
+# entity = {
+# 	name = "amarr_01_supportship_stern_M1_entity"
+# 	pdxmesh = "empty_mesh_ship"
+
+
+# }
+
+# entity = {
+# 	name = "amarr_01_supportship_stern_S2_entity"
+# 	pdxmesh = "empty_mesh_ship"
+
+
+# }

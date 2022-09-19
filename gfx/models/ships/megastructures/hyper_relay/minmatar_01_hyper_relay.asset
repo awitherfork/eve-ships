@@ -1,0 +1,162 @@
+#####################################################
+#####											#####
+#####			      MINMATAR					#####
+#####											#####
+#####################################################
+
+
+entity = {
+	name = "minmatar_01_hyper_relay_entity"
+	pdxmesh = "minmatar_01_hyper_relay_mesh"
+
+	locator = { name = "effect"  rotation ={ 0 0 0 } }		
+
+	default_state = "idle"
+	# attach = { effect   = "minmatar_station1_effect_entity"	}
+	# attach = { effect   = "minmatar_station1_effect2_entity"	}
+	attach = { light_locator_01   = "station_effect_entity"	}	
+	attach = { light_locator_02   = "station_effect_entity"	}	
+	attach = { light_locator_03   = "station_effect_entity"	}	
+	attach = { light_locator_04   = "station_effect_entity"	}	
+	attach = { light_locator_05   = "station_effect_entity"	}	
+	attach = { light_locator_06   = "station_effect_entity"	}	
+	attach = { light_locator_07   = "station_effect_entity"	}	
+	attach = { light_locator_08   = "station_effect_entity"	}	
+	attach = { light_locator_09   = "station_effect_entity"	}	
+	attach = { light_locator_10   = "station_effect_entity"	}	
+	attach = { light_locator_11   = "station_effect_entity"	}	
+	attach = { light_locator_12   = "station_effect_entity"	}	
+	attach = { light_locator_13   = "station_effect_entity"	}	
+	attach = { light_locator_14   = "station_effect_entity"	}	
+	attach = { light_locator_15   = "station_effect_entity"	}	
+	attach = { light_locator_16   = "station_effect_entity"	}	
+	attach = { light_locator_17   = "station_effect_entity"	}	
+	attach = { light_locator_18   = "station_effect_entity"	}	
+	attach = { light_locator_19   = "station_effect_entity"	}	
+	attach = { light_locator_20   = "station_effect_entity"	}	
+	attach = { light_locator_21   = "station_effect_entity"	}	
+	attach = { light_locator_22   = "station_effect_entity"	}	
+	attach = { light_locator_23   = "station_effect_entity"	}	
+	attach = { light_locator_24   = "station_effect_entity"	}	
+	attach = { light_locator_25   = "station_effect_entity"	}	
+	attach = { light_locator_26   = "station_effect_entity"	}	
+	attach = { light_locator_27   = "station_effect_entity"	}	
+	attach = { light_locator_28   = "station_effect_entity"	}	
+	attach = { light_locator_29   = "station_effect_entity"	}	
+	attach = { light_locator_30   = "station_effect_entity"	}	
+	attach = { light_locator_31   = "station_effect_entity"	}	
+	attach = { light_locator_32   = "station_effect_entity"	}	
+	attach = { light_locator_33   = "station_effect_entity"	}	
+	attach = { light_locator_34   = "station_effect_entity"	}	
+	attach = { light_locator_35   = "station_effect_entity"	}	
+	attach = { light_locator_36   = "station_effect_entity"	}	
+	attach = { light_locator_37   = "station_effect_entity"	}	
+	attach = { light_locator_38   = "station_effect_entity"	}	
+	attach = { light_locator_39   = "station_effect_entity"	}	
+	attach = { light_locator_40   = "station_effect_entity"	}	
+	attach = { light_locator_41   = "station_effect_entity"	}	
+	attach = { light_locator_42   = "station_effect_entity"	}	
+	attach = { light_locator_43   = "station_effect_entity"	}	
+	attach = { light_locator_44   = "station_effect_entity"	}	
+	attach = { light_locator_45   = "station_effect_entity"	}	
+	attach = { light_locator_46   = "station_effect_entity"	}	
+	attach = { light_locator_47   = "station_effect_entity"	}	
+	attach = { light_locator_48   = "station_effect_entity"	}	
+	attach = { light_locator_49   = "station_effect_entity"	}	
+	attach = { light_locator_50   = "station_effect_entity"	}	
+	attach = { light_locator_51   = "station_effect_entity"	}	
+	attach = { light_locator_52   = "station_effect_entity"	}	
+	attach = { light_locator_53   = "station_effect_entity"	}	
+	attach = { light_locator_54   = "station_effect_entity"	}	
+	attach = { light_locator_55   = "station_effect_entity"	}	
+	attach = { light_locator_56   = "station_effect_entity"	}	
+	attach = { light_locator_57   = "station_effect_entity"	}	
+	attach = { light_locator_58   = "station_effect_entity"	}	
+	attach = { light_locator_59   = "station_effect_entity"	}	
+	attach = { light_locator_60   = "station_effect_entity"	}	
+	attach = { light_locator_61   = "station_effect_entity" }
+	attach = { light_locator_62   = "station_effect_entity" }
+	attach = { light_locator_63   = "station_effect_entity" }
+	attach = { light_locator_64   = "station_effect_entity" }
+	attach = { light_locator_65   = "station_effect_entity" }
+	attach = { light_locator_66   = "station_effect_entity" }
+	attach = { light_locator_67   = "station_effect_entity" }
+	attach = { light_locator_68   = "station_effect_entity" }
+	attach = { light_locator_69   = "station_effect_entity" }
+	attach = { light_locator_70   = "station_effect_entity" }
+	attach = { light_locator_71   = "station_effect_entity" }
+	attach = { light_locator_72   = "station_effect_entity" }
+	attach = { light_locator_73   = "station_effect_entity" }
+	attach = { light_locator_74   = "station_effect_entity" }
+	attach = { light_locator_75   = "station_effect_entity" }
+	attach = { light_locator_76   = "station_effect_entity" }
+	attach = { light_locator_77   = "station_effect_entity" }
+	attach = { light_locator_78   = "station_effect_entity" }
+	attach = { light_locator_79   = "station_effect_entity" }
+	attach = { light_locator_80   = "station_effect_entity" }
+	attach = { light_locator_81   = "station_effect_entity" }
+	attach = { light_locator_82   = "station_effect_entity" }
+	attach = { light_locator_83   = "station_effect_entity" }
+	attach = { light_locator_84   = "station_effect_entity" }
+	attach = { light_locator_85   = "station_effect_entity" }
+	attach = { light_locator_86   = "station_effect_entity" }
+	attach = { light_locator_87   = "station_effect_entity" }
+	attach = { light_locator_88   = "station_effect_entity" }
+	attach = { light_locator_89   = "station_effect_entity" }
+	attach = { light_locator_90   = "station_effect_entity" }
+	attach = { light_locator_91   = "station_effect_entity" }
+	attach = { light_locator_92   = "station_effect_entity" }
+	attach = { light_locator_93   = "station_effect_entity" }
+	attach = { light_locator_94   = "station_effect_entity" }
+	attach = { light_locator_95   = "station_effect_entity" }
+	attach = { light_locator_96   = "station_effect_entity" }
+	attach = { light_locator_97   = "station_effect_entity" }
+	attach = { light_locator_98   = "station_effect_entity" }
+	attach = { light_locator_99   = "station_effect_entity" }
+	attach = { light_locator_100   = "station_effect_entity" }
+	attach = { light_locator_101   = "station_effect_entity" }
+	attach = { light_locator_102   = "station_effect_entity" }
+	attach = { light_locator_103   = "station_effect_entity" }
+	attach = { light_locator_104   = "station_effect_entity" }
+	attach = { light_locator_105   = "station_effect_entity" }
+	attach = { light_locator_106   = "station_effect_entity" }
+	attach = { light_locator_107   = "station_effect_entity" }
+	attach = { light_locator_108   = "station_effect_entity" }
+	attach = { light_locator_109   = "station_effect_entity" }
+	attach = { light_locator_110   = "station_effect_entity" }
+	attach = { light_locator_111   = "station_effect_entity" }
+	attach = { light_locator_112   = "station_effect_entity" }
+	attach = { light_locator_113   = "station_effect_entity" }
+	attach = { light_locator_114   = "station_effect_entity" }
+	attach = { light_locator_115   = "station_effect_entity" }
+	attach = { light_locator_116   = "station_effect_entity" }
+	attach = { light_locator_117   = "station_effect_entity" }
+	attach = { light_locator_118   = "station_effect_entity" }
+	attach = { light_locator_119   = "station_effect_entity" }
+	attach = { light_locator_120   = "station_effect_entity" }
+	attach = { logo = "effect_logo_minmatar_entity" }
+
+	locator = { name = "root" 		position = { 0  -32  -20 } }
+	locator = { name = "beam" position = { 0 0 10 } rotation = { 0 90 0 } }
+
+	state = { name = "idle" state_time = 5
+		# event = { time = 0 node = "light_locator_100" particle = "ship_light_blue_effect" keep_particle = yes trigger_once = yes }
+		# event = { time = 0 node = "light_locator_101" particle = "ship_light_blue_effect" keep_particle = yes trigger_once = yes }
+		# event = { time = 0 node = "light_locator_102" particle = "ship_light_blue_effect" keep_particle = yes trigger_once = yes }
+		# event = { time = 0 node = "light_locator_103" particle = "ship_light_blue_effect" keep_particle = yes trigger_once = yes }
+		# event = { time = 0 node = "light_locator_104" particle = "ship_light_blue_effect" keep_particle = yes trigger_once = yes }
+		# event = { time = 0 node = "light_locator_105" particle = "ship_light_blue_effect" keep_particle = yes trigger_once = yes }
+		event = { time = 0 node = "root" particle = "hyper_relay_orb_effect" keep_particle = yes trigger_once = yes }
+		# event = { time = 0 node = "beam" particle = "eve_pulsar_star_outburst_effect" keep_particle = yes trigger_once = yes }
+
+		event = { trigger_once = yes sound = { soundeffect = "amb_megastructure_hyper_relay_01_idle" } }
+	}
+	state = { name = "death" animation = "death" looping = no
+		event = { time = 0.0 node = "light_locator_03" particle = "ship_explosion_particle" keep_particle = yes trigger_once = yes sound = { soundeffect = "station_explosion_small" } }
+		event = { time = 0.5 node = "light_locator_06" particle = "ship_explosion_particle" keep_particle = yes trigger_once = yes sound = { soundeffect = "station_explosion_small" } }
+	}
+	scale = 2
+	game_data = {
+		emissive_recolor_crunch = 5.0
+	}
+}

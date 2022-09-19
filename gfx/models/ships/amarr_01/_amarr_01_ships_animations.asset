@@ -1,0 +1,8 @@
+# Mass Relay
+
+# Insert this into your ships_animations.asset file
+
+# animation = {
+# 	name = "amarr_01_mass_relay_idle_animation"
+# 	file = "hummanoid_mass_relay_idle.anim"
+# }

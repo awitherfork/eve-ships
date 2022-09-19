@@ -1,0 +1,18 @@
+objectTypes = {
+	pdxmesh = {
+		name = "amarr_01_gateway_mesh"
+		file = "gfx/models/ships/megastructures/gateway/amarr_01_gateway.mesh"
+		
+		# animation = { id = "idle"		type = "gateway_idle_animation" }
+		# animation = { id = "death"		type = "gateway_death_animation" }
+	
+	}
+	# pdxmesh = {
+	# 	name = "gallente_01_gateway_mesh"
+	# 	file = "gfx/models/ships/megastructures/gateway/gallente_01_gateway.mesh"
+		
+	# 	# animation = { id = "idle"		type = "gateway_idle_animation" }
+	# 	# animation = { id = "death"		type = "gateway_death_animation" }
+	
+	# }
+}

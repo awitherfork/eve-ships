@@ -1,0 +1,487 @@
+objectTypes = {
+	
+#############
+# IDLE
+#############
+
+	
+	
+	#########
+	# Amarr	#
+	#########
+	
+		pdxparticle = {
+			name = "amarr_01_0_65_exhaust_idle_particle"
+			type = "amarr_01_ship_exhaust_idle_file"
+			scale = 0.65
+		}
+
+		pdxparticle = {
+			name = "amarr_01_0_75_exhaust_idle_particle"
+			type = "amarr_01_ship_exhaust_idle_file"
+			scale = 0.75
+		}
+
+		pdxparticle = {
+			name = "amarr_01_1_00_exhaust_idle_particle"
+			type = "amarr_01_ship_exhaust_idle_file"
+			scale = 1.00
+		}
+
+		pdxparticle = {
+			name = "amarr_01_2_00_exhaust_idle_particle"
+			type = "amarr_01_ship_exhaust_idle_file"
+			scale = 2.00
+		}
+
+		pdxparticle = {
+			name = "amarr_01_3_00_exhaust_idle_particle"
+			type = "amarr_01_ship_exhaust_idle_file"
+			scale = 3.00
+		}
+
+		pdxparticle = {
+			name = "amarr_01_4_00_exhaust_idle_particle"
+			type = "amarr_01_ship_exhaust_idle_file"
+			scale = 4.00
+		}
+
+		pdxparticle = {
+			name = "amarr_01_4_5_exhaust_idle_particle"
+			type = "amarr_01_ship_exhaust_idle_file"
+			scale = 4.5
+		}
+		pdxparticle = {
+			name = "amarr_01_5_00_exhaust_idle_particle"
+			type = "amarr_01_ship_exhaust_idle_file"
+			scale = 5
+		}
+		pdxparticle = {
+			name = "amarr_01_5_5_exhaust_idle_particle"
+			type = "amarr_01_ship_exhaust_idle_file"
+			scale = 5.5
+		}
+		pdxparticle = {
+			name = "amarr_01_6_00_exhaust_idle_particle"
+			type = "amarr_01_ship_exhaust_idle_file"
+			scale = 6
+		}
+		pdxparticle = {
+			name = "amarr_01_6_5_exhaust_idle_particle"
+			type = "amarr_01_ship_exhaust_idle_file"
+			scale = 6.5
+		}
+		pdxparticle = {
+			name = "amarr_01_7_0_exhaust_idle_particle"
+			type = "amarr_01_ship_exhaust_idle_file"
+			scale = 7.00
+		}
+
+		pdxparticle = {
+			name = "amarr_01_8_00_exhaust_idle_particle"
+			type = "amarr_01_ship_exhaust_idle_file"
+			scale = 8.00
+		}
+
+		pdxparticle = {
+			name = "amarr_01_12_00_exhaust_idle_particle"
+			type = "amarr_01_ship_exhaust_idle_file"
+			scale = 12.00
+		}
+
+		pdxparticle = {
+			name = "amarr_01_20_00_exhaust_idle_particle"
+			type = "amarr_01_ship_exhaust_idle_file"
+			scale = 20.00
+		}
+
+		pdxparticle = {
+			name = "amarr_01_40_00_exhaust_idle_particle"
+			type = "amarr_01_ship_exhaust_idle_file"
+			scale = 40.00
+		}
+
+	#############
+	# Caldari	#
+	#############
+
+		pdxparticle = {
+			name = "caldari_1_0_65_exhaust_idle_particle"
+			type = "caldari_01_ship_exhaust_idle"
+			scale = 0.65
+		}
+
+		pdxparticle = {
+			name = "caldari_1_1_00_exhaust_idle_particle"
+			type = "caldari_01_ship_exhaust_idle"
+			scale = 1.00
+		}
+
+		pdxparticle = {
+			name = "caldari_1_2_00_exhaust_idle_particle"
+			type = "caldari_01_ship_exhaust_idle"
+			scale = 2.00
+		}
+
+		pdxparticle = {
+			name = "caldari_1_3_00_exhaust_idle_particle"
+			type = "caldari_01_ship_exhaust_idle"
+			scale = 3.00
+		}
+
+		pdxparticle = {
+			name = "caldari_1_4_00_exhaust_idle_particle"
+			type = "caldari_01_ship_exhaust_idle"
+			scale = 4.00
+		}
+
+		pdxparticle = {
+			name = "caldari_1_6_00_exhaust_idle_particle"
+			type = "caldari_01_ship_exhaust_idle"
+			scale = 6.00
+		}
+
+		pdxparticle = {
+			name = "caldari_1_8_00_exhaust_idle_particle"
+			type = "caldari_01_ship_exhaust_idle"
+			scale = 8.00
+		}
+
+	#############
+	# Gallente	#
+	#############
+
+		pdxparticle = {
+			name = "gallente_1_0_65_exhaust_idle_particle"
+			type = "gallente_01_ship_exhaust_idle"
+			scale = 0.65
+		}
+
+		pdxparticle = {
+			name = "gallente_1_1_00_exhaust_idle_particle"
+			type = "gallente_01_ship_exhaust_idle"
+			scale = 1.00
+		}
+
+		pdxparticle = {
+			name = "gallente_1_2_00_exhaust_idle_particle"
+			type = "gallente_01_ship_exhaust_idle"
+			scale = 2.00
+		}
+
+		pdxparticle = {
+			name = "gallente_1_3_00_exhaust_idle_particle"
+			type = "gallente_01_ship_exhaust_idle"
+			scale = 3.00
+		}
+
+		pdxparticle = {
+			name = "gallente_1_4_00_exhaust_idle_particle"
+			type = "gallente_01_ship_exhaust_idle"
+			scale = 4.00
+		}
+
+		pdxparticle = {
+			name = "gallente_1_6_00_exhaust_idle_particle"
+			type = "gallente_01_ship_exhaust_idle"
+			scale = 6.00
+		}
+
+		pdxparticle = {
+			name = "gallente_1_8_00_exhaust_idle_particle"
+			type = "gallente_01_ship_exhaust_idle"
+			scale = 8.00
+		}
+
+		pdxparticle = {
+			name = "gallente_1_20_00_exhaust_idle_particle"
+			type = "gallente_01_ship_exhaust_idle"
+			scale = 20.00
+		}
+
+	#############
+	# Minmatar	#
+	#############
+
+		pdxparticle = {
+			name = "minmatar_1_0_65_exhaust_idle_particle"
+			type = "minmatar_01_ship_exhaust_idle"
+			scale = 0.65
+		}
+
+		pdxparticle = {
+			name = "minmatar_1_1_00_exhaust_idle_particle"
+			type = "minmatar_01_ship_exhaust_idle"
+			scale = 1.00
+		}
+
+		pdxparticle = {
+			name = "minmatar_1_2_00_exhaust_idle_particle"
+			type = "minmatar_01_ship_exhaust_idle"
+			scale = 2.00
+		}
+
+		pdxparticle = {
+			name = "minmatar_1_3_00_exhaust_idle_particle"
+			type = "minmatar_01_ship_exhaust_idle"
+			scale = 3.00
+		}
+
+		pdxparticle = {
+			name = "minmatar_1_4_00_exhaust_idle_particle"
+			type = "minmatar_01_ship_exhaust_idle"
+			scale = 4.00
+		}
+
+		pdxparticle = {
+			name = "minmatar_1_6_00_exhaust_idle_particle"
+			type = "minmatar_01_ship_exhaust_idle"
+			scale = 6.00
+		}
+
+		pdxparticle = {
+			name = "minmatar_1_8_00_exhaust_idle_particle"
+			type = "minmatar_01_ship_exhaust_idle"
+			scale = 8.00
+		}
+
+		pdxparticle = {
+			name = "minmatar_1_20_00_exhaust_idle_particle"
+			type = "minmatar_01_ship_exhaust_idle"
+			scale = 20.00
+		}
+
+
+
+#############
+# MOVING
+#############
+
+	#########
+	# AMARR #
+	#########
+
+		pdxparticle = {
+			name = "amarr_01_0_65_exhaust_moving_particle"
+			type = "amarr_01_ship_exhaust_file"
+			scale = 0.65
+		}	
+
+		pdxparticle = {
+			name = "amarr_01_0_75_exhaust_moving_particle"
+			type = "amarr_01_ship_exhaust_file"
+			scale = 0.75
+		}
+
+		pdxparticle = {
+			name = "amarr_01_1_00_exhaust_moving_particle"
+			type = "amarr_01_ship_exhaust_file"
+			scale = 1.00
+		}
+
+		pdxparticle = {
+			name = "amarr_01_2_00_exhaust_moving_particle"
+			type = "amarr_01_ship_exhaust_file"
+			scale = 2.00
+		}	
+
+		pdxparticle = {
+			name = "amarr_01_4_00_exhaust_moving_particle"
+			type = "amarr_01_ship_exhaust_file"
+			scale = 3.00
+		}
+
+		pdxparticle = {
+			name = "amarr_01_4_00_exhaust_moving_particle"
+			type = "amarr_01_ship_exhaust_file"
+			scale = 4.00
+		}	
+
+		pdxparticle = {
+			name = "amarr_01_5_00_exhaust_moving_particle"
+			type = "amarr_01_ship_exhaust_file"
+			scale = 5.00
+		}
+
+		pdxparticle = {
+			name = "amarr_01_8_00_exhaust_moving_particle"
+			type = "amarr_01_ship_exhaust_file"
+			scale = 8.00
+		}	
+
+		pdxparticle = {
+			name = "amarr_01_6_00_exhaust_moving_particle"
+			type = "amarr_01_ship_exhaust_file"
+			scale = 6.00
+		}
+		pdxparticle = {
+			name = "amarr_01_7_00_exhaust_moving_particle"
+			type = "amarr_01_ship_exhaust_file"
+			scale = 7
+		}
+		pdxparticle = {
+			name = "amarr_01_8_0_exhaust_moving_particle"
+			type = "amarr_01_ship_exhaust_file"
+			scale = 8
+		}
+		pdxparticle = {
+			name = "amarr_01_9_0_exhaust_moving_particle"
+			type = "amarr_01_ship_exhaust_file"
+			scale = 9
+		}
+		pdxparticle = {
+			name = "amarr_01_10_0_exhaust_moving_particle"
+			type = "amarr_01_ship_exhaust_file"
+			scale = 10
+		}
+
+		pdxparticle = {
+			name = "amarr_01_12_0_exhaust_moving_particle"
+			type = "amarr_01_ship_exhaust_file"
+			scale = 12
+		}
+
+		pdxparticle = {
+			name = "amarr_01_20_0_exhaust_moving_particle"
+			type = "amarr_01_ship_exhaust_file"
+			scale = 20
+		}
+		pdxparticle = {
+			name = "amarr_01_40_0_exhaust_moving_particle"
+			type = "amarr_01_ship_exhaust_file"
+			scale = 40
+		}
+
+
+	###########
+	# Caldari #
+	###########
+		
+		pdxparticle = {
+			name = "caldari_01_1_00_ship_exhaust_moving_particle"
+			type = "caldari_01_ship_exhaust_file"
+			scale = 1.00
+		}
+		
+		pdxparticle = {
+			name = "caldari_01_2_00_ship_exhaust_moving_particle"
+			type = "caldari_01_ship_exhaust_file"
+			scale = 2.00
+		}
+		
+		pdxparticle = {
+			name = "caldari_01_3_00_ship_exhaust_moving_particle"
+			type = "caldari_01_ship_exhaust_file"
+			scale = 3.00
+		}
+		
+		pdxparticle = {
+			name = "caldari_01_4_00_ship_exhaust_moving_particle"
+			type = "caldari_01_ship_exhaust_file"
+			scale = 4.00
+		}
+
+		pdxparticle = {
+			name = "caldari_01_6_00_ship_exhaust_moving_particle"
+			type = "caldari_01_ship_exhaust_file"
+			scale = 6.00
+		}
+		
+		pdxparticle = {
+			name = "caldari_01_8_00_ship_exhaust_moving_particle"
+			type = "caldari_01_ship_exhaust_file"
+			scale = 8.00
+		}
+
+	############
+	# Gallente #
+	############
+
+		pdxparticle = {
+			name = "gallente_01_1_00_ship_exhaust_moving_particle"
+			type = "gallente_01_ship_exhaust_file"
+			scale = 1.00
+		}
+		
+		pdxparticle = {
+			name = "gallente_01_2_00_ship_exhaust_moving_particle"
+			type = "gallente_01_ship_exhaust_file"
+			scale = 2.00
+		}
+		
+		pdxparticle = {
+			name = "gallente_01_3_00_ship_exhaust_moving_particle"
+			type = "gallente_01_ship_exhaust_file"
+			scale = 3.00
+		}
+		
+		pdxparticle = {
+			name = "gallente_01_4_00_ship_exhaust_moving_particle"
+			type = "gallente_01_ship_exhaust_file"
+			scale = 4.00
+		}
+
+		pdxparticle = {
+			name = "gallente_01_6_00_ship_exhaust_moving_particle"
+			type = "gallente_01_ship_exhaust_file"
+			scale = 6.00
+		}
+		
+		pdxparticle = {
+			name = "gallente_01_8_00_ship_exhaust_moving_particle"
+			type = "gallente_01_ship_exhaust_file"
+			scale = 8.00
+		}
+
+		pdxparticle = {
+			name = "gallente_01_20_00_ship_exhaust_moving_particle"
+			type = "gallente_01_ship_exhaust_file"
+			scale = 20.00
+		}
+
+	############
+	# Minmatar #
+	############
+	
+	pdxparticle = {
+		name = "minmatar_1_1_00_ship_exhaust_moving_particle"
+		type = "minmatar_01_ship_exhaust_file"
+		scale = 1.00
+	}
+	
+	pdxparticle = {
+		name = "minmatar_1_2_00_ship_exhaust_moving_particle"
+		type = "minmatar_01_ship_exhaust_file"
+		scale = 2.00
+	}
+	
+	pdxparticle = {
+		name = "minmatar_01_3_00_ship_exhaust_moving_particle"
+		type = "minmatar_01_ship_exhaust_file"
+		scale = 3.00
+	}
+	
+	pdxparticle = {
+		name = "minmatar_01_4_00_ship_exhaust_moving_particle"
+		type = "minmatar_01_ship_exhaust_file"
+		scale = 4.00
+	}
+
+	pdxparticle = {
+		name = "minmatar_01_6_00_ship_exhaust_moving_particle"
+		type = "minmatar_01_ship_exhaust_file"
+		scale = 6.00
+	}
+	
+	pdxparticle = {
+		name = "minmatar_01_8_00_ship_exhaust_moving_particle"
+		type = "minmatar_01_ship_exhaust_file"
+		scale = 8.00
+	}
+
+	pdxparticle = {
+		name = "minmatar_01_20_00_ship_exhaust_moving_particle"
+		type = "minmatar_01_ship_exhaust_file"
+		scale = 20.00
+	}
+}

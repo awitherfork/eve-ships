@@ -1,0 +1,517 @@
+@invis_scale = 0.1
+@medium_scale = 0.4
+
+### Turrets ###
+
+objectTypes = {
+
+	pdxmesh = {
+		name = "minmatar_01_turret_projectile_large_mesh"
+		file = "gfx/models/ships/minmatar_01/empty_turret.mesh"
+
+		scale = @invis_scale
+	}
+
+	pdxmesh = {
+		name = "minmatar_01_turret_xl_mesh"
+		file = "gfx/models/ships/caldari_01/empty_turret.mesh"
+
+		scale = @invis_scale
+	}
+
+	pdxmesh = {
+		name = "minmatar_01_turret_projectile_medium_mesh"
+		file = "gfx/models/ships/minmatar_01/empty_turret.mesh"
+
+		scale = @invis_scale
+	}
+
+	pdxmesh = {
+		name = "minmatar_01_turret_projectile_small_mesh"
+		file = "gfx/models/ships/minmatar_01/empty_turret.mesh"
+
+		scale = @invis_scale
+	}
+
+	pdxmesh = {
+		name = "minmatar_01_turret_missile_medium_mesh"
+		file = "gfx/models/ships/minmatar_01/empty_turret.mesh"
+
+		scale = @invis_scale
+	}
+}
+
+	
+#########################################################################
+#####																#####
+##W##							FRIGATES							##W##
+#####																#####
+#########################################################################
+
+############## SCIENCE ##############
+	objectTypes = {
+
+		pdxmesh = {
+			name = "minmatar_01_probe_mesh"
+			file = "gfx/models/ships/minmatar_01/probe.mesh"
+			scale = @invis_scale
+		}
+	}
+
+## Industrial ##
+	objectTypes = {
+
+		pdxmesh = {
+			name = "minmatar_01_hoarder_mesh"
+			file = "gfx/models/ships/minmatar_01/hoarder.mesh"
+			scale = @invis_scale
+		}
+	
+		pdxmesh = {
+			name = "minmatar_wreathe_mesh"
+			file = "gfx/models/ships/minmatar_01/wreathe.mesh"
+			scale = @invis_scale
+		}
+
+		pdxmesh = {
+			name = "minmatar_01_mammoth_mesh"
+			file = "gfx/models/ships/minmatar_01/Mammoth.mesh"
+			scale = @invis_scale
+		}
+
+		pdxmesh = {
+			name = "minmatar_01_fenrir_mesh"
+			file = "gfx/models/ships/minmatar_01/Fenrir.mesh"
+			scale = @invis_scale
+
+			meshsettings = {
+				name = "Fenrir_hull"
+				index = 0
+				texture_diffuse = "Fenrir_diffuse.dds"
+				texture_normal = "Fenrir_normal.dds"
+				texture_specular = "Fenrir_specular.dds"
+				shader = "PdxMeshShip"
+			}
+		}
+}
+
+############## MILITARY ##############
+	# Corvette #
+		objectTypes = {
+			pdxmesh = {
+				name = "minmatar_rifter_mesh"
+				file = "gfx/models/ships/minmatar_01/rifter.mesh"
+				scale = @invis_scale
+			}
+
+			pdxmesh = {
+				name = "minmatar_rifter_frame_mesh"
+				file = "gfx/models/ships/minmatar_01/rifter_frame.mesh"
+				scale = @invis_scale
+			}
+
+			pdxmesh = {
+				name = "minmatar_01_jaguar_mesh"
+				file = "gfx/models/ships/minmatar_01/jaguar.mesh"
+				scale = @invis_scale
+			}
+		
+			pdxmesh = {
+				name = "minmatar_01_wolf_mesh"
+				file = "gfx/models/ships/minmatar_01/wolf.mesh"
+				scale = @invis_scale
+			}	
+
+			pdxmesh = {
+				name = "minmatar_breacher_mesh"
+				file = "gfx/models/ships/minmatar_01/breacher.mesh"
+				scale = @invis_scale
+				meshsettings = { shader = "PdxMeshAsteroid" }
+			}
+
+			pdxmesh = {
+				name = "minmatar_breacher_frame_mesh"
+				file = "gfx/models/ships/minmatar_01/breacher_frame.mesh"
+				scale = @invis_scale
+				meshsettings = { shader = "PdxMeshAsteroid" }
+			}
+		
+			pdxmesh = {
+				name = "minmatar_01_hound_mesh"
+				file = "gfx/models/ships/minmatar_01/Hound.mesh"
+				scale = @invis_scale
+			}
+
+			pdxmesh = {
+				name = "minmatar_burst_mesh"
+				file = "gfx/models/ships/minmatar_01/burst.mesh"
+				scale = @invis_scale
+				meshsettings = { shader = "PdxMeshAsteroid" }
+			}
+
+			pdxmesh = {
+				name = "minmatar_burst_frame_mesh"
+				file = "gfx/models/ships/minmatar_01/burst_frame.mesh"
+				scale = @invis_scale
+			}
+		
+			pdxmesh = {
+				name = "minmatar_01_scalpel_mesh"
+				file = "gfx/models/ships/minmatar_01/scalpel.mesh"
+				scale = @invis_scale
+			}
+
+			pdxmesh = {
+				name = "minmatar_slasher_mesh"
+				file = "gfx/models/ships/minmatar_01/slasher.mesh"
+				scale = @invis_scale
+			}
+
+			pdxmesh = {
+				name = "minmatar_slasher_frame_mesh"
+				file = "gfx/models/ships/minmatar_01/slasher_frame.mesh"
+				scale = @invis_scale
+			}
+		
+			pdxmesh = {
+				name = "minmatar_01_claw_mesh"
+				file = "gfx/models/ships/minmatar_01/claw.mesh"
+				scale = @invis_scale
+			}
+
+			pdxmesh = {
+				name = "minmatar_01_stilleto_mesh"
+				file = "gfx/models/ships/minmatar_01/stilleto.mesh"
+				scale = @invis_scale
+			}
+
+			pdxmesh = {
+				name = "minmatar_01_virgil_mesh"
+				file = "gfx/models/ships/minmatar_01/minmatar_01_virgil.mesh"
+				scale = @invis_scale
+			}
+		}
+
+	##W## DESTROYER ##W##
+	objectTypes = {
+		pdxmesh = {
+			name = "minmatar_01_thrasher_mesh"
+			file = "gfx/models/ships/minmatar_01/thrasher.mesh"
+			scale = @invis_scale
+		}
+		
+		pdxmesh = {
+			name = "minmatar_01_sabre_mesh"
+			file = "gfx/models/ships/minmatar_01/sabre.mesh"
+			scale = @invis_scale
+		}
+			
+		pdxmesh = {
+			name = "minmatar_01_talwar_mesh"
+			file = "gfx/models/ships/minmatar_01/talwar.mesh"
+			scale = @invis_scale
+		}
+
+		pdxmesh = {
+			name = "minmatar_01_bifrost_mesh"
+			file = "gfx/models/ships/minmatar_01/bifrost.mesh"
+			scale = @invis_scale
+		}
+	}
+
+	objectTypes = {
+		pdxmesh = {
+			name = "minmatar_01_svipul_mesh"
+			file = "gfx/models/ships/minmatar_01/Svipul.mesh"
+			scale = @invis_scale
+		}
+	}
+
+	##W## CRUISER ##W##
+		objectTypes = {
+			pdxmesh = {
+				name = "minmatar_01_stabber_mesh"
+				file = "gfx/models/ships/minmatar_01/stabber.mesh"
+				scale = @invis_scale
+			}
+
+			pdxmesh = {
+				name = "minmatar_01_vagabond_mesh"
+				file = "gfx/models/ships/minmatar_01/vagabond.mesh"
+				scale = @invis_scale
+			}
+
+			pdxmesh = {
+				name = "minmatar_01_scythe_mesh"
+				file = "gfx/models/ships/minmatar_01/scythe.mesh"
+				scale = @invis_scale
+			}
+		
+			pdxmesh = {
+				name = "minmatar_01_scimitar_mesh"
+				file = "gfx/models/ships/minmatar_01/scimitar.mesh"
+				scale = @invis_scale
+			}
+
+			pdxmesh = {
+				name = "minmatar_01_belicose_mesh"
+				file = "gfx/models/ships/minmatar_01/belicose.mesh"
+				scale = @invis_scale
+			}
+
+			pdxmesh = {
+				name = "minmatar_01_huggin_mesh"
+				file = "gfx/models/ships/minmatar_01/hugin.mesh"
+				scale = @invis_scale
+			}
+	
+			pdxmesh = {
+				name = "minmatar_01_rupture_mesh"
+				file = "gfx/models/ships/minmatar_01/rupture.mesh"
+				scale = @invis_scale
+			}
+		
+			pdxmesh = {
+				name = "minmatar_01_munin_mesh"
+				file = "gfx/models/ships/minmatar_01/munin.mesh"
+				scale = @invis_scale
+			}
+
+			pdxmesh = {
+				name = "minmatar_01_broadsword_mesh"
+				file = "gfx/models/ships/minmatar_01/broadsword.mesh"
+				scale = @invis_scale
+			}
+	}
+	objectTypes = {
+		pdxmesh = {
+		name = "minmatar_01_loki_1_mesh"
+		file = "gfx/models/ships/minmatar_01/loki_1111.mesh"
+		scale = @invis_scale
+	}
+}
+			
+#########################################################################
+#####																#####
+##W##						BATTLECRUISER							##W##
+#####																#####
+#########################################################################
+
+	objectTypes = {
+		pdxmesh = {
+			name = "minmatar_01_cyclone_mesh"
+			file = "gfx/models/ships/minmatar_01/cyclone.mesh"
+			scale = @invis_scale
+
+		}
+
+		pdxmesh = {
+			name = "minmatar_01_hurricane_mesh"
+			file = "gfx/models/ships/minmatar_01/hurricane.mesh"
+			scale = @invis_scale
+
+		}
+	
+		pdxmesh = {
+			name = "minmatar_01_tornado_mesh"
+			file = "gfx/models/ships/minmatar_01/minmatar_01_tornado.mesh"
+			scale = @invis_scale
+
+		}
+	}
+
+
+#########################################################################
+#####																#####
+##W##						BATTLESHIP								##W##
+#####																#####
+#########################################################################
+
+	objectTypes = {
+		pdxmesh = {
+			name = "minmatar_01_typhoon_mesh"
+			file = "gfx/models/ships/minmatar_01/typhoon.mesh"
+			scale = @invis_scale
+			#meshsettings = { shader = "PdxMeshAsteroid" }
+		}
+
+		pdxmesh = {
+			name = "minmatar_01_tempest_mesh"
+			file = "gfx/models/ships/minmatar_01/tempest.mesh"
+			scale = @invis_scale
+			meshsettings = { shader = "PdxMeshAsteroid" }
+		}
+
+		pdxmesh = {
+			name = "minmatar_01_maelstron_mesh"
+			file = "gfx/models/ships/minmatar_01/maelstron.mesh"
+			scale = @invis_scale
+			meshsettings = { shader = "PdxMeshAsteroid" }
+		}
+	}
+
+
+
+#########################################################################
+#####																#####
+##W##							CARRIER								##W##
+#####																#####
+#########################################################################
+
+	objectTypes = {
+		pdxmesh = {
+			name = "minmatar_01_nidhoggur_mesh"
+			file = "gfx/models/ships/minmatar_01/nidhoggur.mesh"
+			scale = @invis_scale
+		}
+
+		pdxmesh = {
+			name = "minmatar_01_lif_mesh"
+			file = "gfx/models/ships/minmatar_01/mfaux.mesh"
+			scale = @invis_scale
+		}
+	}
+
+#########################################################################
+#####																#####
+##W##							DREADNOUGHT							##W##
+#####																#####
+#########################################################################
+
+	objectTypes = {
+		pdxmesh = {
+			name = "minmatar_01_naglfar_mesh"
+			file = "gfx/models/ships/minmatar_01/naglfar.mesh"
+			scale = @invis_scale
+		}
+
+		pdxmesh = {
+			name = "minmatar_01_naglfar_guns_mesh"
+			file = "gfx/models/ships/minmatar_01/naglafar_guns.mesh"
+			scale = @invis_scale
+		}
+	}
+
+#########################################################################
+#####																#####
+##W##						MOTHER	SHIP							##W##
+#####																#####
+#########################################################################
+
+	objectTypes = {
+		pdxmesh = {
+			name = "minmatar_01_hel_mesh"
+			file = "gfx/models/ships/minmatar_01/hel.mesh"
+			scale = @invis_scale
+
+		}
+	}
+
+#########################################################################
+#####																#####
+##W##							TITAN								##W##
+#####																#####
+#########################################################################
+
+	objectTypes = {
+		pdxmesh = {
+			name = "minmatar_01_ragnarok_mesh"
+			file = "gfx/models/ships/minmatar_01/ragnarok.mesh"
+			scale = @invis_scale
+		}
+
+		pdxmesh = {
+			name = "ragnarok_wreck_mesh"
+			file = "gfx/models/ships/minmatar_01/ragnarok_wreck_mesh.mesh"
+			scale = @invis_scale
+		}
+	}
+
+
+
+	#############################
+	#			minmatar		#
+	#############################
+
+	#### Frames ####	
+objectTypes = {
+		
+	pdxmesh = {
+		name = "minmatar_01_starport_frame_mesh"
+		file = "gfx/models/ships/starbases/caldari_01_commandbase.mesh"
+		scale = @invis_scale
+
+	}
+	
+	## stations ##
+		
+	pdxmesh = {
+		name = "minmatar_01_station1_mesh"
+		file = "gfx/models/ships/starbases/ms1.mesh"
+		scale = @invis_scale
+	}
+
+	pdxmesh = {
+		name = "minmatar_station1_effect_mesh"
+		file = "gfx/models/ships/starbases/ms1_effect.mesh"
+		
+		scale = @invis_scale
+		meshsettings = { 
+			texture_diffuse = "Minmatar_effect_difuse.dds"
+		 }
+	}
+	
+	pdxmesh = {
+		name = "minmatar_01_station2_mesh"
+		file = "gfx/models/ships/starbases/ms2.mesh"
+		scale = @invis_scale
+
+	}
+		
+		pdxmesh = {
+		name = "minmatar_01_station3_mesh"
+		file = "gfx/models/ships/starbases/ms3.mesh"
+		scale = @invis_scale
+
+	}
+		
+		
+		pdxmesh = {
+		name = "minmatar_01_station4_mesh"
+		file = "gfx/models/ships/starbases/ms4.mesh"
+		scale = @invis_scale
+
+	}
+		
+		pdxmesh = {
+		name = "minmatar_01_station5_mesh"
+		file = "gfx/models/ships/starbases/ms5.mesh"
+		scale = @invis_scale
+		#meshsettings = { shader = "PdxMeshAsteroid" }
+	}
+		
+		pdxmesh = {
+		name = "minmatar_01_station6_mesh"
+		file = "gfx/models/ships/starbases/ms6.mesh"
+		scale = @invis_scale
+
+	}
+		
+		pdxmesh = {
+		name = "minmatar_01_station7_mesh"
+		file = "gfx/models/ships/starbases/ms7.mesh"
+		scale = @invis_scale
+
+	}
+
+	# Angel
+	pdxmesh = {
+		name = "angel_station1_mesh"
+		file = "gfx/models/ships/starbases/ms1.mesh"
+		scale = @invis_scale
+		meshsettings = { 
+			texture_diffuse = "crystal_01_bistot.dds"
+		 }
+	}
+}		
+

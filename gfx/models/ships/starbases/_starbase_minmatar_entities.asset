@@ -1,0 +1,408 @@
+# reload assets gfx/models/ships/starbases/_starbase_amarr_entities.asset #
+
+# ship designer scale #
+@pos_scale = 0.5
+@shipyard_scale = 0.2
+@refinery_scale = 1.0
+@outpost_scale = 1.0
+@starport_scale = 0.1
+@starhold_scale = 1.0
+@citadel_scale = 0.8
+
+
+# in game size scale #
+@shipyard_physical_scale = 2.0
+@refinery_physical_scale = 2.0
+
+@outpost_physical_scale = 0.2
+@starport_physical_scale = 0.25
+@starhold_physical_scale = 1
+@citadel_physical_scale = 1
+
+
+@astrahus_frame_physical_scale = 0.3
+@fortizar_frame_physical_scale = 1.5
+@keepstar_frame_physical_scale = 1.0
+
+
+##################################################################
+######														######
+######						minmatar 						######
+######														######
+##################################################################
+
+## Frames ##
+entity = {
+	name = "minmatar_01_starbase_outpost_entity"
+	pdxmesh = eve_outpost_mesh
+
+	locator = { name = "part1" position = { 0 60 0 } }
+	
+	attach = { "part1" = "effect_logo_minmatar_entity" }
+	#attach = { "arm_01" = "effect_logo_amarr_entity" }
+	#attach = { "arm_02" = "effect_logo_amarr_entity" }
+	#attach = { "arm_03" = "effect_logo_amarr_entity" }
+
+	scale = @outpost_physical_scale
+
+	game_data = {
+		size = @outpost_scale
+	}
+}
+
+entity = {
+	name = "minmatar_01_starbase_starport_entity"
+	pdxmesh = "empty_mesh_ship"
+
+	scale = @starport_physical_scale
+
+	game_data = {
+		size = @starport_scale
+	}
+}
+
+entity = {
+	name = "minmatar_01_starbase_starhold_entity"
+	pdxmesh = "empty_mesh_ship"
+}
+
+entity = {
+	name = "minmatar_01_starbase_starfortress_entity"
+	pdxmesh = "empty_mesh_ship"
+}
+
+entity = {
+	name = "minmatar_01_starbase_citadel_entity"
+	pdxmesh = "empty_mesh_ship"
+}
+
+## Starbase ##
+	entity = {
+		name = "minmatar_01_starbase_outpost_section_entity"
+		pdxmesh = "empty_mesh_ship"
+
+		default_state = "idle"
+		state = { name = "idle" state_time = 5
+			event = { time = 0 node = "light_locator_01" particle = "ship_light_blue_effect" keep_particle = yes trigger_once = yes }
+			event = { time = 0 node = "light_locator_02" particle = "ship_light_blue_effect" keep_particle = yes trigger_once = yes }
+			
+			start_event = { trigger_once = yes sound = { soundeffect = "starbase_hum_stage_01" } }
+
+		}
+		
+		scale = @outpost_physical_scale
+
+		game_data = {
+			size = @outpost_scale
+		}	
+	}
+	
+	entity = {
+		name = "minmatar_01_starbase_starport_section_entity"
+		pdxmesh = "minmatar_01_pos_mesh"
+
+		locator = { name = "part1" }
+
+		attach = { part1 = "shield_sphere_entity" }
+		
+		default_state = "idle"
+		state = { name = "idle" state_time = 5
+			event = { time = 0 node = "light_locator_01" particle = "ship_light_blue_effect" keep_particle = yes trigger_once = yes }
+			event = { time = 0 node = "light_locator_02" particle = "ship_light_blue_effect" keep_particle = yes trigger_once = yes }
+			
+			start_event = { trigger_once = yes sound = { soundeffect = "starbase_hum_stage_01" } }
+		}
+
+		state = { name = "death" state_time = 6 looping = no
+			event = { time = 0.0 node = "light_locator_01" particle = "ship_explosion_particle" sound = { soundeffect = "ship_explosion" } }
+			event = { time = 1.6 node = "light_locator_02" particle = "ship_explosion_particle" }
+			event = { time = 2.83 node = "light_locator_03" particle = "ship_explosion_particle" sound = { soundeffect = "ship_explosion" } }
+			event = { time = 3.26 node = "light_locator_04" particle = "ship_explosion_particle" sound = { soundeffect = "ship_explosion_large" } }
+			event = { time = 3.9 node = "light_locator_05" particle = "ship_explosion_particle" }
+			event = { time = 4.1 node = "part1" particle = "ship_explosion_particle" sound = { soundeffect = "ship_destroyed" } }
+			
+			event = { time = 5.4 node = "part1" particle = "medium_station_explosion_particle" keep_particle = yes trigger_once = no }
+			event = { time = 5.4 node = "part1" particle = "medium_station_explosion_particle" keep_particle = yes trigger_once = no }
+		}
+		scale = @starport_physical_scale
+
+		game_data = {
+			size = @starport_scale
+		}	
+	}
+
+	entity = {
+		name = "minmatar_01_starbase_starhold_section_entity"
+		pdxmesh = "minmatar_01_pos2_mesh"
+
+		locator = { name = "part1" }
+
+		attach = { part1 = "shield_sphere_entity" }
+		
+		default_state = "idle"
+		state = { name = "idle" state_time = 5
+			event = { time = 0 node = "light_locator_01" particle = "ship_light_blue_effect" keep_particle = yes trigger_once = yes }
+			event = { time = 0 node = "light_locator_02" particle = "ship_light_blue_effect" keep_particle = yes trigger_once = yes }
+			
+			start_event = { trigger_once = yes sound = { soundeffect = "starbase_hum_stage_01" } }
+		}
+
+		state = { name = "death" state_time = 6 looping = no
+			event = { time = 0.0 node = "light_locator_01" particle = "ship_explosion_particle" sound = { soundeffect = "ship_explosion" } }
+			event = { time = 1.6 node = "light_locator_02" particle = "ship_explosion_particle" }
+			event = { time = 2.83 node = "light_locator_03" particle = "ship_explosion_particle" sound = { soundeffect = "ship_explosion" } }
+			event = { time = 3.26 node = "light_locator_04" particle = "ship_explosion_particle" sound = { soundeffect = "ship_explosion_large" } }
+			event = { time = 3.9 node = "light_locator_05" particle = "ship_explosion_particle" }
+			event = { time = 4.1 node = "part1" particle = "ship_explosion_particle" sound = { soundeffect = "ship_destroyed" } }
+			
+			event = { time = 5.4 node = "part1" particle = "medium_station_explosion_particle" keep_particle = yes trigger_once = no }
+			event = { time = 5.4 node = "part1" particle = "medium_station_explosion_particle" keep_particle = yes trigger_once = no }
+		}
+
+		scale = @starport_physical_scale
+
+		game_data = {
+			size = @starport_scale
+		}	
+	}
+
+	entity = {
+		name = "minmatar_01_starbase_starfortress_section_entity"
+		pdxmesh = "minmatar_01_station1_mesh"
+		
+		locator = { name = "effect"  rotation ={ 0 0 0} }		
+
+		attach = { effect   = "minmatar_station1_effect_entity"	}
+		attach = { effect   = "minmatar_station1_effect2_entity"	}	
+
+		scale = @starhold_physical_scale
+
+		default_state = "idle"
+			state = { name = "idle" state_time = 5
+			event = { time = 0 node = "light_locator_100" particle = "ship_light_blue_effect" keep_particle = yes trigger_once = yes }
+			event = { time = 0 node = "light_locator_101" particle = "ship_light_blue_effect" keep_particle = yes trigger_once = yes }
+			event = { time = 0 node = "light_locator_102" particle = "ship_light_blue_effect" keep_particle = yes trigger_once = yes }
+			event = { time = 0 node = "light_locator_103" particle = "ship_light_blue_effect" keep_particle = yes trigger_once = yes }
+			event = { time = 0 node = "light_locator_104" particle = "ship_light_blue_effect" keep_particle = yes trigger_once = yes }
+			event = { time = 0 node = "light_locator_105" particle = "ship_light_blue_effect" keep_particle = yes trigger_once = yes }
+
+			event = { time = 0 node = "small_gun_01" particle = "ship_light_blue_effect" keep_particle = yes trigger_once = yes }
+			event = { time = 0 node = "small_gun_02" particle = "ship_light_blue_effect" keep_particle = yes trigger_once = yes }
+			event = { time = 0 node = "small_gun_03" particle = "ship_light_blue_effect" keep_particle = yes trigger_once = yes }
+			
+			start_event = { trigger_once = yes sound = { soundeffect = "starbase_hum_stage_01" } }
+			start_event = { trigger_once = yes sound = { soundeffect = "starbase_hum_stage_02" } }
+		}
+
+		state = { name = "death" state_time = 6 looping = no
+			event = { time = 0.0 node = "explosion_1" particle = "ship_explosion_particle" sound = { soundeffect = "ship_explosion" } }
+			event = { time = 1.6 node = "explosion_2" particle = "ship_explosion_particle" }
+			event = { time = 2.83 node = "explosion_3" particle = "ship_explosion_particle" sound = { soundeffect = "ship_explosion" } }
+			event = { time = 3.26 node = "small_gun_01" particle = "ship_explosion_particle" sound = { soundeffect = "ship_explosion_large" } }
+			event = { time = 3.9 node = "small_gun_02" particle = "ship_explosion_particle" }
+			event = { time = 4.1 node = "small_gun_03" particle = "ship_explosion_particle" sound = { soundeffect = "ship_destroyed" } }
+			
+			event = { time = 5.4 node = "part1" particle = "medium_station_explosion_particle" keep_particle = yes trigger_once = no }
+			event = { time = 5.4 node = "part1" particle = "medium_station_explosion_particle" keep_particle = yes trigger_once = no }
+		}
+
+		game_data = {
+			size = @starhold_scale
+		}
+	}
+
+	entity = {
+		name = "minmatar_01_starbase_citadel_section_entity"
+		pdxmesh = "minmatar_01_station1_mesh"
+		
+		scale = @citadel_physical_scale
+
+		locator = { name = "citadel_effect" 		position = { 0 	0 	0	} }		
+		locator = { name = "effect"  rotation ={ 0 0 0} }		
+
+		attach = { effect   = "minmatar_station1_effect_entity"	}
+		attach = { effect   = "minmatar_station1_effect2_entity"	}	
+	
+		#attach = { logo = "effect_astrhaus_logo_entity"	}
+		attach = { citadel_effect   = "effect_astrhaus_logo_entity"	}
+		attach = { light_locator_01   = "station_effect_entity"	}	
+		attach = { light_locator_02   = "station_effect_entity"	}	
+		attach = { light_locator_03   = "station_effect_entity"	}	
+		attach = { light_locator_04   = "station_effect_entity"	}	
+		attach = { light_locator_05   = "station_effect_entity"	}	
+		attach = { light_locator_06   = "station_effect_entity"	}	
+		attach = { light_locator_07   = "station_effect_entity"	}	
+		attach = { light_locator_08   = "station_effect_entity"	}	
+		attach = { light_locator_09   = "station_effect_entity"	}	
+		attach = { light_locator_10   = "station_effect_entity"	}	
+		attach = { light_locator_11   = "station_effect_entity"	}	
+		attach = { light_locator_12   = "station_effect_entity"	}	
+		attach = { light_locator_13   = "station_effect_entity"	}	
+		attach = { light_locator_14   = "station_effect_entity"	}	
+		attach = { light_locator_15   = "station_effect_entity"	}	
+		attach = { light_locator_16   = "station_effect_entity"	}	
+		attach = { light_locator_17   = "station_effect_entity"	}	
+		attach = { light_locator_18   = "station_effect_entity"	}	
+		attach = { light_locator_19   = "station_effect_entity"	}	
+		attach = { light_locator_20   = "station_effect_entity"	}	
+		attach = { light_locator_21   = "station_effect_entity"	}	
+		attach = { light_locator_22   = "station_effect_entity"	}	
+		attach = { light_locator_23   = "station_effect_entity"	}	
+		attach = { light_locator_24   = "station_effect_entity"	}	
+		attach = { light_locator_25   = "station_effect_entity"	}	
+		attach = { light_locator_26   = "station_effect_entity"	}	
+		attach = { light_locator_27   = "station_effect_entity"	}	
+		attach = { light_locator_28   = "station_effect_entity"	}	
+		attach = { light_locator_29   = "station_effect_entity"	}	
+		attach = { light_locator_30   = "station_effect_entity"	}	
+		attach = { light_locator_31   = "station_effect_entity"	}	
+		attach = { light_locator_32   = "station_effect_entity"	}	
+		attach = { light_locator_33   = "station_effect_entity"	}	
+		attach = { light_locator_34   = "station_effect_entity"	}	
+		attach = { light_locator_35   = "station_effect_entity"	}	
+		attach = { light_locator_36   = "station_effect_entity"	}	
+		attach = { light_locator_37   = "station_effect_entity"	}	
+		attach = { light_locator_38   = "station_effect_entity"	}	
+		attach = { light_locator_39   = "station_effect_entity"	}	
+		attach = { light_locator_40   = "station_effect_entity"	}	
+		attach = { light_locator_41   = "station_effect_entity"	}	
+		attach = { light_locator_42   = "station_effect_entity"	}	
+		attach = { light_locator_43   = "station_effect_entity"	}	
+		attach = { light_locator_44   = "station_effect_entity"	}	
+		attach = { light_locator_45   = "station_effect_entity"	}	
+		attach = { light_locator_46   = "station_effect_entity"	}	
+		attach = { light_locator_47   = "station_effect_entity"	}	
+		attach = { light_locator_48   = "station_effect_entity"	}	
+		attach = { light_locator_49   = "station_effect_entity"	}	
+		attach = { light_locator_50   = "station_effect_entity"	}	
+		attach = { light_locator_51   = "station_effect_entity"	}	
+		attach = { light_locator_52   = "station_effect_entity"	}	
+		attach = { light_locator_53   = "station_effect_entity"	}	
+		attach = { light_locator_54   = "station_effect_entity"	}	
+		attach = { light_locator_55   = "station_effect_entity"	}	
+		attach = { light_locator_56   = "station_effect_entity"	}	
+		attach = { light_locator_57   = "station_effect_entity"	}	
+		attach = { light_locator_58   = "station_effect_entity"	}	
+		attach = { light_locator_59   = "station_effect_entity"	}	
+		attach = { light_locator_60   = "station_effect_entity"	}	
+
+		attach = { light_locator_61   = "station_effect_entity" }
+		attach = { light_locator_62   = "station_effect_entity" }
+		attach = { light_locator_63   = "station_effect_entity" }
+		attach = { light_locator_64   = "station_effect_entity" }
+		attach = { light_locator_65   = "station_effect_entity" }
+		attach = { light_locator_66   = "station_effect_entity" }
+		attach = { light_locator_67   = "station_effect_entity" }
+		attach = { light_locator_68   = "station_effect_entity" }
+		attach = { light_locator_69   = "station_effect_entity" }
+		attach = { light_locator_70   = "station_effect_entity" }
+		attach = { light_locator_71   = "station_effect_entity" }
+		attach = { light_locator_72   = "station_effect_entity" }
+		attach = { light_locator_73   = "station_effect_entity" }
+		attach = { light_locator_74   = "station_effect_entity" }
+		attach = { light_locator_75   = "station_effect_entity" }
+		attach = { light_locator_76   = "station_effect_entity" }
+		attach = { light_locator_77   = "station_effect_entity" }
+		attach = { light_locator_78   = "station_effect_entity" }
+		attach = { light_locator_79   = "station_effect_entity" }
+		attach = { light_locator_80   = "station_effect_entity" }
+		attach = { light_locator_81   = "station_effect_entity" }
+		attach = { light_locator_82   = "station_effect_entity" }
+		attach = { light_locator_83   = "station_effect_entity" }
+		attach = { light_locator_84   = "station_effect_entity" }
+		attach = { light_locator_85   = "station_effect_entity" }
+		attach = { light_locator_86   = "station_effect_entity" }
+		attach = { light_locator_87   = "station_effect_entity" }
+		attach = { light_locator_88   = "station_effect_entity" }
+		attach = { light_locator_89   = "station_effect_entity" }
+		attach = { light_locator_90   = "station_effect_entity" }
+		attach = { light_locator_91   = "station_effect_entity" }
+		attach = { light_locator_92   = "station_effect_entity" }
+		attach = { light_locator_93   = "station_effect_entity" }
+		attach = { light_locator_94   = "station_effect_entity" }
+		attach = { light_locator_95   = "station_effect_entity" }
+		attach = { light_locator_96   = "station_effect_entity" }
+		attach = { light_locator_97   = "station_effect_entity" }
+		attach = { light_locator_98   = "station_effect_entity" }
+		attach = { light_locator_99   = "station_effect_entity" }
+		attach = { light_locator_100   = "station_effect_entity" }
+		attach = { light_locator_101   = "station_effect_entity" }
+		attach = { light_locator_102   = "station_effect_entity" }
+		attach = { light_locator_103   = "station_effect_entity" }
+		attach = { light_locator_104   = "station_effect_entity" }
+		attach = { light_locator_105   = "station_effect_entity" }
+		attach = { light_locator_106   = "station_effect_entity" }
+		attach = { light_locator_107   = "station_effect_entity" }
+		attach = { light_locator_108   = "station_effect_entity" }
+		attach = { light_locator_109   = "station_effect_entity" }
+		attach = { light_locator_110   = "station_effect_entity" }
+		attach = { light_locator_111   = "station_effect_entity" }
+		attach = { light_locator_112   = "station_effect_entity" }
+		attach = { light_locator_113   = "station_effect_entity" }
+		attach = { light_locator_114   = "station_effect_entity" }
+		attach = { light_locator_115   = "station_effect_entity" }
+		attach = { light_locator_116   = "station_effect_entity" }
+		attach = { light_locator_117   = "station_effect_entity" }
+		attach = { light_locator_118   = "station_effect_entity" }
+		attach = { light_locator_119   = "station_effect_entity" }
+		attach = { light_locator_120   = "station_effect_entity" }
+								
+		default_state = "idle"
+			state = { name = "idle" state_time = 5
+			event = { time = 0 node = "light_locator_100" particle = "ship_light_blue_effect" keep_particle = yes trigger_once = yes }
+			event = { time = 0 node = "light_locator_101" particle = "ship_light_blue_effect" keep_particle = yes trigger_once = yes }
+			event = { time = 0 node = "light_locator_102" particle = "ship_light_blue_effect" keep_particle = yes trigger_once = yes }
+			event = { time = 0 node = "light_locator_103" particle = "ship_light_blue_effect" keep_particle = yes trigger_once = yes }
+			event = { time = 0 node = "light_locator_104" particle = "ship_light_blue_effect" keep_particle = yes trigger_once = yes }
+			event = { time = 0 node = "light_locator_105" particle = "ship_light_blue_effect" keep_particle = yes trigger_once = yes }
+				
+			start_event = { trigger_once = yes sound = { soundeffect = "starbase_hum_stage_01" } }
+			start_event = { trigger_once = yes sound = { soundeffect = "starbase_hum_stage_02" } }
+		}
+
+		state = { name = "death" state_time = 6 looping = no
+			event = { time = 0.0 node = "explosion_1" particle = "ship_explosion_particle" sound = { soundeffect = "ship_explosion" } }
+			event = { time = 1.6 node = "explosion_2" particle = "ship_explosion_particle" }
+			event = { time = 2.83 node = "explosion_3" particle = "ship_explosion_particle" sound = { soundeffect = "ship_explosion" } }
+			event = { time = 3.26 node = "small_gun_01" particle = "ship_explosion_particle" sound = { soundeffect = "ship_explosion_large" } }
+			event = { time = 3.9 node = "small_gun_02" particle = "ship_explosion_particle" }
+			event = { time = 4.1 node = "small_gun_03" particle = "ship_explosion_particle" sound = { soundeffect = "ship_destroyed" } }
+			
+			event = { time = 5.4 node = "part1" particle = "medium_station_explosion_particle" keep_particle = yes trigger_once = no }
+			event = { time = 5.4 node = "part1" particle = "medium_station_explosion_particle" keep_particle = yes trigger_once = no }
+		}
+
+		game_data = {
+			size = @citadel_scale
+		}
+	}
+
+	## Sections ##
+		entity = {
+			name = "minmatar_01_orbital_station_assemblyyard_section_entity"
+			pdxmesh = "empty_mesh_ship"
+			
+			locator = { name = "root" position = { 0 0 0 } }
+			
+			default_state = "idle"
+			state = { name = "idle" state_time = 5
+				event = { time = 0.0 node = "light_locator_01" particle = "ship_light_blue_regular_effect" keep_particle = yes trigger_once = yes }
+				event = { time = 0.05 node = "light_locator_02" particle = "ship_light_blue_regular_effect" keep_particle = yes trigger_once = yes }
+				event = { time = 0.1 node = "light_locator_03" particle = "ship_light_blue_regular_effect" keep_particle = yes trigger_once = yes }
+				event = { time = 0.15 node = "light_locator_04" particle = "ship_light_blue_regular_effect" keep_particle = yes trigger_once = yes }
+				event = { time = 1.0 node = "light_locator_05" particle = "ship_light_blue_effect" keep_particle = yes trigger_once = yes }
+				event = { time = 2.0 node = "light_locator_06" particle = "ship_light_blue_effect" keep_particle = yes trigger_once = yes }
+			}
+			scale = 1.0
+		}
+		
+		entity = {
+			name = "minmatar_01_orbital_station_refinery_section_entity"
+			pdxmesh = "empty_mesh_ship"
+			
+			default_state = "idle"
+			state = { name = "idle" state_time = 5
+				event = { time = 0.0 node = "light_locator_01" particle = "ship_light_blue_effect" keep_particle = yes trigger_once = yes }
+			}
+			scale = 1.0
+}

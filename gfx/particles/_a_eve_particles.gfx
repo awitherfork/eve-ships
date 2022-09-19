@@ -1,0 +1,138 @@
+objectTypes = {
+	pdxparticle = {
+		name = "a_citadel"
+		type = "a_citadel"
+		
+		scale = 2.0
+	}
+
+	pdxparticle = {
+		name = "citadel_light_orange_regular_effect"
+		type = "citadel_light_orange_regular_effect"
+		
+		scale = 0.5
+	}
+	
+
+	pdxparticle = {
+		name = "matde_platform_beam2_effect"
+		type = "matde_platform_beam2_effect"
+		
+		scale = 1.0
+	}
+
+	pdxparticle = {
+		name = "oblivion_hit_effect"
+		type = "oblivion_hit_effect"
+		
+		scale = 3.0
+	}
+
+	pdxparticle = {
+		name = "cynojammer_effect"
+		type = "cynojammer_effect_file"
+		scale = 20.0
+	}
+
+	pdxparticle = {
+		name = "cynobeacon_effect"
+		type = "cynobeacon_effect_file"
+		scale = 20.0
+	}
+
+	pdxparticle = {
+		name = "jumpgate_effect"
+		type = "molluscoid_01_colossus_canister_effect"
+		scale = 60.0
+	}
+}
+
+# Clouds
+
+objectTypes = {
+	
+	pdxparticle = {
+		name = "azure_dust_cloud_effect"
+		type = "azure_dust_cloud_effect"
+		scale = 1.0
+	}
+	pdxparticle = {
+		name = "red_dust_cloud_effect"
+		type = "red_dust_cloud_effect"
+		scale = 1.0
+	}
+	pdxparticle = {
+		name = "green_dust_cloud_effect"
+		type = "green_dust_cloud_effect"
+		scale = 1.0
+	}
+	pdxparticle = {
+		name = "purple_dust_cloud_effect"
+		type = "purple_dust_cloud_effect"
+		scale = 1.0
+	}
+	pdxparticle = {
+		name = "orange_dust_cloud_effect"
+		type = "orange_dust_cloud_effect"
+		scale = 1.0
+	}
+	pdxparticle = {
+		name = "blue_dust_cloud_effect"
+		type = "blue_dust_cloud_effect"
+		scale = 1.0
+	}
+	pdxparticle = {
+		name = "black_dust_cloud_effect"
+		type = "black_dust_cloud_effect"
+		scale = 1.0
+	}
+	pdxparticle = {
+		name = "dark_dust_cloud_effect"
+		type = "dark_dust_cloud_effect"
+		scale = 1.0
+	}
+	pdxparticle = {
+		name = "white_dust_cloud_effect"
+		type = "white_dust_cloud_effect"
+		scale = 1.0
+	}
+	pdxparticle = {
+		name = "yellow_dust_cloud_effect"
+		type = "yellow_dust_cloud_effect"
+		scale = 1.0
+	}
+	pdxparticle = {
+		name = "nova_star_outburst_effect"
+		type = "nova_star_outburst_effect"
+		scale = 1.0
+	}
+	
+	pdxparticle = {
+		name = "protostar_particle"
+		type = "protostar_file"
+		
+		scale = 2.0
+	}
+	
+	pdxparticle = {
+		name = "collapsar_globule_effect"
+		type = "collapsar_globule_effect"
+		scale = 1.0
+	}
+	pdxparticle = {
+		name = "purple_globule_effect"
+		type = "purple_globule_effect"
+		scale = 1.0
+	}
+	pdxparticle = {
+		name = "yellow_globule_effect"
+		type = "yellow_globule_effect"
+		scale = 1.0
+	}
+	pdxparticle = {
+		name = "green_globule_effect"
+		type = "green_globule_effect"
+		scale = 1.0
+	}
+}
+

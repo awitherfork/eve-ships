@@ -1,0 +1,119 @@
+@habitat_physical_scale = 1.0
+
+
+
+entity = {
+	name = "minmatar_01_habitat_phase_01_entity"
+	pdxmesh = "minmatar_01_orbital_station_frame_mesh"
+	
+	attach = { "part1" = "minmatar_01_habitat_phase_01_core_entity" }
+			
+	scale = @habitat_physical_scale
+	
+	default_state = "habitat_idle"
+	state = { name = "construction" looping = yes }
+	
+	game_data = {
+		shader_type = ship
+		emissive_recolor_crunch = 5.0
+	}
+	
+}
+
+entity = {
+	name = "minmatar_01_habitat_phase_01_core_entity"
+	pdxmesh = "minmatar_01_station3_mesh"
+		
+		default_state = "idle"
+	state = { name = "idle" animation = "idle"
+		start_event = { trigger_once = yes sound = { soundeffect = "amb_mining_station_signals" } }
+	}
+
+	state = { name = "death" animation = "death" looping = no
+		event = { time = 0.0 node = "light_locator_01" particle = "ship_explosion_particle" keep_particle = yes trigger_once = yes sound = { soundeffect = "station_explosion_small" } }
+		event = { time = 0.5 node = "light_locator_02" particle = "ship_explosion_particle" keep_particle = yes trigger_once = yes sound = { soundeffect = "station_explosion_small" } }
+
+		event = { time = 1.9 particle = "medium_station_explosion_particle" keep_particle = yes trigger_once = yes  sound = { soundeffect = "station_explosion_large" } }
+	}
+
+	scale = @habitat_physical_scale
+	
+	game_data = {
+		#size = @mining_station_scale
+	}
+	
+	locator = { name = "medium_gun_01"	position = { 0 0 0 } }
+	locator = { name = "medium_gun_02"	position = { 0 0 0 } }
+	locator = { name = "small_gun_01"	position = { 0 0 0 } }
+	locator = { name = "small_gun_02"	position = { 0 0 0 } }
+	locator = { name = "small_gun_03"	position = { 0 0 0 } }
+	locator = { name = "small_gun_04"	position = { 0 0 0 } }
+}
+
+entity = {
+	name = "minmatar_01_habitat_phase_02_entity"
+	pdxmesh = "minmatar_01_orbital_station_frame_mesh"
+	
+	attach = { "part1" = "minmatar_01_habitat_phase_01_core_entity" }
+	
+	scale = @habitat_physical_scale
+	
+	default_state = "habitat_idle"
+	state = { name = "construction" state_time = 5 looping = yes }
+	
+	game_data = {
+		shader_type = ship
+		emissive_recolor_crunch = 5.0
+	}
+}
+
+entity = {
+	name = "minmatar_01_habitat_phase_03_entity"
+	locator = { name = part1 }
+	
+	scale = @habitat_physical_scale
+	
+	default_state = "habitat_idle"
+	state = { name = "construction" state_time = 5 }
+	
+	state = { name = "death" state_time = 5 looping = no
+		event = { time = 4.9 particle = "large_player_ship_explosion_particle" keep_particle = yes trigger_once = yes sound = { soundeffect = "station_explosion_large" } }
+	}
+	
+	game_data = {
+		shader_type = ship
+		emissive_recolor_crunch = 5.0
+	}
+	
+	attach = { name = "station" part1 = "minmatar_01_habitat_phase_03_section_entity" }
+}
+
+entity = {
+	name = "minmatar_01_habitat_phase_03_section_entity"
+	pdxmesh = "minmatar_01_station6_mesh"
+		
+		default_state = "idle"
+	state = { name = "idle" animation = "idle"
+		start_event = { trigger_once = yes sound = { soundeffect = "amb_mining_station_signals" } }
+	}
+
+	state = { name = "death" animation = "death" looping = no
+		event = { time = 0.0 node = "light_locator_01" particle = "ship_explosion_particle" keep_particle = yes trigger_once = yes sound = { soundeffect = "station_explosion_small" } }
+		event = { time = 0.5 node = "light_locator_02" particle = "ship_explosion_particle" keep_particle = yes trigger_once = yes sound = { soundeffect = "station_explosion_small" } }
+
+		event = { time = 1.9 particle = "medium_station_explosion_particle" keep_particle = yes trigger_once = yes  sound = { soundeffect = "station_explosion_large" } }
+	}
+
+	scale = @habitat_physical_scale
+	
+	game_data = {
+		#size = @mining_station_scale
+	}
+	
+	locator = { name = "medium_gun_01"	position = { 0 0 0 } }
+	locator = { name = "medium_gun_02"	position = { 0 0 0 } }
+	locator = { name = "small_gun_01"	position = { 0 0 0 } }
+	locator = { name = "small_gun_02"	position = { 0 0 0 } }
+	locator = { name = "small_gun_03"	position = { 0 0 0 } }
+	locator = { name = "small_gun_04"	position = { 0 0 0 } }
+}

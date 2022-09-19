@@ -1,0 +1,91 @@
+objectTypes = {
+	
+#############
+# IDLE
+#############
+
+	##########
+	#REV MAIN ENGINE
+	############
+		pdxparticle = {
+			name = "amarr_01_Rev_0_exhaust_idle_particle"
+			type = "amarr_01_ship_exhaust_idle_file"
+			scale = 22
+		}
+	##########
+	#ARCHON ENGINEs
+	############
+		pdxparticle = {
+			name = "amarr_01_arc_0_exhaust_idle_particle"
+			type = "amarr_01_ship_exhaust_idle_file"
+			scale = 75
+		}
+	##########
+	#AVATAR ENGINES
+	############
+		pdxparticle = {
+			name = "amarr_01_ava_0_exhaust_idle_particle"
+			type = "amarr_01_ship_exhaust_idle_file"
+			scale = 17
+		}
+		pdxparticle = {
+			name = "amarr_01_ava_s_0_exhaust_idle_particle"
+			type = "amarr_01_ship_exhaust_idle_file"
+			scale = 97
+		}
+	
+#############
+# MOVING
+#############
+
+	##########
+	#REV MAIN ENGINE
+	############
+	pdxparticle = {
+		name = "amarr_01_Rev_0_exhaust_moving_particle"
+		type = "amarr_01_ship_exhaust_file"
+		scale = 30
+	}
+	
+	##########
+	#ARCHON ENGINEs
+	############
+	pdxparticle = {
+		name = "amarr_01_arc_0_exhaust_moving_particle"
+		type = "amarr_01_ship_exhaust_file"
+		scale = 150
+	}
+	
+	##########
+	#AVATAR ENGINES
+	############
+	pdxparticle = {
+		name = "amarr_01_ava_0_exhaust_moving_particle"
+		type = "amarr_01_ship_exhaust_file"
+		scale = 450
+	}
+	pdxparticle = {
+		name = "amarr_01_ava_s_0_exhaust_moving_particle"
+		type = "amarr_01_ship_exhaust_file"
+		scale = 160
+	}
+
+	pdxparticle = {
+		name = "ship_trail_particle"
+		type = "ship_trail_file"
+		scale = 1.0
+	}
+
+	pdxparticle = {
+		name = "nsc_flagship_explosion_particle"
+		type = "technosphere_explosion_effect"
+		scale = 5.0
+	}
+		
+	pdxparticle = {
+		name = "nsc_superdread_explosion_particle"
+		type = "technosphere_explosion_effect"
+		scale = 4.0
+	}
+
+}

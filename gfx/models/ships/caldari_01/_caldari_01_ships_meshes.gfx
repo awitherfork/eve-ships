@@ -1,0 +1,509 @@
+@main_scale = 1.0
+@invis_scale = 0.1
+
+
+
+#########################################################################
+#####																#####
+##W##							NEW									##W##
+#####																#####
+#########################################################################
+
+### Turrets ###
+
+objectTypes = {
+
+	pdxmesh = {
+		name = "caldari_01_turret_projectile_large_mesh"
+		file = "gfx/models/ships/caldari_01/empty_turret.mesh"
+
+		scale = @invis_scale
+	}
+
+	pdxmesh = {
+		name = "caldari_01_turret_projectile_medium_mesh"
+		file = "gfx/models/ships/caldari_01/empty_turret.mesh"
+
+		scale = @invis_scale
+	}
+
+	pdxmesh = {
+		name = "caldari_01_turret_projectile_small_mesh"
+		file = "gfx/models/ships/caldari_01/empty_turret.mesh"
+
+		scale = @invis_scale
+	}
+
+	pdxmesh = {
+		name = "caldari_01_turret_missile_medium_mesh"
+		file = "gfx/models/ships/caldari_01/empty_turret.mesh"
+
+		scale = @invis_scale
+	}
+
+	pdxmesh = {
+		name = "caldari_01_turret_xl_mesh"
+		file = "gfx/models/ships/caldari_01/empty_turret.mesh"
+
+		scale = @invis_scale
+	}
+}
+
+### Plataform ###
+
+objectTypes = {
+	pdxmesh = {
+		name = "caldari_01_platform_mesh"
+		file = "gfx/models/ships/caldari_01/caldari_platform.mesh"
+		scale = @invis_scale
+	}
+}
+
+#########################################################################
+#####																#####
+##W##							FRIGATES							##W##
+#####																#####
+#########################################################################
+
+##################### 
+### T1 FRIGATES   ###
+#####################
+objectTypes = {
+
+    pdxmesh = {
+        name = "caldari_01_kestrel_mesh"
+        file = "gfx/models/ships/caldari_01/kestrel.mesh"
+        scale = @invis_scale
+    }
+
+    pdxmesh = {
+        name = "caldari_kestrel_frame_mesh"
+        file = "gfx/models/ships/caldari_01/kestrel_frame.mesh"
+        scale = @invis_scale
+    }
+
+	pdxmesh = {
+        name = "caldari_kestrel_frame_mesh"
+        file = "gfx/models/ships/caldari_01/kestrel_frame.mesh"
+        scale = @invis_scale
+    }
+	
+    pdxmesh = {
+        name = "caldari_condor_mesh"
+        file = "gfx/models/ships/caldari_01/condor.mesh"
+        scale = @invis_scale
+    }
+
+	pdxmesh = {
+        name = "caldari_condor_frame_mesh"
+        file = "gfx/models/ships/caldari_01/condor_frame.mesh"
+        scale = @invis_scale
+    }
+
+    pdxmesh = {
+        name = "caldari_01_griffin_mesh"
+        file = "gfx/models/ships/caldari_01/griffin.mesh"
+        scale = @invis_scale
+    }
+
+	pdxmesh = {
+        name = "caldari_griffin_frame_mesh"
+        file = "gfx/models/ships/caldari_01/griffin_frame.mesh"
+        scale = @invis_scale
+    }
+
+    pdxmesh = {
+        name = "caldari_01_merlin_mesh"
+        file = "gfx/models/ships/caldari_01/merlin.mesh"
+        scale = @invis_scale
+    }
+
+	pdxmesh = {
+        name = "caldari_merlin_frame_mesh"
+        file = "gfx/models/ships/caldari_01/merlin_frame.mesh"
+        scale = @invis_scale
+    }
+}
+
+##################### 
+### t2 FRIGATES   ###
+#####################
+objectTypes = {
+
+    pdxmesh = {
+        name = "caldari_01_Raptor_mesh"
+        file = "gfx/models/ships/caldari_01/t2_raptor.mesh"
+        scale = @invis_scale
+    }
+
+    pdxmesh = {
+        name = "caldari_01_Kirin_mesh"
+        file = "gfx/models/ships/caldari_01/t2_kirin.mesh"
+        scale = @invis_scale
+	}
+
+    pdxmesh = {
+        name = "caldari_01_hawk_mesh"
+        file = "gfx/models/ships/caldari_01/t2_hank.mesh"
+        scale = @invis_scale
+	}
+
+    pdxmesh = {
+        name = "caldari_01_Manticore_mesh"
+        file = "gfx/models/ships/caldari_01/t2_manticore.mesh"
+        scale = @invis_scale
+    }	
+}
+
+
+#########################################################################
+#####																#####
+##W##							DESTROYERS							##W##
+#####																#####
+#########################################################################
+
+## T1 ##
+
+objectTypes = {
+	pdxmesh = {
+		name = "caldari_01_cormorant_mesh"
+		file = "gfx/models/ships/caldari_01/comorant.mesh"
+		scale = @invis_scale
+	}
+
+	pdxmesh = {
+		name = "caldari_01_corax_mesh"
+		file = "gfx/models/ships/caldari_01/corax.mesh"
+		scale = @invis_scale
+
+	}
+}
+
+## t2 ##
+objectTypes = {
+
+	pdxmesh = {
+		name = "caldari_01_stork_mesh"
+		file = "gfx/models/ships/caldari_01/stork.mesh"
+		scale = @invis_scale
+	
+	}
+	
+	pdxmesh = {
+		name = "caldari_01_flycatcher_mesh"
+		file = "gfx/models/ships/caldari_01/flycatcher.mesh"
+		scale = @invis_scale
+	
+	}
+
+
+	pdxmesh = {
+		name = "caldari_01_jackdaw_mesh"
+		file = "gfx/models/ships/caldari_01/jackdaw.mesh"
+		scale = @invis_scale
+	}
+}
+
+
+#########################################################################
+#####																#####
+##W##							CRUISER								##W##
+#####																#####
+#########################################################################
+
+objectTypes = {
+	pdxmesh = {
+		name = "caldari_01_caracal_mesh"
+		file = "gfx/models/ships/caldari_01/caracal.mesh"
+		scale = @invis_scale
+	}
+
+	pdxmesh = {
+		name = "caldari_01_moa_mesh"
+		file = "gfx/models/ships/caldari_01/moa.mesh"
+		scale = @invis_scale
+	}
+
+	pdxmesh = {
+		name = "caldari_01_blackbird_mesh"
+		file = "gfx/models/ships/caldari_01/blackbird.mesh"
+		scale = @invis_scale
+	}
+
+	pdxmesh = {
+		name = "caldari_01_osprey_mesh"
+		file = "gfx/models/ships/caldari_01/osprey.mesh"
+		scale = @invis_scale
+	}
+}
+
+### t2 ### 
+
+objectTypes = {
+	pdxmesh = {
+		name = "caldari_01_basilisk_mesh"
+		file = "gfx/models/ships/caldari_01/t2_basilisk.mesh"
+		scale = @invis_scale
+	}
+
+	pdxmesh = {
+		name = "caldari_01_eagle_mesh"
+		file = "gfx/models/ships/caldari_01/t2_eagle.mesh"
+		scale = @invis_scale
+	}
+
+	pdxmesh = {
+		name = "caldari_01_cerberus_mesh"
+		file = "gfx/models/ships/caldari_01/t2_cerberus.mesh"
+		scale = @invis_scale
+	}
+
+	pdxmesh = {
+		name = "caldari_01_rook_mesh"
+		file = "gfx/models/ships/caldari_01/t2_rook.mesh"
+		scale = @invis_scale
+	}
+}
+
+## T3 Cruiser ##
+objectTypes = {
+	pdxmesh = {
+		name = "caldari_01_tengu_1_mesh"
+		file = "gfx/models/ships/caldari_01/tengu_1111.mesh"
+		scale = @invis_scale
+	}
+}
+
+### other ###
+objectTypes = {
+	pdxmesh = {
+		name = "caldari_01_caracal_STERN_mesh"
+		file = "gfx/models/ships/caldari_01/caracal.mesh"
+		scale = @invis_scale
+	}
+
+	pdxmesh = {
+		name = "caldari_01_caracal_MID_mesh"
+		file = "gfx/models/ships/caldari_01/caracal.mesh"
+		scale = @invis_scale
+	}
+
+	pdxmesh = {
+		name = "caldari_01_caracal_BOW_mesh"
+		file = "gfx/models/ships/caldari_01/caldari_01_caracal.mesh"
+		scale = @invis_scale
+	}
+}
+
+
+
+#########################################################################
+#####																#####
+##W##							SCIENCE								##W##
+#####																#####
+#########################################################################
+
+objectTypes = {
+
+    pdxmesh = {
+        name = "caldari_01_heron_mesh"
+        file = "gfx/models/ships/caldari_01/heron.mesh"
+        scale = @invis_scale
+    }
+}
+
+objectTypes = {
+
+    pdxmesh = {
+        name = "caldari_01_badger_mesh"
+        file = "gfx/models/ships/caldari_01/badger.mesh"
+        scale = @invis_scale
+    }
+}
+
+objectTypes = {
+
+    pdxmesh = {
+        name = "caldari_01_tayra_mesh"
+        file = "gfx/models/ships/caldari_01/tayra.mesh"
+        scale = @invis_scale
+    }
+}
+
+
+
+objectTypes = {
+
+    pdxmesh = {
+        name = "caldari_01_charon_mesh"
+        file = "gfx/models/ships/caldari_01/charon.mesh"
+        scale = @invis_scale
+
+        meshsettings = {
+			name = "charon_hull"
+			index = 0
+			texture_diffuse = "charon_diffuse.dds"
+			texture_normal = "charon_normal.dds"
+			texture_specular = "charon_specular.dds"
+			shader = "PdxMeshShip"
+        }
+    }
+}
+
+
+
+
+
+#########################################################################
+#####																#####
+##W##						BATTLECRUISER							##W##
+#####																#####
+#########################################################################
+
+objectTypes = {
+
+	pdxmesh = {
+		name = "caldari_01_ferox_mesh"
+		file = "gfx/models/ships/caldari_01/ferox.mesh"
+		scale = @invis_scale
+	}
+
+	pdxmesh = {
+		name = "caldari_01_drake_mesh"
+		file = "gfx/models/ships/caldari_01/drake.mesh"
+		scale = @invis_scale
+	}
+
+	pdxmesh = {
+		name = "caldari_01_naga_mesh"
+		file = "gfx/models/ships/caldari_01/naga.mesh"
+		scale = @invis_scale
+	}
+}
+
+#########################################################################
+#####																#####
+##W##						BATTLESHIP								##W##
+#####																#####
+#########################################################################
+
+objectTypes = {
+	pdxmesh = {
+		name = "caldari_01_raven_mesh"
+		file = "gfx/models/ships/caldari_01/raven.mesh"
+		scale = @invis_scale
+	}
+
+	pdxmesh = {
+		name = "caldari_01_rokh_mesh"
+		file = "gfx/models/ships/caldari_01/rokh.mesh"
+		scale = @invis_scale
+	}
+
+	pdxmesh = {
+		name = "caldari_01_scorpion_mesh"
+		file = "gfx/models/ships/caldari_01/scorpion.mesh"
+		scale = @invis_scale
+	}
+}
+
+
+#########################################################################
+#####																#####
+##W##							CARRIER								##W##
+#####																#####
+#########################################################################
+
+objectTypes = {
+	pdxmesh = {
+		name = "caldari_01_chimera_mesh"
+		file = "gfx/models/ships/caldari_01/chimera.mesh"
+		scale = @invis_scale
+	}
+
+	pdxmesh = {
+		name = "caldari_01_minokawa_mesh"
+		file = "gfx/models/ships/caldari_01/minokawa.mesh"
+		scale = @invis_scale
+	}
+
+	pdxmesh = {
+		name = "caldari_01_chimera_old_mesh"
+		file = "gfx/models/ships/caldari_01/caldari_01_chimera.mesh"
+		scale = @invis_scale
+	}
+}
+
+#########################################################################
+#####																#####
+##W##							DREADNOUGHT							##W##
+#####																#####
+#########################################################################
+
+objectTypes = {
+	pdxmesh = {
+		name = "caldari_01_phoenix_mesh"
+		file = "gfx/models/ships/caldari_01/phoenix.mesh"
+		scale = @invis_scale
+	}
+	pdxmesh = {
+		name = "caldari_01_phoenix_citadel_mesh"
+		file = "gfx/models/ships/caldari_01/phoenix_citadel.mesh"
+		scale = @invis_scale
+	}
+}
+
+
+#########################################################################
+#####																#####
+##W##						MOTHER	SHIP							##W##
+#####																#####
+#########################################################################
+
+objectTypes = {
+	pdxmesh = {
+		name = "caldari_01_wyvern_mesh"
+		file = "gfx/models/ships/caldari_01/wyvern.mesh"
+		scale = 0.2
+
+	}
+}
+
+
+#########################################################################
+#####																#####
+##W##							TITAN								##W##
+#####																#####
+#########################################################################
+
+objectTypes = {
+	pdxmesh = {
+		name = "caldari_01_leviathan_bow_mesh"
+		file = "gfx/models/ships/caldari_01/leviathan_bow.mesh"
+		scale = @invis_scale
+	}
+	
+	pdxmesh = {
+		name = "caldari_01_leviathan_mesh"
+		file = "gfx/models/ships/caldari_01/leviathan.mesh"
+		scale = @invis_scale
+	}
+
+	pdxmesh = {
+		name = "caldari_01_leviathan_stern_mesh"
+		file = "gfx/models/ships/caldari_01/leviathan_stern.mesh"
+		scale = @invis_scale
+	}
+
+	pdxmesh = {
+		name = "leviathan_wreck_mesh"
+		file = "gfx/models/ships/caldari_01/leviathan_wreck.mesh"
+		scale = @invis_scale
+	}
+
+	
+}
+
+
+
+

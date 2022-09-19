@@ -1,0 +1,35 @@
+AMR = {
+    randomized = no
+    portraits = {
+        "human"
+    }
+    graphical_culture = amarr_01
+    move_pop_sound_effect = "moving_pop_confirmation"
+ }
+
+ CLD = {
+    randomized = no
+    portraits = {
+        "human"
+    }
+    graphical_culture = caldari_01
+    move_pop_sound_effect = "moving_pop_confirmation"
+ }
+
+ GAL = {
+    randomized = no
+    portraits = {
+        "human"
+    }
+    graphical_culture = gallente_01
+    move_pop_sound_effect = "moving_pop_confirmation"
+ }
+
+ MIN = {
+    randomized = no
+    portraits = {
+        "human"
+    }
+    graphical_culture = minmatar_01
+    move_pop_sound_effect = "moving_pop_confirmation"
+ }

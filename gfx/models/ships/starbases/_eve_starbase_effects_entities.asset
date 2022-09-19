@@ -1,0 +1,1993 @@
+# reload assets gfx/models/ships/starbases/_eve_starbase_effects_entities.asset
+
+# ship designer scale #
+@astrahus_scale = 1.0
+@fortizar_scale = 0.8
+@keepstar_scale = 1.0
+
+
+# in game size scale #
+@effect_astrhaus_physical_scale = 1.0
+@effect_fortizar_circle_physical_scale = 2.0
+@effect_keepstar_circle_physical_scale = 4.0
+
+@effect_circle_astrhaus_physical_scale = 20.0
+@effect_circle_keepstar_physical_scale = 3.0
+@effect_circle_raitaru_physical_scale = 2.0
+@effect_circle_sansha_physical_scale = 10
+
+@effect_logo_amarr_physical_scale = 20
+@effect_logo_keepstar_physical_scale = 4.0
+@effect_logo_physical_scale = 4.0
+
+@shield_physical_scale = 10.0
+
+############## TESTE EFFECT ###############
+
+
+#############	Shield Effect	##################
+entity = {
+	name = "shield_sphere_entity"
+	pdxmesh = "shield_sphere_mesh"
+	scale = @shield_physical_scale
+	
+	game_data = {
+		uv_animation_speed   = 0.07
+		uv_animation_direction  = { -1.0 0.5 }
+		emissive_recolor_crunch = 10
+	}
+}
+
+entity = {
+	name = "shield_sphere_large_entity"
+	pdxmesh = "shield_sphere_mesh"
+	scale = 20
+	
+	game_data = {
+		uv_animation_speed   = 0.07
+		uv_animation_direction  = { -1.0 0.5 }
+		emissive_recolor_crunch = 10
+	}
+}
+
+
+entity = {
+	name = "shield_sphere_gallente_entity"
+	pdxmesh = "shield_sphere_gallente_mesh"
+	scale = @shield_physical_scale
+	
+	game_data = {
+		uv_animation_speed   = 0.07
+		uv_animation_direction  = { -1.0 0.5 }
+		emissive_recolor_crunch = 10
+	}
+}
+
+######### 
+# Logos #
+#########
+entity = {
+	name = "effect_logo_amarr_entity"
+	pdxmesh = "logo_amarr_mesh"
+	
+	scale = @effect_logo_amarr_physical_scale
+	
+	game_data = {
+		size = @keepstar_scale
+		emissive_recolor_crunch = 2.0
+		bloom_factor			= 0.7
+		uv_animation_speed 		= .2
+		uv_animation_direction 	= { -1.0 0.0 }
+		
+	}
+}
+
+
+entity = {
+	name = "effect_logo_caldari_entity"
+	pdxmesh = "logo_caldari_mesh"
+	
+	scale = @effect_logo_amarr_physical_scale
+	
+	game_data = {
+		size = @keepstar_scale
+		emissive_recolor_crunch = 2.0
+		bloom_factor			= 0.7
+		uv_animation_speed 		= .2
+		uv_animation_direction 	= { -1.0 0.0 }
+		
+	}
+}
+
+entity = {
+	name = "effect_logo_gallente_entity"
+	pdxmesh = "logo_gallente_mesh"
+	
+	scale = @effect_logo_amarr_physical_scale
+	
+	game_data = {
+		size = @keepstar_scale
+		emissive_recolor_crunch = 2.0
+		bloom_factor			= 0.7
+		uv_animation_speed 		= .2
+		uv_animation_direction 	= { -1.0 0.0 }
+		
+	}
+}
+
+entity = {
+	name = "effect_logo_minmatar_entity"
+	pdxmesh = "logo_minmatar_mesh"
+	
+	scale = @effect_logo_amarr_physical_scale
+	
+	game_data = {
+		size = @keepstar_scale
+		emissive_recolor_crunch = 2.0
+		bloom_factor			= 0.7
+		uv_animation_speed 		= .2
+		uv_animation_direction 	= { -1.0 0.0 }
+		
+	}
+}
+
+
+entity = {
+	name = "effect_logo_angel_entity"
+	pdxmesh = "logo_angel_mesh"
+	
+	scale = @effect_logo_amarr_physical_scale
+	
+	game_data = {
+		size = @keepstar_scale
+		emissive_recolor_crunch = 2.0
+		bloom_factor			= 0.7
+		uv_animation_speed 		= .2
+		uv_animation_direction 	= { -1.0 0.0 }
+		
+	}
+}
+
+entity = {
+	name = "effect_logo_bloodraiders_entity"
+	pdxmesh = "logo_bloodraiders_mesh"
+	
+	scale = @effect_logo_physical_scale
+	
+
+	game_data = {
+		size = @keepstar_scale
+		emissive_recolor_crunch = 2.0
+		bloom_factor			= 0.7
+		uv_animation_speed 		= .2
+		uv_animation_direction 	= { -1.0 0.0 }
+		
+	}
+}
+
+entity = {
+	name = "effect_logo_guristas_entity"
+	pdxmesh = "logo_guristas_mesh"
+	
+	scale = @effect_logo_amarr_physical_scale
+	
+	game_data = {
+		size = @keepstar_scale
+		emissive_recolor_crunch = 2.0
+		bloom_factor			= 0.7
+		uv_animation_speed 		= .2
+		uv_animation_direction 	= { -1.0 0.0 }
+		
+	}
+}
+
+entity = {
+	name = "effect_logo_serpentis_entity"
+	pdxmesh = "logo_serpentis_mesh"
+	
+	scale = @effect_logo_amarr_physical_scale
+	
+	game_data = {
+		size = @keepstar_scale
+		emissive_recolor_crunch = 2.0
+		bloom_factor			= 0.7
+		uv_animation_speed 		= .2
+		uv_animation_direction 	= { -1.0 0.0 }
+		
+	}
+}
+
+entity = {
+	name = "effect_sansha_logo_entity"
+	pdxmesh = "logo_sansha_mesh"
+	
+	scale = @effect_logo_physical_scale
+	
+
+	game_data = {
+		size = @keepstar_scale
+		emissive_recolor_crunch = 2.0
+		bloom_factor			= 0.7
+		uv_animation_speed 		= .2
+		uv_animation_direction 	= { -1.0 0.0 }
+		
+	}
+}
+
+entity = {
+	name = "effect_jita_logo_entity"
+	pdxmesh = "logo_jita_mesh"
+	
+	scale = 2
+	
+
+	game_data = {
+		size = @keepstar_scale
+		emissive_recolor_crunch = 2.0
+		bloom_factor			= 0.7
+		uv_animation_speed 		= .2
+		uv_animation_direction 	= { -1.0 0.0 }
+		
+	}
+}
+
+	################# 
+	#	Upwell Logo #
+	#################
+	
+	# Athanor
+	entity = {
+		name = effect_athanor_logo_entity
+		pdxmesh = "effect_athanor_logo_mesh"
+		
+		scale = @effect_circle_astrhaus_physical_scale
+		
+
+		game_data = {
+			size = @keepstar_scale
+			emissive_recolor_crunch = 2.0
+			bloom_factor			= 0.7
+			uv_animation_speed 		= .2
+			uv_animation_direction 	= { -1.0 0.0 }
+			
+		}
+	}
+
+	entity = {
+		name = effect_athanor_logo_static_entity
+		pdxmesh = "effect_athanor_logo_mesh"
+		
+		scale = @effect_circle_astrhaus_physical_scale
+		
+
+		game_data = {
+			size = @keepstar_scale
+			emissive_recolor_crunch = 2.0
+			bloom_factor			= 0.7
+			#uv_animation_speed 		= .2
+			#uv_animation_direction 	= { -1.0 0.0 }
+			
+		}
+	}
+
+	# Tatara
+	entity = {
+		name = effect_tatara_logo_entity
+		pdxmesh = "effect_tatara_logo_mesh"
+		
+		scale = @effect_circle_astrhaus_physical_scale
+		
+
+		game_data = {
+			size = @keepstar_scale
+			emissive_recolor_crunch = 2.0
+			bloom_factor			= 0.7
+			uv_animation_speed 		= .2
+			uv_animation_direction 	= { -1.0 0.0 }
+			
+		}
+	}
+
+	entity = {
+		name = effect_tatara_logo_static_entity
+		pdxmesh = "effect_tatara_logo_mesh"
+		
+		scale = @effect_circle_astrhaus_physical_scale
+		
+
+		game_data = {
+			size = @keepstar_scale
+			emissive_recolor_crunch = 2.0
+			bloom_factor			= 0.7
+			#uv_animation_speed 		= .2
+			#uv_animation_direction 	= { -1.0 0.0 }
+			
+		}
+	}
+
+	# Asthraus
+	entity = {
+		name = "effect_astrhaus_logo_entity"
+		pdxmesh = "effect_astrhaus_logo_mesh"
+		
+		scale = @effect_astrhaus_physical_scale
+		
+
+		game_data = {
+			size = @keepstar_scale
+			emissive_recolor_crunch = 2.0
+			bloom_factor			= 0.7
+			uv_animation_speed 		= .2
+			uv_animation_direction 	= { -1.0 0.0 }
+			
+		}
+	}
+
+	# fortizar
+	entity = {
+		name = "effect_fortizar_logo_entity"
+		pdxmesh = "effect_fortizar_logo_mesh"
+		
+		scale = @effect_circle_astrhaus_physical_scale
+		
+
+		game_data = {
+			size = @keepstar_scale
+			emissive_recolor_crunch = 2.0
+			bloom_factor			= 0.7
+			uv_animation_speed 		= .2
+			uv_animation_direction 	= { -1.0 0.0 }
+			
+		}
+	}
+
+	entity = {
+		name = "effect_keepstar_logo_entity"
+		pdxmesh = "effect_keepstar_logo_mesh"
+		
+		scale = @effect_logo_keepstar_physical_scale
+		
+
+		game_data = {
+			size = @keepstar_scale
+			emissive_recolor_crunch = 2.0
+			bloom_factor			= 0.7
+			uv_animation_speed 		= .2
+			uv_animation_direction 	= { -1.0 0.0 }
+			
+		}
+	}
+
+	entity = {
+		name = "effect_raitaru_logo_entity"
+		pdxmesh = "effect_raitaru_logo_mesh"
+		
+		scale = @effect_circle_astrhaus_physical_scale
+		
+
+		game_data = {
+			size = @keepstar_scale
+			emissive_recolor_crunch = 2.0
+			bloom_factor			= 0.7
+			#uv_animation_speed 		= .2
+			#uv_animation_direction 	= { -1.0 0.0 }
+			
+		}
+}
+
+############## Citadel Circle effect ###############
+entity = {
+	name = "station_effect_entity"
+	pdxmesh = "station_effect_mesh"
+	
+	scale = @effect_circle_raitaru_physical_scale
+	
+	default_state = "idle"
+	state = { name = "idle" state_time = 5
+		event = { time = 0 node = "light_locator_01" particle = "citadel_light_orange_regular_effect" trigger_once = yes keep_particle = yes }
+	}
+
+	game_data = {
+		size = @keepstar_scale
+		emissive_recolor_crunch = 2.0
+		bloom_factor			= 0.7
+		#uv_animation_speed 		= .2
+		#uv_animation_direction 	= { -1.0 0.0 }
+		
+	}
+}
+
+entity = {
+	name = "fortizar_effect_entity"
+	pdxmesh = "station_effect_mesh"
+	
+	scale = @effect_fortizar_circle_physical_scale
+	
+
+	game_data = {
+		size = @keepstar_scale
+		#emissive_recolor_crunch = 2.0
+		#bloom_factor			= 0.7
+		#uv_animation_speed 		= .2
+		#uv_animation_direction 	= { -1.0 0.0 }
+		
+	}
+}
+
+entity = {
+	name = "sansha_effect_entity"
+	pdxmesh = "station_effect_mesh"
+	
+	scale = @effect_circle_sansha_physical_scale
+	
+
+	game_data = {
+		size = @keepstar_scale
+		#emissive_recolor_crunch = 2.0
+		#bloom_factor			= 0.7
+		#uv_animation_speed 		= .2
+		#uv_animation_direction 	= { -1.0 0.0 }
+		
+	}
+}
+
+entity = {
+	name = "light_trail_entity"
+	pdxmesh = "light_trail_mesh"
+	
+	scale = @effect_circle_sansha_physical_scale
+	
+	game_data = {
+		uv_animation_speed 		= 0.2
+		#uv_animation_direction 	= { 0.4 -1.0 }
+		uv_animation_direction 	= { 0.4 0.0 }
+		bloom_factor = 1.5
+	}
+}
+
+
+entity = {
+	name = "keepstar_effect_entity"
+	pdxmesh = "station_effect_mesh"
+	
+	scale = @effect_keepstar_circle_physical_scale
+	
+
+	game_data = {
+		size = @keepstar_scale
+		#emissive_recolor_crunch = 2.0
+		#bloom_factor			= 0.7
+		#uv_animation_speed 		= .2
+		#uv_animation_direction 	= { -1.0 0.0 }
+		
+	}
+}
+
+###########################
+entity = {
+	name = "effect_astrhaus_circle_entity"
+	pdxmesh = "effect_citadel_mesh"
+	
+	scale = @effect_circle_astrhaus_physical_scale
+	
+
+	game_data = {
+		size = @keepstar_scale
+		emissive_recolor_crunch = 2.0
+		bloom_factor			= 0.7
+		uv_animation_speed 		= .2
+		uv_animation_direction 	= { -1.0 0.1 }
+		
+	}
+}
+
+entity = {
+	name = "effect_keepstar_circle_entity"
+	pdxmesh = "effect_citadel_mesh"
+	
+	scale = @effect_circle_keepstar_physical_scale
+	
+	game_data = {
+		size = @keepstar_scale
+		emissive_recolor_crunch = 2.0
+		bloom_factor			= 0.7
+		uv_animation_speed 		= .2
+		uv_animation_direction 	= { -1.0 0.1 }
+		
+	}
+}
+
+#####################
+# Forcefield effect	#
+#####################
+
+entity = {
+	name = "jita_station_effect_entity"
+	pdxmesh = "jita_station_effect_mesh"
+	
+	#scale = @fortizar_physical_scale
+	scale = 1.0
+
+	game_data = {
+		size = @keepstar_scale
+		emissive_recolor_crunch = 2.0
+		bloom_factor			= 0.7
+		uv_animation_speed 		= .2
+		uv_animation_direction 	= { -2.0 0.1 }
+		
+	}
+}
+
+entity = {
+	name = "jita_station_effect2_entity"
+	pdxmesh = "jita_station_effect_mesh"
+	
+	#scale = @fortizar_physical_scale
+	scale = 1.0
+
+	game_data = {
+		size = @keepstar_scale
+		emissive_recolor_crunch = 2.0
+		bloom_factor			= 0.7
+		uv_animation_speed 		= .2
+		uv_animation_direction 	= { 1.0 0.1 }
+		
+	}
+}
+
+# not used
+entity = {
+	name = "effect_fortizar_entity"
+	pdxmesh = "effect_citadel_fortizar_mesh"
+	
+	#scale = @fortizar_physical_scale
+	scale = 1.0
+
+	game_data = {
+		size = @keepstar_scale
+		emissive_recolor_crunch = 2.0
+		bloom_factor			= 0.7
+		uv_animation_speed 		= .2
+		uv_animation_direction 	= { -2.0 0.1 }
+		
+	}
+}
+
+# not used
+entity = {
+	name = "effect_fortizar2_entity"
+	pdxmesh = "effect_citadel_fortizar_mesh"
+	
+	#scale = @fortizar_physical_scale
+	scale = 1.0
+
+	game_data = {
+		size = @keepstar_scale
+		emissive_recolor_crunch = 2.0
+		bloom_factor			= 0.7
+		uv_animation_speed 		= .2
+		uv_animation_direction 	= { 1.0 0.1 }
+		
+	}
+}
+
+########
+# NEW  #
+########
+entity = {
+	name = "effect_fortizar_new_entity"
+	pdxmesh = "effect_citadel_fortizar2_mesh"
+	
+	#scale = @fortizar_physical_scale
+	scale = 1.0
+
+	game_data = {
+		size = @keepstar_scale
+		emissive_recolor_crunch = 2.0
+		bloom_factor			= 0.7
+		uv_animation_speed 		= -1
+		uv_animation_direction 	= { -2.0 0.1 }
+		
+	}
+}
+
+entity = {
+	name = "effect_fortizar_new2_entity"
+	pdxmesh = "effect_citadel_fortizar2_mesh"
+	
+	#scale = @fortizar_physical_scale
+	scale = 1.0
+
+	game_data = {
+		size = @keepstar_scale
+		emissive_recolor_crunch = 2.0
+		bloom_factor			= 0.7
+		uv_animation_speed 		= 1
+		uv_animation_direction 	= { 2.0 0.1 }
+		
+	}
+}
+
+entity = {
+	name = "effect_keepstar_entity"
+	pdxmesh = "effect_citadel_keepstar_mesh"
+	
+	#scale = @fortizar_physical_scale
+	scale = 1.0
+
+	game_data = {
+		size = @keepstar_scale
+		emissive_recolor_crunch = 2.0
+		bloom_factor			= 0.7
+		uv_animation_speed 		= 0.05
+		uv_animation_direction 	= { -2.0 0.1 }
+		
+	}
+}
+
+entity = {
+	name = "effect_keepstar2_entity"
+	pdxmesh = "effect_citadel_keepstar_mesh"
+	
+	#scale = @fortizar_physical_scale
+	scale = 1.0
+
+	game_data = {
+		size = @keepstar_scale
+		emissive_recolor_crunch = 2.0
+		bloom_factor			= 0.7
+		uv_animation_speed 		= 0.05
+		uv_animation_direction 	= { 2.0 0.1 }
+		
+	}
+}
+
+
+@boxy = 2.5
+
+#	entity = {
+#		name = "enclave_station_entity"
+#		
+#		default_state = "idle"
+#		state = { name = "idle"	state_time = 5 }
+#		state = { name = "death" state_time = 3 looping = no 
+#			event = { time = 2.9 particle = "large_station_explosion_particle" keep_particle = yes trigger_once = yes sound = { soundeffect = "station_explosion_large" } }
+#		}
+#		scale = 3
+#	}
+
+entity = {
+	name = "azure_dust_cloud_entity_small"
+	pdxmesh = "space_dust_01_mesh"
+	
+	meshsettings = {
+	name = "spaceDustShape"
+	texture_diffuse = "space_dust_07_diffuse.dds"
+	}
+	
+	default_state = "idle"
+	state = { name = "idle" 
+		start_event = { time = 0 particle = "green_dust_cloud_effect" keep_particle = yes trigger_once = yes }
+	}
+	scale = 1
+}
+
+entity = {
+	name = "azure_dust_cloud_entity_medium"
+	pdxmesh = "space_dust_01_mesh"
+	
+	meshsettings = {
+	name = "spaceDustShape"
+	texture_diffuse = "space_dust_07_diffuse.dds"
+	}
+	
+	default_state = "idle"
+	state = { name = "idle" 
+		start_event = { time = 0 particle = "green_dust_cloud_effect" keep_particle = yes trigger_once = yes }
+	}
+	scale = 5
+}
+
+entity = {
+	name = "azure_dust_cloud_entity_large"
+	pdxmesh = "space_dust_01_mesh"
+	
+	meshsettings = {
+	name = "spaceDustShape"
+	texture_diffuse = "space_dust_07_diffuse.dds"
+	}
+	
+	default_state = "idle"
+	state = { name = "idle" 
+		start_event = { time = 0 particle = "green_dust_cloud_effect" keep_particle = yes trigger_once = yes }
+	}
+	scale = 15
+}
+
+entity = {
+	name = "azure_cloud_entity_small"
+	pdxmesh = "space_dust_02_mesh"
+	
+	meshsettings = {
+	name = "spaceDustShape"
+	texture_diffuse = "spacedust_galaxy_diffuse.dds"
+	}
+	
+	default_state = "idle"
+	state = { name = "idle" 
+		start_event = { time = 0 particle = "azure_dust_cloud_effect" keep_particle = yes trigger_once = yes }
+	}
+	scale = 3
+}
+
+entity = {
+	name = "azure_cloud_entity_medium"
+	pdxmesh = "space_dust_02_mesh"
+	
+	meshsettings = {
+	name = "spaceDustShape"
+	texture_diffuse = "spacedust_galaxy_diffuse.dds"
+	}
+	
+	default_state = "idle"
+	state = { name = "idle" 
+		start_event = { time = 0 particle = "azure_dust_cloud_effect" keep_particle = yes trigger_once = yes }
+	}
+	scale = 10
+}
+
+entity = {
+	name = "azure_cloud_entity_large"
+	pdxmesh = "space_dust_02_mesh"
+	
+	meshsettings = {
+	name = "spaceDustShape"
+	texture_diffuse = "spacedust_galaxy_diffuse.dds"
+	}
+	
+	default_state = "idle"
+	state = { name = "idle" 
+		start_event = { time = 0 particle = "azure_dust_cloud_effect" keep_particle = yes trigger_once = yes }
+	}
+	scale = 20
+}
+
+entity = {
+	name = "blue_cloud_entity_small"
+	pdxmesh = "space_dust_02_mesh"
+	
+	meshsettings = {
+	name = "spaceDustShape"
+	texture_diffuse = "space_dust_06_diffuse.dds"
+	}
+	
+	default_state = "idle"
+	state = { name = "idle" 
+		start_event = { time = 0 particle = "dark_dust_cloud_effect" keep_particle = yes trigger_once = yes }
+	}
+	scale = 1
+}
+
+entity = {
+	name = "blue_cloud_entity_medium"
+	pdxmesh = "space_dust_02_mesh"
+	
+	meshsettings = {
+	name = "spaceDustShape"
+	texture_diffuse = "space_dust_06_diffuse.dds"
+	}
+	
+	default_state = "idle"
+	state = { name = "idle" 
+		start_event = { time = 0 particle = "dark_dust_cloud_effect" keep_particle = yes trigger_once = yes }
+	}
+	scale = 5
+}
+
+entity = {
+	name = "blue_cloud_entity_large"
+	pdxmesh = "space_dust_02_mesh"
+	
+	meshsettings = {
+	name = "spaceDustShape"
+	texture_diffuse = "space_dust_06_diffuse.dds"
+	}
+	
+	default_state = "idle"
+	state = { name = "idle" 
+		start_event = { time = 0 particle = "dark_dust_cloud_effect" keep_particle = yes trigger_once = yes }
+	}
+	scale = 15
+}
+
+entity = {
+	name = "red_dust_cloud_entity_small"
+	pdxmesh = "space_dust_01_mesh"
+	
+	meshsettings = {
+	name = "spaceDustShape"
+	texture_diffuse = "space_dust_03_diffuse.dds"
+	}
+	
+	default_state = "idle"
+	state = { name = "idle" 
+		start_event = { time = 0 particle = "orange_dust_cloud_effect" keep_particle = yes trigger_once = yes }
+	}
+	scale = 1
+}
+
+entity = {
+	name = "red_dust_cloud_entity_medium"
+	pdxmesh = "space_dust_01_mesh"
+	
+	meshsettings = {
+	name = "spaceDustShape"
+	texture_diffuse = "space_dust_03_diffuse.dds"
+	}
+	
+	default_state = "idle"
+	state = { name = "idle" 
+		start_event = { time = 0 particle = "orange_dust_cloud_effect" keep_particle = yes trigger_once = yes }
+	}
+	scale = 5
+}
+
+entity = {
+	name = "red_dust_cloud_entity_large"
+	pdxmesh = "space_dust_01_mesh"
+	
+	meshsettings = {
+	name = "spaceDustShape"
+	texture_diffuse = "space_dust_03_diffuse.dds"
+	}
+	default_state = "idle"
+	state = { name = "idle" 
+		start_event = { time = 0 particle = "orange_dust_cloud_effect" keep_particle = yes trigger_once = yes }
+	}
+	scale = 15
+}
+
+entity = {
+	name = "red_cloud_entity_small"
+	pdxmesh = "space_dust_02_mesh"
+	
+	meshsettings = {
+	name = "spaceDustShape"
+	texture_diffuse = "spacedust_galaxy_diffuse.dds"
+	}
+	
+	default_state = "idle"
+	state = { name = "idle" 
+		start_event = { time = 0 particle = "red_dust_cloud_effect" keep_particle = yes trigger_once = yes }
+	}
+	scale = 3
+}
+
+entity = {
+	name = "red_cloud_entity_medium"
+	pdxmesh = "space_dust_02_mesh"
+	
+	meshsettings = {
+	name = "spaceDustShape"
+	texture_diffuse = "spacedust_galaxy_diffuse.dds"
+	}
+	
+	default_state = "idle"
+	state = { name = "idle" 
+		start_event = { time = 0 particle = "red_dust_cloud_effect" keep_particle = yes trigger_once = yes }
+	}
+	scale = 10
+}
+
+entity = {
+	name = "red_cloud_entity_large"
+	
+	pdxmesh = "space_dust_02_mesh"
+	
+	meshsettings = {
+	name = "spaceDustShape"
+	texture_diffuse = "spacedust_galaxy_diffuse.dds"
+	}
+	default_state = "idle"
+	state = { name = "idle" 
+		start_event = { time = 0 particle = "red_dust_cloud_effect" keep_particle = yes trigger_once = yes }
+	}
+	scale = 20
+}
+
+entity = {
+	name = "green_dust_cloud_entity_small"
+	pdxmesh = "space_dust_01_mesh"
+	
+	meshsettings = {
+	name = "spaceDustShape"
+	texture_diffuse = "space_dust_02_diffuse.dds"
+	}
+	
+	default_state = "idle"
+	state = { name = "idle" 
+		start_event = { time = 0 particle = "yellow_dust_cloud_effect" keep_particle = yes trigger_once = yes }
+	}
+	scale = 1
+}
+
+entity = {
+	name = "green_dust_cloud_entity_medium"
+	pdxmesh = "space_dust_01_mesh"
+	
+	meshsettings = {
+	name = "spaceDustShape"
+	texture_diffuse = "space_dust_02_diffuse.dds"
+	}
+	
+	default_state = "idle"
+	state = { name = "idle" 
+		start_event = { time = 0 particle = "yellow_dust_cloud_effect" keep_particle = yes trigger_once = yes }
+	}
+	scale = 5
+}
+
+entity = {
+	name = "green_dust_cloud_entity_large"
+	pdxmesh = "space_dust_01_mesh"
+	
+	meshsettings = {
+	name = "spaceDustShape"
+	texture_diffuse = "space_dust_02_diffuse.dds"
+	}
+	
+	default_state = "idle"
+	state = { name = "idle" 
+		start_event = { time = 0 particle = "yellow_dust_cloud_effect" keep_particle = yes trigger_once = yes }
+	}
+	scale = 15
+}
+
+entity = {
+	name = "green_cloud_entity_small"
+	pdxmesh = "space_dust_02_mesh"
+	
+	meshsettings = {
+	name = "spaceDustShape"
+	texture_diffuse = "spacedust_galaxy_diffuse.dds"
+	}
+	
+	default_state = "idle"
+	state = { name = "idle" 
+		start_event = { time = 0 particle = "green_dust_cloud_effect" keep_particle = yes trigger_once = yes }
+	}
+	scale = 3
+}
+
+entity = {
+	name = "green_cloud_entity_medium"
+	pdxmesh = "space_dust_02_mesh"
+	
+	meshsettings = {
+	name = "spaceDustShape"
+	texture_diffuse = "spacedust_galaxy_diffuse.dds"
+	}
+	
+	default_state = "idle"
+	state = { name = "idle" 
+		start_event = { time = 0 particle = "green_dust_cloud_effect" keep_particle = yes trigger_once = yes }
+	}
+	scale = 10
+}
+
+entity = {
+	name = "green_cloud_entity_large"
+	pdxmesh = "space_dust_02_mesh"
+	
+	meshsettings = {
+	name = "spaceDustShape"
+	texture_diffuse = "spacedust_galaxy_diffuse.dds"
+	}
+	
+	default_state = "idle"
+	state = { name = "idle" 
+		start_event = { time = 0 particle = "green_dust_cloud_effect" keep_particle = yes trigger_once = yes }
+	}
+	scale = 20
+}
+
+entity = {
+	name = "purple_dust_cloud_entity_small"
+	pdxmesh = "space_dust_01_mesh"
+	
+	meshsettings = {
+	name = "spaceDustShape"
+	texture_diffuse = "space_dust_01_diffuse.dds"
+	}
+	
+	default_state = "idle"
+	state = { name = "idle" 
+		start_event = { time = 0 particle = "dark_dust_cloud_effect" keep_particle = yes trigger_once = yes }
+	}
+	scale = 1
+}
+
+entity = {
+	name = "purple_dust_cloud_entity_medium"
+	pdxmesh = "space_dust_01_mesh"
+	
+	meshsettings = {
+	name = "spaceDustShape"
+	texture_diffuse = "space_dust_01_diffuse.dds"
+	}
+	
+	default_state = "idle"
+	state = { name = "idle" 
+		start_event = { time = 0 particle = "dark_dust_cloud_effect" keep_particle = yes trigger_once = yes }
+	}
+	scale = 5
+}
+
+entity = {
+	name = "purple_dust_cloud_entity_large"
+	pdxmesh = "space_dust_01_mesh"
+	
+	meshsettings = {
+	name = "spaceDustShape"
+	texture_diffuse = "space_dust_01_diffuse.dds"
+	}
+	
+	default_state = "idle"
+	state = { name = "idle" 
+		start_event = { time = 0 particle = "dark_dust_cloud_effect" keep_particle = yes trigger_once = yes }
+	}
+	scale = 15
+}
+
+entity = {
+	name = "purple_cloud_entity_small"
+	pdxmesh = "space_dust_02_mesh"
+	
+	meshsettings = {
+	name = "spaceDustShape"
+	texture_diffuse = "spacedust_galaxy_diffuse.dds"
+	}
+	
+	default_state = "idle"
+	state = { name = "idle" 
+		start_event = { time = 0 particle = "purple_dust_cloud_effect" keep_particle = yes trigger_once = yes }
+	}
+	scale = 3
+}
+
+entity = {
+	name = "purple_cloud_entity_medium"
+	pdxmesh = "space_dust_02_mesh"
+	
+	meshsettings = {
+	name = "spaceDustShape"
+	texture_diffuse = "spacedust_galaxy_diffuse.dds"
+	}
+	
+	default_state = "idle"
+	state = { name = "idle" 
+		start_event = { time = 0 particle = "purple_dust_cloud_effect" keep_particle = yes trigger_once = yes }
+	}
+	scale = 10
+}
+
+entity = {
+	name = "purple_cloud_entity_large"
+	pdxmesh = "space_dust_02_mesh"
+	
+	meshsettings = {
+	name = "spaceDustShape"
+	texture_diffuse = "spacedust_galaxy_diffuse.dds"
+	}
+	
+	default_state = "idle"
+	state = { name = "idle" 
+		start_event = { time = 0 particle = "purple_dust_cloud_effect" keep_particle = yes trigger_once = yes }
+	}
+	scale = 20
+}
+
+entity = {
+	name = "orange_dust_cloud_entity_small"
+	pdxmesh = "space_dust_01_mesh"
+	
+	meshsettings = {
+	name = "spaceDustShape"
+	texture_diffuse = "space_dust_05_diffuse.dds"
+	}
+	
+	default_state = "idle"
+	state = { name = "idle" 
+		start_event = { time = 0 particle = "yellow_dust_cloud_effect" keep_particle = yes trigger_once = yes }
+	}
+	scale = 1
+}
+entity = {
+	name = "orange_dust_cloud_entity_medium"
+	pdxmesh = "space_dust_01_mesh"
+	
+	meshsettings = {
+	name = "spaceDustShape"
+	texture_diffuse = "space_dust_05_diffuse.dds"
+	}
+	
+	default_state = "idle"
+	state = { name = "idle" 
+		start_event = { time = 0 particle = "yellow_dust_cloud_effect" keep_particle = yes trigger_once = yes }
+	}
+	scale = 5
+}
+entity = {
+	name = "orange_dust_cloud_entity_large"
+	pdxmesh = "space_dust_01_mesh"
+	
+	meshsettings = {
+	name = "spaceDustShape"
+	texture_diffuse = "space_dust_05_diffuse.dds"
+	}
+	
+	default_state = "idle"
+	state = { name = "idle" 
+		start_event = { time = 0 particle = "yellow_dust_cloud_effect" keep_particle = yes trigger_once = yes }
+	}
+	scale = 15
+}
+
+entity = {
+	name = "blue_dust_cloud_entity_small"
+	pdxmesh = "space_dust_01_mesh"
+	
+	meshsettings = {
+	name = "spaceDustShape"
+	texture_diffuse = "space_dust_06_diffuse.dds"
+	}
+	
+	default_state = "idle"
+	state = { name = "idle" 
+		start_event = { time = 0 particle = "dark_dust_cloud_effect" keep_particle = yes trigger_once = yes }
+	}
+	scale = 1
+}
+entity = {
+	name = "blue_dust_cloud_entity_medium"
+	pdxmesh = "space_dust_01_mesh"
+	
+	meshsettings = {
+	name = "spaceDustShape"
+	texture_diffuse = "space_dust_06_diffuse.dds"
+	}
+	
+	default_state = "idle"
+	state = { name = "idle" 
+		start_event = { time = 0 particle = "dark_dust_cloud_effect" keep_particle = yes trigger_once = yes }
+	}
+	scale = 5
+}
+entity = {
+	name = "blue_dust_cloud_entity_large"
+	pdxmesh = "space_dust_01_mesh"
+	
+	meshsettings = {
+	name = "spaceDustShape"
+	texture_diffuse = "space_dust_06_diffuse.dds"
+	}
+	
+	default_state = "idle"
+	state = { name = "idle" 
+		start_event = { time = 0 particle = "dark_dust_cloud_effect" keep_particle = yes trigger_once = yes }
+	}
+	scale = 15
+}
+
+entity = {
+	name = "black_dust_cloud_entity_small"
+	pdxmesh = "space_dust_02_mesh"
+	
+	meshsettings = {
+	name = "spaceDustShape"
+	texture_diffuse = "spacedust_galaxy_diffuse.dds"
+	}
+	
+	default_state = "idle"
+	state = { name = "idle" 
+		start_event = { time = 0 particle = "black_dust_cloud_effect" keep_particle = yes trigger_once = yes }
+	}
+	scale = 1
+}
+entity = {
+	name = "black_dust_cloud_entity_medium"
+	pdxmesh = "space_dust_02_mesh"
+	
+	meshsettings = {
+	name = "spaceDustShape"
+	texture_diffuse = "spacedust_galaxy_diffuse.dds"
+	}
+	
+	default_state = "idle"
+	state = { name = "idle" 
+		start_event = { time = 0 particle = "black_dust_cloud_effect" keep_particle = yes trigger_once = yes }
+	}
+	scale = 5
+}
+entity = {
+	name = "black_dust_cloud_entity_large"
+	pdxmesh = "space_dust_02_mesh"
+	
+	meshsettings = {
+	name = "spaceDustShape"
+	texture_diffuse = "spacedust_galaxy_diffuse.dds"
+	}
+	
+	default_state = "idle"
+	state = { name = "idle" 
+		start_event = { time = 0 particle = "black_dust_cloud_effect" keep_particle = yes trigger_once = yes }
+	}
+	scale = 15
+}
+
+entity = {
+	name = "dark_dust_cloud_entity_small"
+	pdxmesh = "space_dust_02_mesh"
+	
+	meshsettings = {
+	name = "spaceDustShape"
+	texture_diffuse = "spacedust_galaxy_diffuse.dds"
+	}
+	
+	default_state = "idle"
+	state = { name = "idle" 
+		start_event = { time = 0 particle = "dark_dust_cloud_effect" keep_particle = yes trigger_once = yes }
+	}
+	scale = 1
+}
+entity = {
+	name = "dark_dust_cloud_entity_medium"
+	pdxmesh = "space_dust_02_mesh"
+	
+	meshsettings = {
+	name = "spaceDustShape"
+	texture_diffuse = "spacedust_galaxy_diffuse.dds"
+	}
+	
+	default_state = "idle"
+	state = { name = "idle" 
+		start_event = { time = 0 particle = "dark_dust_cloud_effect" keep_particle = yes trigger_once = yes }
+	}
+	scale = 5
+}
+entity = {
+	name = "dark_dust_cloud_entity_large"
+	pdxmesh = "space_dust_02_mesh"
+	
+	meshsettings = {
+	name = "spaceDustShape"
+	texture_diffuse = "spacedust_galaxy_diffuse.dds"
+	}
+	
+	default_state = "idle"
+	state = { name = "idle" 
+		start_event = { time = 0 particle = "dark_dust_cloud_effect" keep_particle = yes trigger_once = yes }
+	}
+	scale = 15
+}
+
+entity = {
+	name = "white_dust_cloud_entity_small"
+	pdxmesh = "space_dust_02_mesh"
+	
+	meshsettings = {
+	name = "spaceDustShape"
+	texture_diffuse = "spacedust_galaxy_diffuse.dds"
+	}
+	
+	default_state = "idle"
+	state = { name = "idle" 
+		start_event = { time = 0 particle = "white_dust_cloud_effect" keep_particle = yes trigger_once = yes }
+	}
+	scale = 1
+}
+entity = {
+	name = "white_dust_cloud_entity_medium"
+	pdxmesh = "space_dust_02_mesh"
+	
+	meshsettings = {
+	name = "spaceDustShape"
+	texture_diffuse = "spacedust_galaxy_diffuse.dds"
+	}
+	
+	default_state = "idle"
+	state = { name = "idle" 
+		start_event = { time = 0 particle = "white_dust_cloud_effect" keep_particle = yes trigger_once = yes }
+	}
+	scale = 5
+}
+entity = {
+	name = "white_dust_cloud_entity_large"
+	pdxmesh = "space_dust_02_mesh"
+	
+	meshsettings = {
+	name = "spaceDustShape"
+	texture_diffuse = "spacedust_galaxy_diffuse.dds"
+	}
+	
+	default_state = "idle"
+	state = { name = "idle" 
+		start_event = { time = 0 particle = "white_dust_cloud_effect" keep_particle = yes trigger_once = yes }
+	}
+	scale = 15
+}
+
+entity = {
+	name = "collapsar_dust_cloud_entity_medium"
+	pdxmesh = "space_dust_02_mesh"
+	
+	meshsettings = {
+	name = "spaceDustShape"
+	texture_diffuse = "space_dust_04_diffuse.dds"
+	}
+	
+	default_state = "idle"
+	state = { name = "idle" 
+		start_event = { time = 0 particle = "dark_dust_cloud_effect" keep_particle = yes trigger_once = yes }
+	}
+	scale = 5
+}
+
+# Globule Entity
+
+entity = {
+	name = "collapsar_globule_entity_small"
+	pdxmesh = "space_dust_02_mesh"
+	
+	meshsettings = {
+	name = "spaceDustShape"
+	texture_diffuse = "spacedust_galaxy_diffuse.dds"
+	}
+	
+	default_state = "idle"
+	state = { name = "idle" 
+		start_event = { time = 0 particle = "collapsar_globule_effect" keep_particle = yes trigger_once = yes }
+	}
+	scale = 1
+}
+
+entity = {
+	name = "collapsar_globule_entity_medium"
+	pdxmesh = "space_dust_02_mesh"
+	
+	meshsettings = {
+	name = "spaceDustShape"
+	texture_diffuse = "spacedust_galaxy_diffuse.dds"
+	}
+	
+	default_state = "idle"
+	state = { name = "idle" 
+		start_event = { time = 0 particle = "collapsar_globule_effect" keep_particle = yes trigger_once = yes }
+	}
+	scale = 5
+}
+
+
+entity = {
+	name = "purple_globule_entity_small"
+	pdxmesh = "space_dust_02_mesh"
+	
+	meshsettings = {
+	name = "spaceDustShape"
+	texture_diffuse = "spacedust_galaxy_diffuse.dds"
+	}
+	
+	default_state = "idle"
+	state = { name = "idle" 
+		start_event = { time = 0 particle = "purple_globule_effect" keep_particle = yes trigger_once = yes }
+	}
+	scale = 1
+}
+
+entity = {
+	name = "purple_globule_entity_medium"
+	pdxmesh = "space_dust_02_mesh"
+	
+	meshsettings = {
+	name = "spaceDustShape"
+	texture_diffuse = "spacedust_galaxy_diffuse.dds"
+	}
+	
+	default_state = "idle"
+	state = { name = "idle" 
+		start_event = { time = 0 particle = "purple_globule_effect" keep_particle = yes trigger_once = yes }
+	}
+	scale = 5
+}
+
+
+entity = {
+	name = "yellow_globule_entity_small"
+	pdxmesh = "space_dust_02_mesh"
+	
+	meshsettings = {
+	name = "spaceDustShape"
+	texture_diffuse = "spacedust_galaxy_diffuse.dds"
+	}
+	
+	default_state = "idle"
+	state = { name = "idle" 
+		start_event = { time = 0 particle = "yellow_globule_effect" keep_particle = yes trigger_once = yes }
+	}
+	scale = 1
+}
+
+entity = {
+	name = "yellow_globule_entity_medium"
+	pdxmesh = "space_dust_02_mesh"
+	
+	meshsettings = {
+	name = "spaceDustShape"
+	texture_diffuse = "spacedust_galaxy_diffuse.dds"
+	}
+	
+	default_state = "idle"
+	state = { name = "idle" 
+		start_event = { time = 0 particle = "yellow_globule_effect" keep_particle = yes trigger_once = yes }
+	}
+	scale = 5
+}
+
+entity = {
+	name = "green_globule_entity_small"
+	pdxmesh = "space_dust_02_mesh"
+	
+	meshsettings = {
+	name = "spaceDustShape"
+	texture_diffuse = "spacedust_galaxy_diffuse.dds"
+	}
+	
+	default_state = "idle"
+	state = { name = "idle" 
+		start_event = { time = 0 particle = "green_globule_effect" keep_particle = yes trigger_once = yes }
+	}
+	scale = 1
+}
+
+entity = {
+	name = "green_globule_entity_medium"
+	pdxmesh = "space_dust_02_mesh"
+	
+	meshsettings = {
+	name = "spaceDustShape"
+	texture_diffuse = "spacedust_galaxy_diffuse.dds"
+	}
+	
+	default_state = "idle"
+	state = { name = "idle" 
+		start_event = { time = 0 particle = "green_globule_effect" keep_particle = yes trigger_once = yes }
+	}
+	scale = 5
+}
+
+
+# Nebula Entity
+
+# Purple 1
+
+entity = {
+	name = "dust_nebula_purple_01_entity_large"
+	pdxmesh = "dust_nebula_01_mesh"
+	
+	meshsettings = {
+	name = "dustNebulaShape"
+	texture_diffuse = "dust_nebula_purple_01_diffuse.dds"
+	}
+	
+	scale = 25
+}
+
+entity = {
+	name = "dust_nebula_purple_01_entity_medium"
+	pdxmesh = "dust_nebula_02_mesh"
+	
+	meshsettings = {
+	name = "dustNebulaShape"
+	texture_diffuse = "dust_nebula_purple_01_diffuse.dds"
+	}
+	
+	scale = 25
+}
+
+entity = {
+	name = "dust_nebula_purple_01_entity_small"
+	pdxmesh = "dust_nebula_03_mesh"
+	
+	meshsettings = {
+	name = "dustNebulaShape"
+	texture_diffuse = "dust_nebula_purple_01_diffuse.dds"
+	}
+	
+	default_state = "idle"
+	state = { name = "idle" 
+		start_event = { time = 0 particle = "dark_dust_cloud_effect" keep_particle = yes trigger_once = yes }
+	}
+	
+	scale = 25
+}
+
+# Purple 2
+
+
+entity = {
+	name = "dust_nebula_purple_02_entity_large"
+	pdxmesh = "dust_nebula_01_mesh"
+	
+	meshsettings = {
+	name = "dustNebulaShape"
+	texture_diffuse = "dust_nebula_purple_05_diffuse.dds"
+	}
+	
+	scale = 25
+}
+
+entity = {
+	name = "dust_nebula_purple_02_entity_medium"
+	pdxmesh = "dust_nebula_02_mesh"
+	
+	meshsettings = {
+	name = "dustNebulaShape"
+	texture_diffuse = "dust_nebula_purple_05_diffuse.dds"
+	}
+	
+	scale = 25
+}
+
+entity = {
+	name = "dust_nebula_purple_02_entity_small"
+	pdxmesh = "dust_nebula_03_mesh"
+	
+	meshsettings = {
+	name = "dustNebulaShape"
+	texture_diffuse = "dust_nebula_purple_05_diffuse.dds"
+	}
+	
+	default_state = "idle"
+	state = { name = "idle" 
+		start_event = { time = 0 particle = "dark_dust_cloud_effect" keep_particle = yes trigger_once = yes }
+	}
+	
+	scale = 25
+}
+
+# Purple 3
+
+entity = {
+	name = "dust_nebula_purple_03_entity_medium"
+	pdxmesh = "dust_nebula_03_mesh"
+	
+	meshsettings = {
+	name = "dustNebulaShape"
+	texture_diffuse = "dust_nebula_purple_03_diffuse.dds"
+	}
+	
+	default_state = "idle"
+	state = { name = "idle" 
+		start_event = { time = 0 particle = "dark_dust_cloud_effect" keep_particle = yes trigger_once = yes }
+	}
+	
+	scale = 25
+}
+
+# Purple 4
+
+entity = {
+	name = "dust_nebula_purple_04_entity_small"
+	pdxmesh = "dust_nebula_03_mesh"
+	
+	meshsettings = {
+	name = "dustNebulaShape"
+	texture_diffuse = "dust_nebula_purple_04_diffuse.dds"
+	}
+	
+	default_state = "idle"
+	state = { name = "idle" 
+		start_event = { time = 0 particle = "dark_dust_cloud_effect" keep_particle = yes trigger_once = yes }
+	}
+	
+	scale = 25
+}
+
+# Purple 5
+
+entity = {
+	name = "dust_nebula_purple_05_entity_medium"
+	pdxmesh = "dust_nebula_02_mesh"
+	
+	meshsettings = {
+	name = "dustNebulaShape"
+	texture_diffuse = "dust_nebula_purple_02_diffuse.dds"
+	}
+	
+	scale = 25
+}
+
+# Green 1
+
+entity = {
+	name = "dust_nebula_green_01_entity_large"
+	pdxmesh = "dust_nebula_01_mesh"
+	
+	meshsettings = {
+	name = "dustNebulaShape"
+	texture_diffuse = "dust_nebula_green_01_diffuse.dds"
+	}
+	
+	scale = 25
+}
+
+entity = {
+	name = "dust_nebula_green_01_entity_medium"
+	pdxmesh = "dust_nebula_02_mesh"
+	
+	meshsettings = {
+	name = "dustNebulaShape"
+	texture_diffuse = "dust_nebula_green_01_diffuse.dds"
+	}
+	
+	scale = 25
+}
+
+entity = {
+	name = "dust_nebula_green_01_entity_small"
+	pdxmesh = "dust_nebula_03_mesh"
+	
+	meshsettings = {
+	name = "dustNebulaShape"
+	texture_diffuse = "dust_nebula_green_01_diffuse.dds"
+	}
+	
+	default_state = "idle"
+	state = { name = "idle" 
+		start_event = { time = 0 particle = "dark_dust_cloud_effect" keep_particle = yes trigger_once = yes }
+	}
+	
+	scale = 25
+}
+
+# Green 2
+
+entity = {
+	name = "dust_nebula_green_02_entity_large"
+	pdxmesh = "dust_nebula_01_mesh"
+	
+	meshsettings = {
+	name = "dustNebulaShape"
+	texture_diffuse = "dust_nebula_green_02_diffuse.dds"
+	}
+	
+	scale = 25
+}
+
+entity = {
+	name = "dust_nebula_green_02_entity_medium"
+	pdxmesh = "dust_nebula_02_mesh"
+	
+	meshsettings = {
+	name = "dustNebulaShape"
+	texture_diffuse = "dust_nebula_green_02_diffuse.dds"
+	}
+	
+	scale = 25
+}
+
+entity = {
+	name = "dust_nebula_green_02_entity_small"
+	pdxmesh = "dust_nebula_03_mesh"
+	
+	meshsettings = {
+	name = "dustNebulaShape"
+	texture_diffuse = "dust_nebula_green_02_diffuse.dds"
+	}
+	
+	default_state = "idle"
+	state = { name = "idle" 
+		start_event = { time = 0 particle = "dark_dust_cloud_effect" keep_particle = yes trigger_once = yes }
+	}
+	
+	scale = 25
+}
+
+# Green 3
+
+entity = {
+	name = "dust_nebula_green_03_entity_medium"
+	pdxmesh = "dust_nebula_03_mesh"
+	
+	meshsettings = {
+	name = "dustNebulaShape"
+	texture_diffuse = "dust_nebula_green_03_diffuse.dds"
+	}
+	
+	default_state = "idle"
+	state = { name = "idle" 
+		start_event = { time = 0 particle = "dark_dust_cloud_effect" keep_particle = yes trigger_once = yes }
+	}
+	
+	scale = 25
+}
+
+# Green 4
+
+entity = {
+	name = "dust_nebula_green_04_entity_small"
+	pdxmesh = "dust_nebula_03_mesh"
+	
+	meshsettings = {
+	name = "dustNebulaShape"
+	texture_diffuse = "dust_nebula_green_04_diffuse.dds"
+	}
+	
+	default_state = "idle"
+	state = { name = "idle" 
+		start_event = { time = 0 particle = "dark_dust_cloud_effect" keep_particle = yes trigger_once = yes }
+	}
+	
+	scale = 25
+}
+
+# Green 5
+
+entity = {
+	name = "dust_nebula_green_05_entity_medium"
+	pdxmesh = "dust_nebula_02_mesh"
+	
+	meshsettings = {
+	name = "dustNebulaShape"
+	texture_diffuse = "dust_nebula_green_05_diffuse.dds"
+	}
+	
+	scale = 25
+}
+
+# Red 1
+
+entity = {
+	name = "dust_nebula_red_01_entity_large"
+	pdxmesh = "dust_nebula_01_mesh"
+	
+	meshsettings = {
+	name = "dustNebulaShape"
+	texture_diffuse = "dust_nebula_red_01_diffuse.dds"
+	}
+	
+	scale = 25
+}
+
+entity = {
+	name = "dust_nebula_red_01_entity_medium"
+	pdxmesh = "dust_nebula_02_mesh"
+	
+	meshsettings = {
+	name = "dustNebulaShape"
+	texture_diffuse = "dust_nebula_red_01_diffuse.dds"
+	}
+	
+	scale = 25
+}
+
+entity = {
+	name = "dust_nebula_red_01_entity_small"
+	pdxmesh = "dust_nebula_03_mesh"
+	
+	meshsettings = {
+	name = "dustNebulaShape"
+	texture_diffuse = "dust_nebula_red_01_diffuse.dds"
+	}
+	
+	default_state = "idle"
+	state = { name = "idle" 
+		start_event = { time = 0 particle = "dark_dust_cloud_effect" keep_particle = yes trigger_once = yes }
+	}
+	
+	scale = 25
+}
+
+# Red 2
+
+
+entity = {
+	name = "dust_nebula_red_02_entity_large"
+	pdxmesh = "dust_nebula_01_mesh"
+	
+	meshsettings = {
+	name = "dustNebulaShape"
+	texture_diffuse = "dust_nebula_red_02_diffuse.dds"
+	}
+	
+	scale = 25
+}
+
+entity = {
+	name = "dust_nebula_red_02_entity_medium"
+	pdxmesh = "dust_nebula_02_mesh"
+	
+	meshsettings = {
+	name = "dustNebulaShape"
+	texture_diffuse = "dust_nebula_red_02_diffuse.dds"
+	}
+	
+	scale = 25
+}
+
+entity = {
+	name = "dust_nebula_red_02_entity_small"
+	pdxmesh = "dust_nebula_03_mesh"
+	
+	meshsettings = {
+	name = "dustNebulaShape"
+	texture_diffuse = "dust_nebula_red_02_diffuse.dds"
+	}
+	
+	default_state = "idle"
+	state = { name = "idle" 
+		start_event = { time = 0 particle = "dark_dust_cloud_effect" keep_particle = yes trigger_once = yes }
+	}
+	
+	scale = 25
+}
+
+# Red 3
+
+entity = {
+	name = "dust_nebula_red_03_entity_medium"
+	pdxmesh = "dust_nebula_03_mesh"
+	
+	meshsettings = {
+	name = "dustNebulaShape"
+	texture_diffuse = "dust_nebula_red_03_diffuse.dds"
+	}
+	
+	default_state = "idle"
+	state = { name = "idle" 
+		start_event = { time = 0 particle = "dark_dust_cloud_effect" keep_particle = yes trigger_once = yes }
+	}
+	
+	scale = 25
+}
+
+# Red 4
+
+entity = {
+	name = "dust_nebula_red_04_entity_small"
+	pdxmesh = "dust_nebula_03_mesh"
+	
+	meshsettings = {
+	name = "dustNebulaShape"
+	texture_diffuse = "dust_nebula_red_04_diffuse.dds"
+	}
+	
+	default_state = "idle"
+	state = { name = "idle" 
+		start_event = { time = 0 particle = "dark_dust_cloud_effect" keep_particle = yes trigger_once = yes }
+	}
+	
+	scale = 25
+}
+
+# Red 5
+
+entity = {
+	name = "dust_nebula_red_05_entity_medium"
+	pdxmesh = "dust_nebula_02_mesh"
+	
+	meshsettings = {
+	name = "dustNebulaShape"
+	texture_diffuse = "dust_nebula_red_05_diffuse.dds"
+	}
+	
+	scale = 25
+}
+
+# Blue 1
+
+entity = {
+	name = "dust_nebula_blue_01_entity_medium"
+	pdxmesh = "dust_nebula_03_mesh"
+	
+	meshsettings = {
+	name = "dustNebulaShape"
+	texture_diffuse = "dust_nebula_blue_01_diffuse.dds"
+	}
+	
+	scale = 25
+}
+
+
+# Orange 1
+
+entity = {
+	name = "dust_nebula_orange_01_entity_large"
+	pdxmesh = "dust_nebula_01_mesh"
+	
+	meshsettings = {
+	name = "dustNebulaShape"
+	texture_diffuse = "dust_nebula_orange_01_diffuse.dds"
+	}
+	
+	scale = 25
+}
+
+# Orange 2
+
+entity = {
+	name = "dust_nebula_orange_02_entity_medium"
+	pdxmesh = "dust_nebula_02_mesh"
+	
+	meshsettings = {
+	name = "dustNebulaShape"
+	texture_diffuse = "dust_nebula_orange_02_diffuse.dds"
+	}
+	
+	scale = 25
+}
+
+# Orange 3
+
+entity = {
+	name = "dust_nebula_orange_03_entity_small"
+	pdxmesh = "dust_nebula_03_mesh"
+	
+	meshsettings = {
+	name = "dustNebulaShape"
+	texture_diffuse = "dust_nebula_orange_03_diffuse.dds"
+	}
+	
+	default_state = "idle"
+	state = { name = "idle" 
+		start_event = { time = 0 particle = "dark_dust_cloud_effect" keep_particle = yes trigger_once = yes }
+	}
+	
+	scale = 25
+}
+
+# Collapsar 1
+
+entity = {
+	name = "dust_nebula_collapsar_01_entity_large"
+	pdxmesh = "dust_nebula_01_mesh"
+	
+	meshsettings = {
+	name = "dustNebulaShape"
+	texture_diffuse = "dust_nebula_collapsar_01_diffuse.dds"
+	}
+	
+	scale = 25
+}
+
+entity = {
+	name = "dust_nebula_collapsar_01_entity_medium"
+	pdxmesh = "dust_nebula_02_mesh"
+	
+	meshsettings = {
+	name = "dustNebulaShape"
+	texture_diffuse = "dust_nebula_collapsar_01_diffuse.dds"
+	}
+	
+	scale = 25
+}
+
+# Orange 2
+
+entity = {
+	name = "dust_nebula_collapsar_02_entity_small"
+	pdxmesh = "dust_nebula_03_mesh"
+	
+	meshsettings = {
+	name = "dustNebulaShape"
+	texture_diffuse = "dust_nebula_collapsar_02_diffuse.dds"
+	}
+	
+	default_state = "idle"
+	state = { name = "idle" 
+		start_event = { time = 0 particle = "dark_dust_cloud_effect" keep_particle = yes trigger_once = yes }
+	}
+	
+	scale = 25
+}
+

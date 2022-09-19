@@ -1,0 +1,317 @@
+# # reload assets gfx/models/ships/caldari_01/_caldari_01_cruiser_t2_ships_entities.asset
+
+# # ship designer scale #
+# @cerberus_scale = 10
+# @eagle_scale = 10
+# @basilisk_scale = 10
+# @rook_scale = 10
+
+# # in game size scale #
+# @cerberus_physical_scale = 1.0
+# @eagle_physical_scale = 1.0
+# @basilisk_physical_scale = 1.0
+# @rook_physical_scale = 0.75
+
+# @small_trail_W = 10
+# @small_trail_L = 60
+# @medium_trail_W = 50
+# @medium_trail_L = 300
+# @large_trail_W = 50
+# @large_trail_L =  300
+
+# #############################################################################
+# ##################         	 CRUISER                 ########################
+# #############################################################################
+
+# #############################################################################
+# ##################         	 MID   SECTIONS          ########################
+# #############################################################################
+# entity = {
+# 	name = "caldari_01_cruiser_mid_T2M4_entity"
+# 	pdxmesh = "caldari_01_eagle_mesh"
+
+# 	scale = @eagle_physical_scale
+
+# 	default_state = "idle"
+# 	state = { name = "idle" state_time = 5
+# 		event = { time = 0 node = "light_locator_01" particle = "ship_light_blue_effect" trigger_once = yes keep_particle = yes }
+# 		event = { time = 0 node = "light_locator_02" particle = "ship_light_blue_effect" trigger_once = yes keep_particle = yes }
+# 		event = { time = 0 node = "light_locator_03" particle = "ship_light_blue_effect" trigger_once = yes keep_particle = yes }		
+
+# 		event = { time = 0 node = "engine_small_01" particle = "caldari_1_3_00_exhaust_idle_particle" trigger_once = yes keep_particle = yes }
+# 		event = { time = 0 node = "engine_small_02" particle = "caldari_1_3_00_exhaust_idle_particle" trigger_once = yes keep_particle = yes }
+# 		event = { time = 0 node = "engine_small_03" particle = "caldari_1_3_00_exhaust_idle_particle" trigger_once = yes keep_particle = yes }
+# 		event = { time = 0 node = "engine_small_04" particle = "caldari_1_3_00_exhaust_idle_particle" trigger_once = yes keep_particle = yes }		
+# 	}
+# 	state = { name = "moving" state_time = 5
+# 		event = { time = 0 node = "light_locator_01" particle = "ship_light_blue_effect" trigger_once = yes keep_particle = yes }
+# 		event = { time = 0 node = "light_locator_02" particle = "ship_light_blue_effect" trigger_once = yes keep_particle = yes }
+# 		event = { time = 0 node = "light_locator_03" particle = "ship_light_blue_effect" trigger_once = yes keep_particle = yes }
+
+# 		event = { time = 0 node = "engine_small_01" particle = "caldari_01_4_00_ship_exhaust_moving_particle" trigger_once = yes keep_particle = yes }
+# 		event = { time = 0 node = "engine_small_02" particle = "caldari_01_4_00_ship_exhaust_moving_particle" trigger_once = yes keep_particle = yes }
+# 		event = { time = 0 node = "engine_small_03" particle = "caldari_01_4_00_ship_exhaust_moving_particle" trigger_once = yes keep_particle = yes }
+# 		event = { time = 0 node = "engine_small_04" particle = "caldari_01_4_00_ship_exhaust_moving_particle" trigger_once = yes keep_particle = yes }
+
+# 	}
+# 	state = { name = "death" state_time = 5 }
+		
+# 	game_data = {
+# 		size = @eagle_scale
+# 	}
+# }
+
+# entity = {
+# 	name = "caldari_01_cruiser_mid_T2S8_entity"
+# 	pdxmesh = "caldari_01_rook_mesh"
+
+# 	scale = @rook_physical_scale
+
+# 	default_state = "idle"
+# 	state = { name = "idle" state_time = 5
+# 		event = { time = 0 node = "light_locator_01" particle = "ship_light_blue_effect" trigger_once = yes keep_particle = yes }
+# 		event = { time = 0 node = "light_locator_02" particle = "ship_light_blue_effect" trigger_once = yes keep_particle = yes }
+# 		event = { time = 0 node = "light_locator_03" particle = "ship_light_blue_effect" trigger_once = yes keep_particle = yes }		
+
+# 		event = { time = 0 node = "engine_small_01" particle = "caldari_1_3_00_exhaust_idle_particle" trigger_once = yes keep_particle = yes }
+# 		event = { time = 0 node = "engine_small_02" particle = "caldari_1_3_00_exhaust_idle_particle" trigger_once = yes keep_particle = yes }
+# 		event = { time = 0 node = "engine_small_03" particle = "caldari_1_3_00_exhaust_idle_particle" trigger_once = yes keep_particle = yes }
+# 		event = { time = 0 node = "engine_small_04" particle = "caldari_1_3_00_exhaust_idle_particle" trigger_once = yes keep_particle = yes }		
+# 	}
+# 	state = { name = "moving" state_time = 5
+# 		event = { time = 0 node = "light_locator_01" particle = "ship_light_blue_effect" trigger_once = yes keep_particle = yes }
+# 		event = { time = 0 node = "light_locator_02" particle = "ship_light_blue_effect" trigger_once = yes keep_particle = yes }
+# 		event = { time = 0 node = "light_locator_03" particle = "ship_light_blue_effect" trigger_once = yes keep_particle = yes }
+
+# 		event = { time = 0 node = "engine_small_01" particle = "caldari_01_4_00_ship_exhaust_moving_particle" trigger_once = yes keep_particle = yes }
+# 		event = { time = 0 node = "engine_small_02" particle = "caldari_01_4_00_ship_exhaust_moving_particle" trigger_once = yes keep_particle = yes }
+# 		event = { time = 0 node = "engine_small_03" particle = "caldari_01_4_00_ship_exhaust_moving_particle" trigger_once = yes keep_particle = yes }
+# 		event = { time = 0 node = "engine_small_04" particle = "caldari_01_4_00_ship_exhaust_moving_particle" trigger_once = yes keep_particle = yes }
+
+# 	}
+# 	state = { name = "death" state_time = 5 }
+	
+	
+# 	game_data = {
+# 		size = @rook_scale
+# 	}
+# }
+
+# entity = {
+# 	name = "caldari_01_cruiser_mid_T2MI4_entity"
+# 	pdxmesh = "caldari_01_cerberus_mesh"
+
+# 	scale = @cerberus_physical_scale
+
+# 	default_state = "idle"
+# 	state = { name = "idle" state_time = 5
+# 		event = { time = 0 node = "light_locator_01" particle = "ship_light_blue_effect" trigger_once = yes keep_particle = yes }
+# 		event = { time = 0 node = "light_locator_02" particle = "ship_light_blue_effect" trigger_once = yes keep_particle = yes }
+
+# 		event = { time = 0 node = "engine_small_01" particle = "caldari_1_3_00_exhaust_idle_particle" trigger_once = yes keep_particle = yes }
+# 		event = { time = 0 node = "engine_small_02" particle = "caldari_1_3_00_exhaust_idle_particle" trigger_once = yes keep_particle = yes }
+# 		event = { time = 0 node = "engine_small_03" particle = "caldari_1_3_00_exhaust_idle_particle" trigger_once = yes keep_particle = yes }
+# 		event = { time = 0 node = "engine_small_04" particle = "caldari_1_3_00_exhaust_idle_particle" trigger_once = yes keep_particle = yes }		
+# 	}
+# 	state = { name = "moving" state_time = 5
+# 		event = { time = 0 node = "light_locator_01" particle = "ship_light_blue_effect" trigger_once = yes keep_particle = yes }
+# 		event = { time = 0 node = "light_locator_02" particle = "ship_light_blue_effect" trigger_once = yes keep_particle = yes }
+
+# 		event = { time = 0 node = "engine_small_01" particle = "caldari_01_4_00_ship_exhaust_moving_particle" trigger_once = yes keep_particle = yes }
+# 		event = { time = 0 node = "engine_small_02" particle = "caldari_01_4_00_ship_exhaust_moving_particle" trigger_once = yes keep_particle = yes }
+# 		event = { time = 0 node = "engine_small_03" particle = "caldari_01_4_00_ship_exhaust_moving_particle" trigger_once = yes keep_particle = yes }
+# 		event = { time = 0 node = "engine_small_04" particle = "caldari_01_4_00_ship_exhaust_moving_particle" trigger_once = yes keep_particle = yes }
+
+# 	}
+# 	state = { name = "death" state_time = 5 }
+	
+	
+# 	game_data = {
+# 		size = @cerberus_scale
+# 	}
+# }
+
+# entity = {
+# 	name = "caldari_01_cruiser_mid_T2H2_entity"
+# 	pdxmesh = "caldari_01_basilisk_mesh"
+
+# 	scale = @basilisk_physical_scale
+
+# 	default_state = "idle"
+# 	state = { name = "idle" state_time = 5
+# 		event = { time = 0 node = "light_locator_01" particle = "ship_light_blue_effect" trigger_once = yes keep_particle = yes }
+# 		event = { time = 0 node = "light_locator_02" particle = "ship_light_blue_effect" trigger_once = yes keep_particle = yes }
+# 		event = { time = 0 node = "light_locator_03" particle = "ship_light_blue_effect" trigger_once = yes keep_particle = yes }		
+
+# 		event = { time = 0 node = "engine_small_01" particle = "caldari_1_3_00_exhaust_idle_particle" trigger_once = yes keep_particle = yes }
+# 		event = { time = 0 node = "engine_small_02" particle = "caldari_1_3_00_exhaust_idle_particle" trigger_once = yes keep_particle = yes }
+# 		event = { time = 0 node = "engine_small_03" particle = "caldari_1_3_00_exhaust_idle_particle" trigger_once = yes keep_particle = yes }
+# 	}
+# 	state = { name = "moving" state_time = 5
+# 		event = { time = 0 node = "light_locator_01" particle = "ship_light_blue_effect" trigger_once = yes keep_particle = yes }
+# 		event = { time = 0 node = "light_locator_02" particle = "ship_light_blue_effect" trigger_once = yes keep_particle = yes }
+# 		event = { time = 0 node = "light_locator_03" particle = "ship_light_blue_effect" trigger_once = yes keep_particle = yes }
+
+# 		event = { time = 0 node = "engine_small_01" particle = "caldari_01_4_00_ship_exhaust_moving_particle" trigger_once = yes keep_particle = yes }
+# 		event = { time = 0 node = "engine_small_02" particle = "caldari_01_4_00_ship_exhaust_moving_particle" trigger_once = yes keep_particle = yes }
+# 		event = { time = 0 node = "engine_small_03" particle = "caldari_01_4_00_ship_exhaust_moving_particle" trigger_once = yes keep_particle = yes }
+# 	}
+# 	state = { name = "death" state_time = 5 }
+	
+# 	game_data = {
+# 		size = @basilisk_scale
+# 	}
+
+# 	#TEMP LOCATOR REPLACE IN SCENE
+# 	locator = {
+# 		name = "strike_craft_locator_01"
+# 		rotation = { -90 0 0 }
+# 	}
+# }
+
+# ##
+# # entities
+# #
+
+# entity = {
+# 	name = "caldari_01_eagle_entity"
+# 	pdxmesh = "caldari_01_eagle_mesh"
+
+# 	scale = @eagle_physical_scale
+
+# 	default_state = "idle"
+# 	state = { name = "idle" state_time = 5
+# 		event = { time = 0 node = "light_locator_01" particle = "ship_light_blue_effect" trigger_once = yes keep_particle = yes }
+# 		event = { time = 0 node = "light_locator_02" particle = "ship_light_blue_effect" trigger_once = yes keep_particle = yes }
+# 		event = { time = 0 node = "light_locator_03" particle = "ship_light_blue_effect" trigger_once = yes keep_particle = yes }		
+
+# 		event = { time = 0 node = "engine_small_01" particle = "caldari_1_3_00_exhaust_idle_particle" trigger_once = yes keep_particle = yes }
+# 		event = { time = 0 node = "engine_small_02" particle = "caldari_1_3_00_exhaust_idle_particle" trigger_once = yes keep_particle = yes }
+# 		event = { time = 0 node = "engine_small_03" particle = "caldari_1_3_00_exhaust_idle_particle" trigger_once = yes keep_particle = yes }
+# 		event = { time = 0 node = "engine_small_04" particle = "caldari_1_3_00_exhaust_idle_particle" trigger_once = yes keep_particle = yes }		
+# 	}
+# 	state = { name = "moving" state_time = 5
+# 		event = { time = 0 node = "light_locator_01" particle = "ship_light_blue_effect" trigger_once = yes keep_particle = yes }
+# 		event = { time = 0 node = "light_locator_02" particle = "ship_light_blue_effect" trigger_once = yes keep_particle = yes }
+# 		event = { time = 0 node = "light_locator_03" particle = "ship_light_blue_effect" trigger_once = yes keep_particle = yes }
+
+# 		event = { time = 0 node = "engine_small_01" particle = "caldari_01_4_00_ship_exhaust_moving_particle" trigger_once = yes keep_particle = yes }
+# 		event = { time = 0 node = "engine_small_02" particle = "caldari_01_4_00_ship_exhaust_moving_particle" trigger_once = yes keep_particle = yes }
+# 		event = { time = 0 node = "engine_small_03" particle = "caldari_01_4_00_ship_exhaust_moving_particle" trigger_once = yes keep_particle = yes }
+# 		event = { time = 0 node = "engine_small_04" particle = "caldari_01_4_00_ship_exhaust_moving_particle" trigger_once = yes keep_particle = yes }
+
+# 	}
+# 	state = { name = "death" state_time = 5 }
+		
+# 	game_data = {
+# 		size = @eagle_scale
+# 	}
+# }
+
+# entity = {
+# 	name = "caldari_01_rook_entity"
+# 	pdxmesh = "caldari_01_rook_mesh"
+
+# 	scale = @rook_physical_scale
+
+# 	default_state = "idle"
+# 	state = { name = "idle" state_time = 5
+# 		event = { time = 0 node = "light_locator_01" particle = "ship_light_blue_effect" trigger_once = yes keep_particle = yes }
+# 		event = { time = 0 node = "light_locator_02" particle = "ship_light_blue_effect" trigger_once = yes keep_particle = yes }
+# 		event = { time = 0 node = "light_locator_03" particle = "ship_light_blue_effect" trigger_once = yes keep_particle = yes }		
+
+# 		event = { time = 0 node = "engine_small_01" particle = "caldari_1_3_00_exhaust_idle_particle" trigger_once = yes keep_particle = yes }
+# 		event = { time = 0 node = "engine_small_02" particle = "caldari_1_3_00_exhaust_idle_particle" trigger_once = yes keep_particle = yes }
+# 		event = { time = 0 node = "engine_small_03" particle = "caldari_1_3_00_exhaust_idle_particle" trigger_once = yes keep_particle = yes }
+# 		event = { time = 0 node = "engine_small_04" particle = "caldari_1_3_00_exhaust_idle_particle" trigger_once = yes keep_particle = yes }		
+# 	}
+# 	state = { name = "moving" state_time = 5
+# 		event = { time = 0 node = "light_locator_01" particle = "ship_light_blue_effect" trigger_once = yes keep_particle = yes }
+# 		event = { time = 0 node = "light_locator_02" particle = "ship_light_blue_effect" trigger_once = yes keep_particle = yes }
+# 		event = { time = 0 node = "light_locator_03" particle = "ship_light_blue_effect" trigger_once = yes keep_particle = yes }
+
+# 		event = { time = 0 node = "engine_small_01" particle = "caldari_01_4_00_ship_exhaust_moving_particle" trigger_once = yes keep_particle = yes }
+# 		event = { time = 0 node = "engine_small_02" particle = "caldari_01_4_00_ship_exhaust_moving_particle" trigger_once = yes keep_particle = yes }
+# 		event = { time = 0 node = "engine_small_03" particle = "caldari_01_4_00_ship_exhaust_moving_particle" trigger_once = yes keep_particle = yes }
+# 		event = { time = 0 node = "engine_small_04" particle = "caldari_01_4_00_ship_exhaust_moving_particle" trigger_once = yes keep_particle = yes }
+
+# 	}
+# 	state = { name = "death" state_time = 5 }
+	
+	
+# 	game_data = {
+# 		size = @rook_scale
+# 	}
+# }
+
+# entity = {
+# 	name = "caldari_01_cerberus_entity"
+# 	pdxmesh = "caldari_01_cerberus_mesh"
+
+# 	scale = @cerberus_physical_scale
+
+# 	default_state = "idle"
+# 	state = { name = "idle" state_time = 5
+# 		event = { time = 0 node = "light_locator_01" particle = "ship_light_blue_effect" trigger_once = yes keep_particle = yes }
+# 		event = { time = 0 node = "light_locator_02" particle = "ship_light_blue_effect" trigger_once = yes keep_particle = yes }
+
+# 		event = { time = 0 node = "engine_small_01" particle = "caldari_1_3_00_exhaust_idle_particle" trigger_once = yes keep_particle = yes }
+# 		event = { time = 0 node = "engine_small_02" particle = "caldari_1_3_00_exhaust_idle_particle" trigger_once = yes keep_particle = yes }
+# 		event = { time = 0 node = "engine_small_03" particle = "caldari_1_3_00_exhaust_idle_particle" trigger_once = yes keep_particle = yes }
+# 		event = { time = 0 node = "engine_small_04" particle = "caldari_1_3_00_exhaust_idle_particle" trigger_once = yes keep_particle = yes }		
+# 	}
+# 	state = { name = "moving" state_time = 5
+# 		event = { time = 0 node = "light_locator_01" particle = "ship_light_blue_effect" trigger_once = yes keep_particle = yes }
+# 		event = { time = 0 node = "light_locator_02" particle = "ship_light_blue_effect" trigger_once = yes keep_particle = yes }
+
+# 		event = { time = 0 node = "engine_small_01" particle = "caldari_01_4_00_ship_exhaust_moving_particle" trigger_once = yes keep_particle = yes }
+# 		event = { time = 0 node = "engine_small_02" particle = "caldari_01_4_00_ship_exhaust_moving_particle" trigger_once = yes keep_particle = yes }
+# 		event = { time = 0 node = "engine_small_03" particle = "caldari_01_4_00_ship_exhaust_moving_particle" trigger_once = yes keep_particle = yes }
+# 		event = { time = 0 node = "engine_small_04" particle = "caldari_01_4_00_ship_exhaust_moving_particle" trigger_once = yes keep_particle = yes }
+
+# 	}
+# 	state = { name = "death" state_time = 5 }
+	
+	
+# 	game_data = {
+# 		size = @cerberus_scale
+# 	}
+# }
+
+# entity = {
+# 	name = "caldari_01_basilisk_entity"
+# 	pdxmesh = "caldari_01_basilisk_mesh"
+
+# 	scale = @basilisk_physical_scale
+
+# 	default_state = "idle"
+# 	state = { name = "idle" state_time = 5
+# 		event = { time = 0 node = "light_locator_01" particle = "ship_light_blue_effect" trigger_once = yes keep_particle = yes }
+# 		event = { time = 0 node = "light_locator_02" particle = "ship_light_blue_effect" trigger_once = yes keep_particle = yes }
+# 		event = { time = 0 node = "light_locator_03" particle = "ship_light_blue_effect" trigger_once = yes keep_particle = yes }		
+
+# 		event = { time = 0 node = "engine_small_01" particle = "caldari_1_3_00_exhaust_idle_particle" trigger_once = yes keep_particle = yes }
+# 		event = { time = 0 node = "engine_small_02" particle = "caldari_1_3_00_exhaust_idle_particle" trigger_once = yes keep_particle = yes }
+# 		event = { time = 0 node = "engine_small_03" particle = "caldari_1_3_00_exhaust_idle_particle" trigger_once = yes keep_particle = yes }
+# 	}
+# 	state = { name = "moving" state_time = 5
+# 		event = { time = 0 node = "light_locator_01" particle = "ship_light_blue_effect" trigger_once = yes keep_particle = yes }
+# 		event = { time = 0 node = "light_locator_02" particle = "ship_light_blue_effect" trigger_once = yes keep_particle = yes }
+# 		event = { time = 0 node = "light_locator_03" particle = "ship_light_blue_effect" trigger_once = yes keep_particle = yes }
+
+# 		event = { time = 0 node = "engine_small_01" particle = "caldari_01_4_00_ship_exhaust_moving_particle" trigger_once = yes keep_particle = yes }
+# 		event = { time = 0 node = "engine_small_02" particle = "caldari_01_4_00_ship_exhaust_moving_particle" trigger_once = yes keep_particle = yes }
+# 		event = { time = 0 node = "engine_small_03" particle = "caldari_01_4_00_ship_exhaust_moving_particle" trigger_once = yes keep_particle = yes }
+# 	}
+# 	state = { name = "death" state_time = 5 }
+	
+# 	game_data = {
+# 		size = @basilisk_scale
+# 	}
+
+# 	#TEMP LOCATOR REPLACE IN SCENE
+# 	locator = {
+# 		name = "strike_craft_locator_01"
+# 		rotation = { -90 0 0 }
+# 	}
+# }

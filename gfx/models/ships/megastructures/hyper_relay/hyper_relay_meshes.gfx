@@ -1,0 +1,78 @@
+objectTypes = {
+	pdxmesh = {
+		name = "amarr_01_hyper_relay_mesh"
+		file = "gfx/models/ships/megastructures/hyper_relay/amarr_01_hyper_relay.mesh"
+		animation = { id = "idle"			type = "hyper_relay_01_idle_animation" }
+		animation = { id = "death"			type = "hyper_relay_01_death_animation" }
+	}
+
+	pdxmesh = {
+		name = "minmatar_01_hyper_relay_mesh"
+		file = "gfx/models/ships/megastructures/hyper_relay/minmatar_01_hyper_relay.mesh"
+		animation = { id = "idle"			type = "hyper_relay_01_idle_animation" }
+		animation = { id = "death"			type = "hyper_relay_01_death_animation" }
+
+	}
+
+	###### Destroyed ######
+	
+# 	pdxmesh = {
+# 		name = "hyper_relay_01_destroyed_mesh"
+# 		file = "gfx/models/ships/megastructures/hyper_relay/hyper_relay_01_destroyed.mesh"
+# 	}
+
+# ###### Effect #########
+
+# 	pdxmesh = {
+# 		name = "hyper_relay_01_portal_mesh"
+# 		file = "gfx/models/ships/megastructures/hyper_relay/hyper_relay_01_portal.mesh"
+
+# 		meshsettings = {
+# 			index = 0
+# 			texture_diffuse = "hyper_relay_01_portal.dds"
+# 			texture_normal = "nonormal.dds"
+# 			texture_specular = "nospec.dds"	
+# 			shader = "PdxMeshAlphaAnimateUVErosion"
+# 		}
+# 	}
+	
+# 	pdxmesh = {
+# 		name = "hyper_relay_01_portal_edge_mesh"
+# 		file = "gfx/models/ships/megastructures/hyper_relay/hyper_relay_01_portal_edge.mesh"
+
+# 		meshsettings = {
+# 			index = 0
+# 			texture_diffuse = "hyper_relay_01_portal_edge.dds"
+# 			texture_normal = "nonormal.dds"
+# 			texture_specular = "nospec.dds"	
+# 			shader = "PdxMeshAlphaAdditiveAnimateUV"
+# 		}
+# 	}
+	
+# 	pdxmesh = {
+# 		name = "hyper_relay_01_portal_spin_mesh"
+# 		file = "gfx/models/ships/megastructures/hyper_relay/hyper_relay_01_portal_spin.mesh"
+
+# 		meshsettings = {
+# 			index = 0
+# 			texture_diffuse = "hyper_relay_01_portal_spin.dds"
+# 			texture_normal = "nonormal.dds"
+# 			texture_specular = "nospec.dds"	
+# 			shader = "PdxMeshAlphaAnimateUVErosion"
+# 		}
+# 	}
+	
+# 	pdxmesh = {
+# 		name = "hyper_relay_01_orb_mesh"
+# 		file = "gfx/models/ships/megastructures/hyper_relay/hyper_relay_01_orb.mesh"
+
+# 		meshsettings = {
+# 			index = 0
+# 			texture_diffuse = "hyper_relay_01_orb.dds"
+# 			texture_normal = "nonormal.dds"
+# 			texture_specular = "nospec.dds"	
+# 			shader = "PdxMeshAlphaAdditiveAnimateUV"
+# 		}
+# 	}
+}
+

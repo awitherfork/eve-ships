@@ -1,0 +1,7 @@
+objectTypes = {
+	pdxmesh = {
+		name = "minmatar_01_headquarters_mesh"
+		file = "gfx/models/ships/juggernauts/minmatar_01/minmatar_01_headquarters.mesh"
+		scale = 1.0
+	}
+}

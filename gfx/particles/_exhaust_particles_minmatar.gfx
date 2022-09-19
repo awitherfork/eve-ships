@@ -1,0 +1,302 @@
+objectTypes = {
+	
+#############
+# IDLE
+#############
+
+	
+	
+	######
+	# minmatar
+	######
+		pdxparticle = {
+			name = "minmatar_1_0_75_exhaust_idle_particle"
+			type = "mammalian_01_ship_exhaust_idle_file"
+			scale = 0.75
+		}
+		pdxparticle = {
+			name = "minmatar_1_1_0_exhaust_idle_particle"
+			type = "mammalian_01_ship_exhaust_idle_file"
+			scale = 1
+		}
+		pdxparticle = {
+			name = "minmatar_1_2_0_exhaust_idle_particle"
+			type = "mammalian_01_ship_exhaust_idle_file"
+			scale = 2
+		}
+		pdxparticle = {
+			name = "minmatar_1_3_0_exhaust_idle_particle"
+			type = "mammalian_01_ship_exhaust_idle_file"
+			scale = 3
+		}
+		pdxparticle = {
+			name = "minmatar_1_4_0_exhaust_idle_particle"
+			type = "mammalian_01_ship_exhaust_idle_file"
+			scale = 4
+		}
+		pdxparticle = {
+			name = "minmatar_1_4_5_exhaust_idle_particle"
+			type = "mammalian_01_ship_exhaust_idle_file"
+			scale = 4.5
+		}
+		pdxparticle = {
+			name = "minmatar_1_5_0_exhaust_idle_particle"
+			type = "mammalian_01_ship_exhaust_idle_file"
+			scale = 5
+		}
+		pdxparticle = {
+			name = "minmatar_1_5_5_exhaust_idle_particle"
+			type = "mammalian_01_ship_exhaust_idle_file"
+			scale = 5.5
+		}
+		pdxparticle = {
+			name = "minmatar_1_6_0_exhaust_idle_particle"
+			type = "mammalian_01_ship_exhaust_idle_file"
+			scale = 6
+		}
+		pdxparticle = {
+			name = "minmatar_1_6_5_exhaust_idle_particle"
+			type = "mammalian_01_ship_exhaust_idle_file"
+			scale = 6.5
+		}
+		pdxparticle = {
+			name = "minmatar_1_7_0_exhaust_idle_particle"
+			type = "mammalian_01_ship_exhaust_idle_file"
+			scale = 7
+		}
+
+	##########
+	#REV MAIN ENGINE
+	############
+		pdxparticle = {
+			name = "minmatar_1_Rev_0_exhaust_idle_particle"
+			type = "mammalian_01_ship_exhaust_idle_file"
+			scale = 22
+		}
+	##########
+	#ARCHON ENGINEs
+	############
+		pdxparticle = {
+			name = "minmatar_1_arc_0_exhaust_idle_particle"
+			type = "mammalian_01_ship_exhaust_idle_file"
+			scale = 75
+		}
+	##########
+	#AVATAR ENGINES
+	############
+		pdxparticle = {
+			name = "minmatar_1_ava_0_exhaust_idle_particle"
+			type = "mammalian_01_ship_exhaust_idle_file"
+			scale = 17
+		}
+		pdxparticle = {
+			name = "minmatar_1_ava_s_0_exhaust_idle_particle"
+			type = "mammalian_01_ship_exhaust_idle_file"
+			scale = 97
+		}
+	
+#############
+# MOVING
+#############
+
+
+	
+	#########
+	# minmatar #
+	#########
+		pdxparticle = {
+			name = "minmatar_1_0_1_exhaust_moving_particle"
+			type = "mammalian_01_ship_exhaust_file"
+			scale = 0.01
+		}
+		pdxparticle = {
+			name = "minmatar_1_0_5_exhaust_moving_particle"
+			type = "mammalian_01_ship_exhaust_file"
+			scale = 0.5
+		}
+		pdxparticle = {
+			name = "minmatar_1_0_75_exhaust_moving_particle"
+			type = "mammalian_01_ship_exhaust_file"
+			scale = 0.75
+		}
+		pdxparticle = {
+			name = "minmatar_1_1_0_exhaust_moving_particle"
+			type = "mammalian_01_ship_exhaust_file"
+			scale = 1
+		}
+		pdxparticle = {
+			name = "minmatar_1_2_0_exhaust_moving_particle"
+			type = "mammalian_01_ship_exhaust_file"
+			scale = 2
+		}
+		pdxparticle = {
+			name = "minmatar_1_3_0_exhaust_moving_particle"
+			type = "mammalian_01_ship_exhaust_file"
+			scale = 3
+		}
+		pdxparticle = {
+			name = "minmatar_1_4_0_exhaust_moving_particle"
+			type = "mammalian_01_ship_exhaust_file"
+			scale = 4
+		}
+		pdxparticle = {
+			name = "minmatar_1_4_5_exhaust_moving_particle"
+			type = "mammalian_01_ship_exhaust_file"
+			scale = 4.5
+		}
+		pdxparticle = {
+			name = "minmatar_1_5_0_exhaust_moving_particle"
+			type = "mammalian_01_ship_exhaust_file"
+			scale = 5
+		}
+		pdxparticle = {
+			name = "minmatar_1_5_5_exhaust_moving_particle"
+			type = "mammalian_01_ship_exhaust_file"
+			scale = 5.5
+		}
+		pdxparticle = {
+			name = "minmatar_1_6_0_exhaust_moving_particle"
+			type = "mammalian_01_ship_exhaust_file"
+			scale = 6
+		}
+		pdxparticle = {
+			name = "minmatar_1_6_5_exhaust_moving_particle"
+			type = "mammalian_01_ship_exhaust_file"
+			scale = 6.5
+		}
+		pdxparticle = {
+			name = "minmatar_1_7_0_exhaust_moving_particle"
+			type = "mammalian_01_ship_exhaust_file"
+			scale = 7
+		}
+		pdxparticle = {
+			name = "minmatar_1_8_0_exhaust_moving_particle"
+			type = "mammalian_01_ship_exhaust_file"
+			scale = 8
+		}
+		pdxparticle = {
+			name = "minmatar_1_9_0_exhaust_moving_particle"
+			type = "mammalian_01_ship_exhaust_file"
+			scale = 9
+		}
+		pdxparticle = {
+			name = "minmatar_1_10_0_exhaust_moving_particle"
+			type = "mammalian_01_ship_exhaust_file"
+			scale = 10
+		}
+		pdxparticle = {
+			name = "minmatar_1_12_0_exhaust_moving_particle"
+			type = "mammalian_01_ship_exhaust_file"
+			scale = 12
+		}
+	##########
+	#REV MAIN ENGINE
+	############
+	pdxparticle = {
+		name = "minmatar_1_Rev_0_exhaust_moving_particle"
+		type = "mammalian_01_ship_exhaust_file"
+		scale = 30
+	}
+	
+	##########
+	#ARCHON ENGINEs
+	############
+	pdxparticle = {
+		name = "minmatar_1_arc_0_exhaust_moving_particle"
+		type = "mammalian_01_ship_exhaust_file"
+		scale = 150
+	}
+	
+	##########
+	#AVATAR ENGINES
+	############
+	pdxparticle = {
+		name = "minmatar_1_ava_0_exhaust_moving_particle"
+		type = "mammalian_01_ship_exhaust_file"
+		scale = 450
+	}
+	pdxparticle = {
+		name = "minmatar_1_ava_s_0_exhaust_moving_particle"
+		type = "mammalian_01_ship_exhaust_file"
+		scale = 160
+	}
+
+	pdxparticle = {
+		name = "ship_trail_particle"
+		type = "ship_trail_file"
+		scale = 1.0
+	}
+
+	pdxparticle = {
+		name = "nsc_flagship_explosion_particle"
+		type = "technosphere_explosion_effect"
+		scale = 5.0
+	}
+		
+	pdxparticle = {
+		name = "nsc_superdread_explosion_particle"
+		type = "technosphere_explosion_effect"
+		scale = 4.0
+	}
+
+	###############
+	# LINE ENGINE #
+	###############
+		### 0.5 ###
+			pdxparticle = {
+				name = "minmatar_0_5_exhaust_line_idle"
+				type = "minmatar_exhaust_line_idle_effect_file"
+				scale = 0.5
+			}
+
+			pdxparticle = {
+				name = "minmatar_0_5_exhaust_line_moving"
+				type = "minmatar_exhaust_line_moving_effect_file"
+				scale = 0.5
+			}
+
+			pdxparticle = {
+				name = "minmatar_0_5_exhaust_line_wide_moving"
+				type = "minmatar_exhaust_line_moving_effect_file"
+				scale = 0.5
+			}
+		### 1 ###
+			pdxparticle = {
+				name = "minmatar_1_exhaust_line_idle"
+				type = "minmatar_exhaust_line_idle_effect_file"
+				scale = 1
+			}
+
+			pdxparticle = {
+				name = "minmatar_1_exhaust_line_moving"
+				type = "minmatar_exhaust_line_moving_effect_file"
+				scale = 1
+			}
+
+			pdxparticle = {
+				name = "minmatar_1_exhaust_line_wide_moving"
+				type = "minmatar_exhaust_line_moving_effect_file"
+				scale = 1
+			}
+
+		### 2 ###
+			pdxparticle = {
+				name = "minmatar_2_exhaust_line_idle"
+				type = "minmatar_exhaust_line_idle_effect_file"
+				scale = 2
+			}
+
+			pdxparticle = {
+				name = "minmatar_2_exhaust_line_moving"
+				type = "minmatar_exhaust_line_moving_effect_file"
+				scale = 2
+			}
+
+			pdxparticle = {
+				name = "minmatar_2_exhaust_line_wide_moving"
+				type = "minmatar_exhaust_line_moving_effect_file"
+				scale = 2
+			}
+}
+
+

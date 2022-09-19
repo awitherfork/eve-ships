@@ -1,0 +1,58 @@
+objectTypes = {
+	pdxparticle = {
+		name = "magnetar_outburst_effect"
+		type = "magnetar_outburst_effect"
+		scale = 1.0
+	}
+
+	pdxparticle = {
+		name = "doomsday_core_beam_effect"
+		type = "doomsday_core_beam_effect"
+		
+		scale = 1.0
+	}
+	pdxparticle = {
+		name = "athanor_beam_effect"
+		type = "athanor_beam_effect_core"
+		
+		scale = 1.0
+	}
+
+	pdxparticle = {
+		name = "eve_hyper_relay_portal_effect_small"
+		type = "hyper_relay_portal_file"
+		
+		scale = 0.35
+	}
+
+	pdxparticle = {
+		name = "eve_hyper_relay_portal_effect"
+		type = "hyper_relay_portal_file"
+		
+		scale = 0.65
+	}
+	
+	pdxparticle = {
+		name = "eve_pulsar_star_outburst_effect"
+		type = "pulsar_star_outburst_effect"
+		
+		scale = 11.0
+	}
+
+	pdxparticle = {
+		name = "eve_gateway_portal_effect"
+		type = "hyper_relay_portal_file"
+		
+		scale = 2
+	}
+	
+	pdxparticle = {
+		name = "eve_gateway_outburst_effect"
+		type = "pulsar_star_outburst_effect"
+		
+		scale = 50.0
+	}
+	
+}
+
+

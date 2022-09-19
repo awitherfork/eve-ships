@@ -1,0 +1,22 @@
+entity = {
+	name = "caldari_01_headquarters_entity"
+	pdxmesh = "caldari_01_headquarters_mesh"
+
+	locator = { name = "xl_gun_01" rotation = { 0 0 0 } position = { 0 0 0 } }
+	locator = { name = "large_gun_01" rotation = { 0 0 0 } position = { 0 0 0 } }
+	locator = { name = "medium_gun_01" rotation = { 0 0 0 } position = { 0 0 0 } }
+	locator = { name = "small_gun_01" rotation = { 0 0 0 } position = { 0 0 0 } }
+	locator = { name = "strike_craft_locator_01" rotation = { 0 0 0 } position = { 0 0 0 } }
+
+	default_state = "idle"
+	state = { name = "idle" state_time = 5
+		start_event = { trigger_once = yes sound = { soundeffect = "defense_station_idle_hum" } } }
+	state = { name = "death" state_time = 5 looping = no }
+
+	scale = 0.5
+
+	game_data = {
+		size = 60.0
+	}
+}
+

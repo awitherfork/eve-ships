@@ -1,0 +1,468 @@
+## reload assets gfx/models/ships/amarr_01/_gallente_01_ships_meshes.gfx ##
+
+
+@invis_scale = 0.1
+@main_scale = 1
+
+
+
+#########################################################################
+#####																#####
+##W##							FRIGATES							##W##
+#####																#####
+#########################################################################
+
+### Turrets ###
+
+objectTypes = {
+
+	pdxmesh = {
+		name = "gallente_01_turret_projectile_large_mesh"
+		file = "gfx/models/ships/gallente_01/empty_turret.mesh"
+
+		scale = @invis_scale
+	}
+
+	pdxmesh = {
+		name = "gallente_01_turret_projectile_medium_mesh"
+		file = "gfx/models/ships/gallente_01/empty_turret.mesh"
+
+		scale = @invis_scale
+	}
+
+	pdxmesh = {
+		name = "gallente_01_turret_projectile_small_mesh"
+		file = "gfx/models/ships/gallente_01/empty_turret.mesh"
+
+		scale = @invis_scale
+	}
+
+	pdxmesh = {
+		name = "gallente_01_turret_missile_medium_mesh"
+		file = "gfx/models/ships/gallente_01/empty_turret.mesh"
+
+		scale = @invis_scale
+	}
+
+	pdxmesh = {
+		name = "gallente_01_turret_xl_mesh"
+		file = "gfx/models/ships/caldari_01/empty_turret.mesh"
+
+		scale = @invis_scale
+	}
+}
+
+################# SCIENCE ################
+
+	objectTypes = {
+
+		pdxmesh = {
+			name = "gallente_01_imicus_mesh"
+			file = "gfx/models/ships/gallente_01/imicus.mesh"
+			scale = @invis_scale
+		}
+
+		pdxmesh = {
+			name = "gallente_01_helios_mesh"
+			file = "gfx/models/ships/gallente_01/helios.mesh"
+			scale = @invis_scale
+		}
+
+	}
+
+################# CONSTRUCTOR #############
+
+	objectTypes = {
+
+		pdxmesh = {
+			name = "gallente_01_kryos_mesh"
+			file = "gfx/models/ships/gallente_01/kryos.mesh"
+			scale = @invis_scale
+		}
+	}
+
+################# TRANSPORT #############
+
+	objectTypes = {
+
+		pdxmesh = {
+			name = "gallente_01_epithal_mesh"
+			file = "gfx/models/ships/gallente_01/epithal.mesh"
+			scale = @invis_scale
+		}
+	}
+
+	objectTypes = {
+
+		pdxmesh = {
+			name = "gallente_01_Obelisk_mesh"
+			file = "gfx/models/ships/gallente_01/obelisk.mesh"
+			scale = @invis_scale
+
+			meshsettings = {
+				name = "Obelisk_hull"
+				index = 0
+				texture_diffuse = "Obelisk_diffuse.dds"
+				texture_normal = "Obelisk_normal.dds"
+				texture_specular = "Obelisk_specular.dds"
+				shader = "PdxMeshShip"
+			}
+		}
+	}
+
+################# COLONY #############
+
+	objectTypes = {
+
+		pdxmesh = {
+			name = "gallente_01_Iteron_mesh"
+			file = "gfx/models/ships/gallente_01/iteron.mesh"
+			scale = @invis_scale
+		}
+	}
+
+################# MILITARY ################
+
+#########################################################################
+#####																#####
+##W##							FRIGATES							##W##
+#####																#####
+#########################################################################
+
+	## T1 ##
+		objectTypes = {
+			pdxmesh = {
+				name = "gallente_incursus_mesh"
+				file = "gfx/models/ships/gallente_01/incursus.mesh"
+				scale = @invis_scale
+			}
+
+			pdxmesh = {
+				name = "gallente_incursus_frame_mesh"
+				file = "gfx/models/ships/gallente_01/incursus_frame.mesh"
+				scale = @invis_scale
+			}
+
+			pdxmesh = {
+				name = "gallente_atron_mesh"
+				file = "gfx/models/ships/gallente_01/atron.mesh"
+				scale = @invis_scale
+			}
+
+			pdxmesh = {
+				name = "gallente_atron_frame_mesh"
+				file = "gfx/models/ships/gallente_01/atron_frame.mesh"
+				scale = @invis_scale
+			}
+
+			pdxmesh = {
+				name = "gallente_tristan_mesh"
+				file = "gfx/models/ships/gallente_01/tristan.mesh"
+				scale = @invis_scale
+			}
+
+			pdxmesh = {
+				name = "gallente_tristan_frame_mesh"
+				file = "gfx/models/ships/gallente_01/tristan_frame.mesh"
+				scale = @invis_scale
+			}
+			
+			pdxmesh = {
+				name = "gallente_maulus_mesh"
+				file = "gfx/models/ships/gallente_01/maulus.mesh"
+				scale = @invis_scale
+			}
+
+			pdxmesh = {
+				name = "gallente_maulus_frame_mesh"
+				file = "gfx/models/ships/gallente_01/maulus_frame.mesh"
+				scale = @invis_scale
+			}
+		}
+
+	#################### T2 ##################
+		objectTypes = {
+			pdxmesh = {
+				name = "gallente_01_enyo_mesh"
+				file = "gfx/models/ships/gallente_01/enyo.mesh"
+				scale = @invis_scale
+			}
+
+			pdxmesh = {
+				name = "gallente_01_Ishkur_mesh"
+				file = "gfx/models/ships/gallente_01/ishkur.mesh"
+				scale = @invis_scale
+			}
+
+			pdxmesh = {
+				name = "gallente_01_Ares_mesh"
+				file = "gfx/models/ships/gallente_01/ares.mesh"
+				scale = @invis_scale
+			}
+
+			pdxmesh = {
+				name = "gallente_01_Taranis_mesh"
+				file = "gfx/models/ships/gallente_01/taranis.mesh"
+				scale = @invis_scale
+			}
+			
+			pdxmesh = {
+				name = "gallente_01_keres_mesh"
+				file = "gfx/models/ships/gallente_01/keres.mesh"
+				scale = @invis_scale
+			}	
+
+			pdxmesh = {
+				name = "gallente_01_nemesis_mesh"
+				file = "gfx/models/ships/gallente_01/nemesis.mesh"
+				scale = @invis_scale
+			}
+}
+#########################################################################
+#####																#####
+##W##							DESTROYER							##W##
+#####																#####
+#########################################################################
+	### T1 ###
+		objectTypes = {
+			pdxmesh = {
+				name = "gallente_01_algos_mesh"
+				file = "gfx/models/ships/gallente_01/algos.mesh"
+				scale = @invis_scale
+			}
+			
+			pdxmesh = {
+				name = "gallente_01_catalyst_mesh"
+				file = "gfx/models/ships/gallente_01/catalyst.mesh"
+				scale = @invis_scale
+			}
+		
+			pdxmesh = {
+				name = "gallente_01_hecate_mesh"
+				file = "gfx/models/ships/gallente_01/hecate.mesh"
+				scale = @invis_scale
+			}
+		}
+
+	### T2 ###
+		objectTypes = {
+			pdxmesh = {
+				name = "gallente_01_magus_mesh"
+				file = "gfx/models/ships/gallente_01/magus.mesh"
+				scale = @invis_scale
+			}
+			
+			pdxmesh = {
+				name = "gallente_01_eris_mesh"
+				file = "gfx/models/ships/gallente_01/eris.mesh"
+				scale = @invis_scale
+			}
+}
+
+#########################################################################
+#####																#####
+##W##							CRUISER								##W##
+#####																#####
+#########################################################################
+
+
+### T1 ###
+	objectTypes = {
+		pdxmesh = {
+			name = "gallente_01_celestis_mesh"
+			file = "gfx/models/ships/gallente_01/celestis.mesh"
+			scale = @invis_scale
+		}
+
+		pdxmesh = {
+			name = "gallente_01_exequror_mesh"
+			file = "gfx/models/ships/gallente_01/exequror.mesh"
+			scale = @invis_scale
+		}
+
+
+		pdxmesh = {
+			name = "gallente_01_thorax_mesh"
+			file = "gfx/models/ships/gallente_01/thorax.mesh"
+			scale = @invis_scale
+		}
+
+		pdxmesh = {
+			name = "gallente_01_vexor_mesh"
+			file = "gfx/models/ships/gallente_01/vexor.mesh"
+			scale = @invis_scale
+		}
+}
+### T2 ###
+	objectTypes = {
+		pdxmesh = {
+			name = "gallente_01_arazu_mesh"
+			file = "gfx/models/ships/gallente_01/arazu.mesh"
+			scale = @invis_scale
+		}
+
+		pdxmesh = {
+			name = "gallente_01_lachesis_mesh"
+			file = "gfx/models/ships/gallente_01/lachesis.mesh"
+			scale = @invis_scale
+		}
+
+		pdxmesh = {
+			name = "gallente_01_oneiros_mesh"
+			file = "gfx/models/ships/gallente_01/oneiros.mesh"
+			scale = @invis_scale
+		}
+
+		pdxmesh = {
+			name = "gallente_01_deimos_mesh"
+			file = "gfx/models/ships/gallente_01/deimos.mesh"
+			scale = @invis_scale
+		}
+
+		pdxmesh = {
+			name = "gallente_01_phobos_mesh"
+			file = "gfx/models/ships/gallente_01/phobos.mesh"
+			scale = @invis_scale
+		}
+
+		pdxmesh = {
+			name = "gallente_01_ishitar_mesh"
+			file = "gfx/models/ships/gallente_01/ishitar.mesh"
+			scale = @invis_scale
+		}
+}
+
+objectTypes = {
+	pdxmesh = {
+		name = "gallente_01_proteus_1_mesh"
+		file = "gfx/models/ships/gallente_01/proteus_1111.mesh"
+		scale = @invis_scale
+	}
+}
+
+
+
+#########################################################################
+#####																#####
+##W##						BATTLECRUISER							##W##
+#####																#####
+#########################################################################
+
+objectTypes = {
+	pdxmesh = {
+		name = "gallente_01_brutix_mesh"
+		file = "gfx/models/ships/gallente_01/brutix.mesh"
+		scale = @invis_scale
+	}
+
+	pdxmesh = {
+		name = "gallente_01_myrmidom_mesh"
+		file = "gfx/models/ships/gallente_01/myrmidom.mesh"
+		scale = @invis_scale
+	}
+
+	pdxmesh = {
+		name = "gallente_01_talos_mesh"
+		file = "gfx/models/ships/gallente_01/talos.mesh"
+		scale = @invis_scale
+	}
+}
+
+#########################################################################
+#####																#####
+##W##						BATTLESHIP								##W##
+#####																#####
+#########################################################################
+
+objectTypes = {
+	pdxmesh = {
+		name = "gallente_01_megathron_mesh"
+		file = "gfx/models/ships/gallente_01/megathron.mesh"
+		scale = @invis_scale
+	}
+
+	pdxmesh = {
+		name = "gallente_01_dominix_mesh"
+		file = "gfx/models/ships/gallente_01/dominix.mesh"
+		scale = @invis_scale
+	}
+
+	pdxmesh = {
+		name = "gallente_01_hyperion_mesh"
+		file = "gfx/models/ships/gallente_01/hyperion.mesh"
+		scale = @invis_scale
+	}
+
+}
+
+#########################################################################
+#####																#####
+##W##							CARRIER								##W##
+#####																#####
+#########################################################################
+
+objectTypes = {
+	pdxmesh = {
+		name = "gallente_01_thanatos_mesh"
+		file = "gfx/models/ships/gallente_01/thanatos.mesh"
+		scale = @invis_scale
+	}
+
+	pdxmesh = {
+		name = "gallente_01_ninazu_mesh"
+		file = "gfx/models/ships/gallente_01/ninazu.mesh"
+		scale = @invis_scale
+	}
+}
+
+#########################################################################
+#####																#####
+##W##							DREADNOUGHT							##W##
+#####																#####
+#########################################################################
+
+objectTypes = {
+	pdxmesh = {
+		name = "gallente_01_moros_mesh"
+		file = "gfx/models/ships/gallente_01/moros.mesh"
+		scale = @invis_scale
+	}
+}
+
+
+
+#########################################################################
+#####																#####
+##W##						MOTHER	SHIP							##W##
+#####																#####
+#########################################################################
+
+objectTypes = {
+	pdxmesh = {
+		name = "gallente_01_nyx_mesh"
+		file = "gfx/models/ships/gallente_01/nyx.mesh"
+		scale = @invis_scale
+	}
+}
+
+
+#########################################################################
+#####																#####
+##W##							TITAN								##W##
+#####																#####
+#########################################################################
+
+objectTypes = {
+	pdxmesh = {
+		name = "gallente_01_erebus_mesh"
+		file = "gfx/models/ships/gallente_01/erebus.mesh"
+		scale = @invis_scale
+
+	}
+	pdxmesh = {
+		name = "erebus_wreck_mesh"
+		file = "gfx/models/ships/gallente_01/erebus_wreck.mesh"
+		scale = @invis_scale
+	}
+}
+
