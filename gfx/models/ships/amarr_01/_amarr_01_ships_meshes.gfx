@@ -367,7 +367,7 @@ objectTypes = {
 
 	pdxmesh = {
         name = "amarr_01_apostle_mesh"
-        file = "gfx/models/ships/amarr_01/apostle.mesh"
+        file = "gfx/models/ships/amarr_01/apostle2.mesh"
         scale = @invis_scale
 	}
 
