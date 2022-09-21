@@ -27,6 +27,11 @@ entity = {
 	name = "amarr_01_Battlecruiser_entity"
 	pdxmesh = "arthropoid_01_cruiser_frame_mesh"
 
+	locator = { name = "part1"	position = { 0 0 0 } rotation = { 0 0 0 } }
+	locator = { name = "part2"	position = { 0 0 0 } rotation = { 0 0 0 } }
+	locator = { name = "part3"	position = { 0 0 0 } rotation = { 0 0 0 } }
+	locator = { name = "part4"	position = { 0 0 0 } rotation = { 0 0 0 } }
+
 	default_state = "idle"
 	state = { name = "idle" animation = "idle" animation_blend_time = 0.25
 		start_event = { trigger_once = yes sound = { soundeffect = "amb_battleship_hum" } }
@@ -79,40 +84,52 @@ entity = {
 # BOW
 entity = {
 	name = "amarr_01_Battlecruiser_bow_L1_entity"
-	pdxmesh = "empty_mesh_ship"
+	pdxmesh = "amarr_01_harbinger_mesh"
 	
 	locator = { name = "large_gun_01" rotation = { 0 0 0 } position = { 0 0 0 } }
+
+	default_state = "idle"
+	state = { name = "idle" state_time = 5
+		event = { time = 0 node = "light_locator_01" particle = "ship_light_blue_effect" trigger_once = yes keep_particle = yes }
+		event = { time = 0 node = "light_locator_02" particle = "ship_light_blue_effect" trigger_once = yes keep_particle = yes }
+		event = { time = 0 node = "light_locator_03" particle = "ship_light_blue_effect" trigger_once = yes keep_particle = yes }		
+		
+		event = { time = 0 node = "engine_small_01" particle = "mammalian_01_1_45_exhaust_idle_particle" trigger_once = yes keep_particle = yes }
+		event = { time = 0 node = "engine_small_02" particle = "mammalian_01_1_45_exhaust_idle_particle" trigger_once = yes keep_particle = yes }
+		event = { time = 0 node = "engine_small_03" particle = "mammalian_01_1_45_exhaust_idle_particle" trigger_once = yes keep_particle = yes }
+		event = { time = 0 node = "engine_small_04" particle = "mammalian_01_1_45_exhaust_idle_particle" trigger_once = yes keep_particle = yes }
+		event = { time = 0 node = "engine_small_05" particle = "mammalian_01_1_45_exhaust_idle_particle" trigger_once = yes keep_particle = yes }
+		event = { time = 0 node = "engine_small_06" particle = "mammalian_01_1_45_exhaust_idle_particle" trigger_once = yes keep_particle = yes }
+	}
+	state = { name = "moving" state_time = 5
+		event = { time = 0 node = "light_locator_01" particle = "ship_light_blue_effect" trigger_once = yes keep_particle = yes }
+		event = { time = 0 node = "light_locator_02" particle = "ship_light_blue_effect" trigger_once = yes keep_particle = yes }
+		event = { time = 0 node = "light_locator_03" particle = "ship_light_blue_effect" trigger_once = yes keep_particle = yes }		
+		
+		event = { time = 0 node = "engine_small_01" particle = "mammalian_01_1_45_ship_exhaust_moving_particle" trigger_once = yes keep_particle = yes }
+		event = { time = 0 node = "engine_small_02" particle = "mammalian_01_1_45_ship_exhaust_moving_particle" trigger_once = yes keep_particle = yes }
+		event = { time = 0 node = "engine_small_03" particle = "mammalian_01_1_45_ship_exhaust_moving_particle" trigger_once = yes keep_particle = yes }
+		event = { time = 0 node = "engine_small_04" particle = "mammalian_01_1_45_ship_exhaust_moving_particle" trigger_once = yes keep_particle = yes }
+		event = { time = 0 node = "engine_small_05" particle = "mammalian_01_1_45_ship_exhaust_moving_particle" trigger_once = yes keep_particle = yes }
+		event = { time = 0 node = "engine_small_06" particle = "mammalian_01_1_45_ship_exhaust_moving_particle" trigger_once = yes keep_particle = yes }
+	}
+	state = { name = "death" state_time = 5 }
+
+	scale = @harbinger_physical_scale
+
+	game_data = {
+		size =  @harbinger_scale
+	}
 }
 
 entity = {
 	name = "amarr_01_Battlecruiser_bow_M1S2_entity"
-	pdxmesh = "empty_mesh_ship"
-	
-	locator = { name = "medium_gun_01" rotation = { 0 0 0 } position = { 0 0 0 } }
-	locator = { name = "small_gun_01" rotation = { 0 0 0 } position = { 0 0 0 } }
-	locator = { name = "small_gun_02" rotation = { 0 0 0 } position = { 0 0 0 } }
-}
-
-entity = {
-	name = "amarr_01_Battlecruiser_bow_M2_entity"
-	pdxmesh = "empty_mesh_ship"
-	
-	locator = { name = "medium_gun_01" rotation = { 0 0 0 } position = { 0 0 0 } }
-	locator = { name = "medium_gun_02" rotation = { 0 0 0 } position = { 0 0 0 } }
-}
-
-# MID
-
-### 1 ###
-entity = {
-	name = "amarr_01_Battlecruiser_mid1_M2S2_entity"
 	pdxmesh = "amarr_01_prophecy_mesh"
-
+	
 	locator = { name = "medium_gun_01" rotation = { 0 0 0 } position = { 0 0 0 } }
-	locator = { name = "medium_gun_02" rotation = { 0 0 0 } position = { 0 0 0 } }
 	locator = { name = "small_gun_01" rotation = { 0 0 0 } position = { 0 0 0 } }
 	locator = { name = "small_gun_02" rotation = { 0 0 0 } position = { 0 0 0 } }
-	
+
 	default_state = "idle"
 	state = { name = "idle" state_time = 5
 		event = { time = 0 node = "light_locator_01" particle = "ship_light_blue_effect" trigger_once = yes keep_particle = yes }
@@ -149,57 +166,13 @@ entity = {
 	}
 }
 
-### 2 ###
 entity = {
-	name = "amarr_01_Battlecruiser_mid1_M3_entity"
-	pdxmesh = "amarr_01_harbinger_mesh"
-
+	name = "amarr_01_Battlecruiser_bow_M2_entity"
+	pdxmesh = "amarr_01_oracle_mesh"
+	
 	locator = { name = "medium_gun_01" rotation = { 0 0 0 } position = { 0 0 0 } }
 	locator = { name = "medium_gun_02" rotation = { 0 0 0 } position = { 0 0 0 } }
-	locator = { name = "medium_gun_03" rotation = { 0 0 0 } position = { 0 0 0 } }
-	
-	default_state = "idle"
-	state = { name = "idle" state_time = 5
-		event = { time = 0 node = "light_locator_01" particle = "ship_light_blue_effect" trigger_once = yes keep_particle = yes }
-		event = { time = 0 node = "light_locator_02" particle = "ship_light_blue_effect" trigger_once = yes keep_particle = yes }
-		event = { time = 0 node = "light_locator_03" particle = "ship_light_blue_effect" trigger_once = yes keep_particle = yes }		
-		
-		event = { time = 0 node = "engine_small_01" particle = "mammalian_01_1_45_exhaust_idle_particle" trigger_once = yes keep_particle = yes }
-		event = { time = 0 node = "engine_small_02" particle = "mammalian_01_1_45_exhaust_idle_particle" trigger_once = yes keep_particle = yes }
-		event = { time = 0 node = "engine_small_03" particle = "mammalian_01_1_45_exhaust_idle_particle" trigger_once = yes keep_particle = yes }
-		event = { time = 0 node = "engine_small_04" particle = "mammalian_01_1_45_exhaust_idle_particle" trigger_once = yes keep_particle = yes }
-		event = { time = 0 node = "engine_small_05" particle = "mammalian_01_1_45_exhaust_idle_particle" trigger_once = yes keep_particle = yes }
-		event = { time = 0 node = "engine_small_06" particle = "mammalian_01_1_45_exhaust_idle_particle" trigger_once = yes keep_particle = yes }
-	}
-	state = { name = "moving" state_time = 5
-		event = { time = 0 node = "light_locator_01" particle = "ship_light_blue_effect" trigger_once = yes keep_particle = yes }
-		event = { time = 0 node = "light_locator_02" particle = "ship_light_blue_effect" trigger_once = yes keep_particle = yes }
-		event = { time = 0 node = "light_locator_03" particle = "ship_light_blue_effect" trigger_once = yes keep_particle = yes }		
-		
-		event = { time = 0 node = "engine_small_01" particle = "mammalian_01_1_45_ship_exhaust_moving_particle" trigger_once = yes keep_particle = yes }
-		event = { time = 0 node = "engine_small_02" particle = "mammalian_01_1_45_ship_exhaust_moving_particle" trigger_once = yes keep_particle = yes }
-		event = { time = 0 node = "engine_small_03" particle = "mammalian_01_1_45_ship_exhaust_moving_particle" trigger_once = yes keep_particle = yes }
-		event = { time = 0 node = "engine_small_04" particle = "mammalian_01_1_45_ship_exhaust_moving_particle" trigger_once = yes keep_particle = yes }
-		event = { time = 0 node = "engine_small_05" particle = "mammalian_01_1_45_ship_exhaust_moving_particle" trigger_once = yes keep_particle = yes }
-		event = { time = 0 node = "engine_small_06" particle = "mammalian_01_1_45_ship_exhaust_moving_particle" trigger_once = yes keep_particle = yes }
-	}
-	state = { name = "death" state_time = 5 }
 
-	scale = @harbinger_physical_scale
-
-	game_data = {
-		size =  @harbinger_scale
-	}
-}
-
-### 3 ###
-entity = {
-	name = "amarr_01_Battlecruiser_mid1_L1M1_entity"
-	pdxmesh = "amarr_01_oracle_mesh"
-
-	locator = { name = "large_gun_01" rotation = { 0 0 0 } position = { 0 0 0 } }
-	locator = { name = "medium_gun_01" rotation = { 0 0 0 } position = { 0 0 0 } }
-	
 	default_state = "idle"
 	state = { name = "idle" state_time = 5
 		event = { time = 0 node = "light_locator_01" particle = "ship_light_blue_effect" trigger_once = yes keep_particle = yes }
@@ -232,38 +205,19 @@ entity = {
 	}
 }
 
-### 4 ###
+# MID
 entity = {
-	name = "amarr_01_Battlecruiser_mid1_S2HB_entity"
-
-	locator = { name = "small_gun_01" rotation = { 0 0 0 } position = { 0 0 0 } }
-	locator = { name = "small_gun_02" rotation = { 0 0 0 } position = { 0 0 0 } }
-	locator = { name = "strike_craft_locator_01" rotation = { 0 0 0 } position = { 0 0 0 } }
-	locator = { name = "part1" }
-
-	attach = { part1 = "amarr_01_battlecruiser_mid1_M2S2_entity" }
-}
-	
-# MID2
-entity = {
-	name = "amarr_01_Battlecruiser_mid2_S2HB_entity"
+	name = "amarr_01_Battlecruiser_mid_M2S2_entity"
 	pdxmesh = "empty_mesh_ship"
 
-	locator = { name = "small_gun_01" rotation = { 0 0 0 } position = { 0 0 0 } }
-	locator = { name = "small_gun_02" rotation = { 0 0 0 } position = { 0 0 0 } }
-	locator = { name = "strike_craft_locator_01" rotation = { 0 0 0 } position = { 0 0 0 } }
-}
-
-entity = {
-	name = "amarr_01_Battlecruiser_mid2_L1M1_entity"
-	pdxmesh = "empty_mesh_ship"
-
-	locator = { name = "large_gun_01" rotation = { 0 0 0 } position = { 0 0 0 } }
 	locator = { name = "medium_gun_01" rotation = { 0 0 0 } position = { 0 0 0 } }
+	locator = { name = "medium_gun_02" rotation = { 0 0 0 } position = { 0 0 0 } }
+	locator = { name = "small_gun_01" rotation = { 0 0 0 } position = { 0 0 0 } }
+	locator = { name = "small_gun_02" rotation = { 0 0 0 } position = { 0 0 0 } }
 }
 
 entity = {
-	name = "amarr_01_Battlecruiser_mid2_M3_entity"
+	name = "amarr_01_Battlecruiser_mid_M3_entity"
 	pdxmesh = "empty_mesh_ship"
 
 	locator = { name = "medium_gun_01" rotation = { 0 0 0 } position = { 0 0 0 } }
@@ -272,16 +226,21 @@ entity = {
 }
 
 entity = {
-	name = "amarr_01_Battlecruiser_mid2_M2S2_entity"
+	name = "amarr_01_Battlecruiser_mid_L1M1_entity"
 	pdxmesh = "empty_mesh_ship"
 
+	locator = { name = "large_gun_01" rotation = { 0 0 0 } position = { 0 0 0 } }
 	locator = { name = "medium_gun_01" rotation = { 0 0 0 } position = { 0 0 0 } }
-	locator = { name = "medium_gun_02" rotation = { 0 0 0 } position = { 0 0 0 } }
-	locator = { name = "small_gun_01" rotation = { 0 0 0 } position = { 0 0 0 } }
-	locator = { name = "small_gun_02" rotation = { 0 0 0 } position = { 0 0 0 } }
 }
 
+entity = {
+	name = "amarr_01_Battlecruiser_mid_S2HB_entity"
+	pdxmesh = "empty_mesh_ship"
 
+	locator = { name = "small_gun_01" rotation = { 0 0 0 } position = { 0 0 0 } }
+	locator = { name = "small_gun_02" rotation = { 0 0 0 } position = { 0 0 0 } }
+	locator = { name = "strike_craft_locator_01" rotation = { 0 0 0 } position = { 0 0 0 } }
+}
 
 # STERN
 entity = {

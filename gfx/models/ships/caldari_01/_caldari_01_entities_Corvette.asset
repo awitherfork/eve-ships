@@ -8,11 +8,11 @@
 @kestrel_scale = 3.0
 
 # in game size scale #
-@corvette_physical_scale = 2.0
-@condor_physical_scale = 1.0
-@merlin_physical_scale = 1.0
-@griffin_physical_scale = 1.0
-@kestrel_physical_scale = 1.0
+@corvette_physical_scale = 1.0
+@condor_physical_scale = 0.5
+@merlin_physical_scale = 0.5
+@griffin_physical_scale = 0.5
+@kestrel_physical_scale = 0.5
 
 @small_trail_W = 10
 @small_trail_L = 60

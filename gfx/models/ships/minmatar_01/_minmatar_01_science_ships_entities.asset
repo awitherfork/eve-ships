@@ -274,6 +274,8 @@ entity = {
 	name = "minmatar_01_transport_ship_entity"
 	pdxmesh = "minmatar_01_hoarder_mesh"
 
+	locator = { name = "transport_gun_01" position = { 0 0 0 } rotation = { 0 0 0 } }
+
 	scale = @transport_physical_scale
 	
 	default_state = "idle"

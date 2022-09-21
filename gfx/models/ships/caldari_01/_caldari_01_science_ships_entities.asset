@@ -392,6 +392,8 @@ entity = {
 entity = {
  	name = "caldari_01_transport_ship_entity"
 	pdxmesh = "caldari_01_tayra_mesh"
+
+	locator = { name = "transport_gun_01" position = { 0 0 0 } rotation = { 0 0 0 } }
 	
 	default_state = "idle"
 	state = { name = "idle" state_time = 5
