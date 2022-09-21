@@ -1,14 +1,10 @@
-# reload assets gfx/models/ships/minmatar_01/_minmatar_01_cruiser_ships_entities.asset 
+# reload assets gfx/models/ships/minmatar_01/_minmatar_01_entities_cruiser.asset
 
 # ship designer scale #
-@cruiser_scale = 5
-@belicose_scale = 5
-@scythe_scale = 5
-@stabber_scale = 5
-@rupture_scale = 5
+@cruiser_scale = 10
 
 # in game size scale #
-@cruiser_physical_scale = 1.0
+@cruiser_physical_scale = 1.6
 @belicose_physical_scale = 1.0
 @scythe_physical_scale = 1.0
 @stabber_physical_scale = 1.0
@@ -167,10 +163,6 @@ entity = {
 	state = { name = "death" state_time = 5 }
 
 	scale = @scythe_physical_scale
-
-	game_data = {
-		size =  @scythe_scale
-	}
 }
 
 entity = {
@@ -222,8 +214,7 @@ entity = {
 			"engine_small_04" = 		{ width = @medium_trail_W 	length = @medium_trail_L   	}
 			"engine_small_05" = 		{ width = @medium_trail_W 	length = @medium_trail_L   	}
 			"engine_small_06" = 		{ width = @medium_trail_W 	length = @medium_trail_L   	}
-		}	
-		size = @stabber_scale
+		}
 	}
 }
 
@@ -286,8 +277,7 @@ entity = {
 			"engine_small_05" = 		{ width = @medium_trail_W 	length = @medium_trail_L   	}
 			"engine_small_06" = 		{ width = @medium_trail_W 	length = @medium_trail_L   	}
 			"engine_small_07" = 		{ width = @medium_trail_W 	length = @medium_trail_L   	}
-		}	
-		size = @rupture_scale
+		}
 	}
 }
 
@@ -347,8 +337,7 @@ entity = {
 			"engine_small_05" = 		{ width = @medium_trail_W 	length = @medium_trail_L   	}
 			"engine_small_06" = 		{ width = @medium_trail_W 	length = @medium_trail_L   	}
 			"engine_small_07" = 		{ width = @medium_trail_W 	length = @medium_trail_L   	}
-		}	
-		size = @belicose_scale
+		}
 	}
 }
 

@@ -1,17 +1,12 @@
-# reload assets gfx/models/ships/caldari_01/_caldari_01_battleship_ships_entities.asset
+# reload assets gfx/models/ships/caldari_01/_caldari_01_entities_battleship.asset
 
 # ship designer scale #
-@Carrier_scale = 40
 @battleship_scale = 20
-@rokh_scale = 20
-@scorpion_scale = 20
-@raven_scale = 20
-
-@Carrier_physical_scale = 0.7
-@battleship_physical_scale = 0.8
-@rokh_physical_scale = 0.8
-@scorpion_physical_scale = 0.8
-@raven_physical_scale = 0.8
+# in game size scale #
+@battleship_physical_scale = 1.4
+@rokh_physical_scale = 1
+@scorpion_physical_scale = 1
+@raven_physical_scale = 1
 
 @small_trail_W = 10
 @small_trail_L = 60

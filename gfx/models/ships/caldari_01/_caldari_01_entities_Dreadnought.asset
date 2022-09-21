@@ -1,12 +1,12 @@
-# reload assets gfx/models/ships/caldari_01/_caldari_01_dreadnought_ships_entities.asset
+# reload assets gfx/models/ships/caldari_01/_caldari_01_entities_dreadnought.asset
 
 # ship designer scale #
-@frame_scale = 40.0
-@Dreadnought_scale = 50.0
+@frame_scale = 20.0
+@Dreadnought_scale = 20.0
 
 # in game size scale #
 @frame_physical_scale = 1.0
-@Dreadnought_physical_scale = 0.4
+@Dreadnought_physical_scale = 0.6
 
 @small_trail_W = 10
 @small_trail_L = 60

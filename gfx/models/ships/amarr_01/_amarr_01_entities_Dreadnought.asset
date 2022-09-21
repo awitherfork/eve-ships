@@ -6,7 +6,7 @@
 
 # in game size scale #
 @frame_physical_scale = 1.0
-@Dreadnought_physical_scale = 0.8
+@Dreadnought_physical_scale = 0.6
 
 @small_trail_W = 10
 @small_trail_L = 60
@@ -90,10 +90,10 @@ entity = {
 		event = { time = 15.9 node = "part2" particle = "large_player_ship_explosion_particle" sound = { soundeffect = ship_destroyed } }
 	}
 
-	scale = @Dreadnought_physical_scale
+	scale = @frame_physical_scale
 
 	game_data = {
-		size = @Dreadnought_scale
+		size = @frame_scale
 		emissive_recolor_crunch = 5.0
 	}
 

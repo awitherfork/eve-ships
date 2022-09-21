@@ -1,14 +1,11 @@
-# reload assets gfx/models/ships/caldari_01/_caldari_01_carrier_ships_entities.asset
+# reload assets gfx/models/ships/caldari_01/_caldari_01_entities_carrier.asset
 
 # ship designer scale #
-@frame_scale = 40
-@Carrier_scale = 40
-@minokawa_scale = 40
+@Carrier_scale = 17
 
 # in game size scale #
 @frame_physical_scale = 1.0
-@Carrier_physical_scale = 0.4
-@force_auxiliary_physical_scale = 0.2
+@chimera_physical_scale = 0.8
 
 @small_trail_W = 10
 @small_trail_L = 60
@@ -90,12 +87,14 @@ entity = {
 		event = { time = 15.9 node = "part2" particle = "large_player_ship_explosion_particle" sound = { soundeffect = ship_destroyed } }
 	}
 
-	scale = @Carrier_physical_scale
+	scale = @frame_physical_scale
 
 	game_data = {
 		size = @Carrier_scale
 		emissive_recolor_crunch = 5.0
 	}
+
+	attach = { part1 = "caldari_01_chimera_entity" }
 }
 
 
@@ -103,38 +102,36 @@ entity = {
 ################################ BOW ###################################
 entity = {
 	name = "caldari_01_Carrier_bow_L1M1S2_entity"
+	pdxmesh = "empty_mesh_ship"
 
 	locator = { name = "large_gun_01" rotation = { 0 0 0 } position = { 0 0 0 } }
 	locator = { name = "medium_gun_01" rotation = { 0 0 0 } position = { 0 0 0 } }
 	locator = { name = "small_gun_01" rotation = { 0 0 0 } position = { 0 0 0 } }
 	locator = { name = "small_gun_02" rotation = { 0 0 0 } position = { 0 0 0 } }
-
-	attach = { part1 = "caldari_01_chimera_entity" }
 }
 
 entity = {
 	name = "caldari_01_Carrier_bow_L1S4_entity"
+	pdxmesh = "empty_mesh_ship"
 
 	locator = { name = "large_gun_01" rotation = { 0 0 0 } position = { 0 0 0 } }
 	locator = { name = "small_gun_01" rotation = { 0 0 0 } position = { 0 0 0 } }
 	locator = { name = "small_gun_02" rotation = { 0 0 0 } position = { 0 0 0 } }
 	locator = { name = "small_gun_03" rotation = { 0 0 0 } position = { 0 0 0 } }
 	locator = { name = "small_gun_04" rotation = { 0 0 0 } position = { 0 0 0 } }
-
-	attach = { part1 = "caldari_01_chimera_entity" }
 }
 
 entity = {
 	name = "caldari_01_Carrier_bow_L2_entity"
+	pdxmesh = "empty_mesh_ship"
 
 	locator = { name = "large_gun_01" rotation = { 0 0 0 } position = { 0 0 0 } }
 	locator = { name = "large_gun_02" rotation = { 0 0 0 } position = { 0 0 0 } }
-
-	attach = { part1 = "caldari_01_chimera_entity" }
 }
 
 entity = {
 	name = "caldari_01_Carrier_bow_M2S4_entity"
+	pdxmesh = "empty_mesh_ship"
 
 	locator = { name = "medium_gun_01" rotation = { 0 0 0 } position = { 0 0 0 } }
 	locator = { name = "medium_gun_02" rotation = { 0 0 0 } position = { 0 0 0 } }
@@ -142,39 +139,34 @@ entity = {
 	locator = { name = "small_gun_02" rotation = { 0 0 0 } position = { 0 0 0 } }
 	locator = { name = "small_gun_03" rotation = { 0 0 0 } position = { 0 0 0 } }
 	locator = { name = "small_gun_04" rotation = { 0 0 0 } position = { 0 0 0 } }
-
-	attach = { part1 = "caldari_01_chimera_entity" }
 }
 
 entity = {
 	name = "caldari_01_Carrier_bow_M1S2SHB_entity"
+	pdxmesh = "empty_mesh_ship"
 
 	locator = { name = "medium_gun_01" rotation = { 0 0 0 } position = { 0 0 0 } }
 	locator = { name = "small_gun_01" rotation = { 0 0 0 } position = { 0 0 0 } }
 	locator = { name = "small_gun_02" rotation = { 0 0 0 } position = { 0 0 0 } }
 	locator = { name = "strike_craft_locator_01" rotation = { 0 0 0 } position = { 0 0 0 } }
-	
-	attach = { part1 = "caldari_01_chimera_entity" }
 }
 
 entity = {
 	name = "caldari_01_Carrier_bow_M3S2_entity"
+	pdxmesh = "empty_mesh_ship"
 
 	locator = { name = "medium_gun_01" rotation = { 0 0 0 } position = { 0 0 0 } }
 	locator = { name = "medium_gun_02" rotation = { 0 0 0 } position = { 0 0 0 } }
 	locator = { name = "medium_gun_01" rotation = { 0 0 0 } position = { 0 0 0 } }
 	locator = { name = "small_gun_01" rotation = { 0 0 0 } position = { 0 0 0 } }
 	locator = { name = "small_gun_02" rotation = { 0 0 0 } position = { 0 0 0 } }
-
-	attach = { part1 = "caldari_01_chimera_entity" }
 }
 
 entity = {
 	name = "caldari_01_Carrier_bow_XL1_entity"
+	pdxmesh = "empty_mesh_ship"
 
 	locator = { name = "xl_gun_01" rotation = { 0 0 0 } position = { 0 0 0 } }
-
-	attach = { part1 = "caldari_01_chimera_entity" }
 }
 
 
@@ -289,8 +281,6 @@ entity = {
 entity = {
 	name = "caldari_01_chimera_entity"
 	pdxmesh = "caldari_01_chimera_mesh"
-	
-	scale = @Carrier_physical_scale 
 
 	default_state = "idle"
 	state = { name = "idle" state_time = 5
@@ -331,9 +321,6 @@ entity = {
 
 	}
 	state = { name = "death" state_time = 5 }
-	
-	
-	game_data = {
-		size = @Carrier_scale
-	}
+
+	scale = @chimera_physical_scale 
 }

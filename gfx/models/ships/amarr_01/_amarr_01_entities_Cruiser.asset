@@ -1,13 +1,13 @@
 # reload assets gfx/models/ships/amarr_01/_amarr_01_entities_cruiser.asset 
 
 # ship designer scale #
-@cruiser_scale = 8
+@cruiser_scale = 10.0
 
 # in game size scale #
-@cruiser_physical_scale = 1.0
+@cruiser_physical_scale = 1.6
 @maller_physical_scale = 1.3
-@arbitrator_physical_scale = 1.1
-@omen_physical_scale = 1.2
+@arbitrator_physical_scale = 1.2
+@omen_physical_scale = 1.3
 
 @small_trail_W = 10
 @small_trail_L = 60
@@ -158,10 +158,6 @@ entity = {
 	state = { name = "death" state_time = 5 }
 
 	scale = @arbitrator_physical_scale
-
-	game_data = {
-		size = @cruiser_scale
-	}
 }
 
 entity = {
@@ -199,10 +195,6 @@ entity = {
 	state = { name = "death" state_time = 5 }
 
 	scale = @maller_physical_scale
-
-	game_data = {
-		size = @cruiser_scale
-	}
 }
 
 entity = {
@@ -241,10 +233,6 @@ entity = {
 	state = { name = "death" state_time = 5 }
 
 	scale = @maller_physical_scale
-
-	game_data = {
-		size = @cruiser_scale
-	}
 }
 
 entity = {
@@ -288,11 +276,6 @@ entity = {
 	state = { name = "death" state_time = 5 }
 
 	scale = @cruiser_physical_scale
-
-	game_data = {
-		size = @cruiser_scale
-			
-	}
 }
 
 #############

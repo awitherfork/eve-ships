@@ -1,14 +1,10 @@
-# reload assets gfx/models/ships/gallente_01/_gallente_01_cruiser_ships_entities.asset
+# reload assets gfx/models/ships/gallente_01/_gallente_01_entities_cruiser.asset
 
 # ship designer scale #
-@cruiser_scale = 9.0
-@celestis_scale = 9.0
-@vexor_scale = 9.0
-@exequror_scale = 9.0
-
+@cruiser_scale = 10.0
 
 # in game size scale #
-@cruiser_physical_scale = 1.2
+@cruiser_physical_scale = 1.6
 @celestis_physical_scale = 1.2
 @vexor_physical_scale = 1.2
 @exequror_physical_scale = 1.2
@@ -167,10 +163,6 @@ entity = {
 	state = { name = "death" state_time = 5 }
 
 	scale = @vexor_physical_scale
-
-	game_data = {
-		size = @vexor_scale
-	}
 }
 
 ### Part 1 ###
@@ -205,10 +197,6 @@ entity = {
 	state = { name = "death" state_time = 5 }
 
 	scale = @exequror_physical_scale
-
-	game_data = {
-		size = @exequror_scale
-	}
 }
 
 ### Part 2 ###
@@ -246,10 +234,6 @@ entity = {
 	state = { name = "death" state_time = 5 }
 
 	scale = @vexor_physical_scale
-
-	game_data = {
-		size = @vexor_scale
-	}
 }
 
 ### Part 3 ###
@@ -294,10 +278,6 @@ entity = {
 	state = { name = "death" state_time = 5 }
 
 	scale = @celestis_physical_scale
-
-	game_data = {
-		size = @celestis_scale
-	}
 }
 
 ### Part 4 ###

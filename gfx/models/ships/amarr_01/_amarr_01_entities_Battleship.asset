@@ -2,16 +2,8 @@
 
 # ship designer scale #
 @battleship_scale = 15.0
-@apocalypse_scale = 15.0
-@armageddon_scale = 15.0
-@abaddon_scale = 15.0
-
-
 # in game size scale #
-@battleship_physical_scale = 1.0
-@apocalypse_physical_scale = 0.5
-@armageddon_physical_scale = 0.8
-@abaddon_physical_scale = 0.8
+@battleship_physical_scale = 1
 
 @small_trail_W = 10
 @small_trail_L = 60
@@ -201,12 +193,6 @@ entity = {
 		event = { time = 0 node = "engine_small_03" particle = "amarr_01_4_00_exhaust_moving_particle" trigger_once = yes keep_particle = yes }
 	}
 	state = { name = "death" state_time = 5 }
-
-	scale = @armageddon_physical_scale
-
-	game_data = {
-		size = @apocalypse_scale
-	}
 }
 
 entity = {
@@ -271,12 +257,6 @@ entity = {
 		event = { time = 0 node = "engine_small_06" particle = "amarr_01_4_00_exhaust_moving_particle" trigger_once = yes keep_particle = yes }
 	}
 	state = { name = "death" state_time = 5 }
-
-	scale = @abaddon_physical_scale
-
-	game_data = {
-		size = @abaddon_scale
-	}
 }
 
 entity = {
@@ -312,15 +292,12 @@ entity = {
 
 	state = { name = "death" state_time = 5 }
 
-	scale = @apocalypse_physical_scale
-
 	game_data = {
 		trail_locators = {
 			"engine_small_01" = 		{ width = @medium_trail_W 	length = @medium_trail_L   	}
 			"engine_small_02" = 		{ width = @medium_trail_W 	length = @medium_trail_L   	}
 			"engine_small_03" = 		{ width = @medium_trail_W 	length = @medium_trail_L   	}
-			}
-		size = @apocalypse_scale
+		}
 	}
 }
 
@@ -384,12 +361,6 @@ entity = {
 		event = { time = 0 node = "engine_small_06" particle = "amarr_01_4_00_exhaust_moving_particle" trigger_once = yes keep_particle = yes }
 	}
 	state = { name = "death" state_time = 5 }
-
-	scale = @abaddon_physical_scale
-
-	game_data = {
-		size = @abaddon_scale
-	}
 }
 
 #Stern

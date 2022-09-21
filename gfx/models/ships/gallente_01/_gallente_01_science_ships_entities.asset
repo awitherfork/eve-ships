@@ -11,10 +11,10 @@
 @colony_frame_physical_scale = 1.0
 @transport_frame_physical_scale = 1.0
 
-@science_physical_scale = 1.0
-@constructor_physical_scale = 0.5
-@colony_physical_scale = 0.5
-@transport_physical_scale = 0.5
+@science_physical_scale = 4
+@constructor_physical_scale = 1
+@colony_physical_scale = 1
+@transport_physical_scale = 1
 
 @small_trail_W = 10
 @small_trail_L = 60

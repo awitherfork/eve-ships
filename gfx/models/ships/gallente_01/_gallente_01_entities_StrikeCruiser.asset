@@ -1,15 +1,8 @@
-@corvette_scale = 5.0
-@destroyer_scale = 7.0
-@cruiser_scale = 12.0
-@cruiser_physical_scale = 1.5
-@battleship_scale = 15.0
-@Battlecruiser_scale = 13.0
-@LightCarrier_scale = 15.0
-@Carrier_scale = 10.0
-@military_station_large = 20.0
-@Dreadnought_scale = 20.0
-@Superdreadnought_scale = 25.0
-@Flagship_scale = 30.0
+# reload assets gfx/models/ships/gallente_01/_gallente_01_entities_strikecruiser.asset
+
+@cruiser_scale = 10.0
+@cruiser_physical_scale = 1.8
+@thorax_physical_scale = 1
 
 @small_trail_W = 10
 @small_trail_L = 60
@@ -93,7 +86,7 @@ entity = {
 		event = { time = 0.0 node = "root" particle = "avian_01_large_ship_explosion_particle" sound = { soundeffect = ship_destroyed } }
 	}
 	
-	scale = 0.9
+	scale = @cruiser_physical_scale
 	
 	game_data = {
 		size = @cruiser_scale
@@ -169,11 +162,7 @@ entity = {
 	}
 	state = { name = "death" state_time = 5 }
 
-	scale = @cruiser_physical_scale
-
-	game_data = {
-		size = @cruiser_scale
-	}
+	scale = @thorax_physical_scale
 }
 
 entity = {
@@ -212,11 +201,7 @@ entity = {
 	}
 	state = { name = "death" state_time = 5 }
 
-	scale = @cruiser_physical_scale
-
-	game_data = {
-		size = @cruiser_scale
-	}
+	scale = @thorax_physical_scale
 }
 
 entity = {
@@ -256,11 +241,7 @@ entity = {
 	}
 	state = { name = "death" state_time = 5 }
 
-	scale = @cruiser_physical_scale
-
-	game_data = {
-		size = @cruiser_scale
-	}
+	scale = @thorax_physical_scale
 }
 
 entity = {
@@ -301,11 +282,7 @@ entity = {
 	}
 	state = { name = "death" state_time = 5 }
 
-	scale = @cruiser_physical_scale
-
-	game_data = {
-		size = @cruiser_scale
-	}
+	scale = @thorax_physical_scale
 }
 
 

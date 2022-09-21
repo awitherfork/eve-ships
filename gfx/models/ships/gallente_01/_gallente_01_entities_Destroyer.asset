@@ -1,17 +1,11 @@
-## reload assets gfx/models/ships/gallente_01/_gallente_01_destroyer_ships_entities.asset
+## reload assets gfx/models/ships/gallente_01/_gallente_01_entities_destroyer.asset
 
 # in design scale
 @destroyer_scale = 8.0
-@algos_scale = 4.0
-@catalyst_scale = 4.0
-@hecate_scale = 4.0
 
 
 # in game size scale #
-@destroyer_physical_scale = 1.0
-@algos_physical_scale = 1.0
-@catalyst_physical_scale = 1.0
-@hecate_physical_scale = 1.0
+@destroyer_physical_scale = 2
 
 
 @small_trail_W = 10
@@ -147,12 +141,6 @@ entity = {
 		event = { time = 0 node = "light_locator_04" particle = "ship_light_blue_effect" trigger_once = yes keep_particle = yes }		
 	}	
 	state = { name = "death" state_time = 5 }
-
-	scale = @catalyst_physical_scale
-
-	game_data = {
-		size = @catalyst_scale
-	}
 }
 
 entity = {
@@ -184,12 +172,6 @@ entity = {
 		event = { time = 0 node = "light_locator_04" particle = "ship_light_blue_effect" trigger_once = yes keep_particle = yes }		
 	}	
 	state = { name = "death" state_time = 5 }
-
-	scale = @algos_physical_scale
-
-	game_data = {
-		size = @algos_scale	
-	}
 }
 
 ##

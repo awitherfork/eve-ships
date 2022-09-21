@@ -1,4 +1,4 @@
-# reload assets gfx/models/ships/minmatar_01/_minmatar_01_dreadnought_ships_entities.asset
+# reload assets gfx/models/ships/minmatar_01/_minmatar_01_entities_dreadnought.asset
 
 # ship designer scale #
 @frame_scale = 20.0
@@ -6,7 +6,7 @@
 
 # in game size scale #
 @frame_physical_scale = 1.0
-@Dreadnought_physical_scale = 0.8
+@Dreadnought_physical_scale = 0.6
 
 @small_trail_W = 10
 @small_trail_L = 60

@@ -1,19 +1,11 @@
-# reload assets gfx/models/ships/gallente_01/_gallente_01_corvette_ships_entities.asset
+# reload assets gfx/models/ships/gallente_01/_gallente_01_entities_corvette.asset
 
 # ship designer scale #
 @corvette_scale = 6.0
-@incursus_scale = 4.0
-@tristan_scale = 4.0
-@maulus_scale = 4.0
-@atron_scale = 4.0
 
 
 # in game size scale #
-@corvette_physical_scale = 2.0
-@incursus_physical_scale = 1.1
-@tristan_physical_scale = 1.1
-@atron_physical_scale = 1.1
-@maulus_physical_scale = 1.1
+@corvette_physical_scale = 3.8
 
 
 @small_trail_W = 10
@@ -105,12 +97,6 @@ entity = {
 		event = { time = 0 node = "engine_small_03" particle = "gallente_01_1_00_ship_exhaust_moving_particle" trigger_once = yes keep_particle = yes }
 	}
 	state = { name = "death" state_time = 5 }
-
-	scale = @tristan_physical_scale
-
-	game_data = {
-		size =  @tristan_scale
-	}
 }
 
 entity = {
@@ -145,12 +131,6 @@ entity = {
 		event = { time = 0 node = "engine_small_04" particle = "gallente_01_1_00_ship_exhaust_moving_particle" trigger_once = yes keep_particle = yes }
 	}
 	state = { name = "death" state_time = 5 }
-
-	scale = @incursus_physical_scale
-
-	game_data = {
-		size = @incursus_scale
-	}
 }
 
 # entity = {

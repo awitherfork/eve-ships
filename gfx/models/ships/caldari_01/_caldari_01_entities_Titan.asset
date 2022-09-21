@@ -1,4 +1,4 @@
-# reload assets gfx/models/ships/caldari_01/_caldari_01_titan_entities.asset 
+# reload assets gfx/models/ships/caldari_01/_caldari_01_entities_titan.asset 
 
 # ship designer scale #
 @titan_scale = 50.0
@@ -6,7 +6,7 @@
 
 # in game size scale #
 @frame_physical_scale = 1.0
-@titan_physical_scale = 0.4
+@titan_physical_scale = 0.35
 
 
 @small_trail_W = 10

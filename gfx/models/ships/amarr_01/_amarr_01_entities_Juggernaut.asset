@@ -1,3 +1,5 @@
+# reload assets gfx/models/ships/amarr_01/_amarr_01_entities_juggernaut.asset
+
 ##########
 # Juggernaut
 ##########
@@ -120,7 +122,7 @@ entity = {
 	}
 	state = { name = "death" state_time = 5 }
 	
-	scale = 1.8
+	scale = 2
 	
 	game_data = {
 		trail_locators = {

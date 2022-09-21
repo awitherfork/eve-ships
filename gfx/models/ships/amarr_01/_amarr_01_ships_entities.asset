@@ -9,10 +9,10 @@
 
 # ingame ship scale #
 @magnate_physical_scale = 0.25
-@science_physical_scale = 0.3
-@constructor_physical_scale = 0.3
-@colonizer_physical_scale = 0.125
-@transport_physical_scale = 0.5
+@science_physical_scale = 1
+@constructor_physical_scale = 1
+@colonizer_physical_scale = 1
+@transport_physical_scale = 1
 
 @small_trail_W = 10
 @small_trail_L = 60

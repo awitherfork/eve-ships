@@ -1,4 +1,4 @@
-# reload assets gfx/models/ships/minmatar_01/_minmatar_01_science_ships_entities.asset 
+# reload assets gfx/models/ships/minmatar_01/_minmatar_01_science_ships_entities.asset
 
 # ship designer scale #
 @constructor_scale = 1.0
@@ -7,15 +7,15 @@
 @trasnport_scale = 1.0
 
 # ingame ship scale #
-@science_frame_physical_scale = 1.0
-@constructor_frame_physical_scale = 1.0
+@science_frame_physical_scale = 1.4
+@constructor_frame_physical_scale = 0.4
 @colony_frame_physical_scale = 1.0
 @transport_frame_physical_scale = 1.0
 
 @science_physical_scale = 1.0
-@constructor_physical_scale = 0.25
-@colony_physical_scale = 0.5
-@transport_physical_scale = 0.5
+@constructor_physical_scale = 1
+@colony_physical_scale = 1
+@transport_physical_scale = 1
 
 @mammonth_physical_scale = 0.3
 @wreathe_physical_scale = 0.5

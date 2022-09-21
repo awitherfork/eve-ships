@@ -1,4 +1,4 @@
-# reload assets gfx/models/ships/caldari_01/_caldari_01_destroyer_ships_entities.asset  #
+# reload assets gfx/models/ships/caldari_01/_caldari_01_entities_destroyer.asset  #
 
 # ship designer scale #
 @destroyer_scale = 8.0
@@ -8,7 +8,7 @@
 
 
 # in game size scale #
-@destroyer_physical_scale = 1.0
+@destroyer_physical_scale = 2.1
 @corax_physical_scale = 1.0
 @cormorant_physical_scale = 1.0
 @jackdaw_physical_scale = 1.0

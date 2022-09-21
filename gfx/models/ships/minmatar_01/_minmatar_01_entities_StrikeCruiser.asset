@@ -1,17 +1,7 @@
-@corvette_scale = 5.0
-@destroyer_scale = 7.0
-@cruiser_scale = 8.0
-@battleship_scale = 15.0
-@Battlecruiser_scale = 13.0
-@LightCarrier_scale = 15.0
-@Carrier_scale = 10.0
-@military_station_large = 20.0
-@Dreadnought_scale = 20.0
-@Superdreadnought_scale = 25.0
-@Flagship_scale = 30.0
+# reload assets gfx/models/ships/minmatar_01/_minmatar_01_entities_strikecruiser.asset
 
-@stabber_scale = 5.0
-@stabber_physical_scale = 1.0
+@cruiser_scale = 8.0
+@stabber_physical_scale = 1.8
 
 @small_trail_W = 10
 @small_trail_L = 60
@@ -95,12 +85,14 @@ entity = {
 		event = { time = 0.0 node = "root" particle = "avian_01_large_ship_explosion_particle" sound = { soundeffect = ship_destroyed } }
 	}
 	
-	scale = 0.9
+	scale = @stabber_physical_scale
 	
 	game_data = {
 		size = @cruiser_scale
 		emissive_recolor_crunch = 10
 	}
+
+	attach = { root = "minmatar_01_stabber_entity" }
 }
 
 
@@ -136,43 +128,43 @@ entity = {
 
 entity = {
 	name = "minmatar_01_StrikeCruiser_mid_S2HB_entity"
+	pdxmesh = "empty_mesh_ship"
+
 	locator = { name = "small_gun_01" rotation = { 0 0 0 } position = { 0 0 0 } }
 	locator = { name = "small_gun_02" rotation = { 0 0 0 } position = { 0 0 0 } }
 	locator = { name = "strike_craft_locator_01" rotation = { 0 0 0 } position = { 0 0 0 } }
 	locator = { name = "root" position = { 0  0  0 } }
-
-	attach = { root = "minmatar_01_stabber_entity" }
 	
 }
 
 entity = {
 	name = "minmatar_01_StrikeCruiser_mid_L1M1_entity"
+	pdxmesh = "empty_mesh_ship"
+
 	locator = { name = "large_gun_01" rotation = { 0 0 0 } position = { 0 0 0 } }
 	locator = { name = "medium_gun_01" rotation = { 0 0 0 } position = { 0 0 0 } }
 	locator = { name = "root" position = { 0  0  0 } }
-
-	attach = { root = "minmatar_01_stabber_entity" }
 }
 
 entity = {
 	name = "minmatar_01_StrikeCruiser_mid_M3_entity"
+	pdxmesh = "empty_mesh_ship"
+
 	locator = { name = "medium_gun_01" rotation = { 0 0 0 } position = { 0 0 0 } }
 	locator = { name = "medium_gun_02" rotation = { 0 0 0 } position = { 0 0 0 } }
 	locator = { name = "medium_gun_03" rotation = { 0 0 0 } position = { 0 0 0 } }
 	locator = { name = "root" position = { 0  0  0 } }
-
-	attach = { root = "minmatar_01_stabber_entity" }
 }
 
 entity = {
 	name = "minmatar_01_StrikeCruiser_mid_M2S2_entity"
+	pdxmesh = "empty_mesh_ship"
+
 	locator = { name = "medium_gun_01" rotation = { 0 0 0 } position = { 0 0 0 } }
 	locator = { name = "medium_gun_02" rotation = { 0 0 0 } position = { 0 0 0 } }
 	locator = { name = "small_gun_01" rotation = { 0 0 0 } position = { 0 0 0 } }
 	locator = { name = "small_gun_02" rotation = { 0 0 0 } position = { 0 0 0 } }
 	locator = { name = "root" position = { 0  0  0 } }
-
-	attach = { root = "minmatar_01_stabber_entity" }
 }
 
 
@@ -197,8 +189,6 @@ entity = {
 entity = {
 	name = "minmatar_01_stabber_entity"
 	pdxmesh = "minmatar_01_stabber_mesh"
-
-	scale = @stabber_physical_scale
 
 	default_state = "idle"
 	state = { name = "idle" state_time = 5
@@ -241,7 +231,6 @@ entity = {
 			"engine_small_04" = 		{ width = @medium_trail_W 	length = @medium_trail_L   	}
 			"engine_small_05" = 		{ width = @medium_trail_W 	length = @medium_trail_L   	}
 			"engine_small_06" = 		{ width = @medium_trail_W 	length = @medium_trail_L   	}
-		}	
-		size = @stabber_scale
+		}
 	}
 }

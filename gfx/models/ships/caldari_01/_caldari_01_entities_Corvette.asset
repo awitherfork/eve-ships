@@ -1,18 +1,10 @@
-# reload assets gfx/models/ships/caldari_01/_caldari_01_corvette_ships_entities.asset
+# reload assets gfx/models/ships/caldari_01/_caldari_01_entities_corvette.asset
 
 # ship designer scale #
 @corvette_scale = 6.0
-@condor_scale = 3.0
-@merlin_scale = 3.0
-@griffin_scale = 3.0
-@kestrel_scale = 3.0
 
 # in game size scale #
-@corvette_physical_scale = 1.0
-@condor_physical_scale = 0.5
-@merlin_physical_scale = 0.5
-@griffin_physical_scale = 0.5
-@kestrel_physical_scale = 0.5
+@corvette_physical_scale = 3
 
 @small_trail_W = 10
 @small_trail_L = 60
@@ -117,13 +109,6 @@ entity = {
 		event = { time = 0 node = "engine_small_06" particle = "caldari_01_1_00_ship_exhaust_moving_particle" trigger_once = yes keep_particle = yes }
 	}
 	state = { name = "death" state_time = 5 }
-
-	scale = @condor_physical_scale
-
-	game_data = {
-		size = @condor_scale
-
-	}
 }
 
 entity = {
@@ -164,8 +149,6 @@ entity = {
 		event = { time = 0 node = "engine_small_06" particle = "caldari_01_1_00_ship_exhaust_moving_particle" trigger_once = yes keep_particle = yes }
 	}
 	state = { name = "death" state_time = 5 }
-
-	scale = @kestrel_physical_scale
 	
 	game_data = {
 		trail_locators = {
@@ -174,7 +157,6 @@ entity = {
 			"engine_small_05" = 		{ width = @medium_trail_W 	length = @medium_trail_L   	}
 			"engine_small_06" = 		{ width = @medium_trail_W 	length = @medium_trail_L   	}
 		}
-		size = @kestrel_scale
 	}
 }
 

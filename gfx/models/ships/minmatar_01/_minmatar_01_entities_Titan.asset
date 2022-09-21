@@ -1,4 +1,4 @@
-# reload assets gfx/models/ships/minmatar_01/_minmatar_01_titan_entities.asset 
+# reload assets gfx/models/ships/minmatar_01/_minmatar_01_entities_titan.asset
 
 # ship designer scale #
 @titan_scale = 50.0
@@ -6,7 +6,7 @@
 
 # in game size scale #
 @frame_physical_scale = 1.0
-@titan_physical_scale = 0.4
+@titan_physical_scale = 0.3
 
 @small_trail_W = 10
 @small_trail_L = 60

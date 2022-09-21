@@ -1,18 +1,20 @@
-## reload assets gfx/models/ships/minmatar_01/_minmatar_01_battlecruiser_ships_entities.asset  ##
+## reload assets gfx/models/ships/minmatar_01/_minmatar_01_entities_battlecruiser.asset  ##
 
 # ship designer scale #
-@battlecruiser_scale = 4.0
-@tornado_scale = 4
-@cyclone_scale = 4
-@hurricane_scale = 4
+@battlecruiser_scale = 1.0
 
 # in game size scale #
-@battlecruiser_physical_scale = 0.5
-@tornado_physical_scale = 0.9
-@cyclone_physical_scale = 0.9
-@hurricane_physical_scale = 0.9
+@battlecruiser_physical_scale = 2
+@tornado_physical_scale = 0.35
 
-##################         	 STRIKE CRUISER           ########################
+@small_trail_W = 10
+@small_trail_L = 60
+@medium_trail_W = 25
+@medium_trail_L = 150
+@large_trail_W = 50
+@large_trail_L =  300
+
+##################         	 BATTLECRUISER           ########################
 
 #FRAME
 entity = {
@@ -79,10 +81,6 @@ entity = {
 	locator = { name = "large_gun_01" rotation = { 0 0 0 } position = { 0 0 0 } }
 
 	scale = @tornado_physical_scale
-
-	game_data = {
-		size = @tornado_scale
-	}
 }
 
 entity = {
@@ -92,8 +90,6 @@ entity = {
 	locator = { name = "medium_gun_01" rotation = { 0 0 0 } position = { 0 0 0 } }
 	locator = { name = "small_gun_01" rotation = { 0 0 0 } position = { 0 0 0 } }
 	locator = { name = "small_gun_02" rotation = { 0 0 0 } position = { 0 0 0 } }
-
-	scale = @hurricane_physical_scale
 
 	default_state = "idle"
 	state = { name = "idle" state_time = 5
@@ -111,14 +107,6 @@ entity = {
 		event = { time = 0 node = "engine_small_02" particle = "mammalian_01_1_45_ship_exhaust_moving_particle" trigger_once = yes keep_particle = yes }
 	}
 	state = { name = "death" state_time = 5 }
-
-	game_data = {
-		trail_locators = {
-			#"engine_small_01" = 		{ width = @medium_trail_W 	length = @medium_trail_L   	}
-			#"engine_small_02" = 		{ width = @medium_trail_W 	length = @medium_trail_L   	}
-		}	
-		size = @hurricane_scale
-	}
 }
 
 entity = {
@@ -155,14 +143,11 @@ entity = {
 	}
 	state = { name = "death" state_time = 5 }
 
-	scale = @cyclone_physical_scale
-
 	game_data = {
 		trail_locators = {
 			"engine_small_01" = 		{ width = @medium_trail_W 	length = @medium_trail_L   	}
 			"engine_small_02" = 		{ width = @medium_trail_W 	length = @medium_trail_L   	}
 		}
-		size = @cyclone_scale
 	}
 }
 

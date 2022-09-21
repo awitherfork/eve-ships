@@ -1,17 +1,10 @@
-# reload assets gfx/models/ships/gallente_01/_gallente_01_battleship_ships_entities.asset 
+# reload assets gfx/models/ships/gallente_01/_gallente_01_entities_battleship.asset 
 
 # ship designer scale #
 @battleship_scale = 15.0
-@dominix_scale = 20.0
-@megathron_scale = 20.0
-@hyperion_scale = 20.0
-
 
 # in game size scale #
 @battleship_physical_scale = 0.8
-@dominix_physical_scale = 0.8
-@megathron_physical_scale = 0.8
-@hyperion_physical_scale = 0.8
 
 @small_trail_W = 10
 @small_trail_L = 60
@@ -178,12 +171,6 @@ entity = {
 		event = { time = 0 node = "engine_small_06" particle = "gallente_01_4_00_ship_exhaust_moving_particle" trigger_once = yes keep_particle = yes }
 	}
 	state = { name = "death" state_time = 5 }
-
-	scale = @dominix_physical_scale
-
-	game_data = {
-		size = @dominix_scale
-	}
 }
 
 entity = {
@@ -224,12 +211,6 @@ entity = {
 		event = { time = 0 node = "engine_small_07" particle = "gallente_01_4_00_ship_exhaust_moving_particle" trigger_once = yes keep_particle = yes }
 	}
 	state = { name = "death" state_time = 5 }
-
-	scale = @megathron_physical_scale
-
-	game_data = {
-		size = @megathron_scale
-	}
 }
 
 entity = {
@@ -266,12 +247,6 @@ entity = {
 		event = { time = 0 node = "engine_small_06" particle = "gallente_01_4_00_ship_exhaust_moving_particle" trigger_once = yes keep_particle = yes }
 	}
 	state = { name = "death" state_time = 5 }
-
-	scale = @dominix_physical_scale
-
-	game_data = {
-		size = @dominix_scale
-	}
 }
 
 entity = {
@@ -312,12 +287,6 @@ entity = {
 		event = { time = 0 node = "engine_small_06" particle = "gallente_01_4_00_ship_exhaust_moving_particle" trigger_once = yes keep_particle = yes }
 	}
 	state = { name = "death" state_time = 5 }
-
-	scale = @hyperion_physical_scale
-
-	game_data = {
-		size = @hyperion_scale
-	}
 }
 
 #############################################################################

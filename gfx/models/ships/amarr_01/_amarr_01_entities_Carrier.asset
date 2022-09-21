@@ -1,14 +1,10 @@
 # reload assets gfx/models/ships/amarr_01/_amarr_01_entities_carrier.asset 
 
 # ship designer scale #
-@frame_scale = 30
-@Carrier_scale = 30
-@faux_scale = 30
-
+@Carrier_scale = 17
 # in game size scale #
-@frame_physical_scale = 1.0
-@Carrier_physical_scale = 0.8
-@force_auxiliary_physical_scale = 0.2
+@frame_physical_scale = 1
+@Carrier_physical_scale = 0.6
 
 @small_trail_W = 10
 @small_trail_L = 60
@@ -89,12 +85,7 @@ entity = {
 		event = { time = 15.9 node = "part2" particle = "large_player_ship_explosion_particle" sound = { soundeffect = ship_destroyed } }
 	}
 
-	scale = @Carrier_physical_scale
-
-	game_data = {
-		size = @Carrier_scale
-		emissive_recolor_crunch = 5.0
-	}
+	scale = @frame_physical_scale
 
 	attach = { part1 = "amarr_01_archon_entity" }
 }
@@ -288,8 +279,6 @@ entity = {
 	name = "amarr_01_archon_entity"
 	pdxmesh = "amarr_01_archon_mesh"
 
-	scale = @Carrier_physical_scale
-
 	default_state = "idle"
 	state = { name = "idle" state_time = 5
 		event = { time = 0 node = "light_locator_01" particle = "ship_light_blue_effect" trigger_once = yes keep_particle = yes }
@@ -318,4 +307,6 @@ entity = {
 
 	}
 	state = { name = "death" state_time = 5 }
+
+	scale = @Carrier_physical_scale
 }

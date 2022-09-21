@@ -2,14 +2,9 @@
 
 # in design scale
 @destroyer_scale = 8.0
-@coecer_scale = 8.0
-@dragoon_scale = 8.0
-@confessor_scale = 8.0
 
 # in game size scale #
-@destroyer_physical_scale = 1.0
-@coecer_physical_scale = 1.0
-@dragoon_physical_scale = 1.0
+@destroyer_physical_scale = 2
 
 @small_trail_W = 10
 @small_trail_L = 60
@@ -139,12 +134,6 @@ entity = {
 		event = { time = 0 node = "light_locator_04" particle = "ship_light_blue_effect" trigger_once = yes keep_particle = yes }		
 	}	
 	state = { name = "death" state_time = 5 }
-
-	scale = @dragoon_physical_scale
-
-	game_data = {
-		size = @dragoon_scale	
-	}
 }
 
 ## 2 ##
@@ -178,12 +167,6 @@ entity = {
 		event = { time = 0 node = "engine_small_06" particle = "amarr_01_2_00_exhaust_moving_particle" trigger_once = yes keep_particle = yes }
 	}
 	state = { name = "death" state_time = 5 }
-
-	scale = @coecer_physical_scale
-
-	game_data = {
-		size = @coecer_scale
-	}
 }
 
 

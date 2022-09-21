@@ -1,3 +1,5 @@
+# reload assets gfx/models/ships/minmatar_01/_minmatar_01_entities_flagship.asset
+
 @corvette_scale = 5.0
 @destroyer_scale = 7.0
 @cruiser_scale = 8.0
@@ -73,7 +75,7 @@ entity = {
 		event = { time = 0.0 particle = "avian_01_large_ship_explosion_particle" sound = { soundeffect = ship_destroyed } }
 	}
 	
-	scale = 2 #3
+	scale = 3 #3
 		
 	game_data = { 
 		size = @Flagship_scale

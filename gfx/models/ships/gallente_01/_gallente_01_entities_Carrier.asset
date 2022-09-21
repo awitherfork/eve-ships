@@ -1,14 +1,12 @@
-# reload assets gfx/models/ships/gallente_01/_gallente_01_carrier_ships_entities.asset
+# reload assets gfx/models/ships/gallente_01/_gallente_01_entities_carrier.asset
 
 # ship designer scale #
 @frame_scale = 40
-@Carrier_scale = 40
-@faux_scale = 40
+@Carrier_scale = 17
 
 # in game size scale #
 @frame_physical_scale = 1.0
 @Carrier_physical_scale = 0.8
-@force_auxiliary_physical_scale = 0.2
 
 
 @small_trail_W = 10
@@ -280,8 +278,6 @@ entity = {
 entity = {
 	name = "gallente_01_thanatos_entity"
 	pdxmesh = "gallente_01_thanatos_mesh"
-	  
-	scale = @Carrier_physical_scale
 
 	locator = {
 		name = "strike_craft_locator_01"

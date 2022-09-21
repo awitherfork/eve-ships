@@ -24,7 +24,7 @@
 #FRAME
 entity = {
 	name = "caldari_01_explorationship_entity"
-	pdxmesh = "humanoid_01_battlecruiser_frame_mesh"
+	pdxmesh = "mammalian_01_cruiser_frame_mesh"
 
 	locator = { name = "part1"	position = { 0 0 0 } rotation = { 0 0 0 } }
 	locator = { name = "part2"	position = { 0 0 0 } rotation = { 0 0 0 } }
@@ -69,7 +69,7 @@ entity = {
 		event = { time = 0.0 particle = "nsc_superdread_explosion_particle" sound = { soundeffect = ship_destroyed } }
 	}
 	
-	scale = 1.0
+	scale = 1.6
 	
 	game_data = { 
 		size = @Battlecruiser_scale

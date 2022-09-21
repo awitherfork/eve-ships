@@ -11,8 +11,8 @@
 
 entity = {
 	name = "amarr_01_colossus_entity"
-	#pdxmesh = "avian_01_colossus_frame_mesh"
-	pdxmesh = "empty_mesh_ship"
+	pdxmesh = "mammalian_01_colossus_frame_mesh"
+	# pdxmesh = "empty_mesh_ship"
 
 	default_state = "idle"
 	state = { name = "idle" animation = "idle" }
@@ -44,7 +44,7 @@ entity = {
 	locator = { name = "part1" position = { -50 0 0 } }
 	locator = { name = "part3" position = { -50 0 0 } }
 
-	scale = 0.15
+	scale = 1
 	
 	game_data = {
 		size = @zirnitra_scale
@@ -63,8 +63,8 @@ entity = {
 
 entity = {
 	name = "caldari_01_colossus_entity"
-	#pdxmesh = "avian_01_colossus_frame_mesh"
-	pdxmesh = "empty_mesh_ship"
+	pdxmesh = "avian_01_colossus_frame_mesh"
+	# pdxmesh = "empty_mesh_ship"
 
 	default_state = "idle"
 	state = { name = "idle" animation = "idle" }
@@ -96,7 +96,7 @@ entity = {
 	locator = { name = "part1" position = { -50 0 0 } }
 	locator = { name = "part3" position = { -50 0 0 } }
 
-	scale = 0.15
+	scale = 1
 	
 	game_data = {
 		size = @zirnitra_scale
@@ -115,8 +115,8 @@ entity = {
 
 entity = {
 	name = "gallente_01_colossus_entity"
-	#pdxmesh = "avian_01_colossus_frame_mesh"
-	pdxmesh = "empty_mesh_ship"
+	pdxmesh = "avian_01_colossus_frame_mesh"
+	# pdxmesh = "empty_mesh_ship"
 
 	default_state = "idle"
 	state = { name = "idle" animation = "idle" }
@@ -148,7 +148,7 @@ entity = {
 	locator = { name = "part1" position = { -50 0 0 } }
 	locator = { name = "part3" position = { -50 0 0 } }
 
-	scale = 0.15
+	scale = 1
 	
 	game_data = {
 		size = @zirnitra_scale
@@ -167,8 +167,8 @@ entity = {
 
 entity = {
 	name = "minmatar_01_colossus_entity"
-	#pdxmesh = "avian_01_colossus_frame_mesh"
-	pdxmesh = "empty_mesh_ship"
+	pdxmesh = "avian_01_colossus_frame_mesh"
+	# pdxmesh = "empty_mesh_ship"
 
 	default_state = "idle"
 	state = { name = "idle" animation = "idle" }
@@ -200,7 +200,7 @@ entity = {
 	locator = { name = "part1" position = { -50 0 0 } }
 	locator = { name = "part3" position = { -50 0 0 } }
 
-	scale = 0.15
+	scale = 1
 	
 	game_data = {
 		size = @zirnitra_scale
@@ -241,6 +241,7 @@ entity = {
 			}
 		}
 		start_event = { trigger_once = yes sound = { soundeffect = "mammalian_colossus_idle" } }
+		start_event = { trigger_once = yes sound = { soundeffect = "mammalian_colossus_idle_layer" } }
 		
 		event = { time = 0 node = "light_locator_01" particle = "ship_light_blue_effect" keep_particle = yes trigger_once = yes }
 		event = { time = 0 node = "light_locator_02" particle = "ship_light_blue_effect" keep_particle = yes trigger_once = yes }
@@ -336,18 +337,18 @@ entity = {
 	# Opening state, goes into "working_looping" state when done.
 	state = { name = "working" animation = "opening" looping = no next_state = "working_looping" 
 		event = { trigger_once = yes sound = { soundeffect = "mammalian_colossus_opening" stop_on_state_change = yes } }
+		event = { time = 10.617 trigger_once = yes sound = { soundeffect = "mammalian_colossus_dome_opening" stop_on_state_change = yes } }
 	
 		event = { time = 1000 id = "beam_start" } #will never fire, but lets the game know that an event with this ID exists
 	
 		event = { time = 0 node = "light_locator_01" particle = "ship_light_blue_effect" keep_particle = yes trigger_once = yes }
 		event = { time = 0 node = "light_locator_02" particle = "ship_light_blue_effect" keep_particle = yes trigger_once = yes }
 		
-		
-		#event = { time = 0 node = "root" particle = "avian_01_colossus_inner_core_effect" keep_particle = yes trigger_once = yes }
-		
 		event = { time = 0 node = "large_engine_01" particle = "generic_2_5_exhaust_line_moving" keep_particle = yes trigger_once = yes }
 		event = { time = 0 node = "large_engine_02" particle = "generic_2_5_exhaust_line_moving" keep_particle = yes trigger_once = yes }
 		event = { time = 0 node = "large_engine_03" particle = "generic_2_5_exhaust_line_moving" keep_particle = yes trigger_once = yes }
+
+		event = { time = 0 node = "root" particle = "mammalian_01_colossus_inner_core_effect" keep_particle = yes trigger_once = yes }
 		
 	}
 	# Closed death state.
@@ -390,7 +391,7 @@ entity = {
 	locator = { name = "explosion_locator_03" position = { 4 3 -28 } }
 	locator = { name = "explosion_locator_04" position = { 28 22 -2.5 } }
 	locator = { name = "explosion_locator_05" position = { -6 3.4 -8 } }
-	#locator = { name = "planet_killer_gun_01" position = { 0 0 0 } } # Actual locator in mesh.
+	# locator = { name = "planet_killer_gun_01" position = { 0 0 0 } } # Actual locator in mesh.
 	
 	attach = { "light_locator_01" = "colossus_effect_small_entity" }
 	attach = { "light_locator_02" = "colossus_effect_small_entity" }

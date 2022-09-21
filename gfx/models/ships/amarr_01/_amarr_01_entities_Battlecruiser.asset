@@ -1,17 +1,10 @@
 # reload assets gfx/models/ships/amarr_01/_amarr_01_entities_battlecruiser.asset 
 
 # ship designer scale #
-@battlecruiser_scale = 4.0
-@prophecy_scale = 6.0
-@harbinger_scale = 4.0
-@oracle_scale = 4.0
-
+@battlecruiser_scale = 11.0
 
 # in game size scale #
-@battlecruiser_physical_scale = 1.0
-@prophecy_physical_scale = 1.0
-@harbinger_physical_scale = 1.0
-@oracle_physical_scale = 1.0
+@battlecruiser_physical_scale = 2.0
 
 @small_trail_W = 10
 @small_trail_L = 60
@@ -114,12 +107,6 @@ entity = {
 		event = { time = 0 node = "engine_small_06" particle = "mammalian_01_1_45_ship_exhaust_moving_particle" trigger_once = yes keep_particle = yes }
 	}
 	state = { name = "death" state_time = 5 }
-
-	scale = @harbinger_physical_scale
-
-	game_data = {
-		size =  @harbinger_scale
-	}
 }
 
 entity = {
@@ -158,12 +145,6 @@ entity = {
 		event = { time = 0 node = "engine_small_06" particle = "mammalian_01_1_45_ship_exhaust_moving_particle" trigger_once = yes keep_particle = yes }
 	}
 	state = { name = "death" state_time = 5 }
-
-	scale = @prophecy_physical_scale
-
-	game_data = {
-		size =  @prophecy_scale
-	}
 }
 
 entity = {
@@ -197,12 +178,6 @@ entity = {
 		event = { time = 0 node = "engine_small_06" particle = "mammalian_01_1_45_ship_exhaust_moving_particle" trigger_once = yes keep_particle = yes }
 	}
 	state = { name = "death" state_time = 5 }
-
-	scale = @oracle_physical_scale
-
-	game_data = {
-		size =  @oracle_scale
-	}
 }
 
 # MID

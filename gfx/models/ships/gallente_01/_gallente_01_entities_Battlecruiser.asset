@@ -1,18 +1,13 @@
-## reload assets gfx/models/ships/gallente_01/_gallente_01_battlecruiser_ships_entites.asset ##
+## reload assets gfx/models/ships/gallente_01/_gallente_01_entities_battlecruiser.asset ##
 
 
 # ship designer scale #
-@battlecruiser_scale = 4.0
-@brutix_scale = 4.0
-@myrmid1om_scale = 4.0
-@talos_scale = 8.0
+@battlecruiser_scale = 11.0
 
 
 # in game size scale #
-@battlecruiser_physical_scale = 1.0
-@brutix_physical_scale = 0.9
-@myrmid1om_physical_scale = 0.9
-@talos_physical_scale = 0.9
+@battlecruiser_physical_scale = 2
+@brutix_physical_scale = 1
 
 @small_trail_W = 10
 @small_trail_L = 60
@@ -206,10 +201,6 @@ entity = {
 	state = { name = "death" state_time = 5 }
 
 	scale = @brutix_physical_scale
-
-	game_data = {
-		size =  @brutix_scale
-	}
 }
 
 # entity = {

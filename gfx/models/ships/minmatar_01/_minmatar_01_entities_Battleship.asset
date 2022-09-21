@@ -1,14 +1,8 @@
-# reload assets gfx/models/ships/minmatar_01/_minmatar_01_battleship_ships_entities.asset 
+# reload assets gfx/models/ships/minmatar_01/_minmatar_01_entities_battleship.asset
 
-@battleship_scale = 20.0
-@typhoon_scale = 20.0
-@tempest_scale = 20.0
-@maelstron_scale = 20.0
+@battleship_scale = 15.0
 
-@battleship_physical_scale = 1.0
-@typhoon_physical_scale = 0.8
-@tempest_physical_scale = 0.8
-@maelstron_physical_scale = 0.8
+@battleship_physical_scale = 0.9
 
 @small_trail_W = 10
 @small_trail_L = 60
@@ -230,12 +224,6 @@ entity = {
 	state = { name = "death" state_time = 5 }
 
 	meshsettings = { shader = "PdxMeshAsteroid" }
-
-	scale = @tempest_physical_scale
-
-	game_data = {
-		size = @tempest_scale
-	}
 }
 
 entity = {
@@ -281,12 +269,6 @@ entity = {
 		event = { time = 0 node = "engine_small_04" particle = "minmatar_01_4_00_ship_exhaust_moving_particle" trigger_once = yes keep_particle = yes }
 	}
 	state = { name = "death" state_time = 5 }
-
-	scale = @typhoon_physical_scale
-
-	game_data = {
-		size = @typhoon_scale
-	}
 }
 
 entity = {
@@ -331,11 +313,6 @@ entity = {
 	state = { name = "death" state_time = 5 }
 
 	meshsettings = { shader = "PdxMeshAsteroid" }
-
-	scale = @maelstron_physical_scale
-	game_data = {
-		size = @maelstron_scale
-	}
 }
 
 entity = {
@@ -378,12 +355,6 @@ entity = {
 	state = { name = "death" state_time = 5 }
 
 	meshsettings = { shader = "PdxMeshAsteroid" }
-
-	scale = @maelstron_physical_scale
-
-	game_data = {
-		size = @maelstron_scale
-	}
 }
 
 #############################################################################

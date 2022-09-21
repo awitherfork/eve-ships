@@ -1,16 +1,10 @@
-# reload assets gfx/models/ships/minmatar_01/_minmatar_01_destroyer_ships_entities.asset
+# reload assets gfx/models/ships/minmatar_01/_minmatar_01_entities_destroyer.asset
 
 # ship designer scale #
 @destroyer_scale = 8.0
-@trasher_scale = 8.0
-@talwar_scale = 8.0
-@svipul_scale = 8.0
 
 # in game size scale #
-@destroyer_physical_scale = 1.0
-@trasher_physical_scale = 1.0
-@talwar_physical_scale = 1.0
-@svipul_physical_scale = 1.0
+@destroyer_physical_scale = 2.0
 
 @small_trail_W = 10
 @small_trail_L = 60
@@ -149,11 +143,6 @@ entity = {
 		event = { time = 0 node = "light_locator_04" particle = "ship_light_blue_effect" trigger_once = yes keep_particle = yes }		
 	}	
 	state = { name = "death" state_time = 5 }
-
-	scale = @trasher_physical_scale
-	game_data = {
-		size = @trasher_scale
-	}
 }
 
 entity = {
@@ -182,11 +171,6 @@ entity = {
 		event = { time = 0 node = "light_locator_04" particle = "ship_light_blue_effect" trigger_once = yes keep_particle = yes }		
 	}	
 	state = { name = "death" state_time = 5 }
-
-	scale = @talwar_physical_scale
-	game_data = {
-		size = @talwar_scale
-	}
 }
 
 ##

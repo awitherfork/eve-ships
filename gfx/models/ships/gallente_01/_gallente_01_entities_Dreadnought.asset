@@ -1,12 +1,12 @@
-# reload assets gfx/models/ships/gallente_01/_gallente_01_dreadnought_ships_entities.asset
+# reload assets gfx/models/ships/gallente_01/_gallente_01_entities_dreadnought.asset
 
 # ship designer scale #
 @frame_scale = 40.0
-@Dreadnought_scale = 50.0
+@Dreadnought_scale = 20.0
 
 # in game size scale #
 @frame_physical_scale = 1.0
-@Dreadnought_physical_scale = 0.8
+@Dreadnought_physical_scale = 0.6
 
 @small_trail_W = 10
 @small_trail_L = 60
@@ -281,8 +281,6 @@ entity = {
 entity = {
 	name = "gallente_01_moros_entity"
 	pdxmesh = "gallente_01_moros_mesh"
-
-	scale = @Dreadnought_physical_scale
 
 	default_state = "idle"
 	state = { name = "idle" state_time = 5

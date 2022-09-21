@@ -1,18 +1,9 @@
-## reload assets gfx/models/ships/minmatar_01/_minmatar_01_corvette_ships_entities.asset
+## reload assets gfx/models/ships/minmatar_01/_minmatar_01_entities_corvette.asset
 
 # ship designer scale #
 @corvette_scale = 6.0
-@rifter_scale = 1.0
-@slasher_scale = 1.0
-@burst_scale = 1.0
-@breacher_scale = 1.0
-
 # in game size scale #
-@corvette_physical_scale = 1
-@rifter_physical_scale = 1.0
-@slasher_physical_scale = 1.0
-@burst_physical_scale = 1.0
-@breacher_physical_scale = 1.0
+@corvette_physical_scale = 2.2
 
 @small_trail_W = 10
 @small_trail_L = 60
@@ -98,11 +89,8 @@ entity = {
 
 	meshsettings = { shader = "PdxMeshAsteroid" }
 
-	scale = @burst_physical_scale
-
 	game_data = {
 		emissive_recolor_crunch = 10.0
-		size = @burst_scale
 	}
 }
 
@@ -151,11 +139,8 @@ entity = {
 	}
 	state = { name = "death" state_time = 5 }
 
-	scale = @rifter_physical_scale
-
 	game_data = {
 		emissive_recolor_crunch = 10.0
-		size = @rifter_scale
 	}
 }
 

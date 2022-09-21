@@ -1,13 +1,10 @@
-# reload assets gfx/models/ships/caldari_01/_caldari_01_battlecruiser_ships_entites.asset   #
+# reload assets gfx/models/ships/caldari_01/_caldari_01_entities_battlecruiser.asset   #
 
 # ship designer scale #
-@battlecruiser_scale = 4.0
-@ferox_scale = 4.0
-@drake_scale = 4.0
-@naga_scale = 12.0
+@battlecruiser_scale = 11.0
 
 # in game size scale #
-@battlecruiser_physical_scale = 1.0
+@battlecruiser_physical_scale = 2.0
 @ferox_physical_scale = 0.7
 @drake_physical_scale = 0.7
 @naga_physical_scale = 0.7
@@ -106,10 +103,6 @@ entity = {
 	state = { name = "death" state_time = 5 }
 
 	scale = @ferox_physical_scale
-
-	game_data = {
-		size =  @ferox_scale
-	}
 }
 
 entity = {
@@ -153,10 +146,6 @@ entity = {
 	state = { name = "death" state_time = 5 }
 
 	scale = @drake_physical_scale
-
-	game_data = {
-		size = @drake_scale
-	}
 }
 
 entity = {
@@ -199,10 +188,6 @@ entity = {
 	state = { name = "death" state_time = 5 }
 
 	scale = @naga_physical_scale
-
-	game_data = {
-		size = @naga_scale		
-	}
 }
 
 ################## MID ############################
