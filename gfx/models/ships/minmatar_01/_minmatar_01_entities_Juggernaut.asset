@@ -1,3 +1,5 @@
+# reload assets gfx/models/ships/minmatar_01/_minmatar_01_entities_juggernaut.asset
+
 ##########
 # Juggernaut
 ##########
@@ -188,7 +190,7 @@ entity = {
 	}
 	state = { name = "death" state_time = 5 }
 	
-	scale = 1.0
+	scale = 2.0
 
 	game_data = {
 		trail_locators = {

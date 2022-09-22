@@ -1,3 +1,5 @@
+# reload assets gfx/models/ships/minmatar_01/_minmatar_01_entities_flagship.asset
+
 @corvette_scale = 5.0
 @destroyer_scale = 7.0
 @cruiser_scale = 8.0
@@ -73,12 +75,14 @@ entity = {
 		event = { time = 0.0 particle = "avian_01_large_ship_explosion_particle" sound = { soundeffect = ship_destroyed } }
 	}
 	
-	scale = 2 #3
+	scale = 3 #3
 		
 	game_data = { 
 		size = @Flagship_scale
 		emissive_recolor_crunch = 10
 	}
+
+	attach = { part3 = "minmatar_01_hel_entity" }
 }
 
 
@@ -156,29 +160,9 @@ entity = {
 	locator = { name = "xl_gun_04"    rotation = { 0 0 0 } position = { 0 0 0 } }
 }
 
-entity = {
-	name = "minmatar_01_Flagship_bow_XL2_entity"
-	pdxmesh = "empty_mesh_ship"
-
-	locator = { name = "xl_gun_01"    rotation = { 0 0 0 } position = { 0 0 0 } }
-	locator = { name = "xl_gun_02"    rotation = { 0 0 0 } position = { 0 0 0 } }
-	locator = { name = "xl_gun_03"    rotation = { 0 0 0 } position = { 0 0 0 } }
-	locator = { name = "xl_gun_04"    rotation = { 0 0 0 } position = { 0 0 0 } }
-}
-
-entity = {
-	name = "minmatar_01_Flagship_bow_XL3_entity"
-	pdxmesh = "empty_mesh_ship"
-
-	locator = { name = "xl_gun_01"    rotation = { 0 0 0 } position = { 0 0 0 } }
-	locator = { name = "xl_gun_02"    rotation = { 0 0 0 } position = { 0 0 0 } }
-	locator = { name = "xl_gun_03"    rotation = { 0 0 0 } position = { 0 0 0 } }
-	locator = { name = "xl_gun_04"    rotation = { 0 0 0 } position = { 0 0 0 } }
-}
-
 #MID1
 entity = {
-	name = "minmatar_01_Flagship_mid1_L2S4_entity"
+	name = "minmatar_01_Flagship_mid_L2S4_entity"
 	pdxmesh = "empty_mesh_ship"
 
 	locator = { name = "large_gun_01" rotation = { 0 0 0 } position = { 0 0 0 } }
@@ -190,7 +174,7 @@ entity = {
 }
 
 entity = {
-	name = "minmatar_01_Flagship_mid1_L1M4_entity"
+	name = "minmatar_01_Flagship_mid_L1M4_entity"
 	pdxmesh = "empty_mesh_ship"
 
 	locator = { name = "large_gun_01" rotation = { 0 0 0 } position = { 0 0 0 } }
@@ -201,7 +185,7 @@ entity = {
 }
 
 entity = {
-	name = "minmatar_01_Flagship_mid1_L2M2_entity"
+	name = "minmatar_01_Flagship_mid_L2M2_entity"
 	pdxmesh = "empty_mesh_ship"
 
 	locator = { name = "large_gun_01" rotation = { 0 0 0 } position = { 0 0 0 } }
@@ -211,7 +195,7 @@ entity = {
 }
 
 entity = {
-	name = "minmatar_01_Flagship_mid1_L3_entity"
+	name = "minmatar_01_Flagship_mid_L3_entity"
 	pdxmesh = "empty_mesh_ship"
 
 	locator = { name = "large_gun_01" rotation = { 0 0 0 } position = { 0 0 0 } }
@@ -220,7 +204,7 @@ entity = {
 }
 
 entity = {
-	name = "minmatar_01_Flagship_mid1_M4SHB_entity"
+	name = "minmatar_01_Flagship_mid_M4SHB_entity"
 	pdxmesh = "empty_mesh_ship"
 
 	locator = { name = "medium_gun_01" rotation = { 0 0 0 } position = { 0 0 0 } }
@@ -231,151 +215,7 @@ entity = {
 }
 
 entity = {
-	name = "minmatar_01_Flagship_mid1_S4LHB_entity"
-	pdxmesh = "empty_mesh_ship"
-
-	locator = { name = "small_gun_01" rotation = { 0 0 0 } position = { 0 0 0 } }
-	locator = { name = "small_gun_02" rotation = { 0 0 0 } position = { 0 0 0 } }
-	locator = { name = "small_gun_03" rotation = { 0 0 0 } position = { 0 0 0 } }
-	locator = { name = "small_gun_04" rotation = { 0 0 0 } position = { 0 0 0 } }
-	locator = { name = "strike_craft_locator_01" rotation = { 0 0 0 } position = { 0 0 0 } }
-	locator = { name = "strike_craft_locator_02" rotation = { 0 0 0 } position = { 0 0 0 } }
-}
-
-#MID2
-entity = {
-	name = "minmatar_01_Flagship_mid2_L2S4_entity"
-
-	locator = { name = "large_gun_01" rotation = { 0 0 0 } position = { 0 0 0 } }
-	locator = { name = "large_gun_02" rotation = { 0 0 0 } position = { 0 0 0 } }
-	locator = { name = "small_gun_01" rotation = { 0 0 0 } position = { 0 0 0 } }
-	locator = { name = "small_gun_02" rotation = { 0 0 0 } position = { 0 0 0 } }
-	locator = { name = "small_gun_03" rotation = { 0 0 0 } position = { 0 0 0 } }
-	locator = { name = "small_gun_04" rotation = { 0 0 0 } position = { 0 0 0 } }
-	locator = { name = "root" position = { 0  0  0 } }
-
-	attach = { root = "minmatar_01_hel_entity" }
-}
-
-entity = {
-	name = "minmatar_01_Flagship_mid2_L1M4_entity"
-	
-	locator = { name = "large_gun_01" rotation = { 0 0 0 } position = { 0 0 0 } }
-	locator = { name = "medium_gun_01" rotation = { 0 0 0 } position = { 0 0 0 } }
-	locator = { name = "medium_gun_02" rotation = { 0 0 0 } position = { 0 0 0 } }
-	locator = { name = "medium_gun_03" rotation = { 0 0 0 } position = { 0 0 0 } }
-	locator = { name = "medium_gun_04" rotation = { 0 0 0 } position = { 0 0 0 } }
-	locator = { name = "root" position = { 0  0  0 } }
-
-	attach = { root = "minmatar_01_hel_entity" }
-}
-
-entity = {
-	name = "minmatar_01_Flagship_mid2_L2M2_entity"
-	
-	locator = { name = "large_gun_01" rotation = { 0 0 0 } position = { 0 0 0 } }
-	locator = { name = "large_gun_02" rotation = { 0 0 0 } position = { 0 0 0 } }
-	locator = { name = "medium_gun_01" rotation = { 0 0 0 } position = { 0 0 0 } }
-	locator = { name = "medium_gun_02" rotation = { 0 0 0 } position = { 0 0 0 } }
-	locator = { name = "root" position = { 0  0  0 } }
-
-	attach = { root = "minmatar_01_hel_entity" }
-}
-
-entity = {
-	name = "minmatar_01_Flagship_mid2_L3_entity"
-	
-	locator = { name = "large_gun_01" rotation = { 0 0 0 } position = { 0 0 0 } }
-	locator = { name = "large_gun_02" rotation = { 0 0 0 } position = { 0 0 0 } }
-	locator = { name = "large_gun_03" rotation = { 0 0 0 } position = { 0 0 0 } }
-	locator = { name = "root" position = { 0  0  0 } }
-
-	attach = { root = "minmatar_01_hel_entity" }
-}
-
-entity = {
-	name = "minmatar_01_Flagship_mid2_M4SHB_entity"
-	
-	locator = { name = "medium_gun_01" rotation = { 0 0 0 } position = { 0 0 0 } }
-	locator = { name = "medium_gun_02" rotation = { 0 0 0 } position = { 0 0 0 } }
-	locator = { name = "medium_gun_03" rotation = { 0 0 0 } position = { 0 0 0 } }
-	locator = { name = "medium_gun_04" rotation = { 0 0 0 } position = { 0 0 0 } }
-	locator = { name = "strike_craft_locator_01" rotation = { 0 0 0 } position = { 0 0 0 } }
-	locator = { name = "root" position = { 0  0  0 } }
-
-	attach = { root = "minmatar_01_hel_entity" }
-}
-
-entity = {
-	name = "minmatar_01_Flagship_mid2_S4LHB_entity"
-	
-	locator = { name = "small_gun_01" rotation = { 0 0 0 } position = { 0 0 0 } }
-	locator = { name = "small_gun_02" rotation = { 0 0 0 } position = { 0 0 0 } }
-	locator = { name = "small_gun_03" rotation = { 0 0 0 } position = { 0 0 0 } }
-	locator = { name = "small_gun_04" rotation = { 0 0 0 } position = { 0 0 0 } }
-	locator = { name = "strike_craft_locator_01" rotation = { 0 0 0 } position = { 0 0 0 } }
-	locator = { name = "strike_craft_locator_02" rotation = { 0 0 0 } position = { 0 0 0 } }
-	locator = { name = "root" position = { 0  0  0 } }
-
-	attach = { root = "minmatar_01_hel_entity" }
-}
-
-#MID3
-entity = {
-	name = "minmatar_01_Flagship_mid3_L2S4_entity"
-	pdxmesh = "empty_mesh_ship"
-
-	locator = { name = "large_gun_01" rotation = { 0 0 0 } position = { 0 0 0 } }
-	locator = { name = "large_gun_02" rotation = { 0 0 0 } position = { 0 0 0 } }
-	locator = { name = "small_gun_01" rotation = { 0 0 0 } position = { 0 0 0 } }
-	locator = { name = "small_gun_02" rotation = { 0 0 0 } position = { 0 0 0 } }
-	locator = { name = "small_gun_03" rotation = { 0 0 0 } position = { 0 0 0 } }
-	locator = { name = "small_gun_04" rotation = { 0 0 0 } position = { 0 0 0 } }
-}
-
-entity = {
-	name = "minmatar_01_Flagship_mid3_L1M4_entity"
-	pdxmesh = "empty_mesh_ship"
-
-	locator = { name = "large_gun_01" rotation = { 0 0 0 } position = { 0 0 0 } }
-	locator = { name = "medium_gun_01" rotation = { 0 0 0 } position = { 0 0 0 } }
-	locator = { name = "medium_gun_02" rotation = { 0 0 0 } position = { 0 0 0 } }
-	locator = { name = "medium_gun_03" rotation = { 0 0 0 } position = { 0 0 0 } }
-	locator = { name = "medium_gun_04" rotation = { 0 0 0 } position = { 0 0 0 } }
-}
-
-entity = {
-	name = "minmatar_01_Flagship_mid3_L2M2_entity"
-	pdxmesh = "empty_mesh_ship"
-
-	locator = { name = "large_gun_01" rotation = { 0 0 0 } position = { 0 0 0 } }
-	locator = { name = "large_gun_02" rotation = { 0 0 0 } position = { 0 0 0 } }
-	locator = { name = "medium_gun_01" rotation = { 0 0 0 } position = { 0 0 0 } }
-	locator = { name = "medium_gun_02" rotation = { 0 0 0 } position = { 0 0 0 } }
-}
-
-entity = {
-	name = "minmatar_01_Flagship_mid3_L3_entity"
-	pdxmesh = "empty_mesh_ship"
-
-	locator = { name = "large_gun_01" rotation = { 0 0 0 } position = { 0 0 0 } }
-	locator = { name = "large_gun_02" rotation = { 0 0 0 } position = { 0 0 0 } }
-	locator = { name = "large_gun_03" rotation = { 0 0 0 } position = { 0 0 0 } }
-}
-
-entity = {
-	name = "minmatar_01_Flagship_mid3_M4SHB_entity"
-	pdxmesh = "empty_mesh_ship"
-
-	locator = { name = "medium_gun_01" rotation = { 0 0 0 } position = { 0 0 0 } }
-	locator = { name = "medium_gun_02" rotation = { 0 0 0 } position = { 0 0 0 } }
-	locator = { name = "medium_gun_03" rotation = { 0 0 0 } position = { 0 0 0 } }
-	locator = { name = "medium_gun_04" rotation = { 0 0 0 } position = { 0 0 0 } }
-	locator = { name = "strike_craft_locator_01" rotation = { 0 0 0 } position = { 0 0 0 } }
-}
-
-entity = {
-	name = "minmatar_01_Flagship_mid3_S4LHB_entity"
+	name = "minmatar_01_Flagship_mid_S4LHB_entity"
 	pdxmesh = "empty_mesh_ship"
 
 	locator = { name = "small_gun_01" rotation = { 0 0 0 } position = { 0 0 0 } }

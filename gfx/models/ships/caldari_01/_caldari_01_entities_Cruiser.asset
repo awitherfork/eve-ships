@@ -1,4 +1,4 @@
-# reload assets gfx/models/ships/caldari_01/_caldari_01_cruiser_ships_entities.asset
+# reload assets gfx/models/ships/caldari_01/_caldari_01_entities_cruiser.asset
 
 # ship designer scale #
 @cruiser_scale = 8
@@ -8,7 +8,7 @@
 @blackbird_scale = 10
 
 # in game size scale #
-@cruiser_physical_scale = 1.0
+@cruiser_physical_scale = 1.6 # <-- when downscaling, only change this value.  The others are appropriate in context of it.
 @caracal_physical_scale = 1.0
 @moa_physical_scale = 1.0
 @osprey_physical_scale = 1.0
@@ -160,10 +160,6 @@ entity = {
 	state = { name = "death" state_time = 5 }
 
 	scale = @osprey_physical_scale
-	
-	game_data = {
-		size = @osprey_scale
-	}
 }
 
 
@@ -199,10 +195,6 @@ entity = {
 	state = { name = "death" state_time = 5 }
 
 	scale = @moa_physical_scale
-		
-	game_data = {
-		size = @moa_scale
-	}
 }
 
 entity = {
@@ -241,10 +233,6 @@ entity = {
 	state = { name = "death" state_time = 5 }
 	
 	scale = @blackbird_physical_scale
-	
-	game_data = {
-		size = @blackbird_scale
-	}
 }
 
 entity = {

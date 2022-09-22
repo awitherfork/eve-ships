@@ -2,17 +2,9 @@
 
 # ship designer scale #
 @corvette_scale = 6.0
-@punisher_scale = 4.0
-@crucifier_scale = 4.0
-@executioner_scale = 4.0
-@inquisitor_scale = 4.0
 
 # in game size scale #
-@corvette_physical_scale = 1
-@punisher_physical_scale = 1.5
-@crucifier_physical_scale = 1.0
-@executioner_physical_scale = 1.5
-@inquisitor_physical_scale = 1.5
+@corvette_physical_scale = 3.5
 
 
 @small_trail_W = 10
@@ -97,15 +89,13 @@ entity = {
 	}
 	state = { name = "death" state_time = 5 }
 
-	scale = @executioner_physical_scale
 	game_data = {
-	trail_locators = {
-		"engine_small_01" = 		{ width = @medium_trail_W 	length = @medium_trail_L   	}
-		"engine_small_02" = 		{ width = @medium_trail_W 	length = @medium_trail_L   	}
-		"engine_small_03" = 		{ width = @medium_trail_W 	length = @medium_trail_L   	}
-		"engine_small_04" = 		{ width = @medium_trail_W 	length = @medium_trail_L   	}
-	}
-	size = @executioner_scale		   
+		trail_locators = {
+			"engine_small_01" = 		{ width = @medium_trail_W 	length = @medium_trail_L   	}
+			"engine_small_02" = 		{ width = @medium_trail_W 	length = @medium_trail_L   	}
+			"engine_small_03" = 		{ width = @medium_trail_W 	length = @medium_trail_L   	}
+			"engine_small_04" = 		{ width = @medium_trail_W 	length = @medium_trail_L   	}
+		}
 	}
 }
 
@@ -141,11 +131,6 @@ entity = {
 		event = { time = 0 node = "engine_small_06" particle = "amarr_01_0_65_exhaust_moving_particle" trigger_once = yes keep_particle = yes }
 	}
 	state = { name = "death" state_time = 5 }
-
-	scale = @punisher_physical_scale
-	game_data = {
-		size = @punisher_scale 
-	}
 }
 
 ######### 3 #########

@@ -11,10 +11,10 @@
 @colony_frame_physical_scale = 1.0
 @transport_frame_physical_scale = 1.0
 
-@science_physical_scale = 1.0
-@constructor_physical_scale = 0.5
-@colony_physical_scale = 0.5
-@transport_physical_scale = 0.5
+@science_physical_scale = 4
+@constructor_physical_scale = 1
+@colony_physical_scale = 1
+@transport_physical_scale = 1
 
 @small_trail_W = 10
 @small_trail_L = 60
@@ -278,6 +278,8 @@ entity = {
 entity = {
  	name = "gallente_01_transport_ship_entity"
 	pdxmesh = "gallente_01_epithal_mesh"
+
+	locator = { name = "transport_gun_01" position = { 0 0 0 } rotation = { 0 0 0 } }
 	
 	default_state = "idle"
 	state = { name = "idle" state_time = 5

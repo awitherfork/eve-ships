@@ -4,8 +4,7 @@
 @science_scale = 4.0
 @constructor_scale = 1.0
 @colony_scale = 1.0
-@trasnport_scale = 1.0
-@transport_scale = 3.34
+@transport_scale = 1.0
 
 @orbital_station_scale = 1
 @refinary_station = 1
@@ -16,11 +15,11 @@
 @observatory_station_scale = 1
 
 # ingame ship scale #
-@science_frame_physical_scale = 1.0
-@constructor_frame_physical_scale = 1.0
-@colony_frame_physical_scale = 1.0
-@transport_frame_physical_scale = 1.0
-@transport_physical_scale = 0.07
+@science_frame_physical_scale = 5.0
+@constructor_frame_physical_scale = 1.75
+@colony_frame_physical_scale = 2.0
+@transport_frame_physical_scale = 0.8
+@transport_physical_scale = 1
 
 
 @science_physical_scale = 1.0
@@ -383,7 +382,7 @@ entity = {
 	scale = @transport_frame_physical_scale
 	
 	game_data = {
-		size = @trasnport_scale
+		size = @transport_scale
 
 		emissive_recolor_crunch = 5.0
 	}
@@ -392,6 +391,8 @@ entity = {
 entity = {
  	name = "caldari_01_transport_ship_entity"
 	pdxmesh = "caldari_01_tayra_mesh"
+
+	locator = { name = "transport_gun_01" position = { 0 0 0 } rotation = { 0 0 0 } }
 	
 	default_state = "idle"
 	state = { name = "idle" state_time = 5
@@ -431,7 +432,7 @@ entity = {
 	scale = @transport_physical_scale
 	
 	game_data = {
-		size = @trasnport_scale
+		size = @transport_scale
 		trail_locators = {
 			"engine_small_01" = 		{ width = @small_trail_W 	length = @small_trail_L   	}
 			"engine_small_02" = 		{ width = @small_trail_W 	length = @small_trail_L   	}

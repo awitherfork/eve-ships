@@ -1,15 +1,5 @@
-@corvette_scale = 5.0
-@destroyer_scale = 7.0
-@cruiser_scale = 8.0
-@battleship_scale = 15.0
-@Battlecruiser_scale = 13.0
-@LightCarrier_scale = 15.0
-@Carrier_scale = 10.0
-@military_station_large = 20.0
-@Dreadnought_scale = 20.0
-@Superdreadnought_scale = 25.0
-@Flagship_scale = 30.0
-@omen_physical_scale = 1.2
+@cruiser_scale = 10.0
+@omen_physical_scale = 1.8
 
 @small_trail_W = 10
 @small_trail_L = 60
@@ -18,13 +8,14 @@
 @large_trail_W = 50
 @large_trail_L =  300
 
-
 ##################         	 STRIKE CRUISER           ########################
 
 #FRAME
 entity = {
 	name = "amarr_01_StrikeCruiser_entity"
 	pdxmesh = "humanoid_01_cruiser_frame_mesh"
+
+
 	
 	default_state = "idle"
 	state = { name = "idle" animation = "idle" animation_blend_time = 0.25
@@ -93,12 +84,14 @@ entity = {
 		event = { time = 0.0 node = "root" particle = "avian_01_large_ship_explosion_particle" sound = { soundeffect = ship_destroyed } }
 	}
 	
-	scale = 0.9
+	scale = @omen_physical_scale
 	
 	game_data = {
 		size = @cruiser_scale
 		emissive_recolor_crunch = 10
 	}
+
+	attach = { part1 = "amarr_01_omen_entity" }
 }
 
 # BOW
@@ -130,163 +123,39 @@ entity = {
 # MID
 entity = {
 	name = "amarr_01_StrikeCruiser_mid_S2HB_entity"
-	pdxmesh = "amarr_01_omen_mesh"
+	pdxmesh = "empty_mesh_ship"
 
 	locator = { name = "small_gun_01" rotation = { 0 0 0 } position = { 0 0 0 } }
 	locator = { name = "small_gun_02" rotation = { 0 0 0 } position = { 0 0 0 } }
 	locator = { name = "strike_craft_locator_01" rotation = { 0 0 0 } position = { 0 0 0 } }
 	
-	default_state = "idle"
-	state = { name = "idle" state_time = 5
-		event = { time = 0 node = "light_locator_01" particle = "ship_light_blue_effect" trigger_once = yes keep_particle = yes }
-		event = { time = 0 node = "light_locator_02" particle = "ship_light_blue_effect" trigger_once = yes keep_particle = yes }
-		event = { time = 0 node = "light_locator_03" particle = "ship_light_blue_effect" trigger_once = yes keep_particle = yes }		
-
-		event = { time = 0 node = "engine_small_01" particle = "amarr_01_2_00_exhaust_idle_particle" trigger_once = yes keep_particle = yes }
-		event = { time = 0 node = "engine_small_02" particle = "amarr_01_2_00_exhaust_idle_particle" trigger_once = yes keep_particle = yes }
-		event = { time = 0 node = "engine_small_03" particle = "amarr_01_2_00_exhaust_idle_particle" trigger_once = yes keep_particle = yes }
-		event = { time = 0 node = "engine_small_04" particle = "amarr_01_2_00_exhaust_idle_particle" trigger_once = yes keep_particle = yes }		
-		event = { time = 0 node = "engine_small_05" particle = "amarr_01_2_00_exhaust_idle_particle" trigger_once = yes keep_particle = yes }		
-	}
-	state = { name = "moving" state_time = 5
-		event = { time = 0 node = "light_locator_01" particle = "ship_light_blue_effect" trigger_once = yes keep_particle = yes }
-		event = { time = 0 node = "light_locator_02" particle = "ship_light_blue_effect" trigger_once = yes keep_particle = yes }
-		event = { time = 0 node = "light_locator_03" particle = "ship_light_blue_effect" trigger_once = yes keep_particle = yes }
-
-		event = { time = 0 node = "engine_small_01" particle = "amarr_01_4_00_exhaust_moving_particle" trigger_once = yes keep_particle = yes }
-		event = { time = 0 node = "engine_small_02" particle = "amarr_01_4_00_exhaust_moving_particle" trigger_once = yes keep_particle = yes }
-		event = { time = 0 node = "engine_small_03" particle = "amarr_01_4_00_exhaust_moving_particle" trigger_once = yes keep_particle = yes }
-		event = { time = 0 node = "engine_small_04" particle = "amarr_01_4_00_exhaust_moving_particle" trigger_once = yes keep_particle = yes }
-		event = { time = 0 node = "engine_small_05" particle = "amarr_01_4_00_exhaust_moving_particle" trigger_once = yes keep_particle = yes }		
-	}
-	state = { name = "death" state_time = 5 }
-
-	scale = @omen_physical_scale
-
-	game_data = {
-		size = @cruiser_scale
-	}
-	
 }
 
 entity = {
 	name = "amarr_01_StrikeCruiser_mid_L1M1_entity"
-	pdxmesh = "amarr_01_omen_mesh"
+	pdxmesh = "empty_mesh_ship"
 
 	locator = { name = "large_gun_01" rotation = { 0 0 0 } position = { 0 0 0 } }
 	locator = { name = "medium_gun_01" rotation = { 0 0 0 } position = { 0 0 0 } }
-	
-	default_state = "idle"
-	state = { name = "idle" state_time = 5
-		event = { time = 0 node = "light_locator_01" particle = "ship_light_blue_effect" trigger_once = yes keep_particle = yes }
-		event = { time = 0 node = "light_locator_02" particle = "ship_light_blue_effect" trigger_once = yes keep_particle = yes }
-		event = { time = 0 node = "light_locator_03" particle = "ship_light_blue_effect" trigger_once = yes keep_particle = yes }		
-
-		event = { time = 0 node = "engine_small_01" particle = "amarr_01_2_00_exhaust_idle_particle" trigger_once = yes keep_particle = yes }
-		event = { time = 0 node = "engine_small_02" particle = "amarr_01_2_00_exhaust_idle_particle" trigger_once = yes keep_particle = yes }
-		event = { time = 0 node = "engine_small_03" particle = "amarr_01_2_00_exhaust_idle_particle" trigger_once = yes keep_particle = yes }
-		event = { time = 0 node = "engine_small_04" particle = "amarr_01_2_00_exhaust_idle_particle" trigger_once = yes keep_particle = yes }		
-		event = { time = 0 node = "engine_small_05" particle = "amarr_01_2_00_exhaust_idle_particle" trigger_once = yes keep_particle = yes }		
-	}
-	state = { name = "moving" state_time = 5
-		event = { time = 0 node = "light_locator_01" particle = "ship_light_blue_effect" trigger_once = yes keep_particle = yes }
-		event = { time = 0 node = "light_locator_02" particle = "ship_light_blue_effect" trigger_once = yes keep_particle = yes }
-		event = { time = 0 node = "light_locator_03" particle = "ship_light_blue_effect" trigger_once = yes keep_particle = yes }
-
-		event = { time = 0 node = "engine_small_01" particle = "amarr_01_4_00_exhaust_moving_particle" trigger_once = yes keep_particle = yes }
-		event = { time = 0 node = "engine_small_02" particle = "amarr_01_4_00_exhaust_moving_particle" trigger_once = yes keep_particle = yes }
-		event = { time = 0 node = "engine_small_03" particle = "amarr_01_4_00_exhaust_moving_particle" trigger_once = yes keep_particle = yes }
-		event = { time = 0 node = "engine_small_04" particle = "amarr_01_4_00_exhaust_moving_particle" trigger_once = yes keep_particle = yes }
-		event = { time = 0 node = "engine_small_05" particle = "amarr_01_4_00_exhaust_moving_particle" trigger_once = yes keep_particle = yes }		
-	}
-	state = { name = "death" state_time = 5 }
-
-	scale = @omen_physical_scale
-
-	game_data = {
-		size = @cruiser_scale
-	}
 }
 
 entity = {
 	name = "amarr_01_StrikeCruiser_mid_M3_entity"
-	pdxmesh = "amarr_01_omen_mesh"
+	pdxmesh = "empty_mesh_ship"
 
 	locator = { name = "medium_gun_01" rotation = { 0 0 0 } position = { 0 0 0 } }
 	locator = { name = "medium_gun_02" rotation = { 0 0 0 } position = { 0 0 0 } }
 	locator = { name = "medium_gun_03" rotation = { 0 0 0 } position = { 0 0 0 } }
-	
-	default_state = "idle"
-	state = { name = "idle" state_time = 5
-		event = { time = 0 node = "light_locator_01" particle = "ship_light_blue_effect" trigger_once = yes keep_particle = yes }
-		event = { time = 0 node = "light_locator_02" particle = "ship_light_blue_effect" trigger_once = yes keep_particle = yes }
-		event = { time = 0 node = "light_locator_03" particle = "ship_light_blue_effect" trigger_once = yes keep_particle = yes }		
-
-		event = { time = 0 node = "engine_small_01" particle = "amarr_01_2_00_exhaust_idle_particle" trigger_once = yes keep_particle = yes }
-		event = { time = 0 node = "engine_small_02" particle = "amarr_01_2_00_exhaust_idle_particle" trigger_once = yes keep_particle = yes }
-		event = { time = 0 node = "engine_small_03" particle = "amarr_01_2_00_exhaust_idle_particle" trigger_once = yes keep_particle = yes }
-		event = { time = 0 node = "engine_small_04" particle = "amarr_01_2_00_exhaust_idle_particle" trigger_once = yes keep_particle = yes }		
-		event = { time = 0 node = "engine_small_05" particle = "amarr_01_2_00_exhaust_idle_particle" trigger_once = yes keep_particle = yes }		
-	}
-	state = { name = "moving" state_time = 5
-		event = { time = 0 node = "light_locator_01" particle = "ship_light_blue_effect" trigger_once = yes keep_particle = yes }
-		event = { time = 0 node = "light_locator_02" particle = "ship_light_blue_effect" trigger_once = yes keep_particle = yes }
-		event = { time = 0 node = "light_locator_03" particle = "ship_light_blue_effect" trigger_once = yes keep_particle = yes }
-
-		event = { time = 0 node = "engine_small_01" particle = "amarr_01_4_00_exhaust_moving_particle" trigger_once = yes keep_particle = yes }
-		event = { time = 0 node = "engine_small_02" particle = "amarr_01_4_00_exhaust_moving_particle" trigger_once = yes keep_particle = yes }
-		event = { time = 0 node = "engine_small_03" particle = "amarr_01_4_00_exhaust_moving_particle" trigger_once = yes keep_particle = yes }
-		event = { time = 0 node = "engine_small_04" particle = "amarr_01_4_00_exhaust_moving_particle" trigger_once = yes keep_particle = yes }
-		event = { time = 0 node = "engine_small_05" particle = "amarr_01_4_00_exhaust_moving_particle" trigger_once = yes keep_particle = yes }		
-	}
-	state = { name = "death" state_time = 5 }
-
-	scale = @omen_physical_scale
-
-	game_data = {
-		size = @cruiser_scale
-	}
 }
 
 entity = {
 	name = "amarr_01_StrikeCruiser_mid_M2S2_entity"
-	pdxmesh = "amarr_01_omen_mesh"
+	pdxmesh = "empty_mesh_ship"
 
 	locator = { name = "medium_gun_01" rotation = { 0 0 0 } position = { 0 0 0 } }
 	locator = { name = "medium_gun_02" rotation = { 0 0 0 } position = { 0 0 0 } }
 	locator = { name = "small_gun_01" rotation = { 0 0 0 } position = { 0 0 0 } }
 	locator = { name = "small_gun_02" rotation = { 0 0 0 } position = { 0 0 0 } }
-	
-	default_state = "idle"
-	state = { name = "idle" state_time = 5
-		event = { time = 0 node = "light_locator_01" particle = "ship_light_blue_effect" trigger_once = yes keep_particle = yes }
-		event = { time = 0 node = "light_locator_02" particle = "ship_light_blue_effect" trigger_once = yes keep_particle = yes }
-		event = { time = 0 node = "light_locator_03" particle = "ship_light_blue_effect" trigger_once = yes keep_particle = yes }		
-
-		event = { time = 0 node = "engine_small_01" particle = "amarr_01_2_00_exhaust_idle_particle" trigger_once = yes keep_particle = yes }
-		event = { time = 0 node = "engine_small_02" particle = "amarr_01_2_00_exhaust_idle_particle" trigger_once = yes keep_particle = yes }
-		event = { time = 0 node = "engine_small_03" particle = "amarr_01_2_00_exhaust_idle_particle" trigger_once = yes keep_particle = yes }
-		event = { time = 0 node = "engine_small_04" particle = "amarr_01_2_00_exhaust_idle_particle" trigger_once = yes keep_particle = yes }		
-		event = { time = 0 node = "engine_small_05" particle = "amarr_01_2_00_exhaust_idle_particle" trigger_once = yes keep_particle = yes }		
-	}
-	state = { name = "moving" state_time = 5
-		event = { time = 0 node = "light_locator_01" particle = "ship_light_blue_effect" trigger_once = yes keep_particle = yes }
-		event = { time = 0 node = "light_locator_02" particle = "ship_light_blue_effect" trigger_once = yes keep_particle = yes }
-		event = { time = 0 node = "light_locator_03" particle = "ship_light_blue_effect" trigger_once = yes keep_particle = yes }
-
-		event = { time = 0 node = "engine_small_01" particle = "amarr_01_4_00_exhaust_moving_particle" trigger_once = yes keep_particle = yes }
-		event = { time = 0 node = "engine_small_02" particle = "amarr_01_4_00_exhaust_moving_particle" trigger_once = yes keep_particle = yes }
-		event = { time = 0 node = "engine_small_03" particle = "amarr_01_4_00_exhaust_moving_particle" trigger_once = yes keep_particle = yes }
-		event = { time = 0 node = "engine_small_04" particle = "amarr_01_4_00_exhaust_moving_particle" trigger_once = yes keep_particle = yes }
-		event = { time = 0 node = "engine_small_05" particle = "amarr_01_4_00_exhaust_moving_particle" trigger_once = yes keep_particle = yes }		
-	}
-	state = { name = "death" state_time = 5 }
-
-	scale = @omen_physical_scale
-
-	game_data = {
-		size = @cruiser_scale
-	}
 }
 
 
@@ -305,4 +174,42 @@ entity = {
 
 	locator = { name = "small_gun_01" rotation = { 0 0 0 } position = { 0 0 0 } }
 	locator = { name = "small_gun_02" rotation = { 0 0 0 } position = { 0 0 0 } }
+}
+
+# ENTITY
+
+entity = {
+	name = "amarr_01_omen_entity"
+	pdxmesh = "amarr_01_omen_mesh"
+	
+	default_state = "idle"
+	state = { name = "idle" state_time = 5
+		event = { time = 0 node = "light_locator_01" particle = "ship_light_blue_effect" trigger_once = yes keep_particle = yes }
+		event = { time = 0 node = "light_locator_02" particle = "ship_light_blue_effect" trigger_once = yes keep_particle = yes }
+		event = { time = 0 node = "light_locator_03" particle = "ship_light_blue_effect" trigger_once = yes keep_particle = yes }		
+
+		event = { time = 0 node = "engine_small_01" particle = "amarr_01_2_00_exhaust_idle_particle" trigger_once = yes keep_particle = yes }
+		event = { time = 0 node = "engine_small_02" particle = "amarr_01_2_00_exhaust_idle_particle" trigger_once = yes keep_particle = yes }
+		event = { time = 0 node = "engine_small_03" particle = "amarr_01_2_00_exhaust_idle_particle" trigger_once = yes keep_particle = yes }
+		event = { time = 0 node = "engine_small_04" particle = "amarr_01_2_00_exhaust_idle_particle" trigger_once = yes keep_particle = yes }		
+		event = { time = 0 node = "engine_small_05" particle = "amarr_01_2_00_exhaust_idle_particle" trigger_once = yes keep_particle = yes }		
+	}
+	state = { name = "moving" state_time = 5
+		event = { time = 0 node = "light_locator_01" particle = "ship_light_blue_effect" trigger_once = yes keep_particle = yes }
+		event = { time = 0 node = "light_locator_02" particle = "ship_light_blue_effect" trigger_once = yes keep_particle = yes }
+		event = { time = 0 node = "light_locator_03" particle = "ship_light_blue_effect" trigger_once = yes keep_particle = yes }
+
+		event = { time = 0 node = "engine_small_01" particle = "amarr_01_4_00_exhaust_moving_particle" trigger_once = yes keep_particle = yes }
+		event = { time = 0 node = "engine_small_02" particle = "amarr_01_4_00_exhaust_moving_particle" trigger_once = yes keep_particle = yes }
+		event = { time = 0 node = "engine_small_03" particle = "amarr_01_4_00_exhaust_moving_particle" trigger_once = yes keep_particle = yes }
+		event = { time = 0 node = "engine_small_04" particle = "amarr_01_4_00_exhaust_moving_particle" trigger_once = yes keep_particle = yes }
+		event = { time = 0 node = "engine_small_05" particle = "amarr_01_4_00_exhaust_moving_particle" trigger_once = yes keep_particle = yes }		
+	}
+	state = { name = "death" state_time = 5 }
+
+	# scale = @omen_physical_scale
+
+	# game_data = {
+	# 	size = @cruiser_scale
+	# }
 }

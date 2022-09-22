@@ -124,5 +124,5 @@ entity = {
 	}
 	state = { name = "death" state_time = 5 }
 	
-	scale = 1.0
+	scale = 2
 }

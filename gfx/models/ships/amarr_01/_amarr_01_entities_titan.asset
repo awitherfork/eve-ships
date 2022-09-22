@@ -6,7 +6,7 @@
 
 # in game size scale #
 @frame_physical_scale = 1.0
-@titan_physical_scale = 0.25
+@titan_physical_scale = 0.2
 @titan_effect_physical_scale = 1.0
 
 @small_trail_W = 10

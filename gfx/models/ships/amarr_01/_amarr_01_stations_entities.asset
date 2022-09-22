@@ -17,11 +17,11 @@
 @constructor_physical_scale = 0.25
 @orbital_station_physical_scale = 0.15
 @refinary_physical_scale = 0.15
-@research_station_physical_scale = 0.15
-@mining_station_physical_scale = 0.12
-@terraforming_station_physical_scale = 0.15
+@research_station_physical_scale = 0.3
+@mining_station_physical_scale = 0.24
+@terraforming_station_physical_scale = 0.3
 @wormhole_station_physical_scale = 0.15
-@observatory_station_physical_scale = 0.15
+@observatory_station_physical_scale = 0.3
 @plataform_physical_scale = 0.5
 
 ###############################

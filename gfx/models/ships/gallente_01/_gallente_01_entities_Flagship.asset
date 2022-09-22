@@ -79,9 +79,9 @@ entity = {
 		size = @Flagship_scale
 		emissive_recolor_crunch = 10
 	}
+
+	attach = { part3 = "gallente_01_nyx_entity"}
 }
-
-
 
 # BOW
 entity = {
@@ -176,9 +176,9 @@ entity = {
 	locator = { name = "xl_gun_04"    rotation = { 0 0 0 } position = { 0 0 0 } }
 }
 
-#MID1
+#MID
 entity = {
-	name = "gallente_01_Flagship_mid1_L2S4_entity"
+	name = "gallente_01_Flagship_mid_L2S4_entity"
 	pdxmesh = "empty_mesh_ship"
 
 	locator = { name = "large_gun_01" rotation = { 0 0 0 } position = { 0 0 0 } }
@@ -190,7 +190,7 @@ entity = {
 }
 
 entity = {
-	name = "gallente_01_Flagship_mid1_L1M4_entity"
+	name = "gallente_01_Flagship_mid_L1M4_entity"
 	pdxmesh = "empty_mesh_ship"
 
 	locator = { name = "large_gun_01" rotation = { 0 0 0 } position = { 0 0 0 } }
@@ -201,7 +201,7 @@ entity = {
 }
 
 entity = {
-	name = "gallente_01_Flagship_mid1_L2M2_entity"
+	name = "gallente_01_Flagship_mid_L2M2_entity"
 	pdxmesh = "empty_mesh_ship"
 
 	locator = { name = "large_gun_01" rotation = { 0 0 0 } position = { 0 0 0 } }
@@ -211,7 +211,7 @@ entity = {
 }
 
 entity = {
-	name = "gallente_01_Flagship_mid1_L3_entity"
+	name = "gallente_01_Flagship_mid_L3_entity"
 	pdxmesh = "empty_mesh_ship"
 
 	locator = { name = "large_gun_01" rotation = { 0 0 0 } position = { 0 0 0 } }
@@ -220,7 +220,7 @@ entity = {
 }
 
 entity = {
-	name = "gallente_01_Flagship_mid1_M4SHB_entity"
+	name = "gallente_01_Flagship_mid_M4SHB_entity"
 	pdxmesh = "empty_mesh_ship"
 
 	locator = { name = "medium_gun_01" rotation = { 0 0 0 } position = { 0 0 0 } }
@@ -231,523 +231,7 @@ entity = {
 }
 
 entity = {
-	name = "gallente_01_Flagship_mid1_S4LHB_entity"
-	pdxmesh = "empty_mesh_ship"
-
-	locator = { name = "small_gun_01" rotation = { 0 0 0 } position = { 0 0 0 } }
-	locator = { name = "small_gun_02" rotation = { 0 0 0 } position = { 0 0 0 } }
-	locator = { name = "small_gun_03" rotation = { 0 0 0 } position = { 0 0 0 } }
-	locator = { name = "small_gun_04" rotation = { 0 0 0 } position = { 0 0 0 } }
-	locator = { name = "strike_craft_locator_01" rotation = { 0 0 0 } position = { 0 0 0 } }
-	locator = { name = "strike_craft_locator_02" rotation = { 0 0 0 } position = { 0 0 0 } }
-}
-
-#MID2
-entity = {
-	name = "gallente_01_Flagship_mid2_L2S4_entity"
-	pdxmesh = "gallente_01_nyx_mesh"
-
-	locator = { name = "large_gun_01" rotation = { 0 0 0 } position = { 0 0 0 } }
-	locator = { name = "large_gun_02" rotation = { 0 0 0 } position = { 0 0 0 } }
-	locator = { name = "small_gun_01" rotation = { 0 0 0 } position = { 0 0 0 } }
-	locator = { name = "small_gun_02" rotation = { 0 0 0 } position = { 0 0 0 } }
-	locator = { name = "small_gun_03" rotation = { 0 0 0 } position = { 0 0 0 } }
-	locator = { name = "small_gun_04" rotation = { 0 0 0 } position = { 0 0 0 } }
-	
-	default_state = "idle"
-	state = { name = "idle" state_time = 5
-		event = { time = 0 node = "light_locator_01" particle = "ship_light_blue_effect" trigger_once = yes keep_particle = yes }
-		event = { time = 0 node = "light_locator_02" particle = "ship_light_blue_effect" trigger_once = yes keep_particle = yes }
-		event = { time = 0 node = "light_locator_03" particle = "ship_light_blue_effect" trigger_once = yes keep_particle = yes }		
-		event = { time = 0 node = "light_locator_04" particle = "ship_light_blue_effect" trigger_once = yes keep_particle = yes }		
-		event = { time = 0 node = "light_locator_05" particle = "ship_light_blue_effect" trigger_once = yes keep_particle = yes }		
-		event = { time = 0 node = "light_locator_06" particle = "ship_light_blue_effect" trigger_once = yes keep_particle = yes }		
-		event = { time = 0 node = "light_locator_07" particle = "ship_light_blue_effect" trigger_once = yes keep_particle = yes }		
-		event = { time = 0 node = "light_locator_08" particle = "ship_light_blue_effect" trigger_once = yes keep_particle = yes }		
-				
-		event = { time = 0 node = "engine_large_01" particle = "gallente_1_8_00_exhaust_idle_particle" trigger_once = yes keep_particle = yes }
-		event = { time = 0 node = "engine_large_02" particle = "gallente_1_8_00_exhaust_idle_particle" trigger_once = yes keep_particle = yes }
-		event = { time = 0 node = "engine_large_03" particle = "gallente_1_8_00_exhaust_idle_particle" trigger_once = yes keep_particle = yes }
-		event = { time = 0 node = "engine_large_04" particle = "gallente_1_8_00_exhaust_idle_particle" trigger_once = yes keep_particle = yes }		
-		event = { time = 0 node = "engine_large_05" particle = "gallente_1_8_00_exhaust_idle_particle" trigger_once = yes keep_particle = yes }		
-		event = { time = 0 node = "engine_large_06" particle = "gallente_1_8_00_exhaust_idle_particle" trigger_once = yes keep_particle = yes }		
-		event = { time = 0 node = "engine_large_07" particle = "gallente_1_8_00_exhaust_idle_particle" trigger_once = yes keep_particle = yes }		
-		event = { time = 0 node = "engine_large_08" particle = "gallente_1_8_00_exhaust_idle_particle" trigger_once = yes keep_particle = yes }		
-		event = { time = 0 node = "engine_large_09" particle = "gallente_1_8_00_exhaust_idle_particle" trigger_once = yes keep_particle = yes }		
-		event = { time = 0 node = "engine_large_10" particle = "gallente_1_8_00_exhaust_idle_particle" trigger_once = yes keep_particle = yes }		
-	}
-	state = { name = "moving" state_time = 5
-		event = { time = 0 node = "light_locator_01" particle = "ship_light_blue_effect" trigger_once = yes keep_particle = yes }
-		event = { time = 0 node = "light_locator_02" particle = "ship_light_blue_effect" trigger_once = yes keep_particle = yes }
-		event = { time = 0 node = "light_locator_03" particle = "ship_light_blue_effect" trigger_once = yes keep_particle = yes }		
-		event = { time = 0 node = "light_locator_04" particle = "ship_light_blue_effect" trigger_once = yes keep_particle = yes }		
-		event = { time = 0 node = "light_locator_05" particle = "ship_light_blue_effect" trigger_once = yes keep_particle = yes }		
-		event = { time = 0 node = "light_locator_06" particle = "ship_light_blue_effect" trigger_once = yes keep_particle = yes }		
-		event = { time = 0 node = "light_locator_07" particle = "ship_light_blue_effect" trigger_once = yes keep_particle = yes }		
-		event = { time = 0 node = "light_locator_08" particle = "ship_light_blue_effect" trigger_once = yes keep_particle = yes }		
-		
-		event = { time = 0 node = "engine_large_01" particle = "gallente_01_8_00_ship_exhaust_moving_particle" trigger_once = yes keep_particle = yes }
-		event = { time = 0 node = "engine_large_02" particle = "gallente_01_8_00_ship_exhaust_moving_particle" trigger_once = yes keep_particle = yes }
-		event = { time = 0 node = "engine_large_03" particle = "gallente_01_8_00_ship_exhaust_moving_particle" trigger_once = yes keep_particle = yes }
-		event = { time = 0 node = "engine_large_04" particle = "gallente_01_8_00_ship_exhaust_moving_particle" trigger_once = yes keep_particle = yes }
-		event = { time = 0 node = "engine_large_05" particle = "gallente_01_8_00_ship_exhaust_moving_particle" trigger_once = yes keep_particle = yes }
-		event = { time = 0 node = "engine_large_06" particle = "gallente_01_8_00_ship_exhaust_moving_particle" trigger_once = yes keep_particle = yes }
-		event = { time = 0 node = "engine_large_07" particle = "gallente_01_8_00_ship_exhaust_moving_particle" trigger_once = yes keep_particle = yes }
-		event = { time = 0 node = "engine_large_08" particle = "gallente_01_8_00_ship_exhaust_moving_particle" trigger_once = yes keep_particle = yes }
-		event = { time = 0 node = "engine_large_09" particle = "gallente_01_8_00_ship_exhaust_moving_particle" trigger_once = yes keep_particle = yes }
-		event = { time = 0 node = "engine_large_10" particle = "gallente_01_8_00_ship_exhaust_moving_particle" trigger_once = yes keep_particle = yes }
-
-	}
-	state = { name = "death" state_time = 5 }
-	
-	scale = @supercarrier_physical_scale
-	
-	game_data = {
-		trail_locators = {
-			"engine_large_01" = 		{ width = @medium_trail_W 	length = @medium_trail_L   	}
-			"engine_large_02" = 		{ width = @medium_trail_W 	length = @medium_trail_L   	}
-			"engine_large_03" = 		{ width = @medium_trail_W 	length = @medium_trail_L   	}
-			"engine_large_04" = 		{ width = @medium_trail_W 	length = @medium_trail_L   	}
-			"engine_large_05" = 		{ width = @medium_trail_W 	length = @medium_trail_L   	}
-			"engine_large_06" = 		{ width = @medium_trail_W 	length = @medium_trail_L   	}
-			"engine_large_07" = 		{ width = @medium_trail_W 	length = @medium_trail_L   	}
-			"engine_large_08" = 		{ width = @medium_trail_W 	length = @medium_trail_L   	}
-			"engine_large_09" = 		{ width = @medium_trail_W 	length = @medium_trail_L   	}
-			"engine_large_10" = 		{ width = @medium_trail_W 	length = @medium_trail_L   	}
-		}	
-		size = @supercarrier_scale
-	}
-}
-
-entity = {
-	name = "gallente_01_Flagship_mid2_L1M4_entity"
-	pdxmesh = "gallente_01_nyx_mesh"
-
-	locator = { name = "large_gun_01" rotation = { 0 0 0 } position = { 0 0 0 } }
-	locator = { name = "medium_gun_01" rotation = { 0 0 0 } position = { 0 0 0 } }
-	locator = { name = "medium_gun_02" rotation = { 0 0 0 } position = { 0 0 0 } }
-	locator = { name = "medium_gun_03" rotation = { 0 0 0 } position = { 0 0 0 } }
-	locator = { name = "medium_gun_04" rotation = { 0 0 0 } position = { 0 0 0 } }
-	
-	default_state = "idle"
-	state = { name = "idle" state_time = 5
-		event = { time = 0 node = "light_locator_01" particle = "ship_light_blue_effect" trigger_once = yes keep_particle = yes }
-		event = { time = 0 node = "light_locator_02" particle = "ship_light_blue_effect" trigger_once = yes keep_particle = yes }
-		event = { time = 0 node = "light_locator_03" particle = "ship_light_blue_effect" trigger_once = yes keep_particle = yes }		
-		event = { time = 0 node = "light_locator_04" particle = "ship_light_blue_effect" trigger_once = yes keep_particle = yes }		
-		event = { time = 0 node = "light_locator_05" particle = "ship_light_blue_effect" trigger_once = yes keep_particle = yes }		
-		event = { time = 0 node = "light_locator_06" particle = "ship_light_blue_effect" trigger_once = yes keep_particle = yes }		
-		event = { time = 0 node = "light_locator_07" particle = "ship_light_blue_effect" trigger_once = yes keep_particle = yes }		
-		event = { time = 0 node = "light_locator_08" particle = "ship_light_blue_effect" trigger_once = yes keep_particle = yes }		
-				
-		event = { time = 0 node = "engine_large_01" particle = "gallente_1_8_00_exhaust_idle_particle" trigger_once = yes keep_particle = yes }
-		event = { time = 0 node = "engine_large_02" particle = "gallente_1_8_00_exhaust_idle_particle" trigger_once = yes keep_particle = yes }
-		event = { time = 0 node = "engine_large_03" particle = "gallente_1_8_00_exhaust_idle_particle" trigger_once = yes keep_particle = yes }
-		event = { time = 0 node = "engine_large_04" particle = "gallente_1_8_00_exhaust_idle_particle" trigger_once = yes keep_particle = yes }		
-		event = { time = 0 node = "engine_large_05" particle = "gallente_1_8_00_exhaust_idle_particle" trigger_once = yes keep_particle = yes }		
-		event = { time = 0 node = "engine_large_06" particle = "gallente_1_8_00_exhaust_idle_particle" trigger_once = yes keep_particle = yes }		
-		event = { time = 0 node = "engine_large_07" particle = "gallente_1_8_00_exhaust_idle_particle" trigger_once = yes keep_particle = yes }		
-		event = { time = 0 node = "engine_large_08" particle = "gallente_1_8_00_exhaust_idle_particle" trigger_once = yes keep_particle = yes }		
-		event = { time = 0 node = "engine_large_09" particle = "gallente_1_8_00_exhaust_idle_particle" trigger_once = yes keep_particle = yes }		
-		event = { time = 0 node = "engine_large_10" particle = "gallente_1_8_00_exhaust_idle_particle" trigger_once = yes keep_particle = yes }		
-	}
-	state = { name = "moving" state_time = 5
-		event = { time = 0 node = "light_locator_01" particle = "ship_light_blue_effect" trigger_once = yes keep_particle = yes }
-		event = { time = 0 node = "light_locator_02" particle = "ship_light_blue_effect" trigger_once = yes keep_particle = yes }
-		event = { time = 0 node = "light_locator_03" particle = "ship_light_blue_effect" trigger_once = yes keep_particle = yes }		
-		event = { time = 0 node = "light_locator_04" particle = "ship_light_blue_effect" trigger_once = yes keep_particle = yes }		
-		event = { time = 0 node = "light_locator_05" particle = "ship_light_blue_effect" trigger_once = yes keep_particle = yes }		
-		event = { time = 0 node = "light_locator_06" particle = "ship_light_blue_effect" trigger_once = yes keep_particle = yes }		
-		event = { time = 0 node = "light_locator_07" particle = "ship_light_blue_effect" trigger_once = yes keep_particle = yes }		
-		event = { time = 0 node = "light_locator_08" particle = "ship_light_blue_effect" trigger_once = yes keep_particle = yes }		
-		
-		event = { time = 0 node = "engine_large_01" particle = "gallente_01_8_00_ship_exhaust_moving_particle" trigger_once = yes keep_particle = yes }
-		event = { time = 0 node = "engine_large_02" particle = "gallente_01_8_00_ship_exhaust_moving_particle" trigger_once = yes keep_particle = yes }
-		event = { time = 0 node = "engine_large_03" particle = "gallente_01_8_00_ship_exhaust_moving_particle" trigger_once = yes keep_particle = yes }
-		event = { time = 0 node = "engine_large_04" particle = "gallente_01_8_00_ship_exhaust_moving_particle" trigger_once = yes keep_particle = yes }
-		event = { time = 0 node = "engine_large_05" particle = "gallente_01_8_00_ship_exhaust_moving_particle" trigger_once = yes keep_particle = yes }
-		event = { time = 0 node = "engine_large_06" particle = "gallente_01_8_00_ship_exhaust_moving_particle" trigger_once = yes keep_particle = yes }
-		event = { time = 0 node = "engine_large_07" particle = "gallente_01_8_00_ship_exhaust_moving_particle" trigger_once = yes keep_particle = yes }
-		event = { time = 0 node = "engine_large_08" particle = "gallente_01_8_00_ship_exhaust_moving_particle" trigger_once = yes keep_particle = yes }
-		event = { time = 0 node = "engine_large_09" particle = "gallente_01_8_00_ship_exhaust_moving_particle" trigger_once = yes keep_particle = yes }
-		event = { time = 0 node = "engine_large_10" particle = "gallente_01_8_00_ship_exhaust_moving_particle" trigger_once = yes keep_particle = yes }
-
-	}
-	state = { name = "death" state_time = 5 }
-	
-	scale = @supercarrier_physical_scale
-	
-	game_data = {
-		trail_locators = {
-			"engine_large_01" = 		{ width = @medium_trail_W 	length = @medium_trail_L   	}
-			"engine_large_02" = 		{ width = @medium_trail_W 	length = @medium_trail_L   	}
-			"engine_large_03" = 		{ width = @medium_trail_W 	length = @medium_trail_L   	}
-			"engine_large_04" = 		{ width = @medium_trail_W 	length = @medium_trail_L   	}
-			"engine_large_05" = 		{ width = @medium_trail_W 	length = @medium_trail_L   	}
-			"engine_large_06" = 		{ width = @medium_trail_W 	length = @medium_trail_L   	}
-			"engine_large_07" = 		{ width = @medium_trail_W 	length = @medium_trail_L   	}
-			"engine_large_08" = 		{ width = @medium_trail_W 	length = @medium_trail_L   	}
-			"engine_large_09" = 		{ width = @medium_trail_W 	length = @medium_trail_L   	}
-			"engine_large_10" = 		{ width = @medium_trail_W 	length = @medium_trail_L   	}
-		}	
-		size = @supercarrier_scale
-	}
-}
-
-entity = {
-	name = "gallente_01_Flagship_mid2_L2M2_entity"
-	pdxmesh = "gallente_01_nyx_mesh"
-
-	locator = { name = "large_gun_01" rotation = { 0 0 0 } position = { 0 0 0 } }
-	locator = { name = "large_gun_02" rotation = { 0 0 0 } position = { 0 0 0 } }
-	locator = { name = "medium_gun_01" rotation = { 0 0 0 } position = { 0 0 0 } }
-	locator = { name = "medium_gun_02" rotation = { 0 0 0 } position = { 0 0 0 } }
-	
-	default_state = "idle"
-	state = { name = "idle" state_time = 5
-		event = { time = 0 node = "light_locator_01" particle = "ship_light_blue_effect" trigger_once = yes keep_particle = yes }
-		event = { time = 0 node = "light_locator_02" particle = "ship_light_blue_effect" trigger_once = yes keep_particle = yes }
-		event = { time = 0 node = "light_locator_03" particle = "ship_light_blue_effect" trigger_once = yes keep_particle = yes }		
-		event = { time = 0 node = "light_locator_04" particle = "ship_light_blue_effect" trigger_once = yes keep_particle = yes }		
-		event = { time = 0 node = "light_locator_05" particle = "ship_light_blue_effect" trigger_once = yes keep_particle = yes }		
-		event = { time = 0 node = "light_locator_06" particle = "ship_light_blue_effect" trigger_once = yes keep_particle = yes }		
-		event = { time = 0 node = "light_locator_07" particle = "ship_light_blue_effect" trigger_once = yes keep_particle = yes }		
-		event = { time = 0 node = "light_locator_08" particle = "ship_light_blue_effect" trigger_once = yes keep_particle = yes }		
-				
-		event = { time = 0 node = "engine_large_01" particle = "gallente_1_8_00_exhaust_idle_particle" trigger_once = yes keep_particle = yes }
-		event = { time = 0 node = "engine_large_02" particle = "gallente_1_8_00_exhaust_idle_particle" trigger_once = yes keep_particle = yes }
-		event = { time = 0 node = "engine_large_03" particle = "gallente_1_8_00_exhaust_idle_particle" trigger_once = yes keep_particle = yes }
-		event = { time = 0 node = "engine_large_04" particle = "gallente_1_8_00_exhaust_idle_particle" trigger_once = yes keep_particle = yes }		
-		event = { time = 0 node = "engine_large_05" particle = "gallente_1_8_00_exhaust_idle_particle" trigger_once = yes keep_particle = yes }		
-		event = { time = 0 node = "engine_large_06" particle = "gallente_1_8_00_exhaust_idle_particle" trigger_once = yes keep_particle = yes }		
-		event = { time = 0 node = "engine_large_07" particle = "gallente_1_8_00_exhaust_idle_particle" trigger_once = yes keep_particle = yes }		
-		event = { time = 0 node = "engine_large_08" particle = "gallente_1_8_00_exhaust_idle_particle" trigger_once = yes keep_particle = yes }		
-		event = { time = 0 node = "engine_large_09" particle = "gallente_1_8_00_exhaust_idle_particle" trigger_once = yes keep_particle = yes }		
-		event = { time = 0 node = "engine_large_10" particle = "gallente_1_8_00_exhaust_idle_particle" trigger_once = yes keep_particle = yes }		
-	}
-	state = { name = "moving" state_time = 5
-		event = { time = 0 node = "light_locator_01" particle = "ship_light_blue_effect" trigger_once = yes keep_particle = yes }
-		event = { time = 0 node = "light_locator_02" particle = "ship_light_blue_effect" trigger_once = yes keep_particle = yes }
-		event = { time = 0 node = "light_locator_03" particle = "ship_light_blue_effect" trigger_once = yes keep_particle = yes }		
-		event = { time = 0 node = "light_locator_04" particle = "ship_light_blue_effect" trigger_once = yes keep_particle = yes }		
-		event = { time = 0 node = "light_locator_05" particle = "ship_light_blue_effect" trigger_once = yes keep_particle = yes }		
-		event = { time = 0 node = "light_locator_06" particle = "ship_light_blue_effect" trigger_once = yes keep_particle = yes }		
-		event = { time = 0 node = "light_locator_07" particle = "ship_light_blue_effect" trigger_once = yes keep_particle = yes }		
-		event = { time = 0 node = "light_locator_08" particle = "ship_light_blue_effect" trigger_once = yes keep_particle = yes }		
-		
-		event = { time = 0 node = "engine_large_01" particle = "gallente_01_8_00_ship_exhaust_moving_particle" trigger_once = yes keep_particle = yes }
-		event = { time = 0 node = "engine_large_02" particle = "gallente_01_8_00_ship_exhaust_moving_particle" trigger_once = yes keep_particle = yes }
-		event = { time = 0 node = "engine_large_03" particle = "gallente_01_8_00_ship_exhaust_moving_particle" trigger_once = yes keep_particle = yes }
-		event = { time = 0 node = "engine_large_04" particle = "gallente_01_8_00_ship_exhaust_moving_particle" trigger_once = yes keep_particle = yes }
-		event = { time = 0 node = "engine_large_05" particle = "gallente_01_8_00_ship_exhaust_moving_particle" trigger_once = yes keep_particle = yes }
-		event = { time = 0 node = "engine_large_06" particle = "gallente_01_8_00_ship_exhaust_moving_particle" trigger_once = yes keep_particle = yes }
-		event = { time = 0 node = "engine_large_07" particle = "gallente_01_8_00_ship_exhaust_moving_particle" trigger_once = yes keep_particle = yes }
-		event = { time = 0 node = "engine_large_08" particle = "gallente_01_8_00_ship_exhaust_moving_particle" trigger_once = yes keep_particle = yes }
-		event = { time = 0 node = "engine_large_09" particle = "gallente_01_8_00_ship_exhaust_moving_particle" trigger_once = yes keep_particle = yes }
-		event = { time = 0 node = "engine_large_10" particle = "gallente_01_8_00_ship_exhaust_moving_particle" trigger_once = yes keep_particle = yes }
-
-	}
-	state = { name = "death" state_time = 5 }
-	
-	scale = @supercarrier_physical_scale
-	
-	game_data = {
-		trail_locators = {
-			"engine_large_01" = 		{ width = @medium_trail_W 	length = @medium_trail_L   	}
-			"engine_large_02" = 		{ width = @medium_trail_W 	length = @medium_trail_L   	}
-			"engine_large_03" = 		{ width = @medium_trail_W 	length = @medium_trail_L   	}
-			"engine_large_04" = 		{ width = @medium_trail_W 	length = @medium_trail_L   	}
-			"engine_large_05" = 		{ width = @medium_trail_W 	length = @medium_trail_L   	}
-			"engine_large_06" = 		{ width = @medium_trail_W 	length = @medium_trail_L   	}
-			"engine_large_07" = 		{ width = @medium_trail_W 	length = @medium_trail_L   	}
-			"engine_large_08" = 		{ width = @medium_trail_W 	length = @medium_trail_L   	}
-			"engine_large_09" = 		{ width = @medium_trail_W 	length = @medium_trail_L   	}
-			"engine_large_10" = 		{ width = @medium_trail_W 	length = @medium_trail_L   	}
-		}	
-		size = @supercarrier_scale
-	}
-}
-
-entity = {
-	name = "gallente_01_Flagship_mid2_L3_entity"
-	pdxmesh = "gallente_01_nyx_mesh"
-
-	locator = { name = "large_gun_01" rotation = { 0 0 0 } position = { 0 0 0 } }
-	locator = { name = "large_gun_02" rotation = { 0 0 0 } position = { 0 0 0 } }
-	locator = { name = "large_gun_03" rotation = { 0 0 0 } position = { 0 0 0 } }
-	
-	default_state = "idle"
-	state = { name = "idle" state_time = 5
-		event = { time = 0 node = "light_locator_01" particle = "ship_light_blue_effect" trigger_once = yes keep_particle = yes }
-		event = { time = 0 node = "light_locator_02" particle = "ship_light_blue_effect" trigger_once = yes keep_particle = yes }
-		event = { time = 0 node = "light_locator_03" particle = "ship_light_blue_effect" trigger_once = yes keep_particle = yes }		
-		event = { time = 0 node = "light_locator_04" particle = "ship_light_blue_effect" trigger_once = yes keep_particle = yes }		
-		event = { time = 0 node = "light_locator_05" particle = "ship_light_blue_effect" trigger_once = yes keep_particle = yes }		
-		event = { time = 0 node = "light_locator_06" particle = "ship_light_blue_effect" trigger_once = yes keep_particle = yes }		
-		event = { time = 0 node = "light_locator_07" particle = "ship_light_blue_effect" trigger_once = yes keep_particle = yes }		
-		event = { time = 0 node = "light_locator_08" particle = "ship_light_blue_effect" trigger_once = yes keep_particle = yes }		
-				
-		event = { time = 0 node = "engine_large_01" particle = "gallente_1_8_00_exhaust_idle_particle" trigger_once = yes keep_particle = yes }
-		event = { time = 0 node = "engine_large_02" particle = "gallente_1_8_00_exhaust_idle_particle" trigger_once = yes keep_particle = yes }
-		event = { time = 0 node = "engine_large_03" particle = "gallente_1_8_00_exhaust_idle_particle" trigger_once = yes keep_particle = yes }
-		event = { time = 0 node = "engine_large_04" particle = "gallente_1_8_00_exhaust_idle_particle" trigger_once = yes keep_particle = yes }		
-		event = { time = 0 node = "engine_large_05" particle = "gallente_1_8_00_exhaust_idle_particle" trigger_once = yes keep_particle = yes }		
-		event = { time = 0 node = "engine_large_06" particle = "gallente_1_8_00_exhaust_idle_particle" trigger_once = yes keep_particle = yes }		
-		event = { time = 0 node = "engine_large_07" particle = "gallente_1_8_00_exhaust_idle_particle" trigger_once = yes keep_particle = yes }		
-		event = { time = 0 node = "engine_large_08" particle = "gallente_1_8_00_exhaust_idle_particle" trigger_once = yes keep_particle = yes }		
-		event = { time = 0 node = "engine_large_09" particle = "gallente_1_8_00_exhaust_idle_particle" trigger_once = yes keep_particle = yes }		
-		event = { time = 0 node = "engine_large_10" particle = "gallente_1_8_00_exhaust_idle_particle" trigger_once = yes keep_particle = yes }		
-	}
-	state = { name = "moving" state_time = 5
-		event = { time = 0 node = "light_locator_01" particle = "ship_light_blue_effect" trigger_once = yes keep_particle = yes }
-		event = { time = 0 node = "light_locator_02" particle = "ship_light_blue_effect" trigger_once = yes keep_particle = yes }
-		event = { time = 0 node = "light_locator_03" particle = "ship_light_blue_effect" trigger_once = yes keep_particle = yes }		
-		event = { time = 0 node = "light_locator_04" particle = "ship_light_blue_effect" trigger_once = yes keep_particle = yes }		
-		event = { time = 0 node = "light_locator_05" particle = "ship_light_blue_effect" trigger_once = yes keep_particle = yes }		
-		event = { time = 0 node = "light_locator_06" particle = "ship_light_blue_effect" trigger_once = yes keep_particle = yes }		
-		event = { time = 0 node = "light_locator_07" particle = "ship_light_blue_effect" trigger_once = yes keep_particle = yes }		
-		event = { time = 0 node = "light_locator_08" particle = "ship_light_blue_effect" trigger_once = yes keep_particle = yes }		
-		
-		event = { time = 0 node = "engine_large_01" particle = "gallente_01_8_00_ship_exhaust_moving_particle" trigger_once = yes keep_particle = yes }
-		event = { time = 0 node = "engine_large_02" particle = "gallente_01_8_00_ship_exhaust_moving_particle" trigger_once = yes keep_particle = yes }
-		event = { time = 0 node = "engine_large_03" particle = "gallente_01_8_00_ship_exhaust_moving_particle" trigger_once = yes keep_particle = yes }
-		event = { time = 0 node = "engine_large_04" particle = "gallente_01_8_00_ship_exhaust_moving_particle" trigger_once = yes keep_particle = yes }
-		event = { time = 0 node = "engine_large_05" particle = "gallente_01_8_00_ship_exhaust_moving_particle" trigger_once = yes keep_particle = yes }
-		event = { time = 0 node = "engine_large_06" particle = "gallente_01_8_00_ship_exhaust_moving_particle" trigger_once = yes keep_particle = yes }
-		event = { time = 0 node = "engine_large_07" particle = "gallente_01_8_00_ship_exhaust_moving_particle" trigger_once = yes keep_particle = yes }
-		event = { time = 0 node = "engine_large_08" particle = "gallente_01_8_00_ship_exhaust_moving_particle" trigger_once = yes keep_particle = yes }
-		event = { time = 0 node = "engine_large_09" particle = "gallente_01_8_00_ship_exhaust_moving_particle" trigger_once = yes keep_particle = yes }
-		event = { time = 0 node = "engine_large_10" particle = "gallente_01_8_00_ship_exhaust_moving_particle" trigger_once = yes keep_particle = yes }
-
-	}
-	state = { name = "death" state_time = 5 }
-	
-	scale = @supercarrier_physical_scale
-	
-	game_data = {
-		trail_locators = {
-			"engine_large_01" = 		{ width = @medium_trail_W 	length = @medium_trail_L   	}
-			"engine_large_02" = 		{ width = @medium_trail_W 	length = @medium_trail_L   	}
-			"engine_large_03" = 		{ width = @medium_trail_W 	length = @medium_trail_L   	}
-			"engine_large_04" = 		{ width = @medium_trail_W 	length = @medium_trail_L   	}
-			"engine_large_05" = 		{ width = @medium_trail_W 	length = @medium_trail_L   	}
-			"engine_large_06" = 		{ width = @medium_trail_W 	length = @medium_trail_L   	}
-			"engine_large_07" = 		{ width = @medium_trail_W 	length = @medium_trail_L   	}
-			"engine_large_08" = 		{ width = @medium_trail_W 	length = @medium_trail_L   	}
-			"engine_large_09" = 		{ width = @medium_trail_W 	length = @medium_trail_L   	}
-			"engine_large_10" = 		{ width = @medium_trail_W 	length = @medium_trail_L   	}
-		}	
-		size = @supercarrier_scale
-	}
-}
-
-entity = {
-	name = "gallente_01_Flagship_mid2_M4SHB_entity"
-	pdxmesh = "gallente_01_nyx_mesh"
-
-	locator = { name = "medium_gun_01" rotation = { 0 0 0 } position = { 0 0 0 } }
-	locator = { name = "medium_gun_02" rotation = { 0 0 0 } position = { 0 0 0 } }
-	locator = { name = "medium_gun_03" rotation = { 0 0 0 } position = { 0 0 0 } }
-	locator = { name = "medium_gun_04" rotation = { 0 0 0 } position = { 0 0 0 } }
-	locator = { name = "strike_craft_locator_01" rotation = { 0 0 0 } position = { 0 0 0 } }
-	
-	default_state = "idle"
-	state = { name = "idle" state_time = 5
-		event = { time = 0 node = "light_locator_01" particle = "ship_light_blue_effect" trigger_once = yes keep_particle = yes }
-		event = { time = 0 node = "light_locator_02" particle = "ship_light_blue_effect" trigger_once = yes keep_particle = yes }
-		event = { time = 0 node = "light_locator_03" particle = "ship_light_blue_effect" trigger_once = yes keep_particle = yes }		
-		event = { time = 0 node = "light_locator_04" particle = "ship_light_blue_effect" trigger_once = yes keep_particle = yes }		
-		event = { time = 0 node = "light_locator_05" particle = "ship_light_blue_effect" trigger_once = yes keep_particle = yes }		
-		event = { time = 0 node = "light_locator_06" particle = "ship_light_blue_effect" trigger_once = yes keep_particle = yes }		
-		event = { time = 0 node = "light_locator_07" particle = "ship_light_blue_effect" trigger_once = yes keep_particle = yes }		
-		event = { time = 0 node = "light_locator_08" particle = "ship_light_blue_effect" trigger_once = yes keep_particle = yes }		
-				
-		event = { time = 0 node = "engine_large_01" particle = "gallente_1_8_00_exhaust_idle_particle" trigger_once = yes keep_particle = yes }
-		event = { time = 0 node = "engine_large_02" particle = "gallente_1_8_00_exhaust_idle_particle" trigger_once = yes keep_particle = yes }
-		event = { time = 0 node = "engine_large_03" particle = "gallente_1_8_00_exhaust_idle_particle" trigger_once = yes keep_particle = yes }
-		event = { time = 0 node = "engine_large_04" particle = "gallente_1_8_00_exhaust_idle_particle" trigger_once = yes keep_particle = yes }		
-		event = { time = 0 node = "engine_large_05" particle = "gallente_1_8_00_exhaust_idle_particle" trigger_once = yes keep_particle = yes }		
-		event = { time = 0 node = "engine_large_06" particle = "gallente_1_8_00_exhaust_idle_particle" trigger_once = yes keep_particle = yes }		
-		event = { time = 0 node = "engine_large_07" particle = "gallente_1_8_00_exhaust_idle_particle" trigger_once = yes keep_particle = yes }		
-		event = { time = 0 node = "engine_large_08" particle = "gallente_1_8_00_exhaust_idle_particle" trigger_once = yes keep_particle = yes }		
-		event = { time = 0 node = "engine_large_09" particle = "gallente_1_8_00_exhaust_idle_particle" trigger_once = yes keep_particle = yes }		
-		event = { time = 0 node = "engine_large_10" particle = "gallente_1_8_00_exhaust_idle_particle" trigger_once = yes keep_particle = yes }		
-	}
-	state = { name = "moving" state_time = 5
-		event = { time = 0 node = "light_locator_01" particle = "ship_light_blue_effect" trigger_once = yes keep_particle = yes }
-		event = { time = 0 node = "light_locator_02" particle = "ship_light_blue_effect" trigger_once = yes keep_particle = yes }
-		event = { time = 0 node = "light_locator_03" particle = "ship_light_blue_effect" trigger_once = yes keep_particle = yes }		
-		event = { time = 0 node = "light_locator_04" particle = "ship_light_blue_effect" trigger_once = yes keep_particle = yes }		
-		event = { time = 0 node = "light_locator_05" particle = "ship_light_blue_effect" trigger_once = yes keep_particle = yes }		
-		event = { time = 0 node = "light_locator_06" particle = "ship_light_blue_effect" trigger_once = yes keep_particle = yes }		
-		event = { time = 0 node = "light_locator_07" particle = "ship_light_blue_effect" trigger_once = yes keep_particle = yes }		
-		event = { time = 0 node = "light_locator_08" particle = "ship_light_blue_effect" trigger_once = yes keep_particle = yes }		
-		
-		event = { time = 0 node = "engine_large_01" particle = "gallente_01_8_00_ship_exhaust_moving_particle" trigger_once = yes keep_particle = yes }
-		event = { time = 0 node = "engine_large_02" particle = "gallente_01_8_00_ship_exhaust_moving_particle" trigger_once = yes keep_particle = yes }
-		event = { time = 0 node = "engine_large_03" particle = "gallente_01_8_00_ship_exhaust_moving_particle" trigger_once = yes keep_particle = yes }
-		event = { time = 0 node = "engine_large_04" particle = "gallente_01_8_00_ship_exhaust_moving_particle" trigger_once = yes keep_particle = yes }
-		event = { time = 0 node = "engine_large_05" particle = "gallente_01_8_00_ship_exhaust_moving_particle" trigger_once = yes keep_particle = yes }
-		event = { time = 0 node = "engine_large_06" particle = "gallente_01_8_00_ship_exhaust_moving_particle" trigger_once = yes keep_particle = yes }
-		event = { time = 0 node = "engine_large_07" particle = "gallente_01_8_00_ship_exhaust_moving_particle" trigger_once = yes keep_particle = yes }
-		event = { time = 0 node = "engine_large_08" particle = "gallente_01_8_00_ship_exhaust_moving_particle" trigger_once = yes keep_particle = yes }
-		event = { time = 0 node = "engine_large_09" particle = "gallente_01_8_00_ship_exhaust_moving_particle" trigger_once = yes keep_particle = yes }
-		event = { time = 0 node = "engine_large_10" particle = "gallente_01_8_00_ship_exhaust_moving_particle" trigger_once = yes keep_particle = yes }
-
-	}
-	state = { name = "death" state_time = 5 }
-	
-	scale = @supercarrier_physical_scale
-	
-	game_data = {
-		trail_locators = {
-			"engine_large_01" = 		{ width = @medium_trail_W 	length = @medium_trail_L   	}
-			"engine_large_02" = 		{ width = @medium_trail_W 	length = @medium_trail_L   	}
-			"engine_large_03" = 		{ width = @medium_trail_W 	length = @medium_trail_L   	}
-			"engine_large_04" = 		{ width = @medium_trail_W 	length = @medium_trail_L   	}
-			"engine_large_05" = 		{ width = @medium_trail_W 	length = @medium_trail_L   	}
-			"engine_large_06" = 		{ width = @medium_trail_W 	length = @medium_trail_L   	}
-			"engine_large_07" = 		{ width = @medium_trail_W 	length = @medium_trail_L   	}
-			"engine_large_08" = 		{ width = @medium_trail_W 	length = @medium_trail_L   	}
-			"engine_large_09" = 		{ width = @medium_trail_W 	length = @medium_trail_L   	}
-			"engine_large_10" = 		{ width = @medium_trail_W 	length = @medium_trail_L   	}
-		}	
-		size = @supercarrier_scale
-	}
-}
-
-entity = {
-	name = "gallente_01_Flagship_mid2_S4LHB_entity"
-	pdxmesh = "gallente_01_nyx_mesh"
-
-	locator = { name = "small_gun_01" rotation = { 0 0 0 } position = { 0 0 0 } }
-	locator = { name = "small_gun_02" rotation = { 0 0 0 } position = { 0 0 0 } }
-	locator = { name = "small_gun_03" rotation = { 0 0 0 } position = { 0 0 0 } }
-	locator = { name = "small_gun_04" rotation = { 0 0 0 } position = { 0 0 0 } }
-	locator = { name = "strike_craft_locator_01" rotation = { 0 0 0 } position = { 0 0 0 } }
-	locator = { name = "strike_craft_locator_02" rotation = { 0 0 0 } position = { 0 0 0 } }
-	
-	default_state = "idle"
-	state = { name = "idle" state_time = 5
-		event = { time = 0 node = "light_locator_01" particle = "ship_light_blue_effect" trigger_once = yes keep_particle = yes }
-		event = { time = 0 node = "light_locator_02" particle = "ship_light_blue_effect" trigger_once = yes keep_particle = yes }
-		event = { time = 0 node = "light_locator_03" particle = "ship_light_blue_effect" trigger_once = yes keep_particle = yes }		
-		event = { time = 0 node = "light_locator_04" particle = "ship_light_blue_effect" trigger_once = yes keep_particle = yes }		
-		event = { time = 0 node = "light_locator_05" particle = "ship_light_blue_effect" trigger_once = yes keep_particle = yes }		
-		event = { time = 0 node = "light_locator_06" particle = "ship_light_blue_effect" trigger_once = yes keep_particle = yes }		
-		event = { time = 0 node = "light_locator_07" particle = "ship_light_blue_effect" trigger_once = yes keep_particle = yes }		
-		event = { time = 0 node = "light_locator_08" particle = "ship_light_blue_effect" trigger_once = yes keep_particle = yes }		
-				
-		event = { time = 0 node = "engine_large_01" particle = "gallente_1_8_00_exhaust_idle_particle" trigger_once = yes keep_particle = yes }
-		event = { time = 0 node = "engine_large_02" particle = "gallente_1_8_00_exhaust_idle_particle" trigger_once = yes keep_particle = yes }
-		event = { time = 0 node = "engine_large_03" particle = "gallente_1_8_00_exhaust_idle_particle" trigger_once = yes keep_particle = yes }
-		event = { time = 0 node = "engine_large_04" particle = "gallente_1_8_00_exhaust_idle_particle" trigger_once = yes keep_particle = yes }		
-		event = { time = 0 node = "engine_large_05" particle = "gallente_1_8_00_exhaust_idle_particle" trigger_once = yes keep_particle = yes }		
-		event = { time = 0 node = "engine_large_06" particle = "gallente_1_8_00_exhaust_idle_particle" trigger_once = yes keep_particle = yes }		
-		event = { time = 0 node = "engine_large_07" particle = "gallente_1_8_00_exhaust_idle_particle" trigger_once = yes keep_particle = yes }		
-		event = { time = 0 node = "engine_large_08" particle = "gallente_1_8_00_exhaust_idle_particle" trigger_once = yes keep_particle = yes }		
-		event = { time = 0 node = "engine_large_09" particle = "gallente_1_8_00_exhaust_idle_particle" trigger_once = yes keep_particle = yes }		
-		event = { time = 0 node = "engine_large_10" particle = "gallente_1_8_00_exhaust_idle_particle" trigger_once = yes keep_particle = yes }		
-	}
-	state = { name = "moving" state_time = 5
-		event = { time = 0 node = "light_locator_01" particle = "ship_light_blue_effect" trigger_once = yes keep_particle = yes }
-		event = { time = 0 node = "light_locator_02" particle = "ship_light_blue_effect" trigger_once = yes keep_particle = yes }
-		event = { time = 0 node = "light_locator_03" particle = "ship_light_blue_effect" trigger_once = yes keep_particle = yes }		
-		event = { time = 0 node = "light_locator_04" particle = "ship_light_blue_effect" trigger_once = yes keep_particle = yes }		
-		event = { time = 0 node = "light_locator_05" particle = "ship_light_blue_effect" trigger_once = yes keep_particle = yes }		
-		event = { time = 0 node = "light_locator_06" particle = "ship_light_blue_effect" trigger_once = yes keep_particle = yes }		
-		event = { time = 0 node = "light_locator_07" particle = "ship_light_blue_effect" trigger_once = yes keep_particle = yes }		
-		event = { time = 0 node = "light_locator_08" particle = "ship_light_blue_effect" trigger_once = yes keep_particle = yes }		
-		
-		event = { time = 0 node = "engine_large_01" particle = "gallente_01_8_00_ship_exhaust_moving_particle" trigger_once = yes keep_particle = yes }
-		event = { time = 0 node = "engine_large_02" particle = "gallente_01_8_00_ship_exhaust_moving_particle" trigger_once = yes keep_particle = yes }
-		event = { time = 0 node = "engine_large_03" particle = "gallente_01_8_00_ship_exhaust_moving_particle" trigger_once = yes keep_particle = yes }
-		event = { time = 0 node = "engine_large_04" particle = "gallente_01_8_00_ship_exhaust_moving_particle" trigger_once = yes keep_particle = yes }
-		event = { time = 0 node = "engine_large_05" particle = "gallente_01_8_00_ship_exhaust_moving_particle" trigger_once = yes keep_particle = yes }
-		event = { time = 0 node = "engine_large_06" particle = "gallente_01_8_00_ship_exhaust_moving_particle" trigger_once = yes keep_particle = yes }
-		event = { time = 0 node = "engine_large_07" particle = "gallente_01_8_00_ship_exhaust_moving_particle" trigger_once = yes keep_particle = yes }
-		event = { time = 0 node = "engine_large_08" particle = "gallente_01_8_00_ship_exhaust_moving_particle" trigger_once = yes keep_particle = yes }
-		event = { time = 0 node = "engine_large_09" particle = "gallente_01_8_00_ship_exhaust_moving_particle" trigger_once = yes keep_particle = yes }
-		event = { time = 0 node = "engine_large_10" particle = "gallente_01_8_00_ship_exhaust_moving_particle" trigger_once = yes keep_particle = yes }
-
-	}
-	state = { name = "death" state_time = 5 }
-	
-	scale = @supercarrier_physical_scale
-	
-	game_data = {
-		trail_locators = {
-			"engine_large_01" = 		{ width = @medium_trail_W 	length = @medium_trail_L   	}
-			"engine_large_02" = 		{ width = @medium_trail_W 	length = @medium_trail_L   	}
-			"engine_large_03" = 		{ width = @medium_trail_W 	length = @medium_trail_L   	}
-			"engine_large_04" = 		{ width = @medium_trail_W 	length = @medium_trail_L   	}
-			"engine_large_05" = 		{ width = @medium_trail_W 	length = @medium_trail_L   	}
-			"engine_large_06" = 		{ width = @medium_trail_W 	length = @medium_trail_L   	}
-			"engine_large_07" = 		{ width = @medium_trail_W 	length = @medium_trail_L   	}
-			"engine_large_08" = 		{ width = @medium_trail_W 	length = @medium_trail_L   	}
-			"engine_large_09" = 		{ width = @medium_trail_W 	length = @medium_trail_L   	}
-			"engine_large_10" = 		{ width = @medium_trail_W 	length = @medium_trail_L   	}
-		}	
-		size = @supercarrier_scale
-	}
-}
-
-#MID3
-entity = {
-	name = "gallente_01_Flagship_mid3_L2S4_entity"
-	pdxmesh = "empty_mesh_ship"
-
-	locator = { name = "large_gun_01" rotation = { 0 0 0 } position = { 0 0 0 } }
-	locator = { name = "large_gun_02" rotation = { 0 0 0 } position = { 0 0 0 } }
-	locator = { name = "small_gun_01" rotation = { 0 0 0 } position = { 0 0 0 } }
-	locator = { name = "small_gun_02" rotation = { 0 0 0 } position = { 0 0 0 } }
-	locator = { name = "small_gun_03" rotation = { 0 0 0 } position = { 0 0 0 } }
-	locator = { name = "small_gun_04" rotation = { 0 0 0 } position = { 0 0 0 } }
-}
-
-entity = {
-	name = "gallente_01_Flagship_mid3_L1M4_entity"
-	pdxmesh = "empty_mesh_ship"
-
-	locator = { name = "large_gun_01" rotation = { 0 0 0 } position = { 0 0 0 } }
-	locator = { name = "medium_gun_01" rotation = { 0 0 0 } position = { 0 0 0 } }
-	locator = { name = "medium_gun_02" rotation = { 0 0 0 } position = { 0 0 0 } }
-	locator = { name = "medium_gun_03" rotation = { 0 0 0 } position = { 0 0 0 } }
-	locator = { name = "medium_gun_04" rotation = { 0 0 0 } position = { 0 0 0 } }
-}
-
-entity = {
-	name = "gallente_01_Flagship_mid3_L2M2_entity"
-	pdxmesh = "empty_mesh_ship"
-
-	locator = { name = "large_gun_01" rotation = { 0 0 0 } position = { 0 0 0 } }
-	locator = { name = "large_gun_02" rotation = { 0 0 0 } position = { 0 0 0 } }
-	locator = { name = "medium_gun_01" rotation = { 0 0 0 } position = { 0 0 0 } }
-	locator = { name = "medium_gun_02" rotation = { 0 0 0 } position = { 0 0 0 } }
-}
-
-entity = {
-	name = "gallente_01_Flagship_mid3_L3_entity"
-	pdxmesh = "empty_mesh_ship"
-
-	locator = { name = "large_gun_01" rotation = { 0 0 0 } position = { 0 0 0 } }
-	locator = { name = "large_gun_02" rotation = { 0 0 0 } position = { 0 0 0 } }
-	locator = { name = "large_gun_03" rotation = { 0 0 0 } position = { 0 0 0 } }
-}
-
-entity = {
-	name = "gallente_01_Flagship_mid3_M4SHB_entity"
-	pdxmesh = "empty_mesh_ship"
-
-	locator = { name = "medium_gun_01" rotation = { 0 0 0 } position = { 0 0 0 } }
-	locator = { name = "medium_gun_02" rotation = { 0 0 0 } position = { 0 0 0 } }
-	locator = { name = "medium_gun_03" rotation = { 0 0 0 } position = { 0 0 0 } }
-	locator = { name = "medium_gun_04" rotation = { 0 0 0 } position = { 0 0 0 } }
-	locator = { name = "strike_craft_locator_01" rotation = { 0 0 0 } position = { 0 0 0 } }
-}
-
-entity = {
-	name = "gallente_01_Flagship_mid3_S4LHB_entity"
+	name = "gallente_01_Flagship_mid_S4LHB_entity"
 	pdxmesh = "empty_mesh_ship"
 
 	locator = { name = "small_gun_01" rotation = { 0 0 0 } position = { 0 0 0 } }
@@ -792,4 +276,77 @@ entity = {
 	locator = { name = "small_gun_02" rotation = { 0 0 0 } position = { 0 0 0 } }
 	locator = { name = "small_gun_03" rotation = { 0 0 0 } position = { 0 0 0 } }
 	locator = { name = "small_gun_04" rotation = { 0 0 0 } position = { 0 0 0 } }
+}
+
+####################
+# ENTITIES
+####################
+
+entity = {
+	name = "gallente_01_nyx_entity"
+	pdxmesh = "gallente_01_nyx_mesh"
+	
+	default_state = "idle"
+	state = { name = "idle" state_time = 5
+		event = { time = 0 node = "light_locator_01" particle = "ship_light_blue_effect" trigger_once = yes keep_particle = yes }
+		event = { time = 0 node = "light_locator_02" particle = "ship_light_blue_effect" trigger_once = yes keep_particle = yes }
+		event = { time = 0 node = "light_locator_03" particle = "ship_light_blue_effect" trigger_once = yes keep_particle = yes }		
+		event = { time = 0 node = "light_locator_04" particle = "ship_light_blue_effect" trigger_once = yes keep_particle = yes }		
+		event = { time = 0 node = "light_locator_05" particle = "ship_light_blue_effect" trigger_once = yes keep_particle = yes }		
+		event = { time = 0 node = "light_locator_06" particle = "ship_light_blue_effect" trigger_once = yes keep_particle = yes }		
+		event = { time = 0 node = "light_locator_07" particle = "ship_light_blue_effect" trigger_once = yes keep_particle = yes }		
+		event = { time = 0 node = "light_locator_08" particle = "ship_light_blue_effect" trigger_once = yes keep_particle = yes }		
+				
+		event = { time = 0 node = "engine_large_01" particle = "gallente_1_8_00_exhaust_idle_particle" trigger_once = yes keep_particle = yes }
+		event = { time = 0 node = "engine_large_02" particle = "gallente_1_8_00_exhaust_idle_particle" trigger_once = yes keep_particle = yes }
+		event = { time = 0 node = "engine_large_03" particle = "gallente_1_8_00_exhaust_idle_particle" trigger_once = yes keep_particle = yes }
+		event = { time = 0 node = "engine_large_04" particle = "gallente_1_8_00_exhaust_idle_particle" trigger_once = yes keep_particle = yes }		
+		event = { time = 0 node = "engine_large_05" particle = "gallente_1_8_00_exhaust_idle_particle" trigger_once = yes keep_particle = yes }		
+		event = { time = 0 node = "engine_large_06" particle = "gallente_1_8_00_exhaust_idle_particle" trigger_once = yes keep_particle = yes }		
+		event = { time = 0 node = "engine_large_07" particle = "gallente_1_8_00_exhaust_idle_particle" trigger_once = yes keep_particle = yes }		
+		event = { time = 0 node = "engine_large_08" particle = "gallente_1_8_00_exhaust_idle_particle" trigger_once = yes keep_particle = yes }		
+		event = { time = 0 node = "engine_large_09" particle = "gallente_1_8_00_exhaust_idle_particle" trigger_once = yes keep_particle = yes }		
+		event = { time = 0 node = "engine_large_10" particle = "gallente_1_8_00_exhaust_idle_particle" trigger_once = yes keep_particle = yes }		
+	}
+	state = { name = "moving" state_time = 5
+		event = { time = 0 node = "light_locator_01" particle = "ship_light_blue_effect" trigger_once = yes keep_particle = yes }
+		event = { time = 0 node = "light_locator_02" particle = "ship_light_blue_effect" trigger_once = yes keep_particle = yes }
+		event = { time = 0 node = "light_locator_03" particle = "ship_light_blue_effect" trigger_once = yes keep_particle = yes }		
+		event = { time = 0 node = "light_locator_04" particle = "ship_light_blue_effect" trigger_once = yes keep_particle = yes }		
+		event = { time = 0 node = "light_locator_05" particle = "ship_light_blue_effect" trigger_once = yes keep_particle = yes }		
+		event = { time = 0 node = "light_locator_06" particle = "ship_light_blue_effect" trigger_once = yes keep_particle = yes }		
+		event = { time = 0 node = "light_locator_07" particle = "ship_light_blue_effect" trigger_once = yes keep_particle = yes }		
+		event = { time = 0 node = "light_locator_08" particle = "ship_light_blue_effect" trigger_once = yes keep_particle = yes }		
+		
+		event = { time = 0 node = "engine_large_01" particle = "gallente_01_8_00_ship_exhaust_moving_particle" trigger_once = yes keep_particle = yes }
+		event = { time = 0 node = "engine_large_02" particle = "gallente_01_8_00_ship_exhaust_moving_particle" trigger_once = yes keep_particle = yes }
+		event = { time = 0 node = "engine_large_03" particle = "gallente_01_8_00_ship_exhaust_moving_particle" trigger_once = yes keep_particle = yes }
+		event = { time = 0 node = "engine_large_04" particle = "gallente_01_8_00_ship_exhaust_moving_particle" trigger_once = yes keep_particle = yes }
+		event = { time = 0 node = "engine_large_05" particle = "gallente_01_8_00_ship_exhaust_moving_particle" trigger_once = yes keep_particle = yes }
+		event = { time = 0 node = "engine_large_06" particle = "gallente_01_8_00_ship_exhaust_moving_particle" trigger_once = yes keep_particle = yes }
+		event = { time = 0 node = "engine_large_07" particle = "gallente_01_8_00_ship_exhaust_moving_particle" trigger_once = yes keep_particle = yes }
+		event = { time = 0 node = "engine_large_08" particle = "gallente_01_8_00_ship_exhaust_moving_particle" trigger_once = yes keep_particle = yes }
+		event = { time = 0 node = "engine_large_09" particle = "gallente_01_8_00_ship_exhaust_moving_particle" trigger_once = yes keep_particle = yes }
+		event = { time = 0 node = "engine_large_10" particle = "gallente_01_8_00_ship_exhaust_moving_particle" trigger_once = yes keep_particle = yes }
+
+	}
+	state = { name = "death" state_time = 5 }
+	
+	scale = @supercarrier_physical_scale
+	
+	game_data = {
+		trail_locators = {
+			"engine_large_01" = 		{ width = @medium_trail_W 	length = @medium_trail_L   	}
+			"engine_large_02" = 		{ width = @medium_trail_W 	length = @medium_trail_L   	}
+			"engine_large_03" = 		{ width = @medium_trail_W 	length = @medium_trail_L   	}
+			"engine_large_04" = 		{ width = @medium_trail_W 	length = @medium_trail_L   	}
+			"engine_large_05" = 		{ width = @medium_trail_W 	length = @medium_trail_L   	}
+			"engine_large_06" = 		{ width = @medium_trail_W 	length = @medium_trail_L   	}
+			"engine_large_07" = 		{ width = @medium_trail_W 	length = @medium_trail_L   	}
+			"engine_large_08" = 		{ width = @medium_trail_W 	length = @medium_trail_L   	}
+			"engine_large_09" = 		{ width = @medium_trail_W 	length = @medium_trail_L   	}
+			"engine_large_10" = 		{ width = @medium_trail_W 	length = @medium_trail_L   	}
+		}	
+		size = @supercarrier_scale
+	}
 }
